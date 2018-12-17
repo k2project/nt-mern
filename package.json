@@ -5,15 +5,20 @@
   "main": "index.js",
   "scripts": {
     "client": "cd client && npm run start",
-    "server": "nodemon index.js",
+    "server": "nodemon server.js",
+    "start": "node server.js",
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
+  "engines": {
+        "node": "10.14.2"
+    },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "dotenv": "^6.2.0",
     "express": "^4.16.4",
     "nodemailer": "^4.7.0"
   },
