@@ -3,17 +3,45 @@ require('dotenv').config()
 
 const express = require('express');
 const path = require('path');
+const bodyParser = require('body-parser');
+const nodemailer = require('nodemailer');
 
 const app = express();
 
 // Serve the static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
 
-// An api endpoint that returns a short list of items
-app.get('/api/getList', (req,res) => {
-    var list = ["item1", "item2", "item3"];
-    res.send(list);
-    console.log('Sent list of items');
+app.use(bodyParser.json());
+app.post('/mail/send', (req, res) => {
+
+    // secure: true for 465, false for other ports
+    let transporter = nodemailer.createTransport({
+       host: 'smtp.livemail.co.uk',
+       port: 465,
+       secure: true,
+       auth: {
+           user: process.env.MAIL_USER,
+           pass: process.env.MAIL_PASS
+       },
+       tls: { rejectUnauthorized: false }
+   });
+
+
+    const mailOptions = {
+      from: process.env.MAIL_USER,
+      to: 'handzon.mmt@gmail.com',
+      subject: 'Sending Email using Node.js',
+      text: 'That was easy!'
+    };
+
+    transporter.sendMail(mailOptions, function(error, info){
+      if (error) {
+        console.log(error);
+      } else {
+        console.log('Email sent: ' + info.response);
+      }
+    });
+
 });
 
 // Handles any requests that don't match the ones above
