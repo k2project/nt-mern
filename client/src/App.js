@@ -1,0 +1,25 @@
+import React, { Component } from 'react';
+import './App.css';
+//list pages imports before router
+import Home from './pages/Home';
+import List from './pages/List';
+
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import createHistory from 'history/createBrowserHistory';
+const history = createHistory();
+
+class App extends Component {
+  render() {
+    return (
+        <Router history={history} basename={process.env.PUBLIC_URL}>
+            <Switch>
+                 <Route exact path={`/`} component={Home}/>
+                 <Route exact path={`/list`} component={List}/>
+           </Switch>
+       </Router>
+
+    );
+  }
+}
+
+export default App;
