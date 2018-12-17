@@ -20,9 +20,9 @@ module.exports = (function() {
             text+= req.body.mobile? 'You could also contact them directly on '+req.body.mobile+'.':'';
             const mailOptions = {
               from: process.env.MAIL_USER,
-              to: 'handzon.mmt@gmail.com',
+              to: 'kopczkrzy@gmail.com',
               replyTo: req.body.mail,
-              subject: 'Sending Email using Node.js',
+              subject: 'Chat request received.',
               text
             };
 

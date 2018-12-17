@@ -9,8 +9,8 @@ class Contact extends Component {
            'Content-Type': 'application/json',
          },
          body: JSON.stringify({
-             name: 'John Doe',
-             mail: 'egzample@mail.com',
+             name: 'Kris K.',
+             mail: 'kopczkrzy@gmail.com',
              mobile: '0123456789',
           }),
        });
