@@ -3,8 +3,7 @@ import React, { Component } from 'react';
 class Contact extends Component {
     handleSubmit = async e => {
        e.preventDefault();
-        console.log('cliked')
-       const response = await fetch('/mail/send', {
+        await fetch('/mail/send', {
          method: 'POST',
          headers: {
            'Content-Type': 'application/json',
@@ -16,7 +15,6 @@ class Contact extends Component {
           }),
        });
 
-       console.log(response)
      };
     render() {
         return (
