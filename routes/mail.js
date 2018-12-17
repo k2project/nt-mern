@@ -13,7 +13,6 @@ module.exports = (function() {
                    user: process.env.MAIL_USER,
                    pass: process.env.MAIL_PASS
                },
-               tls: { rejectUnauthorized: false }
            });
 
             let text= req.body.name+' is requesting a chat. Send them an emial by clicking "Replay" button. ';
