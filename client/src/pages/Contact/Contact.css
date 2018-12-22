@@ -1,0 +1,45 @@
+.Office__bg_img{
+    background: #111;
+    background-image: url('./../../imgs/office.jpg');
+    background-size: cover;
+    background-position:  left center;
+}
+.Office .cover{
+    padding: 0 15rem 5rem 0;
+    text-align: right;
+}
+.Directions__bg_lnd{
+    background-image: url('./../../imgs/lnd.png');
+    background-position:  right center;
+    background-repeat: no-repeat;
+}
+.Directions__img{
+    width: 35rem;
+    margin: 1rem 0 1rem 2rem;
+}
+.Directions__bg_map{
+    background: #fff;
+    background-image: url('./../../imgs/map.png');
+    background-size: cover;
+    background-position: center;
+}
+.Directions .cover{
+    align-content: center;
+    background: none;
+    text-align: center;
+}
+.Directions .btn{
+    opacity: 0;
+    top: 5rem;
+    margin: 5rem auto 0;
+    transition: .5s;
+}
+.Directions .cover:hover  .btn{
+    opacity: 1;
+    top: 0;
+    transition: .5s;
+}
+
+.Directions .cover:hover{
+    background: rgba(255,255,255,.7);
+}

@@ -64,7 +64,7 @@ const TherapyIntro=()=>{
 }
 const IntegrativeTherapy=()=>{
     return (
-        <section  className="IntegrativeTherapy">
+        <section  className="IntegrativeTherapy"  id="integrative-therapy">
                 <div className="Therapy__bg_themed">
                     <div className="section__wrapper">
                         <SectionTitle data={{divider:'white',subtitle:'What I do',title:'Integrative Therapy'}}/>

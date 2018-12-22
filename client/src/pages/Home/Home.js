@@ -68,7 +68,7 @@ const About=()=>{
                         <SectionTitle data={{divider:'themed',subtitle:'About Me',title:'Think about last time you felt heard.'}}/>
                         <p>It's taugh to find someone you can truly connect with. Yet, in our fast-paced lives, the connection is more important than ever.</p>
                         <p>My dedication and expertise provide a safe space for you to be heard and understood with no judgement.</p>
-                        <Link to='/therapy' className="btn" smooth>More About Therapy</Link>
+                        <Link to='/therapy#integrative-therapy' className="btn" smooth>More About Therapy</Link>
                     </div>
                 </div>
                 <div className="About__bg_therapist">
