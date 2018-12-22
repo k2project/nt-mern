@@ -1,0 +1,15 @@
+.Home__bg_hello{
+    background-image: url('./../../imgs/hello.png');
+    background-position: bottom right;
+    background-size:cover;
+}
+.About__bg_therapist{
+    background-image: url('./../../imgs/nc.jpg');
+    background-size: cover;
+    background-position: center ;
+}
+
+.Nujoji__pb_links{
+    height: 4rem;
+    margin: 2rem .5rem;
+}

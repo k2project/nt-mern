@@ -17,9 +17,14 @@
     top:3rem;
     z-index: 3;
 }
-.Page__top_img{
+.Page__top_img.part1{
     position: absolute;
     bottom: 0;
+    right: 20vw;
+}
+.Page__top_img.part2{
+    position: absolute;
+    top: 0;
     right: 20vw;
 }
 .Page__nav{

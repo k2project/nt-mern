@@ -23,7 +23,7 @@ const Top=(props)=>{
     const {imgName, imgAlt}=props.img;
     return (
         <div className="Page__top Page__bg_grey">
-            <img src={require('../../imgs/'+imgName+'')} alt={imgAlt} className="Page__top_img"/>
+            <img src={require('../../imgs/'+imgName+'')} alt={imgAlt} className="Page__top_img part1"/>
             <div className="wrapper">
                 <Nav/>
                 <h2 className="Page__subtitle">Queen's Park &amp; West London</h2>
@@ -36,7 +36,7 @@ const Top=(props)=>{
 const Nav=()=>{
     return(
         <nav className="Page__nav">
-        
+
             <ul>
                 <NavLink to="/" exact activeClassName="selected" smooth>Home</NavLink>
                 <NavLink to="/#about" activeClassName="selected" smooth>About</NavLink>

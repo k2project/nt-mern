@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import DocumentMeta from 'react-document-meta';
+import {Link} from 'react-router-dom';
 
+import './Home.css';
 import Page from '../../components/Page/Page';
+import SectionTitle from '../../components/SectionTitle';
 
 const meta = {
     title: "Nujoji Calvocoressi Counselling | City of London & West London Therapy",
@@ -27,11 +30,85 @@ class Home extends Component {
     return (
         <DocumentMeta {...meta}>
             <Page page={pageDetails}>
-             Nujoji, this is gonna be your App live preview...
-
+                 <Welcome/>
+                 <About/>
+                 <Nujoji/>
             </Page>
         </DocumentMeta>
     );
   }
 }
 export default Home;
+
+const Welcome=()=>{
+    return (
+        <section  className="Welcome">
+                <div className="Home__bg_themed Home__bg_hello">
+                    <div className="section__wrapper">
+                        <SectionTitle data={{divider:'',subtitle:'Welcome!',title:'Change happens when you allow yourself to look at life in a new way.'}}/>
+                    </div>
+                </div>
+                <div>
+                    <div className="section__wrapper">
+                        <p><b> It is not uncommon to feel lost or confused from time to time, or to experience symptoms, unhelpful behaviours or a lack of confidence. These are things that we can all experience.</b></p>
+                        <p>However you can always break the cycle of anger, anxiety, addiction, distrust and    unhealthy behaviour if you want. It all starts with you... Make a choice today!</p>
+                        <Link to='/contact#form' className="btn">Let's Chat Now</Link>
+                    </div>
+
+                </div>
+        </section>
+
+    )
+}
+const About=()=>{
+    return (
+        <section  className="About">
+                <div className="section__bg_grey">
+                    <div className="section__wrapper">
+                        <SectionTitle data={{divider:'themed',subtitle:'About Me',title:'Think about last time you felt heard.'}}/>
+                        <p>It's taugh to find someone you can truly connect with. Yet, in our fast-paced lives, the connection is more important than ever.</p>
+                        <p>My dedication and expertise provide a safe space for you to be heard and understood with no judgement.</p>
+                        <Link to='/therapy' className="btn">More About Therapy</Link>
+                    </div>
+                </div>
+                <div className="About__bg_therapist">
+                    <div className="cover">
+                        <SectionTitle data={{divider:'',subtitle:'Nice meeting you!',title:'My name is Nujoji ...'}}/>
+                    </div>
+                </div>
+        </section>
+
+    )
+}
+const Nujoji=()=>{
+    return (
+        <section  className="Nujoji">
+            <div className="Home__bg_themed">
+                <div className="section__wrapper">
+                    <SectionTitle data={{divider:'',subtitle:'',title:'...and I\'m here to help you!'}}/>
+                    <p><b>I am passionate about my work and firmly believe that therapy can bring about positive change to people’s lives.</b></p>
+                    <p>I have been trained in integrative therapy, that is a progressive form of therapy that combines different therapeutic tools and approaches to fit the needs of the individual client. By combining elements drawn from different schools of psychological theory and research, integrative therapy becomes a flexible and inclusive approach to understanding... Each person needs to be considered as an individual person and counselling techniques must be tailored to their individual needs and personal circumstances.</p>
+                </div>
+            </div>
+            <div>
+                <img src={require('./../../imgs/homeText.pt2.png')} alt='Nujoji' className="Page__top_img part2"/>
+                <div className="section__wrapper">
+                    <p> I have trained for four years at The Minster Centre in London, I obtained a Graduate Diploma in Counselling.</p>
+                    <p>I have experience working one to one with individual clients as well as in a higher education setting. I also have experience working with offenders.</p>
+                    <p>I  am a member of the British Association of Counsellors and Psychotherapists (BACP) and adhere to their Ethical Principles and Code of Professional Conduct. I am also trainee member of the United Kingdom Council for Psychotherapy (UKCP).</p>
+                    <p>
+                        <a href="https://www.bacp.co.uk/profile/8fb9f46e-e25c-e811-8108-3863bb351d40/therapist?location=City%20of%20London" target="_blank"><img className="Nujoji__pb_links" src={require('./../../imgs/psa.PNG')} alt=''/></a>
+                        <a href="https://www.psychotherapy.org.uk/" target="_blank"><img className="Nujoji__pb_links" src={require('./../../imgs/ukcp.png')} alt=''/></a>
+                        <a href="https://www.gov.uk/government/organisations/disclosure-and-barring-service/" target="_blank"><img className="Nujoji__pb_links" src={require('./../../imgs/dbs.png')} alt=''/></a>
+                        <a href="https://forensicpsychotherapy.com/" target="_blank"><img className="Nujoji__pb_links" src={require('./../../imgs/iafp.JPG')} alt=''/></a>
+
+
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+    )
+}
