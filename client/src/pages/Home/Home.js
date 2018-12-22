@@ -62,7 +62,7 @@ const Welcome=()=>{
 }
 const About=()=>{
     return (
-        <section  className="About">
+        <section  className="About" id="about">
                 <div className="section__bg_grey">
                     <div className="section__wrapper">
                         <SectionTitle data={{divider:'themed',subtitle:'About Me',title:'Think about last time you felt heard.'}}/>
@@ -97,10 +97,10 @@ const Nujoji=()=>{
                     <p>I have experience working one to one with individual clients as well as in a higher education setting. I also have experience working with offenders.</p>
                     <p>I  am a member of the British Association of Counsellors and Psychotherapists (BACP) and adhere to their Ethical Principles and Code of Professional Conduct. I am also trainee member of the United Kingdom Council for Psychotherapy (UKCP).</p>
                     <p>
-                        <a href="https://www.bacp.co.uk/profile/8fb9f46e-e25c-e811-8108-3863bb351d40/therapist?location=City%20of%20London" target="_blank"><img className="Nujoji__pb_links" src={require('./../../imgs/psa.PNG')} alt=''/></a>
-                        <a href="https://www.psychotherapy.org.uk/" target="_blank"><img className="Nujoji__pb_links" src={require('./../../imgs/ukcp.png')} alt=''/></a>
-                        <a href="https://www.gov.uk/government/organisations/disclosure-and-barring-service/" target="_blank"><img className="Nujoji__pb_links" src={require('./../../imgs/dbs.png')} alt=''/></a>
-                        <a href="https://forensicpsychotherapy.com/" target="_blank"><img className="Nujoji__pb_links" src={require('./../../imgs/iafp.JPG')} alt=''/></a>
+                        <a href="https://www.bacp.co.uk/profile/8fb9f46e-e25c-e811-8108-3863bb351d40/therapist?location=City%20of%20London" target="_blank" rel="noopener noreferrer" ><img className="Nujoji__pb_links" src={require('./../../imgs/psa.PNG')} alt='bacp logo'/></a>
+                        <a href="https://www.psychotherapy.org.uk/" target="_blank" rel="noopener noreferrer" ><img className="Nujoji__pb_links" src={require('./../../imgs/ukcp.png')} alt='ukcp logo' rel="noopener noreferrer" /></a>
+                        <a href="https://www.gov.uk/government/organisations/disclosure-and-barring-service/" target="_blank"><img className="Nujoji__pb_links" src={require('./../../imgs/dbs.png')} alt='/disclosure and barring service logo' rel="noopener noreferrer" /></a>
+                        <a href="https://forensicpsychotherapy.com/" target="_blank" rel="noopener noreferrer" alt="forensic psychotherapy logo"><img className="Nujoji__pb_links" src={require('./../../imgs/iafp.JPG')} alt=''/></a>
 
 
                     </p>
