@@ -1,32 +1,31 @@
-.App {
-  text-align: center;
+/* //blue      #B4D8E6 */
+/* //yellow    #F0E478 */
+/* //purple    #D8A8E3 */
+
+.Page__bg_grey{
+    background-image: url('./imgs/bgGrey.png');
+}
+.wrapper{
+    width: 100rem;
+    margin: auto;
+    padding-bottom: 23rem;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.Home__bg_themed{
+    background:  #B4D8E6;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Home__color_themed{
+    color:  #B4D8E6;
 }
-
-.App-link {
-  color: #61dafb;
+.Therapy__bg_themed{
+    background:  #F0E478;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Therapy__color_themed{
+    color:  #F0E478;
+}
+.Contact__bg_themed{
+    background:  #D8A8E3;
+}
+.Contact__color_themed{
+    color:  #D8A8E3;
 }

@@ -1,0 +1,57 @@
+.Page__top{
+
+}
+.Page__title{
+    font-size: 6rem;
+    line-height: .9;
+    top: 3rem;
+    z-index: 3;
+}
+.Page__subtitle{
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 1.6rem;
+    padding-top: 12rem;
+    text-transform: uppercase;
+    top:3rem;
+    z-index: 3;
+}
+.Page__top_img{
+    position: absolute;
+    bottom: 0;
+    right: 20vw;
+}
+.Page__nav{
+    align-items: end;
+    display: grid;
+    grid-template-columns:1fr auto;
+}
+.Page__nav a{
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    display: inline-block;
+    padding: 7rem 0  4rem;
+    width: 8rem;
+    text-align: center;
+}
+.Page__nav a.selected{
+    color: #fff;
+}
+.Home .Page__nav a.selected{
+    background: #B4D8E6;
+}
+.Therapy .Page__nav a.selected{
+    background: #F0E478;
+}
+.Contact .Page__nav a.selected{
+    background: #D8A8E3;
+}
+.Page__nav_num{
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    padding: 1rem 2rem;
+    border: solid .2rem #111;
+    left: 15rem;
+    top:-3rem;
+}

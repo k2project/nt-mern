@@ -1,4 +1,27 @@
 import React, { Component } from 'react';
+import DocumentMeta from 'react-document-meta';
+
+import Page from '../../components/Page/Page';
+
+const meta = {
+    title: "Directions and Contact| Nujoji Calvocoressi Counselling",
+    description: 'Welcome to my counselling practice. I am passionate about my work and firmly believe that therapy can bring about positive change to people’s lives... I have been trained in integrative therapy, that is a progressive form of therapy that combines different therapeutic tools and approaches to fit the needs of the individual client. I am a member of BACP.',
+    canonical: 'http://nujojicalvocoressi.com/contact',
+    meta: {
+        name: {
+            author:'@_k2project',
+            keywords: 'Nujoji, CALVOCORESSI,COUNSELLING, Queen\'s Park Therapy,West London Therapy'
+        }
+    }
+};
+const pageDetails={
+    name:'Contact',
+    img:{
+        imgName:'contactText.pt1.png',
+        imgAlt:'Contact Page'
+    }
+}
+
 
 class Contact extends Component {
     handleSubmit = async e => {
@@ -18,12 +41,12 @@ class Contact extends Component {
      };
     render() {
         return (
-            <div className="Contact">
-                 contact page
-                 <form onSubmit={this.handleSubmit}>
-                  <button type="submit">Let's Chat</button>
-                </form>
-            </div>
+            <DocumentMeta {...meta}>
+                <Page page={pageDetails}>
+                 Nujoji, this is gonna be your App live preview...
+
+                </Page>
+            </DocumentMeta>
         );
     }
 }
