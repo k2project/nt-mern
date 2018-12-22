@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import DocumentMeta from 'react-document-meta';
-import {Link} from 'react-router-dom';
+import { NavHashLink as Link } from 'react-router-hash-link';
 
 import './Home.css';
 import Page from '../../components/Page/Page';
@@ -52,7 +52,7 @@ const Welcome=()=>{
                     <div className="section__wrapper">
                         <p><b> It is not uncommon to feel lost or confused from time to time, or to experience symptoms, unhelpful behaviours or a lack of confidence. These are things that we can all experience.</b></p>
                         <p>However you can always break the cycle of anger, anxiety, addiction, distrust and    unhealthy behaviour if you want. It all starts with you... Make a choice today!</p>
-                        <Link to='/contact#form' className="btn">Let's Chat Now</Link>
+                        <Link to='/contact#form' className="btn" smooth>Let's Chat Now</Link>
                     </div>
 
                 </div>
@@ -68,7 +68,7 @@ const About=()=>{
                         <SectionTitle data={{divider:'themed',subtitle:'About Me',title:'Think about last time you felt heard.'}}/>
                         <p>It's taugh to find someone you can truly connect with. Yet, in our fast-paced lives, the connection is more important than ever.</p>
                         <p>My dedication and expertise provide a safe space for you to be heard and understood with no judgement.</p>
-                        <Link to='/therapy' className="btn">More About Therapy</Link>
+                        <Link to='/therapy' className="btn" smooth>More About Therapy</Link>
                     </div>
                 </div>
                 <div className="About__bg_therapist">
@@ -91,7 +91,7 @@ const Nujoji=()=>{
                 </div>
             </div>
             <div>
-                <img src={require('./../../imgs/homeText.pt2.png')} alt='Nujoji' className="Page__top_img part2"/>
+                <img src={require('./../../imgs/homeText.pt2.png')} alt='Nujoji Calvocoressi' className="Page__top_img part2"/>
                 <div className="section__wrapper">
                     <p> I have trained for four years at The Minster Centre in London, I obtained a Graduate Diploma in Counselling.</p>
                     <p>I have experience working one to one with individual clients as well as in a higher education setting. I also have experience working with offenders.</p>
@@ -99,7 +99,7 @@ const Nujoji=()=>{
                     <p>
                         <a href="https://www.bacp.co.uk/profile/8fb9f46e-e25c-e811-8108-3863bb351d40/therapist?location=City%20of%20London" target="_blank" rel="noopener noreferrer" ><img className="Nujoji__pb_links" src={require('./../../imgs/psa.PNG')} alt='bacp logo'/></a>
                         <a href="https://www.psychotherapy.org.uk/" target="_blank" rel="noopener noreferrer" ><img className="Nujoji__pb_links" src={require('./../../imgs/ukcp.png')} alt='ukcp logo' rel="noopener noreferrer" /></a>
-                        <a href="https://www.gov.uk/government/organisations/disclosure-and-barring-service/" target="_blank"><img className="Nujoji__pb_links" src={require('./../../imgs/dbs.png')} alt='/disclosure and barring service logo' rel="noopener noreferrer" /></a>
+                        <a href="https://www.gov.uk/government/organisations/disclosure-and-barring-service/" target="_blank" rel="noopener noreferrer"><img className="Nujoji__pb_links" src={require('./../../imgs/dbs.png')} alt='/disclosure and barring service logo' /></a>
                         <a href="https://forensicpsychotherapy.com/" target="_blank" rel="noopener noreferrer" alt="forensic psychotherapy logo"><img className="Nujoji__pb_links" src={require('./../../imgs/iafp.JPG')} alt=''/></a>
 
 

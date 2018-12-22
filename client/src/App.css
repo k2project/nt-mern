@@ -35,6 +35,7 @@
     background: #161412;
     color: #fff;
 }
+
 section{
     display: grid;
     grid-auto-rows: minmax(40vw,1fr);
