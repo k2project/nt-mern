@@ -26,20 +26,69 @@
 .Directions .cover{
     align-content: center;
     background: none;
+    /* background: rgba(255,255,255,.5); */
+    color: #111;
+    font-size: 2rem;
     text-align: center;
+    padding: 0 20%;
+    transition: .2s .7s;
+}
+.Directions .cover small{
+    display: block;
+    font-size: 1.4rem;
+    margin-top: -1rem;
+}
+.Directions .cover p{
+    opacity: 0;
+    top: 15rem;
+    transition: .75s .1s;
+}
+.Directions .cover:hover p{
+    opacity: 1;
+    top: 0;
+    transition: .5s;
 }
 .Directions .btn{
     opacity: 0;
     top: 5rem;
-    margin: 5rem auto 0;
+    margin: 2rem auto 0;
     transition: .5s;
 }
 .Directions .cover:hover  .btn{
     opacity: 1;
     top: 0;
-    transition: .5s;
+    transition: .5s .25s;
 }
 
 .Directions .cover:hover{
-    background: rgba(255,255,255,.7);
+    background: rgba(255,255,255,.8);
+    transition: .2s;
+}
+
+.Contact__form{
+    padding-top: 5rem;
+}
+.Contact__form input{
+    background: none;
+    border-bottom: solid .1rem #111;
+    width: 100%;
+    padding: 3rem 5rem 2rem;
+}
+.Contact__form input:focus{
+    color: #fff;
+    border-bottom:solid .1rem #fff;
+}
+.Contact__form .btn{
+    margin: 4rem auto 0;
+}
+.text_side{
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    width: 36rem;
+    position: absolute;
+    text-align: center;
+    transform: rotate(90deg);
+    top: 20vw;
+    right:-13rem;
+    opacity: .5;
 }
