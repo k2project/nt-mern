@@ -1,7 +1,9 @@
 /* //blue      #B4D8E6 */
 /* //yellow    #F0E478 */
 /* //purple    #D8A8E3 */
-
+.text_cntr{
+    text-align: center;
+}
 .cover{
     align-content: end;
     background: rgba(0,0,0,.4);

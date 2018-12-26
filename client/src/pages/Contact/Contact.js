@@ -26,28 +26,116 @@ const pageDetails={
 
 
 class Contact extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            sent:false,
+        }
+
+        this.handleSubmit= this.handleSubmit.bind(this);
+        this.handleChange= this.handleChange.bind(this);
+    }
+    handleChange(){
+        this.setState({
+          err:'',
+          sent:false,
+        });
+    }
     handleSubmit = async e => {
        e.preventDefault();
+
+       const t=e.target;
+       if(this.state.err){
+           t.classList="Contact__form";
+           setTimeout(()=>{
+               t.classList="Contact__form shake";
+           },500)
+       }
+       if(this.state.sent){
+           this.setState({
+               sent:false,
+           });
+       }
+
+       let fakeMail=t.mail2.value;
+       if(fakeMail){
+           return;
+       }
+
+       let name=stripHTML(t.nick.value);
+       let mail=stripHTML(t.mail1.value);
+       let mobile=stripHTML(t.mobile.value);
+
         await fetch('/mail/send', {
          method: 'POST',
          headers: {
            'Content-Type': 'application/json',
          },
          body: JSON.stringify({
-             name: 'Kris K.',
-             mail: 'kopczkrzy@gmail.com',
-             mobile: '0123456789',
+             name,
+             mail,
+             mobile,
           }),
-       });
+       }).then(res => res.json())
+      .then(json => {
+        console.log('json', json);
+        if (json.success) {
+          this.setState({
+              sent:true,
+              name:'',
+              mail:'',
+              mobile:'',
+          });
+        } else {
+          this.setState({
+            err:json.message,
+            sent:false,
+          });
+        }
+      });
 
-     };
+     }
+
     render() {
+        const {name,mail,mobile,err,sent}=this.state;
+        let formCls="Contact__form";
+        if(err){
+            formCls="Contact__form shake"
+        }
         return (
             <DocumentMeta {...meta}>
                 <Page page={pageDetails}>
                     <Office/>
                     <Directions/>
-                    <Form/>
+                    <Form>
+                        <form className={formCls} onSubmit={this.handleSubmit}>
+                            <input type="text" name="nick" placeholder="What's your name, please?"
+                                onChange={this.handleChange}
+                                onFocus={(e) =>changePlaceholder(e,"A nickname will do as well!","#fff")}
+                                onBlur={(e) =>changePlaceholder(e,"What's your name, please? ***","#111")}/>
+                            <input type="text" name="mail1" placeholder="Shall I drop you an email..."
+                                onChange={this.handleChange}
+                                 onFocus={(e) =>changePlaceholder(e,"eg. example@mail.com","#ffffff")}
+                                 onBlur={(e) =>changePlaceholder(e,"Shall I drop you an email...","#111")} />
+                            <input type="email" name="mail2" className="Contact__mail_fake" placeholder="Shall I drop you an email..."
+                                onChange={this.handleChange}
+                                 onFocus={(e) =>changePlaceholder(e,"eg. example@mail.com","#ffffff")}
+                                 onBlur={(e) =>changePlaceholder(e,"Shall I drop you an email...","#111")} />
+                            <input type="text" name="mobile" placeholder="...or give you a call back? Or both?"
+                                onChange={this.handleChange}
+                                onFocus={(e) =>changePlaceholder(e,"eg. +44 (0) 123456789","#fff")}
+                                onBlur={(e) =>changePlaceholder(e,"...or give you a call? Or both?","#111")}/>
+                            <div className="text_cntr">
+                                <button type="submit" className="btn">Request a Chat*</button>
+                            </div>
+                            <div className="Form__err">
+                                {err&&<p className="Form__message_err text_cntr"><span>!</span>{err}</p>}
+                                {sent&&<p className="Form__message_sent text_cntr"><b>THANK YOU FOR CONTACTING ME.</b> <br/>Your message has been sent. I will get back to you shortly.</p>}
+                            </div>
+                        </form>
+
+                    </Form>
                 </Page>
             </DocumentMeta>
         );
@@ -110,7 +198,7 @@ const Directions=()=>{
 
     )
 }
-const Form=()=>{
+const Form=(props)=>{
     return (
         <section  className="Form" id="form">
                 <div>
@@ -123,22 +211,9 @@ const Form=()=>{
                 <div className="Contact__bg_themed">
                     <img src={require('./../../imgs/contactText.pt2.png')} alt='Contact Page' className="Page__top_img part2"/>
                     <div className="section__wrapper">
-                        <form className="Contact__form">
-                            <input type="text" placeholder="What's your name, please? ***"
-                                onFocus={(e) =>changePlaceholder(e,"A nickname will do as well!","#fff")}
-                                onBlur={(e) =>changePlaceholder(e,"What's your name, please? ***","#111")}/>
-                            <input type="text" placeholder="Shall I drop you an email..."
-                                 onFocus={(e) =>changePlaceholder(e,"eg. example@mail.com","#ffffff")}
-                                 onBlur={(e) =>changePlaceholder(e,"Shall I drop you an email...","#111")} />
-                            <input type="text" placeholder="...or give you a call? Or both?"
-                                onFocus={(e) =>changePlaceholder(e,"eg. +44 (0) 123456789","#fff")}
-                                onBlur={(e) =>changePlaceholder(e,"...or give you a call? Or both?","#111")}/>
-                            <div  className="btn">Request a Chat</div>
-
-                        </form>
-
+                        {props.children}
                     </div>
-                    <p className="text_side"><b>***REQUIRED: </b> Your name and at least one of the contact fields.</p>
+                    <p className="text_side"><b>*REQUIRED: </b> Your name and at least one of the contact fields.</p>
                 </div>
 
         </section>
@@ -148,4 +223,9 @@ const Form=()=>{
 const changePlaceholder=(e,text,color)=>{
     e.target.placeholder = text;
     e.target.style.color = color;
+
+}
+const stripHTML=(text)=>{
+    text=text.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    return text.trim();
 }
