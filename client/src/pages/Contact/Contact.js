@@ -113,7 +113,7 @@ class Contact extends Component {
                             <input type="text" name="nick" placeholder="What's your name, please?"
                                 onChange={this.handleChange}
                                 onFocus={(e) =>changePlaceholder(e,"A nickname will do as well!","#fff")}
-                                onBlur={(e) =>changePlaceholder(e,"What's your name, please? ***","#111")}/>
+                                onBlur={(e) =>changePlaceholder(e,"What's your name, please?","#111")}/>
                             <input type="text" name="mail1" placeholder="Shall I drop you an email..."
                                 onChange={this.handleChange}
                                  onFocus={(e) =>changePlaceholder(e,"eg. example@mail.com","#ffffff")}
