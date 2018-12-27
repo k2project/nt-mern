@@ -123,7 +123,7 @@ const Accordion=(props)=>{
         return(
             <div className="accordion__li" key={qa.q}>
                 <div  className="accordion__q" onClick={toggleAccordionLi}>
-                    <p><b>Q: </b>{qa.q}</p>
+                    <p><b>Q : </b>{qa.q}</p>
                     <span>&#43;</span>
                 </div>
                 <div  className="accordion__a">

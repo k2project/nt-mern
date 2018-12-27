@@ -158,13 +158,30 @@
 @media only screen and (max-width: 1200px) {
 
 }
-@media only screen and (max-width: 1024px) {
-
+@media only screen and (max-width: 1000px) {
+    .Directions .cover{
+        background: rgba(255,255,255,.8);
+        transition: .2s;
+    }
+    .Directions .cover p{
+        opacity: 1;
+        top: 0;
+        transition: .5s;
+    }
+    .Directions .cover .btn{
+        opacity: 1;
+        top: 0;
+        transition: .5s .25s;
+    }
 }
 @media only screen and (max-width: 786px) {
 
 }
 @media only screen and (max-width: 480px) {
+    .Directions__img{
+        width: 25rem;
+        margin: 1rem 0 2rem;
+    }
     .text_side{
         right: -15rem;
     }
