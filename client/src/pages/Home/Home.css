@@ -12,7 +12,7 @@
 
 .Nujoji__pb_links{
     height: 4rem;
-    margin: 2rem .5rem;
+    margin: 2rem .5rem -.5rem;
 }
 @media only screen and (max-width: 1200px) {
 
@@ -21,7 +21,9 @@
 
 }
 @media only screen and (max-width: 786px) {
-
+    .Home__bg_hello{
+        background-position: left top;
+    }
 }
 @media only screen and (max-width: 480px) {
 

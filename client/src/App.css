@@ -93,6 +93,9 @@ section div{
 .Page__bg_grey{
     background-image: url('./imgs/bgGrey.png');
 }
+.Page__bg_blue{
+    background-image: url('./imgs/bgBlue.png');
+}
 .Home__bg_themed{
     background:  #B4D8E6;
 }
@@ -128,6 +131,9 @@ section div{
         grid-auto-rows: minmax(40vw,1fr);
         grid-template-columns: 1fr;
     }
+    .cover{
+        padding-bottom: 3rem;
+    }
 }
 @media only screen and (max-width: 786px) {
     .wrapper{
@@ -142,5 +148,6 @@ section div{
     }
     .section__wrapper{
         width: 80%;
+        padding: 7rem 0;
     }
 }

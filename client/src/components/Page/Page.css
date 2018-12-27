@@ -7,7 +7,7 @@
     grid-template-columns: auto auto;
     min-width: 100vw;
     left: -50vw;;
-    transition: left 1s;
+    /* transition: left 1s; */
 }
 .Page__top{
     display: inline-block;
@@ -155,6 +155,9 @@
     .Page__nav_num{
         top: 1rem;
     }
+     .Page__top-container{
+        transition: left 1s;
+    }
     .Page.m_open .Page__top-container{
         left: 0;
         transition: left 1s;
@@ -171,7 +174,6 @@
 @media only screen and (max-width: 786px) {
     .Page .Page__top-container{
         left: -100vw;
-        transition: left 1s;
     }
     .Page__nav_mobile{
         width: 100vw;

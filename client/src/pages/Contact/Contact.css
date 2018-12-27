@@ -88,8 +88,9 @@
     width: 36rem;
     position: absolute;
     text-align: center;
-    transform: rotate(90deg);
-    top: 20vw;
+    transform: rotate(90deg)translateY(-50%);
+    top: 50%;
+
     right:-13rem;
     opacity: .5;
 }
@@ -164,5 +165,10 @@
 
 }
 @media only screen and (max-width: 480px) {
-
+    .text_side{
+        right: -15rem;
+    }
+    .Contact__form input{
+        width: 95%;
+    }
 }

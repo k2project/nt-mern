@@ -83,7 +83,7 @@ const About=()=>{
 const Nujoji=()=>{
     return (
         <section  className="Nujoji">
-            <div className="Home__bg_themed">
+            <div className="Home__bg_themed Page__bg_blue">
                 <div className="section__wrapper">
                     <SectionTitle data={{divider:'',subtitle:'',title:'...and I\'m here to help you!'}}/>
                     <p><b>I am passionate about my work and firmly believe that therapy can bring about positive change to people’s lives.</b></p>
@@ -96,11 +96,12 @@ const Nujoji=()=>{
                     <p> I have trained for four years at The Minster Centre in London, I obtained a Graduate Diploma in Counselling.</p>
                     <p>I have experience working one to one with individual clients as well as in a higher education setting. I also have experience working with offenders.</p>
                     <p>I  am a member of the British Association of Counsellors and Psychotherapists (BACP) and adhere to their Ethical Principles and Code of Professional Conduct. I am also trainee member of the United Kingdom Council for Psychotherapy (UKCP).</p>
-                    <p>
-                        <a href="https://forensicpsychotherapy.com/" target="_blank" rel="noopener noreferrer" alt="forensic psychotherapy logo"><img className="Nujoji__pb_links" src={require('./../../imgs/iafp.JPG')} alt=''/></a>
+                    <p className="text_cntr">
+
                         <a href="https://www.bacp.co.uk/profile/8fb9f46e-e25c-e811-8108-3863bb351d40/therapist?location=City%20of%20London" target="_blank" rel="noopener noreferrer" ><img className="Nujoji__pb_links" src={require('./../../imgs/psa.PNG')} alt='bacp logo'/></a>
                         <a href="https://www.psychotherapy.org.uk/" target="_blank" rel="noopener noreferrer" ><img className="Nujoji__pb_links" src={require('./../../imgs/ukcp.png')} alt='ukcp logo' rel="noopener noreferrer" /></a>
                         <a href="https://www.gov.uk/government/organisations/disclosure-and-barring-service/" target="_blank" rel="noopener noreferrer"><img className="Nujoji__pb_links" src={require('./../../imgs/dbs.png')} alt='/disclosure and barring service logo' /></a>
+                        <a href="https://forensicpsychotherapy.com/" target="_blank" rel="noopener noreferrer" alt="forensic psychotherapy logo"><img className="Nujoji__pb_links" src={require('./../../imgs/iafp.JPG')} alt=''/></a>
 
                     </p>
 

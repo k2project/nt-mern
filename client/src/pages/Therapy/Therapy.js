@@ -123,7 +123,7 @@ const Accordion=(props)=>{
         return(
             <div className="accordion__li" key={qa.q}>
                 <div  className="accordion__q" onClick={toggleAccordionLi}>
-                    {qa.q}
+                    <p><b>Q: </b>{qa.q}</p>
                     <span>&#43;</span>
                 </div>
                 <div  className="accordion__a">
@@ -200,7 +200,7 @@ const questionsAndAnswers=[
         a:"I do not."
     },
     {
-        q:'What if you don’t have a time slot that is convenient for both of us? ',
+        q:'What if the time slot isn\'t convenient for both of us? ',
         a:"I am in contact with a number of other therapists in London who might be suitable as an alternative."
     },
 
