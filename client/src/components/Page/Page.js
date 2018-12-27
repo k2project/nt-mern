@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 
 import './Page.css';
-
+let mobileMenuOpen=false;
 class Page extends Component {
     // constructor(props){
     //    super(props);
@@ -11,7 +11,10 @@ class Page extends Component {
         const {name,img}=this.props.page;
         return (
             <div className={"Page "+name}>
-                <Top name={name} img={img}/>
+                <div className="Page__top-container">
+                    <MobileMenu/>
+                    <Top name={name} img={img}/>
+                </div>
                 {this.props.children}
             </div>
         );
@@ -33,20 +36,49 @@ const Top=(props)=>{
     )
 }
 
-const Nav=()=>{
+const Nav=(props)=>{
     return(
         <nav className="Page__nav">
-
-            <ul>
-                <NavLink to="/" exact activeClassName="selected" smooth>Home</NavLink>
-                <NavLink to="/#about" activeClassName="selected" smooth>About</NavLink>
-                <NavLink to="/therapy" activeClassName="selected" smooth>Therapy</NavLink>
-                <NavLink to="/therapy#faqs" activeClassName="selected" smooth>FAQ</NavLink>
-                <NavLink to="/therapy#fees" activeClassName="selected" smooth>Fees</NavLink>
-                <NavLink to="/contact" activeClassName="selected" smooth>Office</NavLink>
-                <NavLink to="/contact#form" activeClassName="selected" smooth>Contact</NavLink>
-            </ul>
+            <div className="Page__nav_hum" onClick={toggleMobileMenu}>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <NavLinks/>
             <div className="Page__nav_num">Enquiries: 07855 846 580</div>
         </nav>
     )
 }
+const MobileMenu=()=>{
+    return(
+        <div className="Page__nav_mobile">
+            <NavLinks/>
+        </div>
+    )
+}
+const NavLinks=()=>{
+    return(
+        <ul>
+            <img src={require('../../imgs/menu.png')} alt='menu' className="Nav__mobile_img"/>
+            <NavLink to="/" exact activeClassName="selected" smooth onClick={toggleMobileMenu}>Home</NavLink>
+            <NavLink to="/#about" activeClassName="selected" smooth onClick={toggleMobileMenu}>About</NavLink>
+            <NavLink to="/therapy" activeClassName="selected" smooth onClick={toggleMobileMenu}>Therapy</NavLink>
+            <NavLink to="/therapy#faqs" activeClassName="selected" smooth onClick={toggleMobileMenu}>FAQ</NavLink>
+            <NavLink to="/therapy#fees" activeClassName="selected" smooth onClick={toggleMobileMenu}>Fees</NavLink>
+            <NavLink to="/contact" activeClassName="selected" smooth onClick={toggleMobileMenu}>Office</NavLink>
+            <NavLink to="/contact#form" activeClassName="selected" smooth onClick={toggleMobileMenu}>Contact</NavLink>
+        </ul>
+    )
+}
+
+const toggleMobileMenu=()=>{
+    mobileMenuOpen=!mobileMenuOpen;
+    const page = document.querySelector('.Page');
+    if(mobileMenuOpen){
+        page.classList.add('m_open');
+    }
+    if(!mobileMenuOpen){
+        page.classList.remove('m_open');
+    }
+}
+console.log(document.documentElement.clientWidth)

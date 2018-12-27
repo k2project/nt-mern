@@ -98,7 +98,7 @@ class Contact extends Component {
      }
 
     render() {
-        const {name,mail,mobile,err,sent}=this.state;
+        const {err,sent}=this.state;
         let formCls="Contact__form";
         if(err){
             formCls="Contact__form shake"

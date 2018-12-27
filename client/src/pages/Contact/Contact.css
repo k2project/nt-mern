@@ -154,3 +154,15 @@
 :not(output):-moz-ui-invalid {
     box-shadow:none;
 }
+@media only screen and (max-width: 1200px) {
+
+}
+@media only screen and (max-width: 1024px) {
+
+}
+@media only screen and (max-width: 786px) {
+
+}
+@media only screen and (max-width: 480px) {
+
+}
