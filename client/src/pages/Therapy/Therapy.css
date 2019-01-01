@@ -1,6 +1,7 @@
 .TherapyIntro__img{
     margin: auto;
     margin-bottom: -5rem;
+    /* margin-top: -2rem; */
     width: 115%;
 }
 .IntegrativeTherapy__bg_respect{
@@ -19,17 +20,7 @@
     grid-column-gap: 2rem;
     grid-template-columns: 1fr auto;
 }
-.btn_square{
-    border: solid .1rem #111;
-    cursor: pointer;
-    font-family: sans-serif;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    padding: 1rem 0;
-    text-align: center;
-    width: 16rem;
-}
+
 .Accordion{
     margin-top: 4rem;
     margin-bottom: 2rem;
@@ -69,6 +60,7 @@
 
 .accordion__li.active .accordion__q{
     background:  #F0E478;
+    background: #F6EFAD;
     font-weight: bold;
     transition: .2s;
 }
@@ -89,6 +81,7 @@
     .IntegrativeTherapy .section__divider.white,
     .IntegrativeTherapy__bg_respect{
         background: #F0E478;
+        background: #F6EFAD;
     }
 
 }

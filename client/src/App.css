@@ -18,12 +18,12 @@
 }
 .cover{
     align-content: end;
-    background: rgba(0,0,0,.4);
+    background: rgba(0,0,0,.3);
     color: #fff;
     display: grid;
     height: 100%;
     left: 0;
-    padding: 0 0 10% 10%;
+    padding: 0 0 5% 10%;
     position: absolute;
     top: 0;
     width: 100%;
@@ -49,6 +49,17 @@
 .btn:hover{
     background: #161412;
     color: #fff;
+}
+.btn_square{
+    border: solid .1rem #111;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding: 1rem 0;
+    text-align: center;
+    width: 16rem;
 }
 
 section{
@@ -92,15 +103,19 @@ section div{
 }
 .section__divider.white{
     background: #fff;
+    /* display: none; */
 }
 .Home .section__divider.themed{
     background:  #B4D8E6;
+    background: #D7E7F4;
 }
 .Therapy .section__divider.themed{
     background:  #F0E478;
+    background: #f6efad;
 }
 .Contact .section__divider.themed{
     background:  #D8A8E3;
+    background: #ecd5f1;
 }
 
 
@@ -114,21 +129,27 @@ section div{
 }
 .Home__bg_themed{
     background:  #B4D8E6;
+    background: #D7E7F4;
 }
 .Home__color_themed{
     color:  #B4D8E6;
+    color: #D7E7F4;
 }
 .Therapy__bg_themed{
     background:  #F0E478;
+    background: #f6efad;
 }
 .Therapy__color_themed{
     color:  #F0E478;
+    color: #f6efad;
 }
 .Contact__bg_themed{
     background:  #D8A8E3;
+    background: #ecd5f1;
 }
 .Contact__color_themed{
     color:  #D8A8E3;
+    color: #ecd5f1;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -164,6 +185,6 @@ section div{
     }
     .section__wrapper{
         width: 80%;
-        padding: 7rem 0;
+        /* padding: 7rem 0; */
     }
 }

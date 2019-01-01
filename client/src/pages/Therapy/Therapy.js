@@ -45,14 +45,14 @@ const TherapyIntro=()=>{
         <section  className="TherapyIntro">
                 <div>
                     <div className="section__wrapper">
-                        <SectionTitle data={{divider:'themed',subtitle:'Make a choice today!',title:'Therapy can help You'}}/>
+                        <SectionTitle data={{divider:'themed',subtitle:'Make a choice today!',title:'How will therapy help?'}}/>
                         <img src={require('./../../imgs/chairs.png')} alt='Therapy room' className="TherapyIntro__img"/>
                     </div>
 
                 </div>
                 <div className="Therapy__bg_themed">
                     <div className="section__wrapper">
-                        <p><b>It is not unusual to feel hesitant or unsure about seeking help...  However it is important to make this first step and ask for help! And it's eqaully crucial to choose a right therapist for yourself. </b></p>
+                        <p><b>It is not unusual to feel hesitant or unsure about seeking help.  However it is important to make this first step and ask for help! And it's eqaully crucial to choose a right therapist for yourself. </b></p>
                         <p>You will need a therapist that you can work with and trust, because the better the relationship between both of you, the more you are likely to benefit from the therapy. </p>
                         <p><i>I hope that I can be your choice! I am here to help!</i></p>
                         <Link to='/#about' className="btn" smooth>More About Me</Link>
@@ -75,7 +75,7 @@ const IntegrativeTherapy=()=>{
                     <div className="section__wrapper">
                         <p>In my therapy, what you say will be treated with respect and compassion. It takes place in a private and confidential setting where we can explore thoughts and feelings in a context different to most every-day settings. It is a dedicated time set aside by you and me. </p>
                         <p> The setting and regularity of our meetings as well as our therapeutic relationship will be the vessel within which you will be free to express whatever is on your mind.</p>
-                        <p>Have more question? Please check out the frequently asked questions and their answers below.</p>
+                        <p>Starting therapy can be a source of comfort and release as well as worry. The below FAQs may help you reach a decision whether now is the right time for you.</p>
                     </div>
                 </div>
         </section>
@@ -87,9 +87,9 @@ const FAQ=props=>{
         <div className="FAQ Page__bg_grey" id="faqs">
             <img src={require('./../../imgs/therapyText.pt2.png')} alt='Therapy Page' className="Page__top_img part2"/>
             <div className="wrapper">
-                <SectionTitle data={{divider:'white',subtitle:'FAQs',title:'How does the therapy work?'}}/>
+                <SectionTitle data={{divider:'white',subtitle:'FAQs',title:'What is thearpy like'}}/>
                 <div className="fr1auto">
-                    <p>Answers to some of the enquiries you may have regarding may practice. <br/>Please do not hesitate to contact me directly if you have more questions.</p>
+                    <p>I hope some of the FAQS will help answer any questions that you may have about starting therapy or about how I practice. Please do not hesitate to contact me if you have another question. </p>
                     <div className=" btn_square" onClick={openAllQuestions}>Open All Questions</div>
                 </div>
                 <Accordion qa={questionsAndAnswers} />
@@ -212,9 +212,10 @@ const Fees=()=>{
         <section  className="Fees" id="fees">
                 <div className="Therapy__bg_themed">
                     <div className="section__wrapper">
-                        <SectionTitle data={{divider:'white',subtitle:'What I charge',title:'Regular meetings provide a sense of safety and continuity...'}}/>
+                        <SectionTitle data={{divider:'white',subtitle:'What I charge',title:'Many people find that regular meetings provide a sense of safety and continuity...'}}/>
                         <p><b>Regular weekly sessions are of 50 minutes duration, and are charged at £60.00 per session.</b></p>
-                        <Link to='/contact#form' className="btn" smooth>Book A Session</Link>
+                        <Link to='/contact#form' className="btn" smooth>Get in touch</Link>
+                        
                     </div>
                 </div>
                 <div>

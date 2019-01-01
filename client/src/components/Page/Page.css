@@ -57,12 +57,15 @@
 }
 .Home .Page__nav a.selected{
     background: #B4D8E6;
+    background:  #D7E7F4;
 }
 .Therapy .Page__nav a.selected{
     background: #F0E478;
+    background: #f6efad;
 }
 .Contact .Page__nav a.selected{
     background: #D8A8E3;
+    background: #ecd5f1;
 }
 .Page__nav_num{
     font-size: 1.4rem;
@@ -130,6 +133,18 @@
     top: -.2rem;
     width: 2rem;
 }
+footer{
+    font-family: sans-serif;
+    padding: 4rem 0 2rem;
+    text-align: center;
+}
+footer .btn_square{
+    margin: auto;
+}
+footer p small{
+    font-size: 1rem;
+}
+
 @media only screen and (max-width: 1350px) {
 
     .Page__nav_num{
@@ -188,6 +203,7 @@
     }
     .Page__top_img{
         opacity: .3;
+        opacity: .5;
     }
 
 
