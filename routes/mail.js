@@ -8,7 +8,7 @@ module.exports = (function() {
         if (!name) {
             return res.send({
                 success: false,
-                message: 'Your name is required. I\'d like to know how to address you, please. '
+                message: 'Your name is required.'
             });
        }
         if (!mail && !mobile) {

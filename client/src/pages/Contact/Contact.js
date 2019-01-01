@@ -110,24 +110,24 @@ class Contact extends Component {
                     <Directions/>
                     <Form>
                         <form className={formCls} onSubmit={this.handleSubmit}>
-                            <input type="text" name="nick" placeholder="What's your name, please?"
+                            <input type="text" name="nick" placeholder="What is your name?"
                                 onChange={this.handleChange}
-                                onFocus={(e) =>changePlaceholder(e,"A nickname will do as well!","#fff")}
-                                onBlur={(e) =>changePlaceholder(e,"What's your name, please?","#111")}/>
-                            <input type="text" name="mail1" placeholder="Shall I drop you an email..."
+                                onFocus={(e) =>changePlaceholder(e,"","#fff")}
+                                onBlur={(e) =>changePlaceholder(e,"What is your name?","#111")}/>
+                            <input type="text" name="mail1" placeholder="What is your email address?"
                                 onChange={this.handleChange}
                                  onFocus={(e) =>changePlaceholder(e,"eg. example@mail.com","#ffffff")}
-                                 onBlur={(e) =>changePlaceholder(e,"Shall I drop you an email...","#111")} />
+                                 onBlur={(e) =>changePlaceholder(e,"What is your email address?","#111")} />
                             <input type="email" name="mail2" className="Contact__mail_fake" placeholder="Shall I drop you an email..."
                                 onChange={this.handleChange}
                                  onFocus={(e) =>changePlaceholder(e,"eg. example@mail.com","#ffffff")}
                                  onBlur={(e) =>changePlaceholder(e,"Shall I drop you an email...","#111")} />
-                            <input type="text" name="mobile" placeholder="...or give you a call back? Or both?"
+                            <input type="text" name="mobile" placeholder="What is your telephone number?"
                                 onChange={this.handleChange}
                                 onFocus={(e) =>changePlaceholder(e,"eg. +44 (0) 123456789","#fff")}
-                                onBlur={(e) =>changePlaceholder(e,"...or give you a call? Or both?","#111")}/>
+                                onBlur={(e) =>changePlaceholder(e,"What is your telephone number?","#111")}/>
                             <div className="text_cntr">
-                                <button type="submit" className="btn">Request a Chat*</button>
+                                <button type="submit" className="btn">Please get in touch*</button>
                             </div>
                             <div className="Form__err">
                                 {err&&<p className="Form__message_err text_cntr"><span>!</span>{err}</p>}
@@ -151,12 +151,12 @@ const Office=()=>{
                     <SectionTitle data={{divider:'',subtitle:'City Of London ',title:'EC2R 7AS'}}/>
                 </div>
             </div>
-                <div className="section__bg_grey">
+                <div>
                     <div className="section__wrapper">
-                        <SectionTitle data={{divider:'themed',subtitle:'About My Office',title:'A private and confidential setting'}}/>
+                        <SectionTitle data={{divider:'themed',subtitle:'A quiet place',title:'A comfortable and confidential place'}}/>
                         <p><b>11-12 Tokenhouse Yard<br/>City of London<br/>London <br/>EC2R 7AS</b></p>
                         <p><b>Opening Hours.</b> I see clients Monday to Friday throughout the year except public holidays. Appointments are available from 8am – 8pm.</p>
-                        <p><i>I also see clients in West London at 19 Nassau Street, Fitzrovia, London, W1W 7AF a few minutes walk from Tottenham Court Road London Underground (Northern &amp; Central lines) and Overground Station.</i></p>
+                        <p><i>I also see clients in the West End at 19 Nassau Street, Fitzrovia, London, W1W 7AF a few minutes’ walk from Tottenham Court Road London Underground (Northern and Central Lines) and Oxford Circus London Underground (Victoria, Central and Bakerloo Lines). </i></p>
                     </div>
                 </div>
 
@@ -169,7 +169,7 @@ const Directions=()=>{
         <section  className="Directions">
                 <div className="Contact__bg_themed Directions__bg_lnd">
                     <div className="section__wrapper">
-                        <SectionTitle data={{divider:'white',subtitle:'Directions',title:'Getting there'}}/>
+                        <SectionTitle data={{divider:'white',subtitle:'Directions',title:'Getting here'}}/>
                         <p><b>City of London office.</b> Tokenhouse Yard is a four-minute walk from Bank Tube Station and is situated just behind the Bank of England off Lothbury.</p>
                         <div className="Nt4__text_center">
                             <img src={require('./../../imgs/stations.png')} alt='Nujoji' className="Directions__img"/>
@@ -187,11 +187,11 @@ const Directions=()=>{
                 </div>
                 <div className="Directions__bg_map">
                     <div className="cover">
-                        <p><b>Find out how to get to my offfice with Google Map.*</b></p>
+                        <p><b>Find out directions from where you are with Google Maps*</b></p>
                         <p><small><i>*Directions open up in another tab.</i></small></p>
 
-                        <a href="https://www.google.com/maps/dir//Tokenhouse+Yard,+London+EC2R+7AS/@51.5153851,-0.0907049,17z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x48761cab515b7a57:0xa9652d3756affe10!2m2!1d-0.0885162!2d51.5153851!3e3"  target="_blank" rel="noopener noreferrer" className="btn">Tokenhouse Yard Office</a>
-                        <a href="https://www.google.com/maps/dir//Nassau+St,+Fitzrovia,+London+W1W+7AF/@51.5188268,-0.1412905,17z/data=!4m17!1m7!3m6!1s0x48761b2a47340f1d:0x7122f29f93bdb1e8!2sNassau+St,+Fitzrovia,+London+W1W+7AF!3b1!8m2!3d51.5188268!4d-0.1391018!4m8!1m0!1m5!1m1!1s0x48761b2a47340f1d:0x7122f29f93bdb1e8!2m2!1d-0.1391018!2d51.5188268!3e3"  target="_blank" rel="noopener noreferrer" className="btn"> Nassau Street Office</a>
+                        <a href="https://www.google.com/maps/dir//Tokenhouse+Yard,+London+EC2R+7AS/@51.5153851,-0.0907049,17z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x48761cab515b7a57:0xa9652d3756affe10!2m2!1d-0.0885162!2d51.5153851!3e3"  target="_blank" rel="noopener noreferrer" className="btn">Tokenhouse Yard - City of London</a>
+                        <a href="https://www.google.com/maps/dir//Nassau+St,+Fitzrovia,+London+W1W+7AF/@51.5188268,-0.1412905,17z/data=!4m17!1m7!3m6!1s0x48761b2a47340f1d:0x7122f29f93bdb1e8!2sNassau+St,+Fitzrovia,+London+W1W+7AF!3b1!8m2!3d51.5188268!4d-0.1391018!4m8!1m0!1m5!1m1!1s0x48761b2a47340f1d:0x7122f29f93bdb1e8!2m2!1d-0.1391018!2d51.5188268!3e3"  target="_blank" rel="noopener noreferrer" className="btn">Nassau Street – West End</a>
                     </div>
                 </div>
         </section>
@@ -203,9 +203,13 @@ const Form=(props)=>{
         <section  className="Form" id="form">
                 <div>
                     <div className="section__wrapper">
-                        <SectionTitle data={{divider:'themed',subtitle:'How to contact Me',title:(<span>Let's Chat. <br/>It's a good place to start...</span>)}}/>
-                        <p>I am always happy to chat directly. <br/>You can call me on either <b>0208 675 9754 </b> or <b>07855 846580</b>. </p>
-                        <p>Please note that if I am with clients, I will be unable to answer your call. In that case leave me a message or use the quick contact form. I will get back to you as soon as it's possible and within 24 hours.</p>
+                        <SectionTitle data={{divider:'themed',subtitle:'How to get in touch',title:(<span>Talking can be a good place to start</span>)}}/>
+                        <p>    I am always happy to speak on the telephone. You can reach me on either <b>0208 675 9754 </b> or <b>07855 846580</b>. </p>
+                        <p><a href="https://my.vsee.com/s/5bf7bbd27cfb4" target="_blank" rel="noopener noreferrer">
+                        <img src={require('./../../imgs/vsee.png')} className="Vsee" alt="Vsee"/>
+                        Video Chat also available.</a></p>
+                        <p>Please be aware that if I am with clients I will be unable to answer your call. In that case please leave me a message or use the quick contact form. Both methods are confidential. I will get back to you as soon as possible and within 24 hours. </p>
+
                     </div>
                 </div>
                 <div className="Contact__bg_themed">
