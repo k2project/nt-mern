@@ -4,9 +4,10 @@
     background-size: cover;
     background-position:  left center;
 }
+
 .Office .cover{
-    padding: 0 15rem 5rem 0;
-    text-align: right;
+    /* padding: 0 15rem 5rem 0; */
+    padding-left: 20%;
 }
 .Directions__bg_lnd{
     background-image: url('./../../imgs/lnd.png');
@@ -54,6 +55,7 @@
     top: 5rem;
     margin: 2rem auto 0;
     transition: .5s;
+    width: 22rem;
 }
 .Directions .cover:hover  .btn{
     opacity: 1;
@@ -73,8 +75,10 @@
 .Contact__form input{
     background: none;
     border-bottom: solid .1rem #111;
+    font-family: 'Cormorant Infant', serif;
+    font-size: 1.6rem;
     width: 100%;
-    padding: 3rem 5rem 2rem;
+    padding: 2.5rem 5rem 1.5rem;
 }
 .Contact__form input:focus{
     color: #fff;
@@ -181,12 +185,14 @@
         top: 0;
         transition: .5s .25s;
     }
+    .Office .cover{
+        /* padding: 0 5rem 5rem 0; */
+        padding-left: 15%;
+    }
 }
 @media only screen and (max-width: 786px) {
 
-    .Office .cover{
-        padding: 0 5rem 5rem 0;
-    }
+
 
 }
 @media only screen and (max-width: 480px) {
@@ -199,5 +205,11 @@
     }
     .Contact__form input{
         width: 95%;
+        padding-right: 1rem;
+        padding-left: 2rem;
+    }
+    .Office .cover{
+        /* padding: 0 5rem 5rem 0; */
+        padding-left: 10%;
     }
 }

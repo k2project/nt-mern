@@ -39,12 +39,12 @@
     border-radius: 8rem;
     color: #161412;
     cursor: pointer;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-family: sans-serif;
     padding: 1.2rem 0;
     text-align: center;
     text-transform: capitalize;
-    width: 22rem;
+    width: 20rem;
     margin-top: 4rem;
 }
 .btn:hover{
@@ -138,7 +138,7 @@ section div{
 }
 .Home__color_themed{
     color:  #B4D8E6;
-    color: #D7E7F4;
+    /* color: #D7E7F4; */
 }
 .Therapy__bg_themed{
     background:  #F0E478;
@@ -146,7 +146,7 @@ section div{
 }
 .Therapy__color_themed{
     color:  #F0E478;
-    color: #f6efad;
+    /* color: #f6efad; */
 }
 .Contact__bg_themed{
     background:  #D8A8E3;
@@ -154,7 +154,7 @@ section div{
 }
 .Contact__color_themed{
     color:  #D8A8E3;
-    color: #ecd5f1;
+    /* color: #ecd5f1; */
 }
 
 @media only screen and (max-width: 1200px) {
@@ -182,6 +182,20 @@ section div{
         padding: 0 5rem 23rem;
     }
 
+    .Home__color_themed{
+        color:  #B4D8E6;
+        /* color: #D7E7F4; */
+    }
+
+    .Therapy__color_themed{
+        color:  #F0E478;
+        /* color: #f6efad; */
+    }
+
+    .Contact__color_themed{
+        color:  #D8A8E3;
+        /* color: #ecd5f1; */
+    }
 
 }
 @media only screen and (max-width: 480px) {
