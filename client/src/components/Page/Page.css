@@ -75,6 +75,10 @@
     left: 15rem;
     top:-3rem;
 }
+.Page__nav_num a{
+    padding: 0;
+    width: 100%;
+}
 .Page__nav_hum{
     cursor: pointer;
     display: none;
@@ -138,7 +142,7 @@ footer{
     padding: 4rem 0 2rem;
     text-align: center;
 }
-footer .btn_square{
+footer .btn{
     margin: auto;
 }
 footer p small{

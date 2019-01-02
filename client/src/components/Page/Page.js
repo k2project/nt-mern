@@ -46,7 +46,7 @@ const Nav=(props)=>{
                 <div></div>
             </div>
             <NavLinks/>
-            <div className="Page__nav_num">Enquiries: 07855 846 580</div>
+            <div className="Page__nav_num"><a href="tel:+447855846580">Enquiries: +44 7855 846 580</a></div>
         </nav>
     )
 }
@@ -64,7 +64,7 @@ const NavLinks=()=>{
             <NavLink to="/" exact activeClassName="selected" smooth onClick={toggleMobileMenu}>Home</NavLink>
             <NavLink to="/#about" activeClassName="selected" smooth onClick={toggleMobileMenu}>About Me</NavLink>
             <NavLink to="/therapy" activeClassName="selected" smooth onClick={toggleMobileMenu}>Therapy</NavLink>
-            <NavLink to="/therapy#faqs" activeClassName="selected" smooth onClick={toggleMobileMenu}>FAQ</NavLink>
+            <NavLink to="/therapy#faqs" activeClassName="selected" smooth onClick={toggleMobileMenu}>FAQs</NavLink>
             <NavLink to="/therapy#fees" activeClassName="selected" smooth onClick={toggleMobileMenu}>Fees</NavLink>
             <NavLink to="/contact" activeClassName="selected" smooth onClick={toggleMobileMenu}>Location</NavLink>
             <NavLink to="/contact#form" activeClassName="selected" smooth onClick={toggleMobileMenu}>Contact</NavLink>
@@ -86,7 +86,7 @@ const toggleMobileMenu=()=>{
 const Footer=()=>{
     return(
         <footer className="Page__bg_grey">
-            <div className="btn_square" onClick={()=>window.scrollTo({ top: 0, behavior: 'smooth' })}>Back To Top</div>
+            <div className="btn" onClick={()=>window.scrollTo({ top: 0, behavior: 'smooth' })}>Back To Top</div>
             <p><small>Nujoji Calvocoressi Counselling &copy; {new Date().getFullYear()}</small> </p>
         </footer>
 

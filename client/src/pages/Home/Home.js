@@ -51,6 +51,7 @@ const Welcome=()=>{
                 <div>
                     <div className="section__wrapper">
                         <p><b> It is not uncommon to feel lost or confused from time to time, or to experience symptoms, unhelpful behaviours or a lack of confidence. These are things that we can all experience.</b></p>
+                        <p> Therapy is about creating a safe and non-judgemental space where you can reflect, explore and understand the difficulties in your life.</p>
                         {/* <p>However you can always break the cycle of anger, anxiety, addiction, distrust and    unhealthy behaviour if you want. It all starts with you... Make a choice today!</p> */}
                         <Link to='/contact#form' className="btn" smooth>Get in touch</Link>
                     </div>
@@ -67,13 +68,14 @@ const About=()=>{
                     <div className="section__wrapper">
                         <SectionTitle data={{divider:'themed',subtitle:'About Me',title:'When was the last time you felt understood?'}}/>
                         {/* <p>It's taugh to find someone you can truly connect with. Yet, in our fast-paced lives, the connection is more important than ever.</p> */}
+
                         <p>My dedication and expertise provide a safe space for you to be heard and understood with no judgement.</p>
                         <Link to='/therapy#integrative-therapy' className="btn" smooth>More About Therapy</Link>
                     </div>
                 </div>
                 <div className="About__bg_therapist">
                     <div className="cover">
-                        <SectionTitle data={{divider:'',subtitle:'',title:'My name is Nujoji'}}/>
+                        {/* <SectionTitle data={{divider:'',subtitle:'',title:'My name is Nujoji'}}/> */}
                     </div>
                 </div>
         </section>
@@ -85,7 +87,7 @@ const Nujoji=()=>{
         <section  className="Nujoji">
             <div className="Home__bg_themed Page__bg_blue">
                 <div className="section__wrapper">
-                    <SectionTitle data={{divider:'white',subtitle:'Qualified & Experienced',title:'Two people sitting down together'}}/>
+                    <SectionTitle data={{divider:'white',subtitle:'Qualified, Registered & Insured',title:'Two people sitting down together'}}/>
                     <p><b>I am passionate about my work and firmly believe that therapy can bring about positive change to people’s lives.</b></p>
                     <p>I have been trained in integrative therapy, that is a progressive form of therapy that combines different therapeutic tools and approaches to fit the needs of the individual client. By combining elements drawn from different schools of psychological theory and research, integrative therapy becomes a flexible and inclusive approach to understanding. Each person needs to be considered as an individual person and counselling techniques must be tailored to their individual needs and personal circumstances.</p>
                 </div>
@@ -95,7 +97,7 @@ const Nujoji=()=>{
                 <div className="section__wrapper">
                     <p> I have trained for four years at The Minster Centre in London, I obtained a Graduate Diploma in Counselling.</p>
                     <p>I have experience working one to one with a diverse variety of individual clients as well as working within a student wellbeing service in a higher education setting. I also work with people who live in secure settings.</p>
-                    <p>I  am a member of the British Association of Counsellors and Psychotherapists (BACP) and adhere to their Ethical Principles and Code of Professional Conduct. I am also trainee member of the United Kingdom Council for Psychotherapy (UKCP).</p>
+                    <p>I am a member of the British Association of Counsellors and Psychotherapists (BACP) and adhere to their Ethical Principles and Code of Professional Conduct. I am also trainee member of the United Kingdom Council for Psychotherapy (UKCP). I hold an enhanced certificate from the Disclosure and Barring Service.</p>
                     <p className="text_cntr">
 
                         <a href="https://www.bacp.co.uk/profile/8fb9f46e-e25c-e811-8108-3863bb351d40/therapist?location=City%20of%20London" target="_blank" rel="noopener noreferrer" ><img className="Nujoji__pb_links" src={require('./../../imgs/psa.PNG')} alt='bacp logo'/></a>

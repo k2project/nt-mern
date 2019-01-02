@@ -187,7 +187,7 @@ const Directions=()=>{
                 </div>
                 <div className="Directions__bg_map">
                     <div className="cover">
-                        <p><b>Find out directions from where you are with Google Maps*</b></p>
+                        <p><b>Find directions from where you are with Google Maps*</b></p>
                         <p><small><i>*Directions open up in another tab.</i></small></p>
 
                         <a href="https://www.google.com/maps/dir//Tokenhouse+Yard,+London+EC2R+7AS/@51.5153851,-0.0907049,17z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x48761cab515b7a57:0xa9652d3756affe10!2m2!1d-0.0885162!2d51.5153851!3e3"  target="_blank" rel="noopener noreferrer" className="btn">Tokenhouse Yard - City of London</a>
@@ -207,7 +207,7 @@ const Form=(props)=>{
                         <p>    I am always happy to speak on the telephone. You can reach me on either <b>0208 675 9754 </b> or <b>07855 846580</b>. </p>
                         <p><a href="https://my.vsee.com/s/5bf7bbd27cfb4" target="_blank" rel="noopener noreferrer">
                         <img src={require('./../../imgs/vsee.png')} className="Vsee" alt="Vsee"/>
-                        Video Chat also available.</a></p>
+                        VSee Video Chat.</a></p>
                         <p>Please be aware that if I am with clients I will be unable to answer your call. In that case please leave me a message or use the quick contact form. Both methods are confidential. I will get back to you as soon as possible and within 24 hours. </p>
 
                     </div>
@@ -217,7 +217,7 @@ const Form=(props)=>{
                     <div className="section__wrapper">
                         {props.children}
                     </div>
-                    <p className="text_side"><b>*REQUIRED: </b> Your name and at least one of the contact fields.</p>
+                    <p className="text_side"><b>*REQUIRED: </b> Your name and at least one method to contact you.</p>
                 </div>
 
         </section>

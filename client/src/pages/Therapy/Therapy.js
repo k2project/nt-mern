@@ -45,7 +45,7 @@ const TherapyIntro=()=>{
         <section  className="TherapyIntro">
                 <div>
                     <div className="section__wrapper">
-                        <SectionTitle data={{divider:'themed',subtitle:'Make a choice today!',title:'How will therapy help?'}}/>
+                        <SectionTitle data={{divider:'themed',subtitle:'First steps',title:'How will therapy help?'}}/>
                         <img src={require('./../../imgs/chairs.png')} alt='Therapy room' className="TherapyIntro__img"/>
                     </div>
 
@@ -53,8 +53,7 @@ const TherapyIntro=()=>{
                 <div className="Therapy__bg_themed">
                     <div className="section__wrapper">
                         <p><b>It is not unusual to feel hesitant or unsure about seeking help.  However it is important to make this first step and ask for help! And it's eqaully crucial to choose a right therapist for yourself. </b></p>
-                        <p>You will need a therapist that you can work with and trust, because the better the relationship between both of you, the more you are likely to benefit from the therapy. </p>
-                        <p><i>I hope that I can be your choice! I am here to help!</i></p>
+                        <p>There are many different therapeutic approaches available and it can be confusing to decide which one is suited for you.</p>
                         <Link to='/#about' className="btn" smooth>More About Me</Link>
                     </div>
                 </div>
@@ -87,7 +86,7 @@ const FAQ=props=>{
         <div className="FAQ Page__bg_grey" id="faqs">
             <img src={require('./../../imgs/therapyText.pt2.png')} alt='Therapy Page' className="Page__top_img part2"/>
             <div className="wrapper">
-                <SectionTitle data={{divider:'white',subtitle:'FAQs',title:'What is thearpy like'}}/>
+                <SectionTitle data={{divider:'white',subtitle:'FAQs',title:'What is thearpy?'}}/>
                 <div className="fr1auto">
                     <p>I hope some of the FAQS will help answer any questions that you may have about starting therapy or about how I practice. Please do not hesitate to contact me if you have another question. </p>
                     <div className=" btn_square" onClick={openAllQuestions}>Open All Questions</div>
@@ -215,7 +214,7 @@ const Fees=()=>{
                         <SectionTitle data={{divider:'white',subtitle:'What I charge',title:'Many people find that regular meetings provide a sense of safety and continuity...'}}/>
                         <p><b>Regular weekly sessions are of 50 minutes duration, and are charged at £60.00 per session.</b></p>
                         <Link to='/contact#form' className="btn" smooth>Get in touch</Link>
-                        
+
                     </div>
                 </div>
                 <div>
