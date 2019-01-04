@@ -212,7 +212,7 @@ const Fees=()=>{
                 <div className="Therapy__bg_themed">
                     <div className="section__wrapper">
                         <SectionTitle data={{divider:'white',subtitle:'What I charge',title:'Many people find that regular meetings provide a sense of safety and continuity...'}}/>
-                        <p><b>Regular weekly sessions are of 50 minutes duration, and are charged at £60.00 per session.</b></p>
+                        <p>Regular weekly sessions are of 50 minutes duration, and are charged at £60.00 per session. I am happy to accept payment by debit or credit card, cash or bank transfer. </p>
                         <Link to='/contact#form' className="btn" smooth>Get in touch</Link>
 
                     </div>

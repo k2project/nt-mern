@@ -166,6 +166,7 @@ footer p small{
     grid-template-columns: 25rem 1fr auto; */
     text-align: right;
     padding: 0 5rem;
+    /* top: 9rem; */
 }
 .ShareBtns span{
     color: silver;
@@ -182,7 +183,7 @@ footer p small{
 .SocialMediaShareButton img{
     cursor: pointer;
     height: 3rem;
-    margin: 0 .5rem -.5rem;
+    margin: 0 .3rem -.5rem;
     width: 3rem;
 }
 .SocialMediaShareButton--whatsapp{
@@ -254,6 +255,7 @@ footer p small{
     }
 
 
+
 }
 @media only screen and (max-width: 480px) {
     .Page__title{
@@ -266,8 +268,10 @@ footer p small{
     .SocialMediaShareButton--whatsapp{
         display: inline-block;
     }
+
     .ShareBtns span{
         display: block;
         padding-bottom: 1rem;
     }
+
 }
