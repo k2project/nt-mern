@@ -1,7 +1,15 @@
 import React, { Component } from 'react';
-import { NavHashLink as NavLink } from 'react-router-hash-link';
-
 import './Page.css';
+import { NavHashLink as NavLink } from 'react-router-hash-link';
+import {
+  FacebookShareButton,
+  LinkedinShareButton,
+  TwitterShareButton,
+  WhatsappShareButton,
+} from 'react-share';
+const shareUrl="http://www.calvocoressi.com";
+
+
 let mobileMenuOpen=false;
 class Page extends Component {
     // constructor(props){
@@ -86,9 +94,31 @@ const toggleMobileMenu=()=>{
 const Footer=()=>{
     return(
         <footer className="Page__bg_grey">
+            <ShareBtns />
             <div className="btn" onClick={()=>window.scrollTo({ top: 0, behavior: 'smooth' })}>Back To Top</div>
-            <p><small>Nujoji Calvocoressi Counselling &copy; {new Date().getFullYear()}</small> </p>
+            <p><small>Nujoji Calvocoressi Counselling | City of London & West End &copy; {new Date().getFullYear()}</small> </p>
         </footer>
 
+    )
+}
+
+const ShareBtns=()=>{
+    return(
+        <div className="ShareBtns">
+            <span>Share Website On:</span>
+            <TwitterShareButton url={shareUrl}>
+                <img src={require('./../../imgs/twitter.icon.png')} alt="Twitter Share Btn"/>
+            </TwitterShareButton>
+            <FacebookShareButton url={shareUrl}>
+                <img src={require('./../../imgs/facebook.icon.png')} alt="Facebook Share Btn"/>
+            </FacebookShareButton>
+            <LinkedinShareButton url={shareUrl}>
+                <img src={require('./../../imgs/linkedin.icon.png')} alt="Linkedin Share Btn"/>
+            </LinkedinShareButton>
+            <WhatsappShareButton url={shareUrl}>
+                <img src={require('./../../imgs/whatsapp.icon.png')} alt="WhatsApp Share Btn"/>
+            </WhatsappShareButton>
+
+        </div>
     )
 }

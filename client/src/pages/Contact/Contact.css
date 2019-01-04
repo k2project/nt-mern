@@ -88,15 +88,15 @@
     margin: 4rem auto 4rem;
 }
 .text_side{
-    font-family: sans-serif;
-    font-size: 1.2rem;
+    /* font-family: sans-serif; */
+    font-size: 1.3rem;
     width: 36rem;
     position: absolute;
     text-align: center;
     transform: rotate(90deg)translateY(-50%);
     top: 50%;
 
-    right:-13rem;
+    right:-12rem;
     opacity: .5;
 }
 .Contact__mail_fake{
@@ -192,7 +192,9 @@
 }
 @media only screen and (max-width: 786px) {
 
-
+    .text_side{
+        right: -13.5rem;
+    }
 
 }
 @media only screen and (max-width: 480px) {

@@ -8,7 +8,7 @@ import SectionTitle from '../../components/SectionTitle';
 
 const meta = {
     title: "Nujoji Calvocoressi Counselling | City of London & West London Therapy",
-    description: 'Welcome to my counselling practice. I am passionate about my work and firmly believe that therapy can bring about positive change to people’s lives... I have been trained in integrative therapy, that is a progressive form of therapy that combines different therapeutic tools and approaches to fit the needs of the individual client. I am a member of BACP.',
+    description: 'Welcome to my counselling practice. I am passionate about my work and firmly believe that therapy can bring about positive change to people’s lives. I have been trained in integrative therapy, that is a progressive form of therapy that combines different therapeutic tools and approaches to fit the needs of the individual client. I am a member of BACP.',
     canonical: 'http://nujojicalvocoressi.com/',
     meta: {
         name: {
@@ -69,7 +69,7 @@ const About=()=>{
                         <SectionTitle data={{divider:'themed',subtitle:'About Me',title:'When was the last time you felt understood?'}}/>
                         {/* <p>It's taugh to find someone you can truly connect with. Yet, in our fast-paced lives, the connection is more important than ever.</p> */}
 
-                        <p>My dedication and expertise provide a safe space for you to be heard and understood with no judgement.</p>
+                            <p>I am passionate about my work and firmly believe that therapy can bring about positive change to people’s lives.</p>
                         <Link to='/therapy#integrative-therapy' className="btn" smooth>More About Therapy</Link>
                     </div>
                 </div>
@@ -88,7 +88,7 @@ const Nujoji=()=>{
             <div className="Home__bg_themed Page__bg_blue">
                 <div className="section__wrapper">
                     <SectionTitle data={{divider:'white',subtitle:'Qualified, Registered & Insured',title:'Two people sitting down together'}}/>
-                    <p><b>I am passionate about my work and firmly believe that therapy can bring about positive change to people’s lives.</b></p>
+
                     <p>I have been trained in integrative therapy, that is a progressive form of therapy that combines different therapeutic tools and approaches to fit the needs of the individual client. By combining elements drawn from different schools of psychological theory and research, integrative therapy becomes a flexible and inclusive approach to understanding. Each person needs to be considered as an individual person and counselling techniques must be tailored to their individual needs and personal circumstances.</p>
                 </div>
             </div>

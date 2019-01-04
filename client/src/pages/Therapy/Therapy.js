@@ -7,7 +7,7 @@ import SectionTitle from '../../components/SectionTitle';
 
 const meta = {
     title: "About Therapy | Nujoji Calvocoressi Counselling",
-    description: 'Welcome to my counselling practice. I am passionate about my work and firmly believe that therapy can bring about positive change to people’s lives... I have been trained in integrative therapy, that is a progressive form of therapy that combines different therapeutic tools and approaches to fit the needs of the individual client. I am a member of BACP.',
+    description: 'Welcome to my counselling practice. I am passionate about my work and firmly believe that therapy can bring about positive change to people’s lives. I have been trained in integrative therapy, that is a progressive form of therapy that combines different therapeutic tools and approaches to fit the needs of the individual client. I am a member of BACP.',
     canonical: 'http://nujojicalvocoressi.com/therapy',
     meta: {
         name: {
@@ -86,7 +86,7 @@ const FAQ=props=>{
         <div className="FAQ Page__bg_grey" id="faqs">
             <img src={require('./../../imgs/therapyText.pt2.png')} alt='Therapy Page' className="Page__top_img part2"/>
             <div className="wrapper">
-                <SectionTitle data={{divider:'white',subtitle:'FAQs',title:'What is thearpy?'}}/>
+                <SectionTitle data={{divider:'white',subtitle:'FAQs',title:'What is therapy?'}}/>
                 <div className="fr1auto">
                     <p>I hope some of the FAQs will help answer any questions that you may have about starting therapy or about how I practice. Please do not hesitate to contact me if you have another question. </p>
                     <div className=" btn_square" onClick={openAllQuestions}>Open All Questions</div>
