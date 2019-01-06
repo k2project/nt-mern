@@ -52,8 +52,8 @@ const TherapyIntro=()=>{
                 </div>
                 <div className="Therapy__bg_themed">
                     <div className="section__wrapper">
-                        <p><b>It is not unusual to feel hesitant or unsure about seeking help.  However it is important to make this first step and ask for help! And it's eqaully crucial to choose a right therapist for yourself. </b></p>
-                        <p>There are many different therapeutic approaches available and it can be confusing to decide which one is suited for you.</p>
+                        <p><b>It is not unusual to feel hesitant or unsure about seeking help. For some people, asking for help can be a difficult place to start.</b></p>
+                        <p> There are many different therapeutic approaches available and it can be confusing to decide which one is suited for you.</p>
                         <Link to='/#about' className="btn" smooth>More About Me</Link>
                     </div>
                 </div>
@@ -67,12 +67,12 @@ const IntegrativeTherapy=()=>{
                 <div className="Therapy__bg_themed">
                     <div className="section__wrapper">
                         <SectionTitle data={{divider:'white',subtitle:'What I do',title:'Integrative Therapy'}}/>
-                        <p>Integrative therapy is a progressive form of therapy that combines different therapeutic tools and approaches to fit the needs of the individual client. By combining elements drawn from different schools of psychological theory and research, integrative therapy becomes a flexible and inclusive approach to understanding...</p>
+                        <p>Integrative therapy is a progressive form of therapy that combines different therapeutic tools and approaches to fit the needs of the individual client. By combining elements drawn from different schools of psychological theory and research, integrative therapy becomes a flexible and inclusive approach to understanding.</p>
                     </div>
                 </div>
                 <div className="IntegrativeTherapy__bg_respect">
                     <div className="section__wrapper">
-                        <p>In my therapy, what you say will be treated with respect and compassion. It takes place in a private and confidential setting where we can explore thoughts and feelings in a context different to most every-day settings. It is a dedicated time set aside by you and me. </p>
+                        <p>In therapy, what you say will be treated with respect and compassion. It takes place in a private and confidential setting where we can explore thoughts and feelings in a context different to most every-day settings. It is a dedicated time set aside by you and me. </p>
                         <p> The setting and regularity of our meetings as well as our therapeutic relationship will be the vessel within which you will be free to express whatever is on your mind.</p>
                         <p>Starting therapy can be a source of comfort and release as well as worry. The below FAQs may help you reach a decision whether now is the right time for you.</p>
                     </div>
@@ -155,24 +155,24 @@ const openAllQuestions=()=>{
 const questionsAndAnswers=[
     {
         q:'How counselling can help?',
-        a:'It often surprises people that counselling isn’t about giving advice or telling you what to do. Instead it is about creating a safe and non-judgemental space where you can reflect, explore and understand the difficulties in your life. The insight and awareness gained will in itself feel freeing giving you more choice in the way you live your life. It is my experience that counselling is a collaborative process and the more you engage with the process the more you are likely to feel nourished by it. There are many ways in which I believe counselling helps.  Being able to talk things through with a trained professional, someone other than your friends or family, can bring a great sense of relief. We often hide our feelings from those closest to us because of our feelings of shame, fear of judgement and a wish not to burden others.  Counselling can bring new levels of awareness that makes life feel easier to manage by the possibility of other choices and ways to feel more free in the world. There is good evidence based research that counselling can be helpful in overcoming particular difficulties such as depression, anxiety, addictions, eating disorders etc.'
+        a:'It often surprises people that counselling isn’t about giving advice or telling people what to do. Instead it is about creating a safe and non-judgemental space where you can reflect, explore and understand the difficulties in your life. The insight and awareness gained will in itself feel freeing giving you more choice in the way you live your life. It is my experienc that counselling is a collaborative process and the more you engage with the process the more you are likely to benefit from it. There are many ways in which I believe counselling helps. Being able to talk things through with a trained professional, someone other than your friends or family, can bring a great sense of relief. We often hide our feelings from those closest to us because of our feelings of shame, fear of judgement and a wish not to burden others. Counselling can bring new levels of awareness that makes life feel easier to manage by the possibility of other choices and ways to feel freer in the world. There is good evidence-based research that counselling can be helpful.'
     },
     {
         q:'What type of counselling do you offer?',
-        a:'I have trained as a integrative counsellor. This is a combined approach that brings together different strands of specific therapeutic modalities. Integrative therapists take the view that no one approach can treat each client in all situations. Rather, each person needs to be considered as an individual person and counselling techniques must be tailored to their individual needs and personal circumstances. I also believe that our childhood experiences can have an impact on how we feel about ourselves today and how we relate to others and how we live in the present moment.   I also incorporate  psychodynamic ideas into my work with clients, attachment theory as well as relational psychotherapy and the importance of our therapeutic relationship.  It can often be helpful to talk about unconscious mental life, such as dreams or day dreams. '
+        a:'I have trained as an integrative counsellor. This is a combined approach that brings togetherdifferent strands of specific therapeutic modalities. Integrative therapists take the view that noone approach can treat each client in all situations. Rather, each person needs to beconsidered as an individual and counselling techniques are tailored to their individual needsand personal circumstances. I also believe that our childhood experiences can have an impacton how we feel about ourselves today and can influence how we relate to others and how welive in the present moment. I incorporate psychodynamic ideas into my work with clients,attachment theory as well as relational psychotherapy and place importance in our therapeuticrelationship.'
     },
     {
         q:'Are my problems big enough?',
-        a:"There is no scale of importance; you don't have to be in crisis to make use of therapy. The most important thing is a will and desire for growth. Simply wanting more fulfilment, improved mental wellbeing, a clearer understanding and energy for life is reason enough for committing to therapy."
+        a:"There is no scale of importance, you don&#39;t have to be in crisis to make use of therapy. Themost important thing is a will and desire for growth. Simply wanting more fulfilment,improved mental wellbeing, a clearer understanding and energy for life is reason enough forcommitting to therapy."
     },
 
     {
         q:'How does counselling work?',
-        a:"There are many different therapeutic approaches available and it can be confusing to decide which one is suited for you. The different ways of working include looking at your thinking style or coping strategies when unhappy. However, again and again research has shown that the quality of the working relationship is more important than the therapeutic method used. Whatever the approach, they all have the same focus – your best interests and of facilitating positive change. The first session is an opportunity for you to meet me and to find out more about you and your difficulties.  First sessions last 60 minutes, sessions after that will be 50 minutes long.  I will ask several questions to find out more about you and I may make a few notes with your permission. This may feel very different from our ongoing sessions as these will be led by you.  We will discuss what you would like to achieve from counselling and you will be given the opportunity to ask me any questions you need to feel more comfortable together.  After the session you will have some time to think about whether I am the right therapist for you – I completely understand if you would rather work with another therapist or if you decide that the time is not quite right.  The decision to engage in counselling can be a difficult one and therapy will only work when you feel ready. "
+        a:"There are many different therapeutic approaches available and it can be confusing to decidewhich one is best suited for you. Time after time the research shows that the quality of thetherapeutic relationship is more important than the therapeutic modality used. Whatever theapproach, they all have the same focus – your best interests and facilitating positive change.The first session is an opportunity for us to meet and for me to find out a little bit more aboutyou and your difficulties. First sessions last 60 minutes, sessions after that will be 50 minuteslong. I will ask several questions to find out more about you and I may make a few notes withyour permission. This first session may feel different from our ongoing sessions as these willbe led by you. We will discuss what you would like to achieve from counselling and you willhave the opportunity to ask me as many questions as you need to feel more comfortable.After the session you can take some time to think about whether I am the right therapist foryou – I completely understand if you would rather work with another therapist or if youdecide that the time is not quite right. The decision to start counselling can be a difficult oneand therapy will only work when you feel ready."
     },
     {
         q:'Will what I say be confidential?',
-        a:"Yes, counselling sessions are strictly confidential.  The only exception to this is if you talk about something that suggests your safety or others is in danger; in this case I would discuss my concerns with you and any other professionals I might need to contact. I would hope for this to be done with your prior knowledge and, wherever possible, would be agreed upon with you."
+        a:"Yes, counselling sessions are strictly confidential. The only exception to this is if you talkabout something that suggests your safety or others is in danger, in this case I would discussmy concerns with you and any other professionals I might need to contact. I would hope thisto be done with your prior knowledge and, wherever possible, with your agreement."
     },
     {
         q:'How long do sessions last?',
@@ -180,15 +180,15 @@ const questionsAndAnswers=[
     },
     {
         q:'Do you charge for missed sessions?',
-        a:"Yes. Although I offer an alternative session when possible."
+        a:"Yes. I will try to offer an alternative session time when possible."
     },
     {
         q:'How many sessions will I need?',
-        a:"In my experience the length of time varies considerably depending on the nature of the problem and what you hope to get out of counselling. For some, a small number of sessions are sufficient, however a period of a year or more would be more beneficial to deal with long lasting difficulties. All counselling sessions will last 50 minutes (apart from the first session which will last 60 minutes).  My preference is to meet at the same time and the same day each week.  Some people may benefit from counselling twice a week and, if you feel that you might, we can discuss this. Many people prefer to work in an open ended way and let it go on for as long as it feels useful or helpful others prefer to agree to a fixed number of weeks and see how they go. "
+        a:"In my experience the length of time varies considerably depending on the nature of theproblem and what you hope to get out of counselling. For some, a small number of sessionsare sufficient, however a period of a year or more would be more beneficial to deal with longlasting difficulties. All counselling sessions will last 50 minutes (apart from the first sessionwhich will last 60 minutes). My preference is to meet at the same time on the same day eachweek. Some people may benefit from counselling twice a week, if you feel that you might,we can discuss this. Many people prefer to work in an open-ended way and to continue for aslong as it feels useful or helpful, others prefer to agree to a fixed number of weeks and seehow they go. "
     },
     {
         q:'Can I terminate the therapy at any point?',
-        a:"The decision to end the therapy will always be yours. I do recommend for short term work you allow three weeks notice to bring the work to an end and in longer terms work, over one year, three months notice. "
+        a:"The decision to end the therapy will always be yours. I do recommend for short term workyou allow three weeks notice to bring the work to an end and in longer term work, over oneyear, three months notice. "
     },
     {
         q:'Can I come in the evening?',
@@ -200,8 +200,7 @@ const questionsAndAnswers=[
     },
     {
         q:'What if the time slot isn\'t convenient for both of us? ',
-        a:"I am in contact with a number of other therapists in London who might be suitable as an alternative."
-    },
+        a:"I am in contact with a number of other therapists in London who might provide a suitablealternative."    },
 
 ]
 
@@ -211,9 +210,9 @@ const Fees=()=>{
         <section  className="Fees" id="fees">
                 <div className="Therapy__bg_themed">
                     <div className="section__wrapper">
-                        <SectionTitle data={{divider:'white',subtitle:'What I charge',title:'Many people find that regular meetings provide a sense of safety and continuity...'}}/>
+                        <SectionTitle data={{divider:'white',subtitle:'What I charge',title:'Many people find that regular meetings provide a sense of safety and continuity'}}/>
                         <p>Regular weekly sessions are of 50 minutes duration, and are charged at £60.00 per session. I am happy to accept payment by debit or credit card, cash or bank transfer. </p>
-                        <Link to='/contact#form' className="btn" smooth>Get in touch</Link>
+                        <Link to='/contact#form' className="btn" smooth>Get In Touch</Link>
 
                     </div>
                 </div>

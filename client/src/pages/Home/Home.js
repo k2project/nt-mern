@@ -53,7 +53,7 @@ const Welcome=()=>{
                         <p><b> It is not uncommon to feel lost or confused from time to time, or to experience symptoms, unhelpful behaviours or a lack of confidence. These are things that we can all experience.</b></p>
                         <p> Therapy is about creating a safe and non-judgemental space where you can reflect, explore and understand the difficulties in your life.</p>
                         {/* <p>However you can always break the cycle of anger, anxiety, addiction, distrust and    unhealthy behaviour if you want. It all starts with you... Make a choice today!</p> */}
-                        <Link to='/contact#form' className="btn" smooth>Get in touch</Link>
+                        <Link to='/contact#form' className="btn" smooth>Get In Touch</Link>
                     </div>
 
                 </div>
@@ -89,7 +89,7 @@ const Nujoji=()=>{
                 <div className="section__wrapper">
                     <SectionTitle data={{divider:'white',subtitle:'Qualified, Registered & Insured',title:'Two people sitting down together'}}/>
 
-                    <p>I have been trained in integrative therapy, that is a progressive form of therapy that combines different therapeutic tools and approaches to fit the needs of the individual client. By combining elements drawn from different schools of psychological theory and research, integrative therapy becomes a flexible and inclusive approach to understanding. Each person needs to be considered as an individual person and counselling techniques must be tailored to their individual needs and personal circumstances.</p>
+                    <p>I have been trained in integrative therapy, this is a progressive form of therapy that combines different therapeutic tools and approaches to fit the needs of the individual client. By combining elements drawn from different schools of psychological theory and research, integrative therapy becomes a flexible and inclusive approach to understanding. Each person is considered as an individual and counselling techniques are tailored to their individual needs and personal circumstances.</p>
                 </div>
             </div>
             <div>

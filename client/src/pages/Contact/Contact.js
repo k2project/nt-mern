@@ -127,7 +127,7 @@ class Contact extends Component {
                                 onFocus={(e) =>changePlaceholder(e,"eg. +44 (0) 123456789","#fff")}
                                 onBlur={(e) =>changePlaceholder(e,"What is your telephone number?","#111")}/>
                             <div className="text_cntr">
-                                <button type="submit" className="btn">Please get in touch*</button>
+                                <button type="submit" className="btn">Please Get In Touch*</button>
                             </div>
                             <div className="Form__err">
                                 {err&&<p className="Form__message_err text_cntr"><span>!</span>{err}</p>}
@@ -148,12 +148,12 @@ const Office=()=>{
         <section  className="Office">
             <div className="Office__bg_img">
                 <div className="cover">
-                    <SectionTitle data={{divider:'',subtitle:'City Of London ',title:'EC2R 7AS'}}/>
+                    {/* <SectionTitle data={{divider:'',subtitle:'City Of London ',title:'EC2R 7AS'}}/> */}
                 </div>
             </div>
                 <div>
                     <div className="section__wrapper">
-                        <SectionTitle data={{divider:'themed',subtitle:'A quiet place',title:'A comfortable and confidential place'}}/>
+                        <SectionTitle data={{divider:'themed',subtitle:'City of London',title:'A comfortable and confidential place'}}/>
                         <p><b>11-12 Tokenhouse Yard<br/>City of London<br/>London <br/>EC2R 7AS</b></p>
                         <p><b>Opening Hours.</b> I see clients Monday to Friday throughout the year except public holidays. Appointments are available from 8am – 8pm.</p>
                         <p><i>I also see clients in the West End at 19 Nassau Street, Fitzrovia, London, W1W 7AF a few minutes’ walk from Tottenham Court Road London Underground (Northern and Central Lines) and Oxford Circus London Underground (Victoria, Central and Bakerloo Lines). </i></p>
@@ -204,11 +204,13 @@ const Form=(props)=>{
                 <div>
                     <div className="section__wrapper">
                         <SectionTitle data={{divider:'themed',subtitle:'How to get in touch',title:(<span>Talking can be a good place to start</span>)}}/>
-                        <p>    I am always happy to speak on the telephone. You can reach me on either <b>0208 675 9754 </b> or <b>07855 846580</b>. </p>
+                        <p>    I am always happy to speak on the telephone. You can contact me on either <b>0208 675 9754 </b> or <b>07855 846580</b>. </p>
+
+                        <p>Please be aware that if I am with clients I will be unable to answer your call. In that case please leave me a message or use the quick contact form. Both methods are confidential. I will get back to you as soon as possible and within 24 hours. </p>
+
                         <p><a href="https://my.vsee.com/s/5bf7bbd27cfb4" target="_blank" rel="noopener noreferrer">
                         <img src={require('./../../imgs/vsee.png')} className="Vsee" alt="Vsee"/>
                         VSee Video Chat.</a></p>
-                        <p>Please be aware that if I am with clients I will be unable to answer your call. In that case please leave me a message or use the quick contact form. Both methods are confidential. I will get back to you as soon as possible and within 24 hours. </p>
 
                     </div>
                 </div>

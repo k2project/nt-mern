@@ -43,7 +43,7 @@
     font-family: sans-serif;
     padding: 1.2rem 0;
     text-align: center;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     width: 20rem;
     margin-top: 4rem;
 }
