@@ -40,7 +40,7 @@
     right: 20vw;
 }
 .Page__nav{
-    align-items: end;
+    align-items: start;
     display: grid;
     grid-template-columns:1fr auto;
 }
@@ -73,7 +73,8 @@
     padding: 1rem 2rem;
     border: solid .2rem #111;
     left: 15rem;
-    top:-3rem;
+    /* top:-3rem; */
+    top:5.5rem;
 }
 .Page__nav_num a{
     padding: 0;
@@ -83,6 +84,7 @@
     cursor: pointer;
     display: none;
     left: 0;
+    top: .5rem;
     text-align: left;
     width: 4rem;
 }
@@ -212,7 +214,7 @@ footer p small{
         display: block;
     }
     .Page__nav_num{
-        top: 1rem;
+        top: 0rem;
     }
      .Page__top-container{
         transition: left 1s;
