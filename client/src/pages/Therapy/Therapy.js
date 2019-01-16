@@ -8,11 +8,11 @@ import SectionTitle from '../../components/SectionTitle';
 const meta = {
     title: "About Therapy | Nujoji Calvocoressi Counselling",
     description: 'Welcome to my counselling practice. I am passionate about my work and firmly believe that therapy can bring about positive change to people’s lives. I have been trained in integrative therapy, that is a progressive form of therapy that combines different therapeutic tools and approaches to fit the needs of the individual client. I am a member of BACP.',
-    canonical: 'http://nujojicalvocoressi.com/therapy',
+    canonical: 'http://www.calvocoressi.com/therapy',
     meta: {
         name: {
             author:'@_k2project',
-            keywords: 'Nujoji, CALVOCORESSI,COUNSELLING, Queen\'s Park Therapy,West London Therapy'
+            keywords: 'Nujoji Calvocoressi, counselling, integrative therapy, London'
         }
     }
 };

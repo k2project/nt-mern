@@ -6,13 +6,13 @@ import Page from '../../components/Page/Page';
 import SectionTitle from '../../components/SectionTitle';
 
 const meta = {
-    title: "Directions and Contact| Nujoji Calvocoressi Counselling",
+    title: "City of London & West End| Nujoji Calvocoressi Counselling",
     description: 'Bookings: 07855 846 580 | Office:11-12 Tokenhouse Yard, City of London, London EC2R 7AS',
-    canonical: 'http://nujojicalvocoressi.com/contact',
+    canonical: 'http://www.calvocoressi.com/contact',
     meta: {
         name: {
             author:'@_k2project',
-            keywords: 'Nujoji, CALVOCORESSI,COUNSELLING, Queen\'s Park Therapy,West London Therapy'
+            keywords: 'Nujoji Calvocoressi, counselling, therapy, London'
         }
     }
 };
