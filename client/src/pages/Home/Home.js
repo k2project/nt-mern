@@ -64,7 +64,7 @@ const Welcome=()=>{
 const About=()=>{
     return (
         <section  className="About" id="about">
-                <div>
+                <div className="Page__bg_grey">
                     <div className="section__wrapper">
                         <SectionTitle data={{divider:'themed',subtitle:'About Me',title:'When was the last time you felt understood?'}}/>
                         {/* <p>It's taugh to find someone you can truly connect with. Yet, in our fast-paced lives, the connection is more important than ever.</p> */}
