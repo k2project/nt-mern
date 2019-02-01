@@ -205,7 +205,7 @@ const Form=(props)=>{
                     <div className="section__wrapper">
                         <SectionTitle data={{divider:'themed',subtitle:'How to get in touch',title:(<span>Talking can be a good place to start</span>)}}/>
                         <p>    I am always happy to speak on the telephone. You can contact me on either <b>0208 675 9754 </b> or <b>07855 846580</b>. </p>
-
+                        <p>If you prefer to make contact with me by email, please complete <a href="#contact-form"><i>the contact form</i>.</a></p>
                         <p>Please be aware that if I am with clients I will be unable to answer your call. In that case please leave me a message or use the quick contact form. Both methods are confidential. I will get back to you as soon as possible and within 24 hours. </p>
 
                         <p><a href="https://my.vsee.com/s/5bf7bbd27cfb4" target="_blank" rel="noopener noreferrer">
@@ -214,7 +214,7 @@ const Form=(props)=>{
 
                     </div>
                 </div>
-                <div className="Contact__bg_themed">
+                <div className="Contact__bg_themed" id="contact-form">
                     <img src={require('./../../imgs/contactText.pt2.png')} alt='Contact Page' className="Page__top_img part2"/>
                     <div className="section__wrapper">
                         {props.children}
