@@ -159,20 +159,20 @@ const questionsAndAnswers=[
     },
     {
         q:'What type of counselling do you offer?',
-        a:'I have trained as an integrative counsellor. This is a combined approach that brings togetherdifferent strands of specific therapeutic modalities. Integrative therapists take the view that noone approach can treat each client in all situations. Rather, each person needs to beconsidered as an individual and counselling techniques are tailored to their individual needsand personal circumstances. I also believe that our childhood experiences can have an impacton how we feel about ourselves today and can influence how we relate to others and how welive in the present moment. I incorporate psychodynamic ideas into my work with clients,attachment theory as well as relational psychotherapy and place importance in our therapeuticrelationship.'
+        a:'I have trained as an integrative counsellor. This is a combined approach that brings together different strands of specific therapeutic modalities. Integrative therapists take the view that noone approach can treat each client in all situations. Rather, each person needs to beconsidered as an individual and counselling techniques are tailored to their individual needsand personal circumstances. I also believe that our childhood experiences can have an impacton how we feel about ourselves today and can influence how we relate to others and how welive in the present moment. I incorporate psychodynamic ideas into my work with clients, attachment theory as well as relational psychotherapy and place importance in our therapeutic relationship.'
     },
     {
         q:'Are my problems big enough?',
-        a:"There is no scale of importance, you don&#39;t have to be in crisis to make use of therapy. Themost important thing is a will and desire for growth. Simply wanting more fulfilment,improved mental wellbeing, a clearer understanding and energy for life is reason enough forcommitting to therapy."
+        a:"There is no scale of importance, you don't have to be in crisis to make use of therapy. Themost important thing is a will and desire for growth. Simply wanting more fulfilment, improved mental wellbeing, a clearer understanding and energy for life is reason enough for committing to therapy."
     },
 
     {
         q:'How does counselling work?',
-        a:"There are many different therapeutic approaches available and it can be confusing to decidewhich one is best suited for you. Time after time the research shows that the quality of thetherapeutic relationship is more important than the therapeutic modality used. Whatever theapproach, they all have the same focus – your best interests and facilitating positive change.The first session is an opportunity for us to meet and for me to find out a little bit more aboutyou and your difficulties. First sessions last 60 minutes, sessions after that will be 50 minuteslong. I will ask several questions to find out more about you and I may make a few notes withyour permission. This first session may feel different from our ongoing sessions as these willbe led by you. We will discuss what you would like to achieve from counselling and you willhave the opportunity to ask me as many questions as you need to feel more comfortable.After the session you can take some time to think about whether I am the right therapist foryou – I completely understand if you would rather work with another therapist or if youdecide that the time is not quite right. The decision to start counselling can be a difficult oneand therapy will only work when you feel ready."
+        a:"There are many different therapeutic approaches available and it can be confusing to decide which one is best suited for you. Time after time the research shows that the quality of thetherapeutic relationship is more important than the therapeutic modality used. Whatever the approach, they all have the same focus – your best interests and facilitating positive change.The first session is an opportunity for us to meet and for me to find out a little bit more about you and your difficulties. First sessions last 60 minutes, sessions after that will be 50 minutes long. I will ask several questions to find out more about you and I may make a few notes with your permission. This first session may feel different from our ongoing sessions as these will be led by you. We will discuss what you would like to achieve from counselling and you will have the opportunity to ask me as many questions as you need to feel more comfortable. After the session you can take some time to think about whether I am the right therapist for you – I completely understand if you would rather work with another therapist or if you decide that the time is not quite right. The decision to start counselling can be a difficult one and therapy will only work when you feel ready."
     },
     {
         q:'Will what I say be confidential?',
-        a:"Yes, counselling sessions are strictly confidential. The only exception to this is if you talkabout something that suggests your safety or others is in danger, in this case I would discussmy concerns with you and any other professionals I might need to contact. I would hope thisto be done with your prior knowledge and, wherever possible, with your agreement."
+        a:"Yes, counselling sessions are strictly confidential. The only exception to this is if you talk about something that suggests your safety or others is in danger, in this case I would discuss my concerns with you and any other professionals I might need to contact. I would hope this to be done with your prior knowledge and, wherever possible, with your agreement."
     },
     {
         q:'How long do sessions last?',
@@ -184,11 +184,11 @@ const questionsAndAnswers=[
     },
     {
         q:'How many sessions will I need?',
-        a:"In my experience the length of time varies considerably depending on the nature of theproblem and what you hope to get out of counselling. For some, a small number of sessionsare sufficient, however a period of a year or more would be more beneficial to deal with longlasting difficulties. All counselling sessions will last 50 minutes (apart from the first sessionwhich will last 60 minutes). My preference is to meet at the same time on the same day eachweek. Some people may benefit from counselling twice a week, if you feel that you might,we can discuss this. Many people prefer to work in an open-ended way and to continue for aslong as it feels useful or helpful, others prefer to agree to a fixed number of weeks and seehow they go. "
+        a:"In my experience the length of time varies considerably depending on the nature of the problem and what you hope to get out of counselling. For some, a small number of sessionsare sufficient, however a period of a year or more would be more beneficial to deal with longlasting difficulties. All counselling sessions will last 50 minutes (apart from the first session which will last 60 minutes). My preference is to meet at the same time on the same day each week. Some people may benefit from counselling twice a week, if you feel that you might, we can discuss this. Many people prefer to work in an open-ended way and to continue for as long as it feels useful or helpful, others prefer to agree to a fixed number of weeks and see how they go. "
     },
     {
         q:'Can I terminate the therapy at any point?',
-        a:"The decision to end the therapy will always be yours. I do recommend for short term workyou allow three weeks notice to bring the work to an end and in longer term work, over oneyear, three months notice. "
+        a:"The decision to end the therapy will always be yours. I do recommend for short term work you allow three weeks notice to bring the work to an end and in longer term work, over one year, three months notice. "
     },
     {
         q:'Can I come in the evening?',
@@ -200,7 +200,7 @@ const questionsAndAnswers=[
     },
     {
         q:'What if the time slot isn\'t convenient for both of us? ',
-        a:"I am in contact with a number of other therapists in London who might provide a suitablealternative."    },
+        a:"I am in contact with a number of other therapists in London who might provide a suitable alternative."    },
 
 ]
 
