@@ -163,7 +163,7 @@ const questionsAndAnswers=[
     },
     {
         q:'Are my problems big enough?',
-        a:"There is no scale of importance, you don't have to be in crisis to make use of therapy. Themost important thing is a will and desire for growth. Simply wanting more fulfilment, improved mental wellbeing, a clearer understanding and energy for life is reason enough for committing to therapy."
+        a:"There is no scale of importance, you don't have to be in crisis to make use of therapy. The most important thing is a will and desire for growth. Simply wanting more fulfilment, improved mental wellbeing, a clearer understanding and energy for life is reason enough for committing to therapy."
     },
 
     {
