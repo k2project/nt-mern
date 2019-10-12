@@ -18,6 +18,18 @@
     line-height: .9;
     top: 3rem;
     z-index: 3;
+
+}
+.Page__title small{
+    font-size: 1.2rem;
+    color: #666;
+}
+.Page__title_pt2{
+    font-size: 4rem;
+    font-size: 2.9rem;
+    left: 18rem;
+    top: -1rem;
+    text-transform: uppercase;
 }
 .Page__subtitle{
     font-family: sans-serif;
@@ -28,6 +40,9 @@
     text-transform: uppercase;
     top:3rem;
     z-index: 3;
+    border-bottom: solid .1rem #111;
+    padding-bottom: 1rem;
+    width: 70rem;
 }
 .Page__top_img.part1{
     position: absolute;
@@ -230,7 +245,24 @@ footer p small{
         opacity: .3;
         transition: .1s .5s;
     } */
+    .Page__title{
+        line-height: .5;
+        margin-top: 3rem;
+    }
+    .Page__title small{
+        display: block;
+        left: 28rem;
+        top: 2rem;
+    }
+    .Page__title_pt2{
+        font-size: 3.7rem;
+        left: 0;
+        top: 0;
 
+    }
+    .Page__subtitle{
+        width: 48rem;
+    }
 }
 @media only screen and (max-width: 786px) {
     .Page .Page__top-container{

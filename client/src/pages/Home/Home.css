@@ -11,8 +11,24 @@
 }
 
 .Nujoji__pb_links{
-    height: 4rem;
-    margin: 2rem .5rem -.5rem;
+    height: 5rem;
+    margin: 2rem 1rem -.5rem;
+}
+
+.Nujoji a{
+    text-decoration: underline;
+}
+.Nujoji .qualifications{
+    display: grid;
+    grid-template-columns: 2rem auto;
+    padding-left: 3rem;
+    padding-top: 1rem;
+    text-align: left;
+}
+.prof-bods{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
 }
 @media only screen and (max-width: 1200px) {
 

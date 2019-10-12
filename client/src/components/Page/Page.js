@@ -39,7 +39,7 @@ const Top=(props)=>{
             <div className="wrapper">
                 <Nav/>
                 <h2 className="Page__subtitle">City of London &amp; West End</h2>
-                <h1 className="Page__title">Nujoji Calvocoressi <br/><span className={props.name+"__color_themed"}>Counselling</span></h1>
+                <h1 className="Page__title">Nujoji Calvocoressi <small>MA, Pg.Dip, MBACP, UKCP(Reg), IAFP</small><br/><span className={props.name+"__color_themed Page__title_pt2"}>Counselling and Psychotherapy</span></h1>
             </div>
         </div>
     )
@@ -54,7 +54,7 @@ const Nav=(props)=>{
                 <div></div>
             </div>
             <NavLinks/>
-            <div className="Page__nav_num"><a href="tel:+447855846580">Enquiries: +44 7855 846 580</a></div>
+            <div className="Page__nav_num"><a href="tel:+442086759754">Enquiries: 0208 675 9754</a></div>
         </nav>
     )
 }
