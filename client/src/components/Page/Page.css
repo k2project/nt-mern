@@ -1,3 +1,4 @@
+
 .Page{
     overflow-x: hidden;
 }
@@ -13,36 +14,38 @@
     display: inline-block;
     width: 100vw;
 }
-.Page__title{
-    font-size: 6rem;
-    line-height: .9;
-    top: 3rem;
+.Page__title_name{
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 3rem;
     z-index: 3;
+    left: .5rem;
 
 }
-.Page__title small{
-    font-size: 1.2rem;
-    color: #666;
+.Page__title_name span{
+
+    display: inline-block;
+    font-size: 1.4rem;
+    padding-left: 1rem;
+
 }
-.Page__title_pt2{
-    font-size: 4rem;
-    font-size: 2.9rem;
-    left: 18rem;
-    top: -1rem;
+.Page__title_prof{
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 4.5rem;
+    z-index: 3;
     text-transform: uppercase;
+    margin-top: 1rem;
 }
+
 .Page__subtitle{
     font-family: sans-serif;
     font-size: 1.4rem;
     font-weight: 400;
-    margin-bottom: 1.6rem;
-    padding-top: 12rem;
     text-transform: uppercase;
-    top:3rem;
+    left: .6rem;
     z-index: 3;
-    border-bottom: solid .1rem #111;
-    padding-bottom: 1rem;
-    width: 70rem;
+    margin-top: .6rem;
+    padding-top: 15rem;
+
 }
 .Page__top_img.part1{
     position: absolute;
@@ -245,24 +248,7 @@ footer p small{
         opacity: .3;
         transition: .1s .5s;
     } */
-    .Page__title{
-        line-height: .5;
-        margin-top: 3rem;
-    }
-    .Page__title small{
-        display: block;
-        left: 28rem;
-        top: 2rem;
-    }
-    .Page__title_pt2{
-        font-size: 3.7rem;
-        left: 0;
-        top: 0;
 
-    }
-    .Page__subtitle{
-        width: 48rem;
-    }
 }
 @media only screen and (max-width: 786px) {
     .Page .Page__top-container{
@@ -287,14 +273,32 @@ footer p small{
         text-align: center;
         padding: 1rem 2rem 2rem;
     }
+    .Page__title_name{
+        font-size: 2.8rem;
+        left: 0;
 
+    }
+    .Page__title_name span{
+        font-size: 1.2rem;
+        padding-left: 0;
+        display: block;
+
+    }
+    .Page__title_prof{
+        font-size: 3.5rem;
+    }
+
+    .Page__subtitle{
+        font-size: 1.4rem;
+        left: 0;
+        padding-top: 18rem;
+
+    }
 
 
 }
 @media only screen and (max-width: 480px) {
-    .Page__title{
-        font-size: 4.5rem;
-    }
+
     .Page.m_open .Page__nav_hum{
         left: -13rem;
 
@@ -307,5 +311,25 @@ footer p small{
         display: block;
         padding-bottom: 1rem;
     }
+    .Page__title_name{
+        font-size: 2.4rem;
+        left: 0;
+
+    }
+    .Page__title_name span{
+        font-size: 1.2rem;
+        padding-left: 0;
+        display: block;
+
+    }
+    .Page__title_prof{
+        font-size: 3rem;
+    }
+
+    .Page__subtitle{
+        font-size: 1.2rem;
+        left: 0;
+    }
+
 
 }

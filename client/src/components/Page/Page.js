@@ -38,8 +38,15 @@ const Top=(props)=>{
             <img src={require('../../imgs/'+imgName+'')} alt={imgAlt} className="Page__top_img part1"/>
             <div className="wrapper">
                 <Nav/>
-                <h2 className="Page__subtitle">City of London &amp; West End</h2>
-                <h1 className="Page__title">Nujoji Calvocoressi <small>MA, Pg.Dip, MBACP, UKCP(Reg), IAFP</small><br/><span className={props.name+"__color_themed Page__title_pt2"}>Counselling and Psychotherapy</span></h1>
+                <h3 className="Page__subtitle">City of London / West End</h3>
+                <h2 className="Page__title_prof">
+                    <span> <b>Counselling & Psychotherapy</b></span><br/>
+                    <span className={props.name+"__color_themed Page__title_pt2"}>
+                    </span>
+                </h2>
+                <h1 className={props.name+"__color_themed Page__title_name"}>Nujoji Calvocoressi
+                    <span> MA, Pg.Dip, MBACP, UKCP(Reg), IAFP</span>
+                </h1>
             </div>
         </div>
     )
