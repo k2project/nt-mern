@@ -60,14 +60,15 @@
 .Page__nav{
     align-items: start;
     display: grid;
-    grid-template-columns:1fr auto;
+    grid-template-columns:1fr auto auto;
 }
 .Page__nav a{
     font-size: 1.4rem;
     font-family: sans-serif;
     display: inline-block;
     padding: 7rem 0  4rem;
-    width: 8rem;
+    width: 7.9rem;
+    /* width: 7.5rem; */
     text-align: center;
 }
 .Page__nav a.selected{
@@ -90,8 +91,7 @@
     font-family: sans-serif;
     padding: 1rem 2rem;
     border: solid .2rem #111;
-    left: 15rem;
-    /* top:-3rem; */
+    left: 10rem;
     top:5.5rem;
 }
 .Page__nav_num a{
@@ -113,6 +113,21 @@
     width: 3rem;
     transition: .2s;
 }
+
+.Page__nav_linkedin a{
+    display: inline-block;
+    padding: 0;
+    width: 4rem;
+    height: 4rem;
+    left: 10rem;
+    top:5.5rem;
+    border: solid .2rem #111;
+    background: #111;
+}
+.Page__nav_linkedin a img{
+    height: 3.5rem;
+}
+
 .Page__nav_mobile{
     /* background: #161412; */
     background-image: url('./../../imgs/bgGrey.png');
@@ -209,9 +224,9 @@ footer p{
     display: none;
 }
 @media only screen and (max-width: 1350px) {
-
+    .Page__nav_linkedin a,
     .Page__nav_num{
-        left: 0;
+        left: 2rem;
     }
 }
 @media only screen and (max-width: 1200px) {
@@ -230,9 +245,13 @@ footer p{
     .Page__nav_hum{
         display: block;
     }
+    .Page__nav_linkedin a,
     .Page__nav_num{
         top: 0rem;
+        left: -2rem;
     }
+
+
      .Page__top-container{
         transition: left 1s;
     }
@@ -297,7 +316,9 @@ footer p{
 
 }
 @media only screen and (max-width: 480px) {
-
+    .Page__nav_num a span{
+        display: none;
+    }
     .Page.m_open .Page__nav_hum{
         left: -13rem;
 

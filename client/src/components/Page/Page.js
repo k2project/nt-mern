@@ -7,7 +7,9 @@ import {
   TwitterShareButton,
   WhatsappShareButton,
 } from 'react-share';
+import linkedin from './../../imgs/linkedin.png';
 const shareUrl="http://www.calvocoressi.com";
+
 
 
 let mobileMenuOpen=false;
@@ -61,7 +63,12 @@ const Nav=(props)=>{
                 <div></div>
             </div>
             <NavLinks/>
-            <div className="Page__nav_num"><a href="tel:+442086759754">Enquiries: 0208 675 9754</a></div>
+            <div className="Page__nav_num">
+                <a href="tel:+442086759754"><span>Enquiries:</span> 0208 675 9754</a>
+            </div>
+            <div className="Page__nav_linkedin">
+                <a href="http://www.linkedin.com/in/calvocoressi" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt=""/></a>
+            </div>
         </nav>
     )
 }
