@@ -6,13 +6,13 @@ import Page from '../../components/Page/Page';
 import SectionTitle from '../../components/SectionTitle';
 
 const meta = {
-    title: "About Therapy | Nujoji Calvocoressi Counselling",
-    description: 'Welcome to my counselling practice. I am passionate about my work and firmly believe that therapy can bring about positive change to people’s lives. I have been trained in integrative therapy, that is a progressive form of therapy that combines different therapeutic tools and approaches to fit the needs of the individual client. I am a member of BACP.',
+    title: "About Therapy | Nujoji Calvocoressi counselling and psychotherapy",
+    description: 'Welcome to my counselling and psychotherapy practice. I am passionate about my work and firmly believe that therapy can bring about positive change to people’s lives. I have been trained in integrative therapy, that is a progressive form of therapy that combines different therapeutic tools and approaches to fit the needs of the individual client. I am a member of BACP.',
     canonical: 'http://www.calvocoressi.com/therapy',
     meta: {
         name: {
             author:'@_k2project',
-            keywords: 'Nujoji Calvocoressi, counselling, integrative therapy, London'
+            keywords: 'Nujoji Calvocoressi, counselling and psychotherapy, integrative therapy, London'
         }
     }
 };
@@ -66,7 +66,7 @@ const IntegrativeTherapy=()=>{
         <section  className="IntegrativeTherapy"  id="integrative-therapy">
                 <div className="Therapy__bg_themed">
                     <div className="section__wrapper">
-                        <SectionTitle data={{divider:'white',subtitle:'What I do',title:'Integrative Therapy'}}/>
+                        <SectionTitle data={{divider:'white',subtitle:'How I work',title:'Integrative Therapy'}}/>
                         <p>Integrative therapy is a progressive form of therapy that combines different therapeutic tools and approaches to fit the needs of the individual client. By combining elements drawn from different schools of psychological theory and research, integrative therapy becomes a flexible and inclusive approach to understanding.</p>
                     </div>
                 </div>
@@ -154,12 +154,12 @@ const openAllQuestions=()=>{
 }
 const questionsAndAnswers=[
     {
-        q:'How counselling can help?',
-        a:'It often surprises people that counselling isn’t about giving advice or telling people what to do. Instead it is about creating a safe and non-judgemental space where you can reflect, explore and understand the difficulties in your life. The insight and awareness gained will in itself feel freeing giving you more choice in the way you live your life. It is my experienc that counselling is a collaborative process and the more you engage with the process the more you are likely to benefit from it. There are many ways in which I believe counselling helps. Being able to talk things through with a trained professional, someone other than your friends or family, can bring a great sense of relief. We often hide our feelings from those closest to us because of our feelings of shame, fear of judgement and a wish not to burden others. Counselling can bring new levels of awareness that makes life feel easier to manage by the possibility of other choices and ways to feel freer in the world. There is good evidence-based research that counselling can be helpful.'
+        q:'How counselling and psychotherapy can help?',
+        a:'It often surprises people that counselling and psychotherapy isn’t about giving advice or telling people what to do. Instead it is about creating a safe and non-judgemental space where you can reflect, explore and understand the difficulties in your life. The insight and awareness gained will in itself feel freeing giving you more choice in the way you live your life. It is my experience that counselling and psychotherapy is a collaborative process and the more you engage with the process the more you are likely to benefit from it. There are many ways in which I believe counselling and psychotherapy helps. Being able to talk things through with a trained professional, someone other than your friends or family, can bring a great sense of relief. We often hide our feelings from those closest to us because of our feelings of shame, fear of judgement and a wish not to burden others. counselling and psychotherapy can bring new levels of awareness that makes life feel easier to manage by the possibility of other choices and ways to feel freer in the world. There is good evidence-based research that counselling and psychotherapy can be helpful.'
     },
     {
-        q:'What type of counselling do you offer?',
-        a:'I have trained as an integrative counsellor. This is a combined approach that brings together different strands of specific therapeutic modalities. Integrative therapists take the view that noone approach can treat each client in all situations. Rather, each person needs to beconsidered as an individual and counselling techniques are tailored to their individual needsand personal circumstances. I also believe that our childhood experiences can have an impacton how we feel about ourselves today and can influence how we relate to others and how welive in the present moment. I incorporate psychodynamic ideas into my work with clients, attachment theory as well as relational psychotherapy and place importance in our therapeutic relationship.'
+        q:'What type of counselling and psychotherapy do you offer?',
+        a:'I have trained as an integrative counsellor. This is a combined approach that brings together different strands of specific therapeutic modalities. Integrative therapists take the view that noone approach can treat each client in all situations. Rather, each person needs to be considered as an individual and counselling and psychotherapy techniques are tailored to their individual needs and personal circumstances. I also believe that our childhood experiences can have an impact on how we feel about ourselves today and can influence how we relate to others and how we live in the present moment. I incorporate psychodynamic ideas into my work with clients, attachment theory as well as relational psychotherapy and place importance in our therapeutic relationship.'
     },
     {
         q:'Are my problems big enough?',
@@ -167,12 +167,12 @@ const questionsAndAnswers=[
     },
 
     {
-        q:'How does counselling work?',
-        a:"There are many different therapeutic approaches available and it can be confusing to decide which one is best suited for you. Time after time the research shows that the quality of thetherapeutic relationship is more important than the therapeutic modality used. Whatever the approach, they all have the same focus – your best interests and facilitating positive change.The first session is an opportunity for us to meet and for me to find out a little bit more about you and your difficulties. First sessions last 60 minutes, sessions after that will be 50 minutes long. I will ask several questions to find out more about you and I may make a few notes with your permission. This first session may feel different from our ongoing sessions as these will be led by you. We will discuss what you would like to achieve from counselling and you will have the opportunity to ask me as many questions as you need to feel more comfortable. After the session you can take some time to think about whether I am the right therapist for you – I completely understand if you would rather work with another therapist or if you decide that the time is not quite right. The decision to start counselling can be a difficult one and therapy will only work when you feel ready."
+        q:'How does counselling and psychotherapy work?',
+        a:"There are many different therapeutic approaches available and it can be confusing to decide which one is best suited for you. Time after time the research shows that the quality of the therapeutic relationship is more important than the therapeutic modality used. Whatever the approach, they all have the same focus – your best interests and facilitating positive change. The first session is an opportunity for us to meet and for me to find out a little bit more about you and your difficulties. First sessions last 60 minutes, sessions after that will be 50 minutes long. I will ask several questions to find out more about you and I may make a few notes with your permission. This first session may feel different from our ongoing sessions as these will be led by you. We will discuss what you would like to achieve from counselling and psychotherapy and you will have the opportunity to ask me as many questions as you need to feel more comfortable. After the session you can take some time to think about whether I am the right therapist for you – I completely understand if you would rather work with another therapist or if you decide that the time is not quite right. The decision to start counselling and psychotherapy can be a difficult one and therapy will only work when you feel ready."
     },
     {
         q:'Will what I say be confidential?',
-        a:"Yes, counselling sessions are strictly confidential. The only exception to this is if you talk about something that suggests your safety or others is in danger, in this case I would discuss my concerns with you and any other professionals I might need to contact. I would hope this to be done with your prior knowledge and, wherever possible, with your agreement."
+        a:"Yes, counselling and psychotherapy sessions are strictly confidential. The only exception to this is if you talk about something that suggests your safety or others is in danger, in this case I would discuss my concerns with you and any other professionals I might need to contact. I would hope this to be done with your prior knowledge and, wherever possible, with your agreement."
     },
     {
         q:'How long do sessions last?',
@@ -184,7 +184,7 @@ const questionsAndAnswers=[
     },
     {
         q:'How many sessions will I need?',
-        a:"In my experience the length of time varies considerably depending on the nature of the problem and what you hope to get out of counselling. For some, a small number of sessionsare sufficient, however a period of a year or more would be more beneficial to deal with longlasting difficulties. All counselling sessions will last 50 minutes (apart from the first session which will last 60 minutes). My preference is to meet at the same time on the same day each week. Some people may benefit from counselling twice a week, if you feel that you might, we can discuss this. Many people prefer to work in an open-ended way and to continue for as long as it feels useful or helpful, others prefer to agree to a fixed number of weeks and see how they go. "
+        a:"In my experience the length of time varies considerably depending on the nature of the problem and what you hope to get out of counselling and psychotherapy. For some, a small number of sessions are sufficient, however a period of a year or more would be more beneficial to deal with long lasting difficulties. All counselling and psychotherapy sessions will last 50 minutes (apart from the first session which will last 60 minutes). My preference is to meet at the same time on the same day each week. Some people may benefit from counselling and psychotherapy twice a week, if you feel that you might, we can discuss this. Many people prefer to work in an open-ended way and to continue for as long as it feels useful or helpful, others prefer to agree to a fixed number of weeks and see how they go. "
     },
     {
         q:'Can I terminate the therapy at any point?',
@@ -192,10 +192,10 @@ const questionsAndAnswers=[
     },
     {
         q:'Can I come in the evening?',
-        a:"I work in the evenings. I do not work Saturday and Sunday. "
+        a:"I work in the evenings. I do not work Saturdays, Sundays or public holidays. "
     },
     {
-        q:'Do you offer counselling supervision?',
+        q:'Do you offer counselling and psychotherapy supervision?',
         a:"I do not."
     },
     {
