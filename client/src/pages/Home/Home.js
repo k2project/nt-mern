@@ -105,13 +105,13 @@ const Nujoji=()=>{
                     </p>
                     <p>I have experience working one to one with a diverse variety of individual clients in private practice as well as working within a student wellbeing service in a higher education setting. I work in the NHS with male offenders in the secure forensic estate who engage in violent, sexually harmful and criminal behaviour.</p>
                     <p>I am a member of the <a href="https://www.bacp.co.uk/">British Association of Counsellors and Psychotherapists (BACP)</a> and adhere to their Ethical Principles and Code of Professional Conduct. I am also a registered member of the <a href="https://www.psychotherapy.org.uk/">United Kingdom Council for Psychotherapy (UKCP)</a> and the <a href="https://www.forensicpsychotherapy.org/">International Association for Forensic Psychotherapy (IAFP)</a>. I hold an enhanced certificate from the <a href="https://www.gov.uk/government/organisations/disclosure-and-barring-service">Disclosure and Barring Service.</a></p>
-                    <p className="text_cntr prof-bods">
+                    <p className="text_cntr">
 
-                        <a href="https://forensicpsychotherapy.com/" target="_blank" rel="noopener noreferrer" alt="forensic psychotherapy logo"><img className="Nujoji__pb_links" src={require('./../../imgs/iafp.png')} alt=''/></a>
                         <a href="https://www.psychotherapy.org.uk/" target="_blank" rel="noopener noreferrer" ><img className="Nujoji__pb_links" src={require('./../../imgs/ukcp.png')} alt='ukcp logo' rel="noopener noreferrer" /></a>
                         <a href="https://www.bacp.co.uk/profile/8fb9f46e-e25c-e811-8108-3863bb351d40/therapist?location=City%20of%20London" target="_blank" rel="noopener noreferrer" ><img className="Nujoji__pb_links" src={require('./../../imgs/psa.PNG')} alt='bacp logo'/></a>
                         <a href="https://www.gov.uk/government/organisations/disclosure-and-barring-service/" target="_blank" rel="noopener noreferrer"><img className="Nujoji__pb_links" src={require('./../../imgs/dbs.png')} alt='/disclosure and barring service logo' /></a>
 
+                        <a href="https://forensicpsychotherapy.com/" target="_blank" rel="noopener noreferrer" alt="forensic psychotherapy logo"><img className="Nujoji__pb_links" src={require('./../../imgs/iafp.png')} alt=''/></a>
                     </p>
 
                 </div>

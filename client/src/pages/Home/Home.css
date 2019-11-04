@@ -12,7 +12,7 @@
 
 .Nujoji__pb_links{
     height: 5rem;
-    margin: 2rem 1rem -.5rem;
+    margin: 2rem .2rem -1rem;
 }
 
 .Nujoji a{
@@ -25,11 +25,7 @@
     padding-top: 1rem;
     text-align: left;
 }
-.prof-bods{
-    position: absolute;
-    bottom: 2rem;
-    width: 100%;
-}
+
 @media only screen and (max-width: 1200px) {
 
 }
