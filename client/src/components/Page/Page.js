@@ -103,7 +103,7 @@ const Footer=()=>{
         <footer className="Page__bg_grey">
             <ShareBtns />
             <div className="btn" onClick={()=>window.scrollTo({ top: 0, behavior: 'smooth' })}>Back To Top</div>
-            <p><small>Nujoji Calvocoressi Counselling | City of London & West End &copy; {new Date().getFullYear()}</small> </p>
+            <p>Nujoji Calvocoressi Counselling & Psychotherapy <br/> City of London & West End &copy; {new Date().getFullYear()}</p>
         </footer>
 
     )

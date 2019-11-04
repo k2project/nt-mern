@@ -170,15 +170,14 @@ footer .btn:hover{
     background: none;
     border-color: #111;
     color: #111;
+    line-height: .8;
 }
 footer p{
     /* margin: 0; */
-}
-footer p small{
-    /* color: #c0c0c0; */
     font-family: sans-serif;
     font-size: 1rem;
 }
+
 
 .ShareBtns{
     /* align-items: start; */
@@ -330,6 +329,7 @@ footer p small{
         font-size: 1.2rem;
         left: 0;
     }
+
 
 
 }
