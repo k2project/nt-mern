@@ -8,6 +8,7 @@ import {
   WhatsappShareButton,
 } from 'react-share';
 import linkedin from './../../imgs/linkedin.png';
+import butterfly from './../../imgs/butterfly.png';
 const shareUrl="http://www.calvocoressi.com";
 
 
@@ -40,15 +41,20 @@ const Top=(props)=>{
             <img src={require('../../imgs/'+imgName+'')} alt={imgAlt} className="Page__top_img part1"/>
             <div className="wrapper">
                 <Nav/>
-                <h3 className="Page__subtitle">City of London / West End</h3>
+                <h1 className="Page__title_name">
+                    Nujoji Calvocoressi <br/> Counselling and Psychotherapy
+                    <img src={butterfly} className="butterfly butterfly_1" alt=""/>
+                    <img src={butterfly} className="butterfly butterfly_2" alt=""/>
+                </h1>
+                <h3 className={props.name+"__color_themed Page__subtitle"}>City of London and West End</h3>
+                {/*
                 <h2 className="Page__title_prof">
                     <span> <b>Counselling & Psychotherapy</b></span><br/>
                     <span className={props.name+"__color_themed Page__title_pt2"}>
                     </span>
                 </h2>
                 <h1 className={props.name+"__color_themed Page__title_name"}>Nujoji Calvocoressi
-                    <span> MA, Pg.Dip, MBACP, UKCP(Reg), IAFP</span>
-                </h1>
+                </h1> */}
             </div>
         </div>
     )
@@ -84,8 +90,8 @@ const NavLinks=()=>{
         <ul>
             <img src={require('../../imgs/menu.png')} alt='menu' className="Nav__mobile_img"/>
             <NavLink to="/" exact activeClassName="selected" smooth onClick={toggleMobileMenu}>Home</NavLink>
-            <NavLink to="/#about" activeClassName="selected" smooth onClick={toggleMobileMenu}>About Me</NavLink>
             <NavLink to="/therapy" activeClassName="selected" smooth onClick={toggleMobileMenu}>Therapy</NavLink>
+            <NavLink to="/#about" activeClassName="selected" smooth onClick={toggleMobileMenu}>About Me</NavLink>
             <NavLink to="/therapy#faqs" activeClassName="selected" smooth onClick={toggleMobileMenu}>FAQs</NavLink>
             <NavLink to="/therapy#fees" activeClassName="selected" smooth onClick={toggleMobileMenu}>Fees</NavLink>
             <NavLink to="/contact" activeClassName="selected" smooth onClick={toggleMobileMenu}>Location</NavLink>

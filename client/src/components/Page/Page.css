@@ -7,7 +7,7 @@
     grid-auto-rows: 1fr;
     grid-template-columns: auto auto;
     min-width: 100vw;
-    left: -50vw;;
+    left: -50vw;
     /* transition: left 1s; */
 }
 .Page__top{
@@ -16,37 +16,33 @@
 }
 .Page__title_name{
     font-family: 'Julius Sans One', sans-serif;
-    font-size: 3rem;
-    z-index: 3;
-    left: .5rem;
-
-}
-.Page__title_name span{
-
-    display: inline-block;
-    font-size: 1.4rem;
-    padding-left: 1rem;
-
-}
-.Page__title_prof{
-    font-family: 'Julius Sans One', sans-serif;
     font-size: 4.5rem;
+    font-weight: bold;
     z-index: 3;
-    text-transform: uppercase;
-    margin-top: 1rem;
-}
+    padding-top: 17rem;
 
+}
 .Page__subtitle{
-    font-family: sans-serif;
-    font-size: 1.4rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    left: .6rem;
-    z-index: 3;
-    margin-top: .6rem;
-    padding-top: 15rem;
-
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 2.2rem;
 }
+.butterfly{
+    position: absolute;
+    height: 15rem;
+    opacity: .4;
+}
+.butterfly_1{
+    bottom: 10rem;
+    left:-5rem;
+    transform: rotate(40deg);
+    height: 10rem;
+}
+.butterfly_2{
+    bottom: 5rem;
+    left:47rem;
+    transform: rotateY(180deg) rotate(40deg);
+}
+
 .Page__top_img.part1{
     position: absolute;
     bottom: 0;
@@ -180,6 +176,7 @@ footer{
 
 footer .btn{
     margin: 1rem auto 2rem;
+    border-radius: 0;
 }
 footer .btn:hover{
     background: none;
