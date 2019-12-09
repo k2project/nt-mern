@@ -4,7 +4,7 @@ module.exports = (function() {
     const mailRoutes = require('express').Router();
 
     mailRoutes.post('/send', function (req, res) {
-        const { name, mail, mobile } = req.body;
+        const { name, mail, mobile, location } = req.body;
         if (!name) {
             return res.send({
                 success: false,
@@ -31,6 +31,13 @@ module.exports = (function() {
                message: 'Please enter a valid mobile number or call me directly on  0208 675 9754.'
            });
       }
+      console.log(location)
+       if (!location) {
+           return res.send({
+               success: false,
+               message: 'Please indicate which office you wish to see me.'
+           });
+      }
 
          //secure: true for 465, false for other ports
             let transporter = nodemailer.createTransport({
@@ -46,7 +53,7 @@ module.exports = (function() {
                //  }
            });
 
-            let text= req.body.name+' is requesting a chat.'
+            let text= req.body.name+' is requesting a meeting at '+req.body.location+' office.'
             text+= req.body.mail? ' Email them back by clicking on the "Replay" button':'';
             let replyTo=  req.body.mail?  req.body.mail:'';
             text+= (req.body.mobile && !req.body.mail)? ' Contact them directly only by mobile on '+req.body.mobile:'';
@@ -62,7 +69,7 @@ module.exports = (function() {
 
             transporter.sendMail(mailOptions, function(error, info){
               if (error) {
-                console.log(error);
+                // console.log(error);
               } else {
                 console.log('Email sent: ' + info.response);
                 res.send({

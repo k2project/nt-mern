@@ -66,7 +66,14 @@ class Contact extends Component {
        let name=stripHTML(t.nick.value);
        let mail=stripHTML(t.mail1.value);
        let mobile=stripHTML(t.mobile.value);
+       let location = null;
 
+       const locations = document.getElementsByName('location');
+       for(var i = 0; i < locations.length; i++){
+            if(locations[i].checked){
+                location = locations[i].value;
+            }
+        }
         await fetch('/mail/send', {
          method: 'POST',
          headers: {
@@ -76,17 +83,22 @@ class Contact extends Component {
              name,
              mail,
              mobile,
+             location
           }),
        }).then(res => res.json())
       .then(json => {
-        console.log('json', json);
+        // console.log('json', json);
         if (json.success) {
           this.setState({
               sent:true,
               name:'',
               mail:'',
               mobile:'',
+              err:'',
           });
+          for(var i = 0; i < locations.length; i++){
+               locations[i].checked = false;
+           }
         } else {
           this.setState({
             err:json.message,
@@ -128,8 +140,12 @@ class Contact extends Component {
                                 onFocus={(e) =>changePlaceholder(e,"eg. +44 (0) 123456789","#fff")}
                                 onBlur={(e) =>changePlaceholder(e,"What is your telephone number?","#111")}/>
                             <div className="Form__locations">
-                                <RadioInput value="Tokenhouse Yard" text="Tokenhouse Yard (City of London)"/>
-                                <RadioInput value="Nassau Street" text="Nassau Street (West End)"/>
+                                <RadioInput
+                                    value="Tokenhouse Yard"
+                                    text="Tokenhouse Yard (City of London)" clearErr={this.handleChange}/>
+                                <RadioInput
+                                    value="Nassau Street"
+                                    text="Nassau Street (West End)" clearErr={this.handleChange}/>
                             </div>
 
                             <div className="text_cntr">
@@ -151,6 +167,7 @@ export default Contact;
 
 const RadioInput = props=>{
     function handleClick(e){
+        props.clearErr();
         const sellectedRadioInput = document.querySelector('.RadioInput__fake.clicked');
         if(sellectedRadioInput){
             sellectedRadioInput.classList.remove('clicked');
