@@ -122,10 +122,16 @@ class Contact extends Component {
                                 onChange={this.handleChange}
                                  onFocus={(e) =>changePlaceholder(e,"eg. example@mail.com","#ffffff")}
                                  onBlur={(e) =>changePlaceholder(e,"Shall I drop you an email...","#111")} />
+
                             <input type="text" name="mobile" placeholder="What is your telephone number?"
                                 onChange={this.handleChange}
                                 onFocus={(e) =>changePlaceholder(e,"eg. +44 (0) 123456789","#fff")}
                                 onBlur={(e) =>changePlaceholder(e,"What is your telephone number?","#111")}/>
+                            <div className="Form__locations">
+                                <RadioInput value="Tokenhouse Yard" text="Tokenhouse Yard (City of London)"/>
+                                <RadioInput value="Nassau Street" text="Nassau Street (West End)"/>
+                            </div>
+
                             <div className="text_cntr">
                                 <button type="submit" className="btn">Please Get In Touch*</button>
                             </div>
@@ -143,6 +149,26 @@ class Contact extends Component {
 }
 export default Contact;
 
+const RadioInput = props=>{
+    function handleClick(e){
+        const sellectedRadioInput = document.querySelector('.RadioInput__fake.clicked');
+        if(sellectedRadioInput){
+            sellectedRadioInput.classList.remove('clicked');
+        }
+        e.target.previousElementSibling.classList.add('clicked');
+    }
+    return(
+        <div className="RadioInput">
+            <div className="RadioInput__fake">
+                <span className="RadioInput__box">
+                    <span className="RadioInput__box_check">&#9632;</span>
+                </span>
+                <span className="RadioInput__text">{props.text}</span>
+            </div>
+            <input type="radio" name="location" value={props.value} className="RadioInput__input" onClick={handleClick}/>
+        </div>
+    )
+}
 const Office=()=>{
     return (
         <section  className="Office">
@@ -153,10 +179,13 @@ const Office=()=>{
             </div>
                 <div>
                     <div className="section__wrapper">
-                        <SectionTitle data={{divider:'themed',subtitle:'City of London',title:'A comfortable and confidential place'}}/>
-                        <p><b>11-12 Tokenhouse Yard<br/>City of London<br/>London <br/>EC2R 7AS</b></p>
-                        <p><b>Opening Hours.</b> I see clients Monday to Friday throughout the year except public holidays. Appointments are available from 10am – 8pm.</p>
-                        <p>I also see clients in the West End at 19 Nassau Street, Fitzrovia, London, W1W 7AF a few minutes’ walk from Tottenham Court Road London Underground (Northern and Central Lines) and Oxford Circus London Underground (Victoria, Central and Bakerloo Lines).</p>
+                        <SectionTitle data={{divider:'themed',subtitle:'City of London and West End',title:'A comfortable and confidential place'}}/>
+                        <div className="section__clm2">
+                            <p><b>11-12 Tokenhouse Yard<br/>City of London<br/>London <br/>EC2R 7AS</b></p>
+                            <p><b>19 Nassau Street<br/>Fitzrovia ( West End )<br/>London <br/>W1W 7AF</b></p>
+                        </div>
+                        <p><b>Opening Hours.</b> I see clients Monday to Friday throughout the year except public holidays. Appointments are available from 8am – 8pm.</p>
+                        {/* <p>I also see clients in the West End at 19 Nassau Street, Fitzrovia, London, W1W 7AF a few minutes’ walk from Tottenham Court Road London Underground (Northern and Central Lines) and Oxford Circus London Underground (Victoria, Central and Bakerloo Lines).</p> */}
                     </div>
                 </div>
 
@@ -170,19 +199,20 @@ const Directions=()=>{
                 <div className="Contact__bg_themed Directions__bg_lnd">
                     <div className="section__wrapper">
                         <SectionTitle data={{divider:'white',subtitle:'Directions',title:'Getting here'}}/>
-                        <p><b>City of London office.</b> Tokenhouse Yard is a four-minute walk from Bank Tube Station and is situated just behind the Bank of England off Lothbury.</p>
-                        <div className="Nt4__text_center">
+                        <p><b>CITY OF LONDON OFFICE.</b> Tokenhouse Yard is a four-minute walk from Bank Tube Station (Waterloo and City, DLR, Northern, Central Line) and is situated just behind the Bank of England off Lothbury.</p>
+                        {/* <div className="Nt4__text_center">
                             <img src={require('./../../imgs/stations.png')} alt='Nujoji' className="Directions__img"/>
-                        </div>
+                        </div> */}
                         <p>
                             <small>
-                                <b>Bank Tube Station:</b>Waterloo and City, DLR, Northern, Central Line.<br/>
-                                <b>Moorgate Tube Station:</b>Northern, Hammersmith and City, Circle, Metropolitan lines.<br/>
-                                <b>Buses:</b> 21, 43, 76, 141.<br/>
+                            {/* <b>Bank Tube Station: </b>Waterloo and City, DLR, Northern, Central Line.<br/>
+                                <b>Moorgate Tube Station: </b>Northern, Hammersmith and City, Circle, Metropolitan lines.<br/>
+                                <b>Buses: </b> 21, 43, 76, 141.<br/> */}
                                 Pay and display parking on Old Jewry and Coleman Street. Secure bike racks available. Taxi Rank Queen Victoria Street.<br/>
                             </small>
 
                         </p>
+                        <p><b>WEST END OFFICE.</b> Nassau Street is located a few minutes’ walk from Tottenham Court Road London Underground (Northern and Central Lines) and Oxford Circus London Underground (Victoria, Central and Bakerloo Lines).</p>
                     </div>
                 </div>
                 <div className="Directions__bg_map">
@@ -208,9 +238,9 @@ const Form=(props)=>{
                         <p>If you prefer to make contact with me by email, please complete <a href="#contact-form">the contact form.</a></p>
                         <p>Please be aware that if I am with clients I will be unable to answer your call. In that case please leave me a message or use the quick contact form. Both methods are confidential. I will get back to you as soon as possible and within 24 hours. </p>
 
-                        <p><a href="https://my.vsee.com/s/5bf7bbd27cfb4" target="_blank" rel="noopener noreferrer">
+                        {/* <p><a href="https://my.vsee.com/s/5bf7bbd27cfb4" target="_blank" rel="noopener noreferrer">
                         <img src={require('./../../imgs/vsee.png')} className="Vsee" alt="Vsee"/>
-                        VSee Video calling.</a></p>
+                        VSee Video calling.</a></p> */}
 
                     </div>
                 </div>

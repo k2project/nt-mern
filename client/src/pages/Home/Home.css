@@ -16,7 +16,8 @@
 }
 
 .Nujoji a{
-    text-decoration: underline;
+    text-decoration: none;
+    font-weight: bold;
 }
 .Nujoji .qualifications{
     display: grid;

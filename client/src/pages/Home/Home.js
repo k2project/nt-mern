@@ -95,13 +95,13 @@ const Nujoji=()=>{
             <div>
                 <img src={require('./../../imgs/homeText.pt2.png')} alt='Nujoji Calvocoressi' className="Page__top_img part2"/>
                 <div className="section__wrapper">
-                    <p> I trained for four years at <a href="https://www.minstercentre.ac.uk">The Minster Centre</a> in London, a leading integrative psychotherapy training in the United Kingdom. Courses meet high academic and professional standards and are validated by the main professional bodies the <a href="https://www.psychotherapy.org.uk/">UKCP</a> and <a href="https://www.bacp.co.uk/">BACP</a>.</p>
+                    <p> I trained for four years at <a href="https://www.minstercentre.ac.uk">The Minster Centre</a> in London, a leading integrative psychotherapy training in the United Kingdom. Courses meet high academic and professional standards and are validated by the main professional bodies the <a href=" https://www.psychotherapy.org.uk/therapist/nujoji-calvocoressi/" target="_blank" rel="noopener noreferrer">UKCP</a> and <a href=" https://www.bacp.co.uk/profile/8fb9f46e-e25c-e811-8108-3863bb351d40/therapist?location=City%20of%20London" target="_blank" rel="noopener noreferrer">BACP</a>.</p>
                     <p>I obtained the following qualifications:
-                        <div className="qualifications">
+                        <span className="qualifications">
                             <span>&bull;</span><span>Master of Arts in Counselling and Psychotherapy</span>
                             <span>&bull;</span><span>Advanced Post Graduate Diploma in Counselling and Psychotherapy</span>
                             <span>&bull;</span><span>Diploma in Counselling</span>
-                        </div>
+                        </span>
                     </p>
                     <p>I have experience working one to one with a diverse variety of individual clients in private practice as well as working within a student wellbeing service in a higher education setting. I work in the NHS with male offenders in the secure forensic estate who engage in violent, sexually harmful and criminal behaviour.</p>
                     <p>I am a member of the <a href="https://www.bacp.co.uk/">British Association of Counsellors and Psychotherapists (BACP)</a> and adhere to their Ethical Principles and Code of Professional Conduct. I am also a registered member of the <a href="https://www.psychotherapy.org.uk/">United Kingdom Council for Psychotherapy (UKCP)</a> and the <a href="https://www.forensicpsychotherapy.org/">International Association for Forensic Psychotherapy (IAFP)</a>. I hold an enhanced certificate from the <a href="https://www.gov.uk/government/organisations/disclosure-and-barring-service">Disclosure and Barring Service.</a></p>

@@ -14,6 +14,9 @@
     display: inline-block;
     width: 100vw;
 }
+.Page__top .wrapper{
+    padding-bottom: 15rem;
+}
 .Page__title_name{
     font-family: 'Julius Sans One', sans-serif;
     font-size: 4.5rem;
@@ -28,8 +31,7 @@
 }
 .butterfly{
     position: absolute;
-    height: 15rem;
-    opacity: .4;
+    height: 7rem;
 }
 .butterfly_1{
     bottom: 10rem;
@@ -39,7 +41,7 @@
 }
 .butterfly_2{
     bottom: 5rem;
-    left:47rem;
+    left:52rem;
     transform: rotateY(180deg) rotate(40deg);
 }
 

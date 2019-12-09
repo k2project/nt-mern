@@ -102,6 +102,47 @@
 .Contact__mail_fake{
     display: none;
 }
+.Form__locations{
+    margin-top: 2rem;
+    padding: 0 5rem;
+
+}
+.RadioInput{
+    margin: .3rem 0;
+}
+.RadioInput__input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+.RadioInput__fake{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    opacity: .6;
+}
+.RadioInput__fake.clicked{
+    opacity: 1;
+}
+.RadioInput__box{
+    width: 2rem;
+    height: 2rem;
+    border: solid .2rem #111;
+    margin-right: 1rem;
+    opacity: .5;
+}
+.RadioInput__box_check{
+    font-size: 2.4rem;
+    left: .15rem;
+    top: -.85rem;
+    opacity: 0;
+}
+.RadioInput__fake.clicked .RadioInput__box_check{
+    opacity: 1 ;
+    transition: .5s;
+}
+.RadioInput__text{
+}
 .Form__err{
     font-family: sans-serif;
     font-size: 1.2rem;

@@ -110,6 +110,11 @@ section div{
     background: #fff;
     /* display: none; */
 }
+.section__clm2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2rem;
+}
 .Home .section__divider.themed{
     background:  #B4D8E6;
     background: #D7E7F4;
