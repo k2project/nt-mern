@@ -20,9 +20,9 @@
 }
 .Directions__bg_map{
     background: #fff;
-    background-image: url('./../../imgs/map.png');
+    background-image: url('./../../imgs/londonMap.png');
     background-size: cover;
-    background-position: center;
+    background-position:center;
 }
 .Directions .cover{
     align-content: center;
