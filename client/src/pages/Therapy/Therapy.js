@@ -5,8 +5,48 @@ import './Therapy.css';
 import Page from '../../components/Page/Page';
 import SectionTitle from '../../components/SectionTitle';
 
+import aetna from './../../imgs/aetna.jpg';
+import aviva from './../../imgs/aviva.png';
+import axa from './../../imgs/axa.png';
+import healix from './../../imgs/healix.png';
+import validium from './../../imgs/validium.png';
+import vitality from './../../imgs/vitality.png';
+
+const insuranceLogos = [
+    {
+        logo: healix,
+        link:'https://healix.com',
+        name:'Healix'
+    },
+    {
+        logo: aetna,
+        link:'https://www.aetna.com',
+        name:'Aetna'
+    },
+    {
+        logo: vitality,
+        link:'https://www.vitality.co.uk',
+        name:'Vitality'
+    },
+    {
+        logo: aviva,
+        link:'https://www.aviva.co.uk/health/health-products/',
+        name:'Aviva'
+    },
+    {
+        logo: validium,
+        link:'https://www.validium.com',
+        name:'Validium'
+    },
+    {
+        logo: axa,
+        link:'https://www.axappphealthcare.co.uk',
+        name:'Axa PPP'
+    },
+];
+
 const meta = {
-    title: "About Therapy | Nujoji Calvocoressi Counselling & Psychotherapy",
+    title: "About Therapy | Nujoji Calvocoressi Counselling and Psychotherapy",
     description: 'Welcome to my counselling and psychotherapy practice. I am passionate about my work and firmly believe that therapy can bring about positive change to people’s lives. I have been trained in integrative therapy, that is a progressive form of therapy that combines different therapeutic tools and approaches to fit the needs of the individual client. I am a member of BACP.',
     canonical: 'http://www.calvocoressi.com/therapy',
     meta: {
@@ -33,6 +73,7 @@ class Therapy extends Component {
                 <IntegrativeTherapy/>
                 <FAQ/>
                 <Fees/>
+                <Insurance/>
             </Page>
         </DocumentMeta>
     );
@@ -224,5 +265,25 @@ const Fees=()=>{
                 </div>
         </section>
 
+    )
+}
+
+const Insurance =()=>{
+    const logos = insuranceLogos.map(i=><a href={i.link} target="_blank" rel="noopener noreferrer">
+        <img
+            src={i.logo}
+            className="Insurance__logo"
+            alt={i.name}
+            key={`insuranceLogo_${i.name}`}/>
+    </a>)
+    return(
+        <div className="Insurance">
+            <div className="wrapper">
+                <div className="Insurance__logos">
+                    {logos}
+                </div>
+                <p>If you have a private health insurance policy, it is often possible that you can fund some or all of your counselling and psychotherapy sessions through your health insurance policy. I am recognised with a number of medical insurers including Aetna, Aviva, Axa PPP, Healix, Validium and Vitality Health. </p>
+            </div>
+        </div>
     )
 }

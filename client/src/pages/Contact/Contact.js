@@ -6,7 +6,7 @@ import Page from '../../components/Page/Page';
 import SectionTitle from '../../components/SectionTitle';
 
 const meta = {
-    title: "City of London & West End| Nujoji Calvocoressi Counselling & Psychotherapy",
+    title: "City of London & West End| Nujoji Calvocoressi Counselling and Psychotherapy",
     description: 'Bookings: 07855 846 580 | Office:11-12 Tokenhouse Yard, City of London, London EC2R 7AS',
     canonical: 'http://www.calvocoressi.com/contact',
     meta: {
@@ -140,12 +140,16 @@ class Contact extends Component {
                                 onFocus={(e) =>changePlaceholder(e,"eg. +44 (0) 123456789","#fff")}
                                 onBlur={(e) =>changePlaceholder(e,"What is your telephone number?","#111")}/>
                             <div className="Form__locations">
+                                <p>What location is the most convenient?</p>
                                 <RadioInput
                                     value="Tokenhouse Yard"
                                     text="Tokenhouse Yard (City of London)" clearErr={this.handleChange}/>
                                 <RadioInput
                                     value="Nassau Street"
                                     text="Nassau Street (West End)" clearErr={this.handleChange}/>
+                                <RadioInput
+                                    value="any office"
+                                    text="Either location" clearErr={this.handleChange}/>
                             </div>
 
                             <div className="text_cntr">
@@ -216,7 +220,7 @@ const Directions=()=>{
                 <div className="Contact__bg_themed Directions__bg_lnd">
                     <div className="section__wrapper">
                         <SectionTitle data={{divider:'white',subtitle:'Directions',title:'Getting here'}}/>
-                        <p><b>CITY OF LONDON OFFICE.</b> Tokenhouse Yard is a four-minute walk from Bank Tube Station (Waterloo and City, DLR, Northern, Central Line) and is situated just behind the Bank of England off Lothbury.</p>
+                        <p><b>CITY OF LONDON.</b> Tokenhouse Yard is a four-minute walk from Bank Tube Station (Waterloo and City, DLR, Northern, Central Line) and is situated just behind the Bank of England off Lothbury.</p>
                         {/* <div className="Nt4__text_center">
                             <img src={require('./../../imgs/stations.png')} alt='Nujoji' className="Directions__img"/>
                         </div> */}
@@ -229,7 +233,7 @@ const Directions=()=>{
                             </small>
 
                         </p>
-                        <p><b>WEST END OFFICE.</b> Nassau Street is located a few minutes’ walk from Tottenham Court Road London Underground (Northern and Central Lines) and Oxford Circus London Underground (Victoria, Central and Bakerloo Lines).</p>
+                        <p><b>WEST END.</b> Nassau Street is located a few minutes’ walk from Tottenham Court Road London Underground (Northern and Central Lines) and Oxford Circus London Underground (Victoria, Central and Bakerloo Lines).</p>
                     </div>
                 </div>
                 <div className="Directions__bg_map">

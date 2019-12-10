@@ -35,7 +35,7 @@ module.exports = (function() {
        if (!location) {
            return res.send({
                success: false,
-               message: 'Please indicate which office you wish to see me.'
+               message: 'Please indicate at what place you wish to see me.'
            });
       }
 
@@ -53,7 +53,7 @@ module.exports = (function() {
                //  }
            });
 
-            let text= req.body.name+' is requesting a meeting at '+req.body.location+' office.'
+            let text= req.body.name+' is requesting a meeting at '+req.body.location+' .'
             text+= req.body.mail? ' Email them back by clicking on the "Replay" button':'';
             let replyTo=  req.body.mail?  req.body.mail:'';
             text+= (req.body.mobile && !req.body.mail)? ' Contact them directly only by mobile on '+req.body.mobile:'';

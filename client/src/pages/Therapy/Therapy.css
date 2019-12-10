@@ -68,6 +68,21 @@
     opacity: 1;
     transition: opacity 0s 0s;
 }
+.Insurance{
+    background: #efefef;
+}
+.Insurance .wrapper{
+    padding-top:12rem;
+    padding-bottom:8rem;
+}
+.Insurance__logos{
+    text-align: center;
+    margin: 0 0 2rem ;
+}
+.Insurance__logo{
+    height: 6rem;
+    margin: .5rem 1.5rem;
+}
 @media only screen and (max-width: 1200px) {
 
 }

@@ -40,8 +40,8 @@
     height: 10rem;
 }
 .butterfly_2{
-    bottom: 5rem;
-    left:67rem;
+    bottom: 17rem;
+    left:57rem;
     transform: rotateY(180deg) rotate(40deg);
 }
 
@@ -179,6 +179,7 @@ footer{
 footer .btn{
     margin: 1rem auto 2rem;
     border-radius: 0;
+    border-width: .1rem;
 }
 footer .btn:hover{
     background: none;

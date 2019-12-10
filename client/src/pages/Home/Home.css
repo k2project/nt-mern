@@ -17,7 +17,9 @@
 
 .Nujoji a{
     text-decoration: none;
-    font-weight: bold;
+    /* font-weight: bold; */
+    color: #003163;
+    color: #1498D9;
 }
 .Nujoji .qualifications{
     display: grid;
