@@ -8,6 +8,7 @@ import SectionTitle from '../../components/SectionTitle';
 import aetna from './../../imgs/aetna.jpg';
 import aviva from './../../imgs/aviva.png';
 import axa from './../../imgs/axa.png';
+import cigna from './../../imgs/cigna.png';
 import healix from './../../imgs/healix.png';
 import validium from './../../imgs/validium.png';
 import vitality from './../../imgs/vitality.png';
@@ -17,6 +18,11 @@ const insuranceLogos = [
         logo: healix,
         link:'https://healix.com',
         name:'Healix'
+    },
+    {
+        logo: cigna,
+        link:'https://www.cigna.co.uk/',
+        name:'Cigna'
     },
     {
         logo: aetna,
