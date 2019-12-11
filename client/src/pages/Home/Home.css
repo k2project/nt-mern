@@ -71,17 +71,20 @@
         background-position: left top;
     }
     .ProfessionalBodies__logo{
-        height: 4rem;
+        height: 10vw;
         margin: .5rem .5rem;
+    }
+    .ProfessionalBodies__logo:nth-child(3){
+        height: 15vw;
     }
     .ProfessionalBodies__logos a:last-child{
         order: -1;
     }
 }
 @media only screen and (max-width: 480px) {
-    .ProfessionalBodies__logo{
+    /* .ProfessionalBodies__logo{
         height: 3.7rem;
         margin: .5rem .5rem;
-    }
+    } */
 
 }
