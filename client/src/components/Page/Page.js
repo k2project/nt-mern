@@ -41,10 +41,10 @@ const Top=(props)=>{
             <img src={require('../../imgs/'+imgName+'')} alt={imgAlt} className="Page__top_img part1"/>
             <div className="wrapper">
                 <Nav/>
+                <img src={butterfly} className="butterfly butterfly_2" alt=""/>
+                <img src={butterfly} className="butterfly butterfly_1" alt=""/>
                 <h1 className="Page__title_name">
                     Nujoji Calvocoressi <br/> Counselling and Psychotherapy
-                    <img src={butterfly} className="butterfly butterfly_1" alt=""/>
-                    <img src={butterfly} className="butterfly butterfly_2" alt=""/>
                 </h1>
                 <h3 className={props.name+"__color_themed Page__subtitle"}>City of London and West End</h3>
                 {/*

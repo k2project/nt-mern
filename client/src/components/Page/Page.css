@@ -22,7 +22,7 @@
     font-size: 4.5rem;
     font-weight: bold;
     z-index: 3;
-    padding-top: 17rem;
+    /* padding-top: 17rem; */
 
 }
 .Page__subtitle{
@@ -30,18 +30,18 @@
     font-size: 2.2rem;
 }
 .butterfly{
-    position: absolute;
-    height: 7rem;
+    display: block;
+    transition: 1s;
 }
 .butterfly_1{
-    bottom: 10rem;
-    left:-5rem;
     transform: rotate(40deg);
     height: 10rem;
+    left: -6rem;
 }
 .butterfly_2{
-    bottom: 17rem;
-    left:57rem;
+    margin-top: 5rem;
+    left: 55%;
+    height: 6rem;
     transform: rotateY(180deg) rotate(40deg);
 }
 
@@ -230,6 +230,9 @@ footer p{
     }
 }
 @media only screen and (max-width: 1200px) {
+    .butterfly_1{
+        left: -1rem;
+    }
 
 }
 @media only screen and (max-width: 1000px) {
@@ -266,6 +269,23 @@ footer p{
         opacity: .3;
         transition: .1s .5s;
     } */
+    .Page__title_name{
+        font-size: 4rem;
+
+    }
+    .Page__subtitle{
+        font-size: 2rem;
+    }
+    .butterfly_1{
+        height: 8rem;
+        margin-bottom: 1rem;
+    }
+    .butterfly_2{
+        margin-top: 8rem;
+        top: 8rem;
+        left: 8rem;
+    }
+
 
 }
 @media only screen and (max-width: 786px) {
@@ -291,27 +311,11 @@ footer p{
         text-align: center;
         padding: 1rem 2rem 2rem;
     }
-    .Page__title_name{
-        font-size: 2.8rem;
-        left: 0;
-
-    }
-    .Page__title_name span{
-        font-size: 1.2rem;
-        padding-left: 0;
-        display: block;
-
-    }
-    .Page__title_prof{
-        font-size: 3.5rem;
-    }
-
     .Page__subtitle{
-        font-size: 1.4rem;
-        left: 0;
-        padding-top: 18rem;
-
+        font-size: 1.8rem;
     }
+
+
 
 
 }
@@ -331,24 +335,14 @@ footer p{
         display: block;
         padding-bottom: 1rem;
     }
+
     .Page__title_name{
-        font-size: 2.4rem;
+        font-size: 3.5rem;
         left: 0;
 
     }
-    .Page__title_name span{
-        font-size: 1.2rem;
-        padding-left: 0;
-        display: block;
-
-    }
-    .Page__title_prof{
-        font-size: 3rem;
-    }
-
     .Page__subtitle{
-        font-size: 1.2rem;
-        left: 0;
+        width: 20rem;
     }
 
 

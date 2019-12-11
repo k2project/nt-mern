@@ -15,24 +15,9 @@ import vitality from './../../imgs/vitality.png';
 
 const insuranceLogos = [
     {
-        logo: healix,
-        link:'https://healix.com',
-        name:'Healix'
-    },
-    {
-        logo: cigna,
-        link:'https://www.cigna.co.uk/',
-        name:'Cigna'
-    },
-    {
         logo: aetna,
         link:'https://www.aetna.com',
         name:'Aetna'
-    },
-    {
-        logo: vitality,
-        link:'https://www.vitality.co.uk',
-        name:'Vitality'
     },
     {
         logo: aviva,
@@ -40,14 +25,29 @@ const insuranceLogos = [
         name:'Aviva'
     },
     {
-        logo: validium,
-        link:'https://www.validium.com',
-        name:'Validium'
-    },
-    {
         logo: axa,
         link:'https://www.axappphealthcare.co.uk',
         name:'Axa PPP'
+    },
+    {
+        logo: cigna,
+        link:'https://www.cigna.co.uk/',
+        name:'Cigna'
+    },
+    {
+        logo: healix,
+        link:'https://healix.com',
+        name:'Healix'
+    },
+    {
+        logo: vitality,
+        link:'https://www.vitality.co.uk',
+        name:'Vitality'
+    },
+    {
+        logo: validium,
+        link:'https://www.validium.com',
+        name:'Validium'
     },
 ];
 
@@ -288,7 +288,7 @@ const Insurance =()=>{
                 <div className="Insurance__logos">
                     {logos}
                 </div>
-                <p>If you have a private health insurance policy, it is often possible that you can fund some or all of your counselling and psychotherapy sessions through your health insurance policy. I am recognised with a number of medical insurers including Aetna, Aviva, Axa PPP, Healix, Validium and Vitality Health. </p>
+                <p>If you have a private health insurance policy, it is often possible that you can fund some or all of your counselling and psychotherapy sessions through your health insurance policy. I am recognised with a number of medical insurers including Aetna, Aviva, Axa PPP, Cigna, Healix, Validium and Vitality Health. </p>
             </div>
         </div>
     )

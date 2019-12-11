@@ -10,6 +10,26 @@
     background-position: center ;
 }
 
+.ProfessionalBodies{
+    background: #efefef;
+}
+.ProfessionalBodies .wrapper{
+    padding-top:12rem;
+    padding-bottom:8rem;
+}
+.ProfessionalBodies__logos{
+    text-align: center;
+    margin: 0 0 3rem ;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+}
+.ProfessionalBodies__logo{
+    height: 6rem;
+    margin: .5rem 1rem;
+}
+
 .Nujoji__pb_links{
     height: 4rem;
     margin: 2rem .2rem -1rem;
@@ -18,8 +38,8 @@
 .Nujoji a{
     text-decoration: none;
     /* font-weight: bold; */
-    color: #003163;
-    color: #1498D9;
+    color: #001041;
+    /* color: #1498D9; */
 }
 .Nujoji .qualifications{
     display: grid;
@@ -34,12 +54,34 @@
 }
 @media only screen and (max-width: 1024px) {
 
+    .ProfessionalBodies__logo{
+        height: 4.4rem;
+        margin: .5rem .5rem;
+    }
+    .ProfessionalBodies__logo:first-child{
+        margin-right: 1rem;
+    }
+    .ProfessionalBodies__logos{
+        margin-bottom: 1.5rem;
+    }
+
 }
 @media only screen and (max-width: 786px) {
     .Home__bg_hello{
         background-position: left top;
     }
+    .ProfessionalBodies__logo{
+        height: 4rem;
+        margin: .5rem .5rem;
+    }
+    .ProfessionalBodies__logos a:last-child{
+        order: -1;
+    }
 }
 @media only screen and (max-width: 480px) {
+    .ProfessionalBodies__logo{
+        height: 3.7rem;
+        margin: .5rem .5rem;
+    }
 
 }

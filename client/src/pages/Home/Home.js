@@ -6,6 +6,11 @@ import './Home.css';
 import Page from '../../components/Page/Page';
 import SectionTitle from '../../components/SectionTitle';
 
+import bacp from './../../imgs/bacp.PNG';
+import ukcp from './../../imgs/ukcp.png';
+import iafp from './../../imgs/iafp.png';
+import dbs from './../../imgs/dbs.png';
+
 const meta = {
     title: "Nujoji Calvocoressi Counselling and Psychotherapy | City of London & West End Therapy",
     description: 'Welcome to my counselling and psychotherapy practice. I am passionate about my work and firmly believe that therapy can bring about positive change to people’s lives. I have been trained in integrative therapy, that is a progressive form of therapy that combines different therapeutic tools and approaches to fit the needs of the individual client. I am a member of BACP.',
@@ -33,7 +38,7 @@ class Home extends Component {
                  <Welcome/>
                  <About/>
                  <Nujoji/>
-                 <Insurance/>
+                 <ProfessionalBodies/>
             </Page>
         </DocumentMeta>
     );
@@ -123,17 +128,42 @@ const Nujoji=()=>{
     )
 }
 
-const Insurance =()=>{
-
+const professionalBodiesData = [
+    {
+        logo: bacp,
+        link:'https://www.bacp.co.uk/profile/8fb9f46e-e25c-e811-8108-3863bb351d40/therapist?location=City%20of%20London',
+        name:'bacp'
+    },
+    {
+        logo: ukcp,
+        link:'https://www.psychotherapy.org.uk/',
+        name:'ukcp'
+    },
+    {
+        logo: iafp,
+        link:'https://forensicpsychotherapy.com/',
+        name:'iafp'
+    },
+    {
+        logo: dbs,
+        link:'https://www.gov.uk/government/organisations/disclosure-and-barring-service/',
+        name:'dbs'
+    },
+]
+const ProfessionalBodies =()=>{
+    const logos = professionalBodiesData.map( b=>{
+        return <a href={b.link}
+            key={"professional_body_"+b.name}
+            target="_blank"
+            rel="noopener noreferrer" >
+                <img src={b.logo} alt={b.name} className="ProfessionalBodies__logo"/>
+            </a>
+    });
     return(
-        <div className="Insurance">
+        <div className="ProfessionalBodies">
             <div className="wrapper">
-                <div className="Insurance__logos">
-                    <a href="https://www.psychotherapy.org.uk/" target="_blank" rel="noopener noreferrer" ><img className="Insurance__logo" src={require('./../../imgs/ukcp.png')} alt='ukcp logo' rel="noopener noreferrer" /></a>
-                    <a href="https://www.bacp.co.uk/profile/8fb9f46e-e25c-e811-8108-3863bb351d40/therapist?location=City%20of%20London" target="_blank" rel="noopener noreferrer" ><img className="Insurance__logo" src={require('./../../imgs/bacp.PNG')} alt='bacp logo'/></a>
-                    <a href="https://www.gov.uk/government/organisations/disclosure-and-barring-service/" target="_blank" rel="noopener noreferrer"><img className="Insurance__logo" src={require('./../../imgs/dbs.png')} alt='/disclosure and barring service logo' /></a>
-
-                    <a href="https://forensicpsychotherapy.com/" target="_blank" rel="noopener noreferrer" alt="forensic psychotherapy logo"><img className="Insurance__logo" src={require('./../../imgs/iafp.png')} alt=''/></a>
+                <div className="ProfessionalBodies__logos">
+                    {logos}
                 </div>
                 <p>I am a member of the British Association of Counsellors and Psychotherapists (BACP) and adhere to their Ethical Principles and Code of Professional Conduct. I am also a registered member of the United Kingdom Council for Psychotherapy (UKCP)and the International Association for Forensic Psychotherapy (IAFP). I hold an enhanced certificate from the Disclosure and Barring Service.</p>
             </div>
