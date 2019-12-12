@@ -28,6 +28,8 @@
     align-content: center;
     background: none;
     /* background: rgba(255,255,255,.5); */
+    background: rgba(255,255,255,.8);
+
     color: #111;
     font-size: 2rem;
     text-align: center;
@@ -37,11 +39,11 @@
 .Directions .cover small{
     display: block;
     font-size: 1.4rem;
-    margin-top: -1rem;
+    margin-top: 1rem;
 }
 .Directions .cover p{
-    opacity: 0;
-    top: 15rem;
+    /* opacity: 0;
+    top: 15rem; */
     transition: .75s .1s;
 }
 .Directions .cover:hover p{
@@ -51,10 +53,11 @@
 }
 .Directions .btn{
     font-size: 1.1rem;
-    opacity: 0;
-    top: 5rem;
+    /* opacity: 0;
+    top: 5rem; */
     margin: 2rem auto 0;
     transition: .5s;
+    transition: .25s;
     width: 22rem;
 }
 .Directions .cover:hover  .btn{
