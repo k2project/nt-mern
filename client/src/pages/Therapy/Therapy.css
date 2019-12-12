@@ -138,24 +138,22 @@
         padding:  0;
     }
     .Insurance__logos{
-        border: solid 1px yellow;
         width: 100%;
     }
     .Insurance__logo{
         height: 7.5vw;
         max-height: 6rem;
     }
-    /* .Insurance__logos a:nth-child(3){
-        order: -1;
-    }
-    .Insurance__logos a:nth-child(7){
-        order: -1;
-    } */
+
 }
 @media only screen and (max-width: 480px) {
-    .Insurance__logos{
-        border: solid 1px red;
-    }
 
+    .Insurance__logo{
+        height: 10vw;
+        max-height: 4rem;
+    }
+    .Insurance__logos a:nth-child(5){
+        order: -1;
+    }
 
 }
