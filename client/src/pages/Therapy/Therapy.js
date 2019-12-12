@@ -15,6 +15,11 @@ import vitality from './../../imgs/vitality.png';
 
 const insuranceLogos = [
     {
+        logo: axa,
+        link:'https://www.axappphealthcare.co.uk',
+        name:'Axa PPP'
+    },
+    {
         logo: aetna,
         link:'https://www.aetna.com',
         name:'Aetna'
@@ -25,14 +30,9 @@ const insuranceLogos = [
         name:'Aviva'
     },
     {
-        logo: axa,
-        link:'https://www.axappphealthcare.co.uk',
-        name:'Axa PPP'
-    },
-    {
-        logo: cigna,
-        link:'https://www.cigna.co.uk/',
-        name:'Cigna'
+        logo: vitality,
+        link:'https://www.vitality.co.uk',
+        name:'Vitality'
     },
     {
         logo: healix,
@@ -40,14 +40,14 @@ const insuranceLogos = [
         name:'Healix'
     },
     {
-        logo: vitality,
-        link:'https://www.vitality.co.uk',
-        name:'Vitality'
-    },
-    {
         logo: validium,
         link:'https://www.validium.com',
         name:'Validium'
+    },
+    {
+        logo: cigna,
+        link:'https://www.cigna.co.uk/',
+        name:'Cigna'
     },
 ];
 
