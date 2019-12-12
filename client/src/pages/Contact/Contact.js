@@ -203,7 +203,7 @@ const Office=()=>{
                         <SectionTitle data={{divider:'themed',subtitle:'City of London and West End',title:'A comfortable and confidential place'}}/>
                         <div className="section__clm2">
                             <p><b>11-12 Tokenhouse Yard<br/>City of London<br/>London <br/>EC2R 7AS</b></p>
-                            <p><b>19 Nassau Street<br/>Fitzrovia ( West End )<br/>London <br/>W1W 7AF</b></p>
+                            <p><b>19 Nassau Street<br/>West End <br/>London <br/>W1W 7AF</b></p>
                         </div>
                         <p><b>Opening Hours.</b> I see clients Monday to Friday throughout the year except public holidays. Appointments are available from 8am – 8pm.</p>
                         {/* <p>I also see clients in the West End at 19 Nassau Street, Fitzrovia, London, W1W 7AF a few minutes’ walk from Tottenham Court Road London Underground (Northern and Central Lines) and Oxford Circus London Underground (Victoria, Central and Bakerloo Lines).</p> */}
