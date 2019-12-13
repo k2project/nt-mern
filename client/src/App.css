@@ -176,12 +176,12 @@ section div{
         padding:12rem 10rem;
     }
     section{
-        display: grid;
-        grid-auto-rows: auto;
+        /* grid-auto-rows: auto; */
         grid-template-columns: 1fr;
+        /* grid-auto-rows: minmax(40vw,1fr); */
     }
     .Contact section{
-        grid-auto-rows: minmax(30rem , 1fr);
+        /* grid-auto-rows: minmax(30rem , 1fr); */
     }
     .cover{
         padding-bottom: 3rem;
