@@ -27,6 +27,7 @@
 .Page__subtitle{
     /* font-family: 'Julius Sans One', sans-serif; */
     font-family: 'Raleway', sans-serif;
+    letter-spacing: .1rem;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 2.2rem;

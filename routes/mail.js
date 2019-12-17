@@ -28,7 +28,7 @@ module.exports = (function() {
        if (mobile&&!mobRegex.test(mobile)) {
            return res.send({
                success: false,
-               message: 'Please enter a valid mobile number or call me directly on  0208 675 9754.'
+               message: 'Please enter a valid mobile number or call me directly on  02086759754.'
            });
       }
       console.log(location)

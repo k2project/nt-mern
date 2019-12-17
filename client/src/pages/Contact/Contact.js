@@ -205,7 +205,7 @@ const Office=()=>{
                             <p><b>11-12 Tokenhouse Yard<br/>City of London<br/>London <br/>EC2R 7AS</b></p>
                             <p><b>19 Nassau Street<br/>West End <br/>London <br/>W1W 7AF</b></p>
                         </div>
-                        <p><b>Appointment Times.</b> I see clients Monday to Friday throughout the year except public holidays. Appointments are available from 8am – 8pm.</p>
+                        <p><b>Appointment Times.</b> I see clients Monday to Friday throughout the year except public holidays. Appointments are available from <span className="nowrap">8am – 8pm</span>.</p>
                         {/* <p>I also see clients in the West End at 19 Nassau Street, Fitzrovia, London, W1W 7AF a few minutes’ walk from Tottenham Court Road London Underground (Northern and Central Lines) and Oxford Circus London Underground (Victoria, Central and Bakerloo Lines).</p> */}
                     </div>
                 </div>
@@ -236,7 +236,7 @@ const Directions=()=>{
                 </div>
                 <div className="Directions__bg_map">
                     <div className="cover">
-                        <p><b>Find directions with Google Maps*</b></p>
+                        <b>Find directions with Google Maps*</b>
 
                         <a href="https://www.google.com/maps/dir//Tokenhouse+Yard,+London+EC2R+7AS/@51.5153851,-0.0907049,17z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x48761cab515b7a57:0xa9652d3756affe10!2m2!1d-0.0885162!2d51.5153851!3e3"  target="_blank" rel="noopener noreferrer" className="btn">Tokenhouse Yard - City of London</a>
                         <a href="https://www.google.com/maps/dir//Nassau+St,+Fitzrovia,+London+W1W+7AF/@51.5188268,-0.1412905,17z/data=!4m17!1m7!3m6!1s0x48761b2a47340f1d:0x7122f29f93bdb1e8!2sNassau+St,+Fitzrovia,+London+W1W+7AF!3b1!8m2!3d51.5188268!4d-0.1391018!4m8!1m0!1m5!1m1!1s0x48761b2a47340f1d:0x7122f29f93bdb1e8!2m2!1d-0.1391018!2d51.5188268!3e3"  target="_blank" rel="noopener noreferrer" className="btn">Nassau Street – West End</a>
@@ -253,7 +253,7 @@ const Form=(props)=>{
                 <div>
                     <div className="section__wrapper">
                         <SectionTitle data={{divider:'themed',subtitle:'How to get in touch',title:(<span>Talking can be a good place to start</span>)}}/>
-                        <p>    I am always happy to speak on the telephone. You can contact me on <b>0208 675 9754</b>. </p>
+                        <p>    I am always happy to speak on the telephone. You can contact me on <b className="nowrap">0208 675 9754</b>. </p>
                         <p>If you prefer to make contact with me by email, please complete <a href="#contact-form">the contact form.</a></p>
                         <p>Please be aware that if I am with clients I will be unable to answer your call. In that case please leave me a message or use the quick contact form. Both methods are confidential. I will get back to you as soon as possible and within 24 hours. </p>
 
