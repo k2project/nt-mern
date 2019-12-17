@@ -16,6 +16,7 @@
 .ProfessionalBodies .wrapper{
     padding-top:12rem;
     padding-bottom:10rem;
+    text-align: justify;
 }
 .ProfessionalBodies__logos{
     text-align: center;
@@ -39,7 +40,7 @@
     text-decoration: none;
     /* font-weight: bold; */
     color: #001041;
-    /* color: #1498D9; */
+    color: #1498D9;
 }
 .Nujoji .qualifications{
     display: grid;

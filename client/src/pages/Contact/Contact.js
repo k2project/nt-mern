@@ -205,7 +205,7 @@ const Office=()=>{
                             <p><b>11-12 Tokenhouse Yard<br/>City of London<br/>London <br/>EC2R 7AS</b></p>
                             <p><b>19 Nassau Street<br/>West End <br/>London <br/>W1W 7AF</b></p>
                         </div>
-                        <p><b>Opening Hours.</b> I see clients Monday to Friday throughout the year except public holidays. Appointments are available from 8am – 8pm.</p>
+                        <p><b>Appointment Times.</b> I see clients Monday to Friday throughout the year except public holidays. Appointments are available from 8am – 8pm.</p>
                         {/* <p>I also see clients in the West End at 19 Nassau Street, Fitzrovia, London, W1W 7AF a few minutes’ walk from Tottenham Court Road London Underground (Northern and Central Lines) and Oxford Circus London Underground (Victoria, Central and Bakerloo Lines).</p> */}
                     </div>
                 </div>
@@ -225,12 +225,10 @@ const Directions=()=>{
                             <img src={require('./../../imgs/stations.png')} alt='Nujoji' className="Directions__img"/>
                         </div> */}
                         <p>
-                            <small>
                             {/* <b>Bank Tube Station: </b>Waterloo and City, DLR, Northern, Central Line.<br/>
                                 <b>Moorgate Tube Station: </b>Northern, Hammersmith and City, Circle, Metropolitan lines.<br/>
                                 <b>Buses: </b> 21, 43, 76, 141.<br/> */}
-                                Pay and display parking on Old Jewry and Coleman Street. Secure bike racks available. Taxi Rank Queen Victoria Street.<br/>
-                            </small>
+                            Pay and display parking on Old Jewry and Coleman Street. Secure bike racks available. Taxi Rank Queen Victoria Street.
 
                         </p>
                         <p><b>WEST END.</b> Nassau Street is located a few minutes’ walk from Tottenham Court Road London Underground (Northern and Central Lines) and Oxford Circus London Underground (Victoria, Central and Bakerloo Lines).</p>
@@ -255,7 +253,7 @@ const Form=(props)=>{
                 <div>
                     <div className="section__wrapper">
                         <SectionTitle data={{divider:'themed',subtitle:'How to get in touch',title:(<span>Talking can be a good place to start</span>)}}/>
-                        <p>    I am always happy to speak on the telephone. You can contact me on <b>0208 675 9754 </b>. </p>
+                        <p>    I am always happy to speak on the telephone. You can contact me on <b>0208 675 9754</b>. </p>
                         <p>If you prefer to make contact with me by email, please complete <a href="#contact-form">the contact form.</a></p>
                         <p>Please be aware that if I am with clients I will be unable to answer your call. In that case please leave me a message or use the quick contact form. Both methods are confidential. I will get back to you as soon as possible and within 24 hours. </p>
 

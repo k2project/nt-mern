@@ -20,13 +20,15 @@
 .Page__title_name{
     font-family: 'Julius Sans One', sans-serif;
     font-size: 4.5rem;
-    font-weight: bold;
     z-index: 3;
     /* padding-top: 17rem; */
 
 }
 .Page__subtitle{
-    font-family: 'Julius Sans One', sans-serif;
+    /* font-family: 'Julius Sans One', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
     font-size: 2.2rem;
 }
 .butterfly{

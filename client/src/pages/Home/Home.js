@@ -56,7 +56,7 @@ const Welcome=()=>{
                 </div>
                 <div>
                     <div className="section__wrapper">
-                        <p><b> It is not uncommon to feel lost or confused from time to time, or to experience symptoms, unhelpful behaviours or a lack of confidence. These are things that we can all experience.</b></p>
+                        <p>It is not uncommon to feel lost or confused from time to time, or to experience symptoms, unhelpful behaviours or a lack of confidence. These are things that we can all experience.</p>
                         <p> Therapy is about creating a safe and non-judgemental space where you can reflect, explore and understand the difficulties in your life.</p>
                         {/* <p>However you can always break the cycle of anger, anxiety, addiction, distrust and    unhealthy behaviour if you want. It all starts with you... Make a choice today!</p> */}
                         <Link to='/contact#form' className="btn" smooth>Get In Touch</Link>
@@ -109,7 +109,7 @@ const Nujoji=()=>{
                             <span>&bull;</span><span>Diploma in Counselling</span>
                         </span>
                     </p>
-                    <p>I have experience working one to one with a diverse variety of individual clients in private practice as well as working within a student wellbeing service in a higher education setting. I work in the NHS with male offenders in the secure forensic estate who engage in violent, sexually harmful and criminal behaviour.</p>
+                    <p>I have experience working one to one with a diverse variety of individual clients in private practice as well as working within a student wellbeing service in a higher education setting. I work in the NHS with male offenders in the secure forensic estate who engage in violent, harmful and criminal behaviour.</p>
                     {/* <p>I am a member of the <a href="https://www.bacp.co.uk/">British Association of Counsellors and Psychotherapists (BACP)</a> and adhere to their Ethical Principles and Code of Professional Conduct. I am also a registered member of the <a href="https://www.psychotherapy.org.uk/">United Kingdom Council for Psychotherapy (UKCP)</a> and the <a href="https://www.forensicpsychotherapy.org/">International Association for Forensic Psychotherapy (IAFP)</a>. I hold an enhanced certificate from the <a href="https://www.gov.uk/government/organisations/disclosure-and-barring-service">Disclosure and Barring Service.</a></p>
                     <p className="text_cntr">
 
@@ -131,7 +131,7 @@ const Nujoji=()=>{
 const professionalBodiesData = [
     {
         logo: bacp,
-        link:'https://www.bacp.co.uk/profile/8fb9f46e-e25c-e811-8108-3863bb351d40/therapist?location=City%20of%20London',
+        link:'https://www.bacp.co.uk',
         name:'bacp'
     },
     {
@@ -165,7 +165,7 @@ const ProfessionalBodies =()=>{
                 <div className="ProfessionalBodies__logos">
                     {logos}
                 </div>
-                <p>I am a member of the British Association of Counsellors and Psychotherapists (BACP) and adhere to their Ethical Principles and Code of Professional Conduct. I am also a registered member of the United Kingdom Council for Psychotherapy (UKCP)and the International Association for Forensic Psychotherapy (IAFP). I hold an enhanced certificate from the Disclosure and Barring Service.</p>
+                <p>I am a member of the British Association of Counsellors and Psychotherapists (BACP) and adhere to their Ethical Principles and Code of Professional Conduct. I am also a registered member of the United Kingdom Council for Psychotherapy (UKCP) and the International Association for Forensic Psychotherapy (IAFP). I hold an enhanced certificate from the Disclosure and Barring Service.</p>
             </div>
         </div>
     )

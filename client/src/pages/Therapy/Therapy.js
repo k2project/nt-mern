@@ -99,7 +99,7 @@ const TherapyIntro=()=>{
                 </div>
                 <div className="Therapy__bg_themed">
                     <div className="section__wrapper">
-                        <p><b>It is not unusual to feel hesitant or unsure about seeking help. For some people, asking for help can be a difficult place to start.</b></p>
+                        <p>It is not unusual to feel hesitant or unsure about seeking help. For some people, asking for help can be a difficult place to start.</p>
                         <p> There are many different therapeutic approaches available and it can be confusing to decide which one is suited for you.</p>
                         <Link to='/#about' className="btn" smooth>More About Me</Link>
                     </div>
@@ -258,7 +258,7 @@ const Fees=()=>{
                 <div className="Therapy__bg_themed">
                     <div className="section__wrapper">
                         <SectionTitle data={{divider:'white',subtitle:'What I charge',title:'Many people find that regular meetings provide a sense of safety and continuity'}}/>
-                        <p>Regular weekly sessions are of 50 minutes duration, and are charged at £60.00 per session. I am happy to accept payment by debit or credit card, cash or bank transfer. </p>
+                        <p>Regular weekly sessions are of 50 minutes duration, and are charged at £60 per session. I am happy to accept payment by debit or credit card, cash or bank transfer. </p>
                         <Link to='/contact#form' className="btn" smooth>Get In Touch</Link>
 
                     </div>
