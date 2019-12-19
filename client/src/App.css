@@ -160,9 +160,11 @@ section div{
 .Contact__bg_themed{
     background:  #D8A8E3;
     background: #ecd5f1;
+    background: #E4E4FF;
 }
 .Contact__color_themed{
     color:  #D8A8E3;
+    color: #cbcbff;
     /* color: #ecd5f1; */
 }
 

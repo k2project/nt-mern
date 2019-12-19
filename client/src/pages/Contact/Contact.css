@@ -154,7 +154,7 @@
     font-family: sans-serif;
     font-size: 1.1rem;
     height: 1rem;
-    opacity: .4;
+    /* opacity: .4; */
 }
 .Form__message_sent,
 .Form__message_err{
@@ -173,6 +173,7 @@
     background: rgba(255,255,255,1);
     border-radius: 100%;
     color: #D8A8E3;
+    color: #cbcbff;
     display: inline-block;
     font-size: 1.6rem;
     line-height: 2.5rem;

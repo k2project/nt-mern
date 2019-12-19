@@ -86,6 +86,7 @@
 .Contact .Page__nav a.selected{
     background: #D8A8E3;
     background: #ecd5f1;
+    background: #E4E4FF;
 }
 .Page__nav_num{
     font-size: 1.4rem;
