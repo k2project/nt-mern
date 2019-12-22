@@ -130,12 +130,12 @@ const IntegrativeTherapy=()=>{
 }
 const FAQ=props=>{
     return(
-        <div className="FAQ Page__bg_grey" id="faqs">
+        <div className="FAQ Page__bg_grey" id="FAQ">
             <img src={require('./../../imgs/therapyText.pt2.png')} alt='Therapy Page' className="Page__top_img part2"/>
             <div className="wrapper">
-                <SectionTitle data={{divider:'white',subtitle:'FAQs',title:'What is therapy?'}}/>
+                <SectionTitle data={{divider:'white',subtitle:'FAQ',title:'What is therapy?'}}/>
                 <div className="fr1auto">
-                    <p>I hope some of the FAQs will help answer any questions that you may have about starting therapy or about how I practice. Please do not hesitate to contact me if you have another question. </p>
+                    <p>I hope some of the FAQ will help answer any questions that you may have about starting therapy or about how I practice. Please do not hesitate to contact me if you have another question. </p>
                     <div className=" btn_square" onClick={openAllQuestions}>Open All Questions</div>
                 </div>
                 <Accordion qa={questionsAndAnswers} />

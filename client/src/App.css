@@ -42,14 +42,14 @@
     /* border-radius: 8rem; */
     color: #161412;
     cursor: pointer;
-    font-size: 1.3rem;
-    font-family: sans-serif;
-    padding: 1.2rem 0;
+    font-size: 1.4rem;
+    padding: 1.4rem 0;
     text-align: center;
     /* text-transform: capitalize; */
     width: 20rem;
     margin-top: 4rem;
 }
+.btn_square:hover,
 .btn:hover{
     background: #161412;
     color: #fff;
@@ -57,7 +57,6 @@
 .btn_square{
     border: solid .1rem #111;
     cursor: pointer;
-    font-family: sans-serif;
     font-size: 1.2rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
@@ -118,6 +117,9 @@ section div{
     grid-template-columns: auto 1fr ;
     margin-bottom: 2rem;
     grid-column-gap: 4vw;
+}
+.section__clm2 b{
+    font-weight: 400;
 }
 .Home .section__divider.themed{
     background:  #B4D8E6;

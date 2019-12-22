@@ -92,7 +92,7 @@ const NavLinks=()=>{
             <NavLink to="/" exact activeClassName="selected" smooth onClick={toggleMobileMenu}>Home</NavLink>
             <NavLink to="/therapy" activeClassName="selected" smooth onClick={toggleMobileMenu}>Therapy</NavLink>
             <NavLink to="/#about" activeClassName="selected" smooth onClick={toggleMobileMenu}>About Me</NavLink>
-            <NavLink to="/therapy#faqs" activeClassName="selected" smooth onClick={toggleMobileMenu}>FAQs</NavLink>
+            <NavLink to="/therapy#FAQ" activeClassName="selected" smooth onClick={toggleMobileMenu}>FAQ</NavLink>
             <NavLink to="/therapy#fees" activeClassName="selected" smooth onClick={toggleMobileMenu}>Fees</NavLink>
             <NavLink to="/contact" activeClassName="selected" smooth onClick={toggleMobileMenu}>Location</NavLink>
             <NavLink to="/contact#form" activeClassName="selected" smooth onClick={toggleMobileMenu}>Contact</NavLink>

@@ -72,9 +72,11 @@
 
 .Contact__form{
     padding-top: 4rem;
+    font-size: 1.3rem;
 
 }
 .Contact__form input{
+    font-size: 1.3rem;
     background: none;
     border-bottom: solid .1rem #111;
     font-family: 'Raleway', serif;
@@ -82,22 +84,26 @@
     padding: 2.5rem 5rem 1.5rem;
 }
 .Contact__form input:focus{
-    color: #fff;
-    border-bottom:solid .1rem #fff;
+    color: #111;
+    font-size: 1.3rem;
+    /* color: #fff; */
+    /* border-bottom:solid .1rem #fff; */
 }
-.Contact__form .btn{
+.Contact__form button.btn{
+    font-size: 1.3rem;
+    font-weight: 400;
     margin: 4rem auto 2rem;
-    border-radius: 0;
-    border-width: .1rem;
+    /* border-radius: 0; */
+    /* border-width: .1rem; */
 }
 .text_side{
     /* font-family: sans-serif; */
-    font-size: 1.1rem;
-    width: 36rem;
+    font-size: 1.3rem;
+    width: 40rem;
     position: absolute;
     text-align: center;
     transform: rotate(90deg)translateY(-50%);
-    top: 45%;
+    top: 48%;
     right:-12rem;
     opacity: .5;
 }
@@ -265,7 +271,8 @@
 @media only screen and (max-width: 786px) {
 
     .text_side{
-        right: -14rem;
+        top: 45%;
+        right: -16rem;
     }
 
 }
@@ -275,7 +282,7 @@
         margin: 1rem 0 2rem;
     }
     .text_side{
-        right: -15rem;
+        right: -16.5rem;
     }
     .Form__locations,
     .Contact__form input{
