@@ -3,15 +3,18 @@
     overflow-x: hidden;
 }
 .Page__top-container{
-    display: grid;
-    grid-auto-rows: 1fr;
-    grid-template-columns: auto auto;
-    min-width: 100vw;
-    left: -50vw;
+    /* display: grid; */
+    /* grid-auto-rows: 1fr; */
+    /* grid-template-columns: auto auto; */
+    /* min-width: 100vw; */
+    /* left: -50vw; */
     /* transition: left 1s; */
 }
+.Page__nav_mobile{
+    display: none;
+}
 .Page__top{
-    display: inline-block;
+    /* display: inline-block; */
     width: 100vw;
 }
 .Page__top .wrapper{
@@ -107,6 +110,7 @@
     top: .5rem;
     text-align: left;
     width: 4rem;
+    transition: 1s;
 }
 .Page__nav_hum div{
     background: #111;
@@ -130,11 +134,7 @@
     height: 3.5rem;
 }
 
-.Page__nav_mobile{
-    /* background: #161412; */
-    background-image: url('./../../imgs/bgGrey.png');
-    width: 50vw;
-}
+
 .Nav__mobile_img{
     display: none;
     opacity: .1;
@@ -161,16 +161,17 @@
     padding: .7rem 0;
 }
 
+
 .Page.m_open .Page__nav_hum div:nth-child(1){
-    transform: rotate(-45deg);
+    transform: rotate(45deg);
     top: .2rem;
     width: 2rem;
 }
 .Page.m_open .Page__nav_hum div:nth-child(2){
-    left: .5rem;
+    left: -1.3rem;
 }
 .Page.m_open .Page__nav_hum div:nth-child(3){
-    transform: rotate(45deg);
+    transform: rotate(-45deg);
     top: -.2rem;
     width: 2rem;
 }
@@ -182,8 +183,6 @@ footer{
 
 footer .btn{
     margin: 1rem auto 2rem;
-    border-radius: 0;
-    border-width: .1rem;
 }
 
 footer p{
@@ -251,15 +250,32 @@ footer p{
         top: 0rem;
         left: -2rem;
     }
+    .Page__top-container{
+        width: 150vw;
+        left: -50vw;
+        /* transition: 1s; */
 
-
-     .Page__top-container{
-        transition: left 1s;
     }
+    .Page__nav_mobile{
+        /* background: #161412; */
+        background-image: url('./../../imgs/bgGrey.png');
+        width: 50vw;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+    .Page__top{
+        left: 50vw;
+    }
+
     .Page.m_open .Page__top-container{
         left: 0;
-        transition: left 1s;
+        /* transition: 1s; */
     }
+
+    /* //menu bg */
     .Nav__mobile_img{
         display: block;
     }

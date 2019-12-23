@@ -37,7 +37,9 @@
     margin: auto;
     padding-bottom: 23rem;
 }
+a.btn,
 .btn{
+    display: block;
     border: solid .1rem #161412;
     /* border-radius: 8rem; */
     color: #161412;
