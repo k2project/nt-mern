@@ -2,11 +2,14 @@
 require('dotenv').config()
 
 const express = require('express');
+const secure = require('express-force-https');
 const path = require('path');
 const bodyParser = require('body-parser');
 
 
 const app = express();
+//to redirect all http requests to https
+app.use(secure);
 
 // Serve the static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
