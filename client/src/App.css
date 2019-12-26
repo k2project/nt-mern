@@ -16,6 +16,7 @@
 .text_cntr{
     text-align: center;
 }
+
 .App{
     overflow-x: hidden;
 }
@@ -23,6 +24,7 @@
     align-content: end;
     background: rgba(0,0,0,.3);
     color: #fff;
+    display: flex;
     display: grid;
     height: 100%;
     left: 0;
@@ -31,7 +33,11 @@
     top: 0;
     width: 100%;
 }
-
+.cover_ctr{
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+}
 .wrapper{
     width: 100rem;
     margin: auto;
