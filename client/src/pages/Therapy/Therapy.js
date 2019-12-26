@@ -135,7 +135,9 @@ const FAQ=props=>{
             <div className="wrapper">
                 <SectionTitle data={{divider:'white',subtitle:'FAQ',title:'What is therapy?'}}/>
                 <div className="fr1auto">
-                    <p>I hope some of the FAQ will help answer any questions that you may have about starting therapy or about how I practice. Please do not hesitate to contact me if you have another question. </p>
+                    <p>
+                        I hope some of the FAQ will help answer any questions that you may have about starting therapy or about how I practice. Please do not hesitate to contact me if you have another question.
+                    </p>
                     <div className="btn_square" onClick={openAllQuestions}>Open All Questions</div>
                 </div>
                 <Accordion qa={questionsAndAnswers} />
