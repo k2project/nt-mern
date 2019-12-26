@@ -16,9 +16,14 @@
 }
 .fr1auto{
     align-items: end;
-    display: grid;
+    /* display: grid;
     grid-column-gap: 2rem;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr auto; */
+    display: flex;
+}
+.fr1auto p{
+    flex-grow: 1;
+    padding-right: 2rem;
 }
 
 .Accordion{

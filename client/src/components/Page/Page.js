@@ -87,7 +87,7 @@ const MobileMenu=()=>{
 }
 const NavLinks=()=>{
     return(
-        <ul>
+        <ul className="Page__nav_links">
             <img src={require('../../imgs/menu.png')} alt='menu' className="Nav__mobile_img"/>
             <NavLink to="/" exact activeClassName="selected" smooth onClick={toggleMobileMenu}>Home</NavLink>
             <NavLink to="/therapy" activeClassName="selected" smooth onClick={toggleMobileMenu}>Therapy</NavLink>

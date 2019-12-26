@@ -62,9 +62,14 @@
     right: 20vw;
 }
 .Page__nav{
-    align-items: start;
+    /* align-items: start;
     display: grid;
-    grid-template-columns:1fr auto auto;
+    grid-template-columns:1fr auto auto; */
+    display: flex;
+
+}
+.Page__nav_links{
+    flex-grow: 1;
 }
 .Page__nav a{
     font-size: 1.4rem;
@@ -93,6 +98,7 @@
 }
 
 .Page__nav_hum{
+    flex-grow: 1;
     cursor: pointer;
     display: none;
     left: 0;
@@ -116,6 +122,7 @@
     border: solid .2rem #111;
     left: 10rem;
     top:5.5rem;
+    display: inline-block;
 }
 .Page__nav_num a{
     padding: 0;

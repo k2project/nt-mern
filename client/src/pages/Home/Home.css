@@ -68,6 +68,10 @@
 }
 @media only screen and (max-width: 1000px) {
 
+    .About__bg_therapist{
+        height: 60rem;
+    }
+
 }
 @media only screen and (max-width: 786px) {
     .Home__bg_hello{
