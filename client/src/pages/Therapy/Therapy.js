@@ -192,13 +192,13 @@ const Accordion=(props)=>{
 }
 const closeAllQuestions=()=>{
 
-    document.querySelectorAll('.accordion__li').forEach(li=>{
+    Array.from(document.getElementsByClassName('accordion__li active')).forEach(li=>{
         li.classList.remove('active');
         li.querySelector('span').innerHTML='&#43;';
     })
 }
 const openAllQuestions=()=>{
-    document.querySelectorAll('.accordion__li').forEach(li=>{
+    Array.from(document.getElementsByClassName('accordion__li')).forEach(li=>{
         li.classList.add('active');
         li.querySelector('span').innerHTML='&#8722;';
     })
