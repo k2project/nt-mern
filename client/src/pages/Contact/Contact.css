@@ -277,8 +277,12 @@
 
 }
 @media screen and (max-width: 1000px) and (orientation: landscape) {
-    .Office__bg_img{
+    /* .Office__bg_img{
         display: none;
+    } */
+    .Office__bg_img,
+    .Directions__bg_map{
+        padding: 25rem 2rem 30rem;
     }
 }
 @media only screen and (max-width: 786px) {
