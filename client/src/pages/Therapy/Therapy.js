@@ -134,15 +134,17 @@ const FAQ=props=>{
             <img src={require('./../../imgs/therapyText.pt2.png')} alt='Therapy Page' className="Page__top_img part2"/>
             <div className="wrapper">
                 <SectionTitle data={{divider:'white',subtitle:'FAQ',title:'What is therapy?'}}/>
-                <div className="fr1auto">
+                <div>
                     <p>
                         I hope some of the FAQ will help answer any questions that you may have about starting therapy or about how I practice. Please do not hesitate to contact me if you have another question.
                     </p>
-                    <div className="btn_square" onClick={openAllQuestions}>Open All Questions</div>
+                    <div className="text_r">
+                        <div className="btn_square" onClick={openAllQuestions}>Open All Questions</div>
+
+                    </div>
                 </div>
                 <Accordion qa={questionsAndAnswers} />
-                <div className="fr1auto">
-                    <p></p>
+                <div className="text_r">
                     <div className="btn_square" onClick={closeAllQuestions}>Close All Questions</div>
                 </div>
 
