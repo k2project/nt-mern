@@ -276,6 +276,11 @@
     }
 
 }
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+    .Office__bg_img{
+        display: none;
+    }
+}
 @media only screen and (max-width: 786px) {
 
     .text_side{
