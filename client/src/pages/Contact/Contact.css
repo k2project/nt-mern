@@ -270,6 +270,10 @@
     .Directions__bg_map{
         height: 50rem;
     }
+    .Office__bg_img{
+        display: block;
+        width: 100vw;
+    }
 
 }
 @media only screen and (max-width: 786px) {
