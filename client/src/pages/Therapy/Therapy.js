@@ -198,9 +198,9 @@ const closeAllQuestions=()=>{
     })
 }
 const openAllQuestions=()=>{
-    alert('test.working')
     document.querySelectorAll('.accordion__li').forEach(li=>{
         li.classList.add('active');
+        alert(li.classList)
         li.querySelector('span').innerHTML='&#8722;';
     })
 }
