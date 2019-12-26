@@ -169,8 +169,8 @@ const Accordion=(props)=>{
 
     let accordion=props.qa.map(qa=>{
         return(
-            <div className="accordion__li" key={qa.q}>
-                <div  className="accordion__q" onClick={toggleAccordionLi}>
+            <div className="accordion__li" key={qa.q} onClick={toggleAccordionLi}>
+                <div  className="accordion__q" >
                     <p><b>Q : </b>{qa.q}</p>
                     <span>&#43;</span>
                 </div>

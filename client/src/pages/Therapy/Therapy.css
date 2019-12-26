@@ -133,6 +133,7 @@
     .accordion__li.active .accordion__q{
         background: none;
         color:  #F0E478;
+        color: #c8b716;
         font-weight: bold;
         transition: 0s;
     }
