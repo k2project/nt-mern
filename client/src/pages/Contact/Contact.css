@@ -247,6 +247,10 @@
     }
 }
 @media only screen and (max-width: 1000px) {
+    .Office,
+    .Directions{
+        display: block;
+    }
     .Office .cover{
         /* padding: 0 5rem 5rem 0; */
         padding-left: 15%;
