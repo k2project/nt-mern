@@ -101,7 +101,7 @@ const Nujoji=()=>{
             <div>
                 <img src={require('./../../imgs/homeText.pt2.png')} alt='Nujoji Calvocoressi' className="Page__top_img part2"/>
                 <div className="section__wrapper">
-                    <p> I trained for four years at <a href="https://www.minstercentre.ac.uk">The Minster Centre</a> in London, a leading integrative psychotherapy training in the United Kingdom. Courses meet high academic and professional standards and are validated by the main professional bodies the <a href=" https://www.psychotherapy.org.uk/therapist/nujoji-calvocoressi/" target="_blank" rel="noopener noreferrer">UKCP</a> and <a href=" https://www.bacp.co.uk/profile/8fb9f46e-e25c-e811-8108-3863bb351d40/therapist?location=City%20of%20London" target="_blank" rel="noopener noreferrer">BACP</a>.</p>
+                    <p> I trained for four years at <a href="https://www.minstercentre.ac.uk" target="_blank" rel="noopener noreferrer">The Minster Centre</a> in London, a leading integrative psychotherapy training in the United Kingdom. Courses meet high academic and professional standards and are validated by the main professional bodies the <a href=" https://www.psychotherapy.org.uk/therapist/nujoji-calvocoressi/" target="_blank" rel="noopener noreferrer">UKCP</a> and <a href=" https://www.bacp.co.uk/profile/8fb9f46e-e25c-e811-8108-3863bb351d40/therapist?location=City%20of%20London" target="_blank" rel="noopener noreferrer">BACP</a>.</p>
                     <p>I obtained the following qualifications:
                         <span className="qualifications">
                             <span>&bull;</span><span>Master of Arts in Counselling and Psychotherapy</span>
