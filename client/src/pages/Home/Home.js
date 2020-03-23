@@ -10,6 +10,7 @@ import bacp from './../../imgs/bacp.PNG';
 import ukcp from './../../imgs/ukcp.png';
 import iafp from './../../imgs/iafp.png';
 import dbs from './../../imgs/dbs.png';
+import truthproject from './../../imgs/tp.png';
 
 const meta = {
     title: "Nujoji Calvocoressi Counselling and Psychotherapy | City of London & West End Therapy",
@@ -110,6 +111,12 @@ const Nujoji=()=>{
                         </span>
                     </p>
                     <p>I have experience working one to one with a diverse variety of individual clients in private practice as well as working within a student wellbeing service in a higher education setting. I work in the NHS with male offenders in the secure forensic estate who engage in violent, harmful and criminal behaviour.</p>
+                    <p>
+                        <a href="https://www.truthproject.org.uk/i-will-be-heard" target="_blank" rel="noopener noreferrer" >
+                                <img src={truthproject} alt="I will be heard. Truth project." className="tp__logo"/>
+                        </a>
+                        Aside from my work as a psychotherapist I am also a member of the Victims and Survivors’ Consultative Panel at the <a href="https://www.truthproject.org.uk/i-will-be-heard" target="_blank" rel="noopener noreferrer">Independent Inquiry into Child Sexual Abuse</a>. The Inquiry was set up to consider the extent to which state and non-state institutions have failed in their duty of care to protect children from sexual abuse.
+                    </p>
                     {/* <p>I am a member of the <a href="https://www.bacp.co.uk/">British Association of Counsellors and Psychotherapists (BACP)</a> and adhere to their Ethical Principles and Code of Professional Conduct. I am also a registered member of the <a href="https://www.psychotherapy.org.uk/">United Kingdom Council for Psychotherapy (UKCP)</a> and the <a href="https://www.forensicpsychotherapy.org/">International Association for Forensic Psychotherapy (IAFP)</a>. I hold an enhanced certificate from the <a href="https://www.gov.uk/government/organisations/disclosure-and-barring-service">Disclosure and Barring Service.</a></p>
                     <p className="text_cntr">
 

@@ -49,7 +49,11 @@
     padding-top: 1rem;
     text-align: left;
 }
-
+.tp__logo{
+    height: 7rem;
+    float: left;
+    padding: 0 1.2rem .8rem 0;
+}
 
 @media only screen and (max-width: 1024px) {
 
