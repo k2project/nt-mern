@@ -50,9 +50,10 @@
     text-align: left;
 }
 .tp__logo{
+    position: relative;
     height: 7rem;
     float: left;
-    padding: 0 1.2rem .8rem 0;
+    padding: 0 1.2rem 0 0;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -90,6 +91,10 @@
     }
     .ProfessionalBodies__logos a:last-child{
         order: -1;
+    }
+    .tp__logo{
+        height: 5rem;
+        margin-top: 1rem;
     }
 }
 @media only screen and (max-width: 480px) {

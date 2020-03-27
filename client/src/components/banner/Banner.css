@@ -1,0 +1,73 @@
+.Banner{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height:100vh;
+    background: rgba(0,0,0,.2);
+    z-index: 999;
+
+}
+@keyframes slideBannerIn {
+    to{
+        opacity:1;
+        bottom:0;
+    }
+}
+.Banner__box{
+    background: #fff;
+    position: absolute;
+    bottom: 5rem;
+    width: 100vw;
+    padding:9rem 0 7rem;
+    text-align: center;
+    opacity: 0;
+    animation: slideBannerIn .5s forwards;
+}
+.Banner__body{
+    text-align: left;
+    margin: auto;
+    width: 90rem;
+    display: grid;
+    /* grid-template-columns: 1fr auto; */
+    grid-column-gap: 5rem;
+    align-content: center;
+}
+.Banner__img{
+    height: 12rem;
+    transform: rotate(-25deg)scaleX(-1);
+    left: 5rem
+}
+.Banner__close{
+    position: absolute;
+    top: 1rem;
+    right: 8rem;
+    font-size: 5rem;
+    cursor: pointer;
+    opacity: .1;
+}
+@media only screen and (max-width: 1200px) {
+
+}
+@media only screen and (max-width: 1000px) {
+
+    .Banner__body{
+        width:100%;
+        padding: 0 5rem;
+    }
+    .Banner__close{
+        right: 5rem;
+    }
+}
+@media only screen and (max-width: 786px) {
+
+    .Banner__body{
+        padding: 0 3rem;
+    }
+    
+
+}
+@media only screen and (max-width: 480px) {
+
+
+}
