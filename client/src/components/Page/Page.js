@@ -1,52 +1,56 @@
 import React, { Component } from 'react';
-import './Page.css';
+import './Page.scss';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 import {
-  FacebookShareButton,
-  LinkedinShareButton,
-  TwitterShareButton,
-  WhatsappShareButton,
+    FacebookShareButton,
+    LinkedinShareButton,
+    TwitterShareButton,
+    WhatsappShareButton
 } from 'react-share';
 import linkedin from './../../imgs/linkedin.png';
 import butterfly from './../../imgs/butterfly.png';
-const shareUrl="http://www.calvocoressi.com";
+const shareUrl = 'http://www.calvocoressi.com';
 
-
-
-let mobileMenuOpen=false;
+let mobileMenuOpen = false;
 class Page extends Component {
     // constructor(props){
     //    super(props);
     // }
     render() {
-        const {name,img}=this.props.page;
+        const { name, img } = this.props.page;
         return (
-            <div className={"Page "+name}>
-                <div className="Page__top-container">
-                    <MobileMenu/>
-                    <Top name={name} img={img}/>
+            <div className={'Page ' + name}>
+                <div className='Page__top-container'>
+                    <MobileMenu />
+                    <Top name={name} img={img} />
                 </div>
                 {this.props.children}
-                <Footer/>
+                <Footer />
             </div>
         );
     }
 }
 export default Page;
 
-const Top=(props)=>{
-    const {imgName, imgAlt}=props.img;
+const Top = props => {
+    const { imgName, imgAlt } = props.img;
     return (
-        <div className="Page__top Page__bg_grey">
-            <img src={require('../../imgs/'+imgName+'')} alt={imgAlt} className="Page__top_img part1"/>
-            <div className="wrapper">
-                <Nav/>
-                <img src={butterfly} className="butterfly butterfly_2" alt=""/>
-                <img src={butterfly} className="butterfly butterfly_1" alt=""/>
-                <h1 className="Page__title_name">
-                    Nujoji Calvocoressi <br/> Counselling and Psychotherapy
+        <div className='Page__top Page__bg_grey'>
+            <img
+                src={require('../../imgs/' + imgName + '')}
+                alt={imgAlt}
+                className='Page__top_img part1'
+            />
+            <div className='wrapper'>
+                <Nav />
+                <img src={butterfly} className='butterfly butterfly_2' alt='' />
+                <img src={butterfly} className='butterfly butterfly_1' alt='' />
+                <h1 className='Page__title_name'>
+                    Nujoji Calvocoressi <br /> Counselling and Psychotherapy
                 </h1>
-                <h3 className={props.name+"__color_themed Page__subtitle"}>City of London and West End</h3>
+                <h3 className={props.name + '__color_themed Page__subtitle'}>
+                    City of London and West End
+                </h3>
                 {/*
                 <h2 className="Page__title_prof">
                     <span> <b>Counselling & Psychotherapy</b></span><br/>
@@ -57,88 +61,168 @@ const Top=(props)=>{
                 </h1> */}
             </div>
         </div>
-    )
-}
+    );
+};
 
-const Nav=(props)=>{
-    return(
-        <nav className="Page__nav">
-            <div className="Page__nav_hum" onClick={toggleMobileMenu}>
+const Nav = props => {
+    return (
+        <nav className='Page__nav'>
+            <div className='Page__nav_hum' onClick={toggleMobileMenu}>
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
-            <NavLinks/>
-            <div className="Page__nav_num">
-                <a href="tel:+442086759754"><span>Enquiries:</span> 0208 675 9754</a>
+            <NavLinks />
+            <div className='Page__nav_num'>
+                <a href='tel:+442086759754'>
+                    <span>Enquiries:</span> 0208 675 9754
+                </a>
             </div>
-            <div className="Page__nav_linkedin">
-                <a href="http://www.linkedin.com/in/calvocoressi" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt=""/></a>
+            <div className='Page__nav_linkedin'>
+                <a
+                    href='http://www.linkedin.com/in/calvocoressi'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                >
+                    <img src={linkedin} alt='' />
+                </a>
             </div>
         </nav>
-    )
-}
-const MobileMenu=()=>{
-    return(
-        <div className="Page__nav_mobile">
-            <NavLinks/>
+    );
+};
+const MobileMenu = () => {
+    return (
+        <div className='Page__nav_mobile'>
+            <NavLinks />
         </div>
-    )
-}
-const NavLinks=()=>{
-    return(
-        <ul className="Page__nav_links">
-            <img src={require('../../imgs/menu.png')} alt='menu' className="Nav__mobile_img"/>
-            <NavLink to="/" exact activeClassName="selected" smooth onClick={toggleMobileMenu}>Home</NavLink>
-            <NavLink to="/therapy" activeClassName="selected" smooth onClick={toggleMobileMenu}>Therapy</NavLink>
-            <NavLink to="/#about" activeClassName="selected" smooth onClick={toggleMobileMenu}>About Me</NavLink>
-            <NavLink to="/therapy#FAQ" activeClassName="selected" smooth onClick={toggleMobileMenu}>FAQ</NavLink>
-            <NavLink to="/therapy#fees" activeClassName="selected" smooth onClick={toggleMobileMenu}>Fees</NavLink>
-            <NavLink to="/contact" activeClassName="selected" smooth onClick={toggleMobileMenu}>Location</NavLink>
-            <NavLink to="/contact#form" activeClassName="selected" smooth onClick={toggleMobileMenu}>Contact</NavLink>
+    );
+};
+const NavLinks = () => {
+    return (
+        <ul className='Page__nav_links'>
+            <img
+                src={require('../../imgs/menu.png')}
+                alt='menu'
+                className='Nav__mobile_img'
+            />
+            <NavLink
+                to='/'
+                exact
+                activeClassName='selected'
+                smooth
+                onClick={toggleMobileMenu}
+            >
+                Home
+            </NavLink>
+            <NavLink
+                to='/therapy'
+                activeClassName='selected'
+                smooth
+                onClick={toggleMobileMenu}
+            >
+                Therapy
+            </NavLink>
+            <NavLink
+                to='/#about'
+                activeClassName='selected'
+                smooth
+                onClick={toggleMobileMenu}
+            >
+                About Me
+            </NavLink>
+            <NavLink
+                to='/therapy#FAQ'
+                activeClassName='selected'
+                smooth
+                onClick={toggleMobileMenu}
+            >
+                FAQ
+            </NavLink>
+            <NavLink
+                to='/therapy#fees'
+                activeClassName='selected'
+                smooth
+                onClick={toggleMobileMenu}
+            >
+                Fees
+            </NavLink>
+            <NavLink
+                to='/contact'
+                activeClassName='selected'
+                smooth
+                onClick={toggleMobileMenu}
+            >
+                Location
+            </NavLink>
+            <NavLink
+                to='/contact#form'
+                activeClassName='selected'
+                smooth
+                onClick={toggleMobileMenu}
+            >
+                Contact
+            </NavLink>
         </ul>
-    )
-}
+    );
+};
 
-const toggleMobileMenu=()=>{
-    mobileMenuOpen=!mobileMenuOpen;
+const toggleMobileMenu = () => {
+    mobileMenuOpen = !mobileMenuOpen;
     const page = document.querySelector('.Page');
-    if(mobileMenuOpen){
+    if (mobileMenuOpen) {
         page.classList.add('m_open');
     }
-    if(!mobileMenuOpen){
+    if (!mobileMenuOpen) {
         page.classList.remove('m_open');
     }
-}
+};
 
-const Footer=()=>{
-    return(
-        <footer className="Page__bg_grey">
+const Footer = () => {
+    return (
+        <footer className='Page__bg_grey'>
             <ShareBtns />
-            <div className="btn" onClick={()=>window.scrollTo({ top: 0, behavior: 'smooth' })}>Back To Top</div>
-            <p>Nujoji Calvocoressi Counselling & Psychotherapy <br/> City of London & West End &copy; {new Date().getFullYear()}</p>
+            <div
+                className='btn'
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            >
+                Back To Top
+            </div>
+            <p>
+                Nujoji Calvocoressi Counselling & Psychotherapy <br /> City of
+                London & West End &copy; {new Date().getFullYear()}
+            </p>
         </footer>
+    );
+};
 
-    )
-}
-
-const ShareBtns=()=>{
-    return(
-        <div className="ShareBtns">
+const ShareBtns = () => {
+    return (
+        <div className='ShareBtns'>
             <span>Share Website On:</span>
             <TwitterShareButton url={shareUrl}>
-                <img src={require('./../../imgs/twitter.icon.png')} alt="Twitter Share Btn"/>
+                <img
+                    src={require('./../../imgs/twitter.icon.png')}
+                    alt='Twitter Share Btn'
+                />
             </TwitterShareButton>
             <FacebookShareButton url={shareUrl}>
-                <img src={require('./../../imgs/facebook.icon.png')} alt="Facebook Share Btn"/>
+                <img
+                    src={require('./../../imgs/facebook.icon.png')}
+                    alt='Facebook Share Btn'
+                />
             </FacebookShareButton>
             <LinkedinShareButton url={shareUrl}>
-                <img src={require('./../../imgs/linkedin.icon.png')} alt="Linkedin Share Btn"/>
+                <img
+                    src={require('./../../imgs/linkedin.icon.png')}
+                    alt='Linkedin Share Btn'
+                />
             </LinkedinShareButton>
             <WhatsappShareButton url={shareUrl}>
-                <img src={require('./../../imgs/whatsapp.icon.png')} alt="WhatsApp Share Btn"/>
+                <img
+                    src={require('./../../imgs/whatsapp.icon.png')}
+                    alt='WhatsApp Share Btn'
+                />
             </WhatsappShareButton>
-
         </div>
-    )
-}
+    );
+};

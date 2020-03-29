@@ -1,8 +1,7 @@
-
-.Page{
+.Page {
     overflow-x: hidden;
 }
-.Page__top-container{
+.Page__top-container {
     /* display: grid; */
     /* grid-auto-rows: 1fr; */
     /* grid-template-columns: auto auto; */
@@ -10,196 +9,191 @@
     /* left: -50vw; */
     transition: left 1s;
 }
-.Page__nav_mobile{
+.Page__nav_mobile {
     display: none;
 }
-.Page__top{
+.Page__top {
     /* display: inline-block; */
     width: 100vw;
 }
-.Page__top .wrapper{
+.Page__top .wrapper {
     padding-bottom: 15rem;
 }
-.Page__title_name{
+.Page__title_name {
     font-family: 'Julius Sans One', sans-serif;
     font-size: 4.5rem;
     z-index: 3;
     /* padding-top: 17rem; */
-
 }
-.Page__subtitle{
+.Page__subtitle {
     /* font-family: 'Julius Sans One', sans-serif; */
     font-family: 'Raleway', sans-serif;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 2.2rem;
 }
-.butterfly{
+.butterfly {
     display: block;
     transition: 1s;
 }
-.butterfly_1{
+.butterfly_1 {
     transform: rotate(40deg);
     height: 10rem;
     left: -6rem;
 }
-.butterfly_2{
+.butterfly_2 {
     margin-top: 5rem;
     left: 55%;
     height: 6rem;
     transform: rotateY(180deg) rotate(40deg);
 }
 
-.Page__top_img.part1{
+.Page__top_img.part1 {
     position: absolute;
     bottom: 0;
     right: 20vw;
 }
-.Page__top_img.part2{
+.Page__top_img.part2 {
     position: absolute;
     top: 0;
     right: 20vw;
 }
-.Page__nav{
+.Page__nav {
     /* align-items: start;
     display: grid;
     grid-template-columns:1fr auto auto; */
     display: flex;
-
 }
-.Page__nav_links{
+.Page__nav_links {
     flex-grow: 1;
 }
-.Page__nav a{
+.Page__nav a {
     font-size: 1.4rem;
     font-family: sans-serif;
     display: inline-block;
-    padding: 7rem 0  4rem;
+    padding: 7rem 0 4rem;
     width: 7.9rem;
     /* width: 7.5rem; */
     text-align: center;
 }
-.Page__nav a.selected{
+.Page__nav a.selected {
     color: #fff;
 }
-.Home .Page__nav a.selected{
-    background: #B4D8E6;
-    background:  #D7E7F4;
+.Home .Page__nav a.selected {
+    background: #b4d8e6;
+    background: #d7e7f4;
 }
-.Therapy .Page__nav a.selected{
-    background: #F0E478;
+.Therapy .Page__nav a.selected {
+    background: #f0e478;
     background: #f6efad;
 }
-.Contact .Page__nav a.selected{
-    background: #D8A8E3;
+.Contact .Page__nav a.selected {
+    background: #d8a8e3;
     background: #ecd5f1;
-    background: #E4E4FF;
+    background: #e4e4ff;
 }
 
-.Page__nav_hum{
+.Page__nav_hum {
     flex-grow: 1;
     cursor: pointer;
     display: none;
     left: 0;
-    top: .5rem;
+    top: 0.5rem;
     text-align: left;
     width: 4rem;
     transition: 1s;
 }
-.Page__nav_hum div{
+.Page__nav_hum div {
     background: #111;
-    height: .3rem;
-    margin: .5rem 0;
+    height: 0.3rem;
+    margin: 0.5rem 0;
     width: 3rem;
-    transition: .2s;
+    transition: 0.2s;
 }
-.Page__nav_num{
+.Page__nav_num {
     height: 4rem;
     font-size: 1.4rem;
     font-family: sans-serif;
     padding: 1rem 2rem;
-    border: solid .2rem #111;
+    border: solid 0.2rem #111;
     left: 10rem;
-    top:5.5rem;
+    top: 5.5rem;
     display: inline-block;
 }
-.Page__nav_num a{
+.Page__nav_num a {
     padding: 0;
     width: 100%;
 }
-.Page__nav_linkedin a{
+.Page__nav_linkedin a {
     display: inline-block;
     padding: 0;
     width: 4rem;
     height: 4rem;
     left: 10rem;
-    top:5.5rem;
-    border: solid .2rem #111;
+    top: 5.5rem;
+    border: solid 0.2rem #111;
     background: #111;
 }
-.Page__nav_linkedin a img{
+.Page__nav_linkedin a img {
     height: 3.5rem;
 }
 
-
-.Nav__mobile_img{
+.Nav__mobile_img {
     display: none;
-    opacity: .1;
+    opacity: 0.1;
     position: absolute;
     top: 18%;
     right: 40%;
 }
 
-.Page__nav_mobile ul{
+.Page__nav_mobile ul {
     align-content: center;
-    background: rgba(0,0,0,.85);
+    background: rgba(0, 0, 0, 0.85);
     display: grid;
     height: 100%;
     padding-left: 30%;
     width: 100%;
     z-index: 8;
 }
-.Page__nav_mobile a{
+.Page__nav_mobile a {
     color: #fff;
     display: block;
     /* font-family: sans-serif; */
     font-size: 2rem;
-    letter-spacing: .3rem;
-    padding: .7rem 0;
+    letter-spacing: 0.3rem;
+    padding: 0.7rem 0;
 }
 
-
-.Page.m_open .Page__nav_hum div:nth-child(1){
+.Page.m_open .Page__nav_hum div:nth-child(1) {
     transform: rotate(45deg);
-    top: .2rem;
+    top: 0.2rem;
     width: 2rem;
 }
-.Page.m_open .Page__nav_hum div:nth-child(2){
+.Page.m_open .Page__nav_hum div:nth-child(2) {
     left: -1.3rem;
 }
-.Page.m_open .Page__nav_hum div:nth-child(3){
+.Page.m_open .Page__nav_hum div:nth-child(3) {
     transform: rotate(-45deg);
-    top: -.2rem;
+    top: -0.2rem;
     width: 2rem;
 }
-footer{
+footer {
     background: #eee;
     padding: 2rem 0 1rem;
     text-align: center;
 }
 
-footer .btn{
+footer .btn {
     margin: 1rem auto 2rem;
 }
 
-footer p{
+footer p {
     /* margin: 0; */
     font-size: 1rem;
 }
 
-
-.ShareBtns{
+.ShareBtns {
     /* align-items: start; */
     /* display: grid;
     grid-template-columns: 25rem 1fr auto; */
@@ -207,64 +201,61 @@ footer p{
     padding: 0 5rem;
     /* top: 9rem; */
 }
-.ShareBtns span{
+.ShareBtns span {
     color: silver;
-    padding-right: .7rem;
+    padding-right: 0.7rem;
 }
-.SocialMediaShareButton{
+.SocialMediaShareButton {
     display: inline-block;
-    opacity: .1;
+    opacity: 0.1;
 }
-.SocialMediaShareButton:hover{
+.SocialMediaShareButton:hover {
     opacity: 1;
-    transition: .2s;
+    transition: 0.2s;
 }
-.SocialMediaShareButton img{
+.SocialMediaShareButton img {
     cursor: pointer;
     height: 3rem;
-    margin: 0 .3rem -.5rem;
+    margin: 0 0.3rem -0.5rem;
     width: 3rem;
 }
-.SocialMediaShareButton--whatsapp{
+.SocialMediaShareButton--whatsapp {
     display: none;
 }
 @media only screen and (max-width: 1350px) {
     .Page__nav_linkedin a,
-    .Page__nav_num{
+    .Page__nav_num {
         left: 2rem;
     }
 }
 @media only screen and (max-width: 1200px) {
-    .butterfly_1{
+    .butterfly_1 {
         left: -1rem;
     }
-
 }
 @media only screen and (max-width: 1000px) {
-
-    .Page__nav{
+    .Page__nav {
         padding-top: 3rem;
     }
-    .Page__nav ul{
+    .Page__nav ul {
         /* background-image: url('../../imgs/bgGrey.png'); */
 
         display: none;
     }
-    .Page__nav_hum{
+    .Page__nav_hum {
         display: block;
     }
     .Page__nav_linkedin a,
-    .Page__nav_num{
+    .Page__nav_num {
         top: 0rem;
         left: -2rem;
     }
-    .Page__top-container{
+    .Page__top-container {
         width: 150vw;
         left: -50vw;
         /* transition: 1s; */
-
     }
-    .Page__nav_mobile{
+    .Page__nav_mobile {
         /* background: #161412; */
         background-image: url('./../../imgs/bgGrey.png');
         width: 50vw;
@@ -274,103 +265,90 @@ footer p{
         left: 0;
         height: 100%;
     }
-    .Page__top{
+    .Page__top {
         left: 50vw;
     }
 
-    .Page.m_open .Page__top-container{
+    .Page.m_open .Page__top-container {
         left: 0;
         /* transition: 1s; */
     }
 
     /* //menu bg */
-    .Nav__mobile_img{
+    .Nav__mobile_img {
         display: block;
     }
     /* .Page.m_open .Page__top_img{
         opacity: .3;
         transition: .1s .5s;
     } */
-    .Page__title_name{
+    .Page__title_name {
         font-size: 4rem;
-
     }
-    .Page__subtitle{
+    .Page__subtitle {
         font-size: 2rem;
     }
-    .butterfly_1{
+    .butterfly_1 {
         height: 8rem;
         margin-bottom: 1rem;
     }
-    .butterfly_2{
+    .butterfly_2 {
         margin-top: 8rem;
         top: 8rem;
-        left: 8rem;
     }
-
-
 }
 @media only screen and (max-width: 786px) {
-    .Page__top-container{
+    .Page__top-container {
         width: 200vw;
         left: -100vw;
     }
-    .Page__nav_mobile{
+    .Page__nav_mobile {
         width: 100vw;
     }
-    .Page__top{
+    .Page__top {
         left: 100vw;
     }
-    .Page.m_open .Page__nav_hum{
+    .Page.m_open .Page__nav_hum {
         left: -17rem;
-        transition: .5s .5s;
+        transition: 0.5s 0.5s;
         z-index: 9;
     }
-    .Page.m_open .Page__nav_hum div{
+    .Page.m_open .Page__nav_hum div {
         background: #fff;
     }
-    .Page__top_img{
-        opacity: .3;
-        opacity: .5;
+    .Page__top_img {
+        opacity: 0.3;
+        opacity: 0.5;
     }
-    .ShareBtns{
+    .ShareBtns {
         text-align: center;
         padding: 1rem 2rem 2rem;
     }
-    .Page__subtitle{
+    .Page__subtitle {
         font-size: 1.8rem;
     }
-
-
-
-
 }
 @media only screen and (max-width: 480px) {
-    .Page__nav_num a span{
+    .Page__nav_num a span {
         display: none;
     }
-    .Page.m_open .Page__nav_hum{
+    .Page.m_open .Page__nav_hum {
         left: -13rem;
-
     }
-    .SocialMediaShareButton--whatsapp{
+    .SocialMediaShareButton--whatsapp {
         display: inline-block;
     }
 
-    .ShareBtns span{
+    .ShareBtns span {
         display: block;
         padding-bottom: 1rem;
     }
 
-    .Page__title_name{
+    .Page__title_name {
         font-size: 3.5rem;
         left: 0;
-
     }
-    .Page__subtitle{
+    .Page__subtitle {
         width: 20rem;
     }
-
-
-
 }
