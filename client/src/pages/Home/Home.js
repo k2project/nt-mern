@@ -11,6 +11,7 @@ import ukcp from './../../imgs/ukcp.png';
 import iafp from './../../imgs/iafp.png';
 import dbs from './../../imgs/dbs.png';
 import truthproject from './../../imgs/tp.png';
+import graduation from './../../imgs/graduation.png';
 
 const meta = {
     title:
@@ -207,16 +208,31 @@ const Nujoji = () => {
                     <p>
                         I obtained the following qualifications:
                         <span className='qualifications'>
-                            <span>&bull;</span>
+                            {/* <span>&bull;</span> */}
+                            <img
+                                src={graduation}
+                                alt=''
+                                className='graduation'
+                            />
                             <span>
                                 Master of Arts in Counselling and Psychotherapy
                             </span>
-                            <span>&bull;</span>
+                            {/* <span>&bull;</span> */}
+                            <img
+                                src={graduation}
+                                alt=''
+                                className='graduation'
+                            />
                             <span>
                                 Advanced Post Graduate Diploma in Counselling
                                 and Psychotherapy
                             </span>
-                            <span>&bull;</span>
+                            {/* <span>&bull;</span> */}
+                            <img
+                                src={graduation}
+                                alt=''
+                                className='graduation'
+                            />
                             <span>Post Graduate Diploma in Counselling</span>
                         </span>
                     </p>
