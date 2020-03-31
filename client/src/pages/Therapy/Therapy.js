@@ -181,11 +181,11 @@ const IntegrativeTherapy = () => {
 const FAQ = props => {
     return (
         <div className='FAQ Page__bg_grey' id='FAQ'>
-            <img
+            {/* <img
                 src={require('./../../imgs/therapyText.pt2.png')}
                 alt='Therapy Page'
                 className='Page__top_img part2'
-            />
+            /> */}
             <div className='wrapper'>
                 <SectionTitle
                     data={{
@@ -386,7 +386,7 @@ const Fees = () => {
 
 const Insurance = () => {
     const logos = insuranceLogos.map(i => (
-        <a href={i.link} target='_blank' rel='noopener noreferrer'>
+        <a href={i.link} key={i.name} target='_blank' rel='noopener noreferrer'>
             <img
                 src={i.logo}
                 className='Insurance__logo'

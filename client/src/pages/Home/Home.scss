@@ -1,55 +1,55 @@
-.Home__bg_hello{
+@import './../../VarAndMIxins.scss';
+.Home__bg_hello {
     background-image: url('./../../imgs/hello.png');
     background-position: bottom right;
-    background-size:cover;
+    background-size: cover;
 }
-.About__bg_therapist{
+.About__bg_therapist {
     background: #161412;
     background-image: url('./../../imgs/nc.jpg');
     background-size: cover;
-    background-position: center ;
+    background-position: center;
 }
 
-.ProfessionalBodies{
+.ProfessionalBodies {
     background: #efefef;
 }
-.ProfessionalBodies .wrapper{
-    padding-top:12rem;
-    padding-bottom:10rem;
+.ProfessionalBodies .wrapper {
+    padding-top: 12rem;
+    padding-bottom: 10rem;
     text-align: justify;
 }
-.ProfessionalBodies__logos{
+.ProfessionalBodies__logos {
     text-align: center;
-    margin: 0 0 3rem ;
+    margin: 0 0 3rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-
 }
-.ProfessionalBodies__logo{
+.ProfessionalBodies__logo {
     height: 6rem;
-    margin: .5rem 1rem;
+    margin: 0.5rem 1rem;
 }
 
-.Nujoji__pb_links{
+.Nujoji__pb_links {
     height: 4rem;
-    margin: 2rem .2rem -1rem;
+    margin: 2rem 0.2rem -1rem;
 }
 
-.Nujoji a{
+.Nujoji a {
     text-decoration: none;
     /* font-weight: bold; */
     color: #001041;
-    color: #1498D9;
+    color: #1498d9;
 }
-.Nujoji .qualifications{
+.Nujoji .qualifications {
     display: grid;
     grid-template-columns: 2rem auto;
     padding-left: 3rem;
     padding-top: 1rem;
     text-align: left;
 }
-.tp__logo{
+.tp__logo {
     position: relative;
     height: 7rem;
     float: left;
@@ -57,42 +57,37 @@
 }
 
 @media only screen and (max-width: 1024px) {
-
-    .ProfessionalBodies__logo{
+    .ProfessionalBodies__logo {
         height: 4.4rem;
-        margin: .5rem .5rem;
+        margin: 0.5rem 0.5rem;
     }
-    .ProfessionalBodies__logo:first-child{
+    .ProfessionalBodies__logo:first-child {
         margin-right: 1rem;
     }
-    .ProfessionalBodies__logos{
+    .ProfessionalBodies__logos {
         margin-bottom: 1.5rem;
     }
-
-
 }
 @media only screen and (max-width: 1000px) {
-
-    .About__bg_therapist{
+    .About__bg_therapist {
         height: 60rem;
     }
-
 }
 @media only screen and (max-width: 786px) {
-    .Home__bg_hello{
+    .Home__bg_hello {
         background-position: left top;
     }
-    .ProfessionalBodies__logo{
+    .ProfessionalBodies__logo {
         height: 10vw;
-        margin: .5rem .5rem;
+        margin: 0.5rem 0.5rem;
     }
-    .ProfessionalBodies__logo:nth-child(3){
+    .ProfessionalBodies__logo:nth-child(3) {
         height: 15vw;
     }
-    .ProfessionalBodies__logos a:last-child{
+    .ProfessionalBodies__logos a:last-child {
         order: -1;
     }
-    .tp__logo{
+    .tp__logo {
         height: 5rem;
         margin-top: 1rem;
     }
@@ -102,5 +97,4 @@
         height: 3.7rem;
         margin: .5rem .5rem;
     } */
-
 }

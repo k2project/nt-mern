@@ -7,22 +7,20 @@ import {
     TwitterShareButton,
     WhatsappShareButton
 } from 'react-share';
-import linkedin from './../../imgs/linkedin.png';
+import linkedin from './../../imgs/in.png';
+import fb from './../../imgs/fb.png';
 import butterfly from './../../imgs/butterfly.png';
 const shareUrl = 'http://www.calvocoressi.com';
 
 let mobileMenuOpen = false;
 class Page extends Component {
-    // constructor(props){
-    //    super(props);
-    // }
     render() {
-        const { name, img } = this.props.page;
+        const { name } = this.props.page;
         return (
             <div className={'Page ' + name}>
                 <div className='Page__top-container'>
                     <MobileMenu />
-                    <Top name={name} img={img} />
+                    <Top name={name} />
                 </div>
                 {this.props.children}
                 <Footer />
@@ -33,32 +31,23 @@ class Page extends Component {
 export default Page;
 
 const Top = props => {
-    const { imgName, imgAlt } = props.img;
     return (
         <div className='Page__top Page__bg_grey'>
-            <img
-                src={require('../../imgs/' + imgName + '')}
-                alt={imgAlt}
-                className='Page__top_img part1'
-            />
             <div className='wrapper'>
                 <Nav />
-                <img src={butterfly} className='butterfly butterfly_2' alt='' />
-                <img src={butterfly} className='butterfly butterfly_1' alt='' />
-                <h1 className='Page__title_name'>
-                    Nujoji Calvocoressi <br /> Counselling and Psychotherapy
-                </h1>
-                <h3 className={props.name + '__color_themed Page__subtitle'}>
-                    City of London and West End
-                </h3>
-                {/*
-                <h2 className="Page__title_prof">
-                    <span> <b>Counselling & Psychotherapy</b></span><br/>
-                    <span className={props.name+"__color_themed Page__title_pt2"}>
-                    </span>
-                </h2>
-                <h1 className={props.name+"__color_themed Page__title_name"}>Nujoji Calvocoressi
-                </h1> */}
+
+                <div className='Page__title'>
+                    <h1 className='heading'>
+                        Counselling and
+                        <br />
+                        Psychotherapy
+                    </h1>
+                    <h2 className={props.name + '__color_themed heading'}>
+                        Nujoji Calvocoressi{' '}
+                    </h2>
+                    <h3 className='heading'>City of London &amp; West End</h3>
+                </div>
+                <img src={butterfly} alt='' className='butterfly' />
             </div>
         </div>
     );
@@ -74,17 +63,24 @@ const Nav = props => {
             </div>
             <NavLinks />
             <div className='Page__nav_num'>
-                <a href='tel:+442086759754'>
-                    <span>Enquiries:</span> 0208 675 9754
-                </a>
+                <a href='tel:+442086759754'>0208 675 9754</a>
             </div>
-            <div className='Page__nav_linkedin'>
+            <div className='Page__nav_media'>
                 <a
                     href='http://www.linkedin.com/in/calvocoressi'
                     target='_blank'
                     rel='noopener noreferrer'
                 >
-                    <img src={linkedin} alt='' />
+                    <img src={linkedin} alt='LinkedIn Account' />
+                </a>
+            </div>
+            <div className='Page__nav_media'>
+                <a
+                    href='https://www.facebook.com/calvocoressi/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                >
+                    <img src={fb} alt='Facebook Account' />
                 </a>
             </div>
         </nav>
@@ -161,6 +157,14 @@ const NavLinks = () => {
                 onClick={toggleMobileMenu}
             >
                 Contact
+            </NavLink>
+            <NavLink
+                to='/resources'
+                activeClassName='selected'
+                smooth
+                onClick={toggleMobileMenu}
+            >
+                Resources
             </NavLink>
         </ul>
     );

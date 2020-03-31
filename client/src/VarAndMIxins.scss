@@ -1,0 +1,86 @@
+/* //blue      #B4D8E6 */
+/* //yellow    #F0E478 */
+/* //purple    #D8A8E3 */
+// var
+
+$FONT_FAMILY_BODY: 'Lora', serif;
+$FONT_FAMILY_HEADINGS: 'Montserrat', sans-serif;
+
+$HOME_COLOR: #e88687;
+$THERAPY_COLOR: #efe09e;
+$CONTACT_COLOR: #98c5cf;
+$RESOURCES_COLOR: #c0e6a3;
+
+$color-primary: null;
+$color-secondary: null;
+$color-darker: null;
+$color-lighter: null;
+$brick-themed: null;
+$bg-themed: null;
+
+$themes: (
+    'Home': (
+        'primary': $HOME_COLOR
+    ),
+    'Therapy': (
+        'primary': $THERAPY_COLOR
+    ),
+    'Contact': (
+        'primary': $CONTACT_COLOR
+    ),
+    'Resources': (
+        'primary': $RESOURCES_COLOR
+    )
+) !default;
+
+@mixin themify($themes: $themes) {
+    // Iterate over the themes
+    @each $theme, $colors in $themes {
+        .#{$theme} & {
+            // Set the theme variables with `!global`
+            $color-primary: map-get($colors, 'primary') !global;
+            // Output user content
+            @content;
+            // Unset the theme variables with `!global`
+            $color-primary: null !global;
+        }
+    }
+}
+
+// .theme-color_transitioned{
+//     @include themify {
+//       color: $color-primary;
+//     }
+//     transition: color 1s ;
+// }
+
+@mixin desktop-sm {
+    @media only screen and (max-width: 1200px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media only screen and (max-width: 1000px) {
+        @content;
+    }
+}
+@mixin mobile {
+    @media only screen and (max-width: 786px) {
+        @content;
+    }
+}
+@mixin mobile-sm {
+    @media only screen and (max-width: 480px) {
+        @content;
+    }
+}
+@mixin portrait {
+    @media only screen and (max-width: 786px) and (orientation: portrait) {
+        @content;
+    }
+}
+@mixin landscape {
+    @media only screen and (max-width: 786px) and (orientation: landscape) {
+        @content;
+    }
+}

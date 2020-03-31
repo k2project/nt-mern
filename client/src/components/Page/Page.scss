@@ -1,12 +1,8 @@
+@import './../../VarAndMIxins.scss';
 .Page {
     overflow-x: hidden;
 }
 .Page__top-container {
-    /* display: grid; */
-    /* grid-auto-rows: 1fr; */
-    /* grid-template-columns: auto auto; */
-    /* min-width: 100vw; */
-    /* left: -50vw; */
     transition: left 1s;
 }
 .Page__nav_mobile {
@@ -17,52 +13,11 @@
     width: 100vw;
 }
 .Page__top .wrapper {
-    padding-bottom: 15rem;
-}
-.Page__title_name {
-    font-family: 'Julius Sans One', sans-serif;
-    font-size: 4.5rem;
-    z-index: 3;
-    /* padding-top: 17rem; */
-}
-.Page__subtitle {
-    /* font-family: 'Julius Sans One', sans-serif; */
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: 0.1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 2.2rem;
-}
-.butterfly {
-    display: block;
-    transition: 1s;
-}
-.butterfly_1 {
-    transform: rotate(40deg);
-    height: 10rem;
-    left: -6rem;
-}
-.butterfly_2 {
-    margin-top: 5rem;
-    left: 55%;
-    height: 6rem;
-    transform: rotateY(180deg) rotate(40deg);
+    // text-align: center;
+    padding-bottom: 10rem;
 }
 
-.Page__top_img.part1 {
-    position: absolute;
-    bottom: 0;
-    right: 20vw;
-}
-.Page__top_img.part2 {
-    position: absolute;
-    top: 0;
-    right: 20vw;
-}
 .Page__nav {
-    /* align-items: start;
-    display: grid;
-    grid-template-columns:1fr auto auto; */
     display: flex;
 }
 .Page__nav_links {
@@ -72,26 +27,34 @@
     font-size: 1.4rem;
     font-family: sans-serif;
     display: inline-block;
-    padding: 7rem 0 4rem;
-    width: 7.9rem;
-    /* width: 7.5rem; */
+    padding: 6rem 1.6rem 3rem;
     text-align: center;
 }
+.Page__nav a:nth-child(2) {
+    width: 7.8rem;
+}
+
 .Page__nav a.selected {
-    color: #fff;
+    // width: 8rem;
+    // padding-right: 0;
+    // padding-left: 0;
+    // color: #fff;
 }
 .Home .Page__nav a.selected {
     background: #b4d8e6;
     background: #d7e7f4;
+    background: $HOME_COLOR;
 }
 .Therapy .Page__nav a.selected {
     background: #f0e478;
     background: #f6efad;
+    background: $THERAPY_COLOR;
 }
 .Contact .Page__nav a.selected {
     background: #d8a8e3;
     background: #ecd5f1;
     background: #e4e4ff;
+    background: $CONTACT_COLOR;
 }
 
 .Page__nav_hum {
@@ -116,27 +79,30 @@
     font-size: 1.4rem;
     font-family: sans-serif;
     padding: 1rem 2rem;
-    border: solid 0.2rem #111;
-    left: 10rem;
-    top: 5.5rem;
+    border: solid 0.1rem #111;
+    // left: 10rem;
+    top: 5rem;
+    margin-right: 0.2rem;
     display: inline-block;
 }
 .Page__nav_num a {
     padding: 0;
     width: 100%;
 }
-.Page__nav_linkedin a {
+.Page__nav_media a {
     display: inline-block;
     padding: 0;
     width: 4rem;
     height: 4rem;
-    left: 10rem;
-    top: 5.5rem;
-    border: solid 0.2rem #111;
-    background: #111;
+    // left: 10rem;
+    top: 5rem;
+    margin: 0 0.1rem;
+    border: solid 0.1rem #111;
+    overflow: hidden;
 }
-.Page__nav_linkedin a img {
-    height: 3.5rem;
+.Page__nav_media a img {
+    height: 3rem;
+    top: 0.3rem;
 }
 
 .Nav__mobile_img {
@@ -177,6 +143,39 @@
     transform: rotate(-45deg);
     top: -0.2rem;
     width: 2rem;
+}
+.Page__title {
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auot;
+    // padding-left: 5rem;
+    h1 {
+        font-size: 6rem;
+        letter-spacing: 0.2rem;
+        line-height: 0.9;
+        // color: #ccc;
+        padding-top: 12rem;
+        font-weight: normal;
+    }
+    h2 {
+        font-size: 3rem;
+        font-weight: normal;
+        padding-top: 3rem;
+    }
+    h3 {
+        // color: #ccc;
+        // font-size: 1.8rem;
+        text-transform: uppercase;
+        padding-top: 0.2rem;
+    }
+}
+.butterfly {
+    height: 28rem;
+    position: absolute;
+    right: 10rem;
+    top: 14rem;
+    transform: scaleX(1.2);
+    opacity: 0.2;
 }
 footer {
     background: #eee;
@@ -223,33 +222,30 @@ footer p {
     display: none;
 }
 @media only screen and (max-width: 1350px) {
-    .Page__nav_linkedin a,
-    .Page__nav_num {
-        left: 2rem;
-    }
+    // .Page__nav_media a,
+    // .Page__nav_num {
+    //     left: 2rem;
+    // }
 }
-@media only screen and (max-width: 1200px) {
-    .butterfly_1 {
-        left: -1rem;
-    }
-}
-@media only screen and (max-width: 1000px) {
+@include desktop-sm {
     .Page__nav {
         padding-top: 3rem;
     }
     .Page__nav ul {
-        /* background-image: url('../../imgs/bgGrey.png'); */
-
         display: none;
     }
     .Page__nav_hum {
         display: block;
     }
-    .Page__nav_linkedin a,
+    .Page__nav_media a,
     .Page__nav_num {
         top: 0rem;
-        left: -2rem;
     }
+    .butterfly {
+        right: 16%;
+    }
+}
+@include tablet {
     .Page__top-container {
         width: 150vw;
         left: -50vw;
@@ -282,22 +278,17 @@ footer p {
         opacity: .3;
         transition: .1s .5s;
     } */
-    .Page__title_name {
-        font-size: 4rem;
+    .Page__title {
+        h1 {
+            font-size: 5rem;
+        }
     }
-    .Page__subtitle {
-        font-size: 2rem;
-    }
-    .butterfly_1 {
-        height: 8rem;
-        margin-bottom: 1rem;
-    }
-    .butterfly_2 {
-        margin-top: 8rem;
-        top: 8rem;
+    .butterfly {
+        top: 12rem;
+        right: 10%;
     }
 }
-@media only screen and (max-width: 786px) {
+@include mobile {
     .Page__top-container {
         width: 200vw;
         left: -100vw;
@@ -324,11 +315,29 @@ footer p {
         text-align: center;
         padding: 1rem 2rem 2rem;
     }
-    .Page__subtitle {
-        font-size: 1.8rem;
+
+    .Page__nav_media a,
+    .Page__nav_num {
+        left: 2rem;
+    }
+    .Page__title {
+        h1 {
+            font-size: 4rem;
+        }
+        h2 {
+            font-size: 2.6rem;
+        }
+        h3 {
+            font-size: 1.3rem;
+        }
+    }
+    .butterfly {
+        transform: scaleX(1);
+        right: 5%;
+        // top: 9rem;
     }
 }
-@media only screen and (max-width: 480px) {
+@include mobile-sm {
     .Page__nav_num a span {
         display: none;
     }
@@ -343,12 +352,20 @@ footer p {
         display: block;
         padding-bottom: 1rem;
     }
-
-    .Page__title_name {
-        font-size: 3.5rem;
-        left: 0;
+    .Page__title {
+        h1 {
+            font-size: 3.5rem;
+            letter-spacing: -0.1rem;
+            padding-top: 17rem;
+        }
+        h2 {
+            font-size: 2.4rem;
+        }
     }
-    .Page__subtitle {
-        width: 20rem;
+    .butterfly {
+        transform: scaleX(-1);
+        right: 10%;
+        height: 20rem;
+        top: 10rem;
     }
 }

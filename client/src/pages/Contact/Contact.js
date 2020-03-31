@@ -129,12 +129,12 @@ class Contact extends Component {
                                 name='nick'
                                 placeholder='What is your name?'
                                 onChange={this.handleChange}
-                                onFocus={e => changePlaceholder(e, '', '#111')}
+                                onFocus={e => changePlaceholder(e, '', '#fff')}
                                 onBlur={e =>
                                     changePlaceholder(
                                         e,
                                         'What is your name?',
-                                        '#111'
+                                        '#fff'
                                     )
                                 }
                             />
@@ -147,14 +147,14 @@ class Contact extends Component {
                                     changePlaceholder(
                                         e,
                                         'eg. example@mail.com',
-                                        '#111'
+                                        '#fff'
                                     )
                                 }
                                 onBlur={e =>
                                     changePlaceholder(
                                         e,
                                         'What is your email address?',
-                                        '#111'
+                                        '#fff'
                                     )
                                 }
                             />
@@ -168,14 +168,14 @@ class Contact extends Component {
                                     changePlaceholder(
                                         e,
                                         'eg. example@mail.com',
-                                        '#111'
+                                        '#fff'
                                     )
                                 }
                                 onBlur={e =>
                                     changePlaceholder(
                                         e,
                                         'Shall I drop you an email...',
-                                        '#111'
+                                        '#fff'
                                     )
                                 }
                             />
@@ -189,14 +189,14 @@ class Contact extends Component {
                                     changePlaceholder(
                                         e,
                                         'eg. +44 (0) 123456789',
-                                        '#111'
+                                        '#fff'
                                     )
                                 }
                                 onBlur={e =>
                                     changePlaceholder(
                                         e,
                                         'What is your telephone number?',
-                                        '#111'
+                                        '#fff'
                                     )
                                 }
                             />
@@ -435,11 +435,11 @@ const Form = props => {
                 </div>
             </div>
             <div className='Contact__bg_themed' id='contact-form'>
-                <img
+                {/* <img
                     src={require('./../../imgs/contactText.pt2.png')}
                     alt='Contact Page'
                     className='Page__top_img part2'
-                />
+                /> */}
                 <div className='section__wrapper'>{props.children}</div>
                 <p className='text_side'>
                     <b>*REQUIRED: </b> Your name and at least one method to

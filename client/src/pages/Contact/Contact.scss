@@ -1,202 +1,206 @@
-.Office__bg_img{
+@import '../../VarAndMIxins.scss';
+.Office__bg_img {
     background: #111;
     background-image: url('./../../imgs/office.jpg');
     background-size: cover;
-    background-position:  left center;
+    background-position: left center;
 }
 
-.Office .cover{
+.Office .cover {
     /* padding: 0 15rem 5rem 0; */
     padding-left: 20%;
 }
-.Directions__bg_lnd{
+.Directions__bg_lnd {
     background-image: url('./../../imgs/lnd.png');
-    background-position:  right center;
+    background-position: right center;
     background-repeat: no-repeat;
 }
-.Directions__img{
+.Directions__img {
     width: 35rem;
     margin: 1rem 0 1rem 2rem;
 }
-.Directions__bg_map{
+.Directions__bg_map {
     background: #fff;
-    background-image: url('./../../imgs/londonMap.png');
+    background-image: url('./../../imgs/map.png');
     background-size: cover;
     background-position: center;
 }
-.Directions .cover{
+.Directions .cover {
     align-content: center;
     background: none;
     /* background: rgba(255,255,255,.5); */
-    background: rgba(255,255,255,.8);
+    background: rgba(255, 255, 255, 0.8);
 
     color: #111;
     font-size: 1.8rem;
     text-align: center;
     padding: 0 20%;
-    transition: .2s .7s;
+    transition: 0.2s 0.7s;
 }
-.Directions .cover small{
+.Directions .cover small {
     display: block;
     font-size: 1rem;
 }
-.Directions .cover p{
+.Directions .cover p {
     /* opacity: 0;
     top: 15rem; */
-    transition: .75s .1s;
+    transition: 0.75s 0.1s;
 }
-.Directions .cover:hover p{
+.Directions .cover:hover p {
     opacity: 1;
     top: 0;
-    transition: .5s;
+    transition: 0.5s;
 }
-.Directions .btn{
+.Directions .btn {
     font-size: 1.1rem;
     /* opacity: 0;
     top: 5rem; */
     margin: 2rem auto 0;
-    transition: .5s;
-    transition: .25s;
+    transition: 0.5s;
+    transition: 0.25s;
     width: 22rem;
 }
-.Directions .cover:hover  .btn{
+.Directions .cover:hover .btn {
     opacity: 1;
     top: 0;
-    transition: .5s .25s;
+    transition: 0.5s 0.25s;
 }
 
-.Directions .cover:hover{
-    background: rgba(255,255,255,.8);
-    transition: .2s;
+.Directions .cover:hover {
+    background: rgba(255, 255, 255, 0.8);
+    transition: 0.2s;
 }
 
-.Contact__form{
+.Contact__form {
     padding-top: 4rem;
     font-size: 1.3rem;
-
 }
-.Contact__form input{
+.Contact__form input {
     font-size: 1.3rem;
     background: none;
-    border-bottom: solid .1rem #111;
+    border-bottom: solid 0.1rem #111;
     font-family: 'Raleway', serif;
     width: 100%;
     padding: 2.5rem 5rem 1.5rem;
 }
-.Contact__form input:focus{
+.Contact__form input:focus {
     color: #111;
     font-size: 1.3rem;
     /* color: #fff; */
     /* border-bottom:solid .1rem #fff; */
 }
-.Contact__form button.btn{
+.Contact__form button.btn {
     font-size: 1.3rem;
     font-weight: 400;
     margin: 4rem auto 2rem;
     /* border-radius: 0; */
     /* border-width: .1rem; */
 }
-.text_side{
+.text_side {
     /* font-family: sans-serif; */
     font-size: 1.3rem;
     width: 40rem;
     position: absolute;
     text-align: center;
-    transform: rotate(90deg)translateY(-50%);
+    transform: rotate(90deg) translateY(-50%);
     top: 48%;
-    right:-12rem;
-    opacity: .5;
+    right: -12rem;
+    opacity: 0.5;
 }
-.Contact__mail_fake{
+.Contact__mail_fake {
     display: none;
 }
-.Form__locations{
+.Form__locations {
     margin-top: 1rem;
     padding: 0 5rem;
-
 }
-.Form__locations p{
-    opacity: .6;
+.Form__locations p {
+    opacity: 0.6;
     text-align: left;
 }
-.RadioInput{
-    margin: .3rem 0;
+.RadioInput {
+    margin: 0.3rem 0;
 }
-.RadioInput__input{
+.RadioInput__input {
     position: absolute;
     height: 100%;
     width: 100%;
     opacity: 0;
 }
-.RadioInput__fake{
+.RadioInput__fake {
     display: grid;
     grid-template-columns: auto 1fr;
-    opacity: .6;
+    opacity: 0.6;
 }
-.RadioInput__fake.clicked{
+.RadioInput__fake.clicked {
     opacity: 1;
+    color: #fff;
 }
-.RadioInput__box{
+.RadioInput__box {
     width: 2rem;
     height: 2rem;
-    border: solid .1rem #111;
+    border: solid 0.1rem #111;
     margin-right: 1rem;
-    opacity: .5;
+    opacity: 0.6;
 }
-.RadioInput__box_check{
+.RadioInput__box_check {
     font-size: 2.5rem;
-    left: .2rem;
-    top: -.85rem;
+    left: 0.2rem;
+    top: -0.85rem;
     opacity: 0;
 }
-.RadioInput__fake.clicked .RadioInput__box_check{
-    opacity: 1 ;
-    transition: .5s;
+.RadioInput__fake.clicked .RadioInput__box_check {
+    opacity: 1;
+    color: #fff;
 }
-.RadioInput__text{
+.RadioInput__fake.clicked .RadioInput__box {
+    opacity: 1;
+    border-color: #fff;
+}
+.RadioInput__text {
     text-align: left;
 }
-.Form__err{
+.Form__err {
     font-family: sans-serif;
     font-size: 1.1rem;
     height: 1rem;
     /* opacity: .4; */
 }
 .Form__message_sent,
-.Form__message_err{
-
+.Form__message_err {
     opacity: 0;
-    transform: scale(.5);
-    animation: slideIn .5s .5s cubic-bezier(.1,1.13,.7,1.79)  forwards;
+    transform: scale(0.5);
+    animation: slideIn 0.5s 0.5s cubic-bezier(0.1, 1.13, 0.7, 1.79) forwards;
 }
-@keyframes slideIn{
-    to{
+@keyframes slideIn {
+    to {
         opacity: 1;
         transform: scale(1);
     }
 }
-.Form__message_err span{
-    background: rgba(255,255,255,1);
+.Form__message_err span {
+    background: rgba(255, 255, 255, 1);
     border-radius: 100%;
-    color: #D8A8E3;
+    color: #d8a8e3;
     color: #cbcbff;
+    color: $CONTACT_COLOR;
     display: inline-block;
     font-size: 1.6rem;
     line-height: 2.5rem;
     font-weight: bolder;
     height: 2.5rem;
-    margin-right: .5rem;
+    margin-right: 0.5rem;
     text-align: center;
     width: 2.5rem;
-    top: .3rem;
+    top: 0.3rem;
 }
-.Contact__form.shake{
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+.Contact__form.shake {
+    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000px;
 }
-.Vsee{
+.Vsee {
     height: 3rem;
     margin-right: 1rem;
     margin-top: -2rem;
@@ -204,85 +208,88 @@
     top: 2rem;
 }
 
-@keyframes shake{
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
+@keyframes shake {
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
 
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
 
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
-  }
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
 
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
-  }
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
 }
 :not(output):-moz-ui-invalid {
-    box-shadow:none;
+    box-shadow: none;
 }
 @media only screen and (max-width: 1200px) {
-
-    .Directions .cover{
-        background: rgba(255,255,255,.8);
-        transition: .2s;
+    .Directions .cover {
+        background: rgba(255, 255, 255, 0.8);
+        transition: 0.2s;
     }
-    .Directions .cover p{
+    .Directions .cover p {
         opacity: 1;
         top: 0;
-        transition: .5s;
+        transition: 0.5s;
     }
-    .Directions .cover .btn{
+    .Directions .cover .btn {
         opacity: 1;
         top: 0;
-        transition: .5s .25s;
+        transition: 0.5s 0.25s;
     }
     .Contact__form input,
-    .Form__locations{
+    .Form__locations {
         padding-left: 2rem;
         padding-right: 0;
     }
 }
 @media only screen and (max-width: 1000px) {
     .Office,
-    .Directions{
+    .Directions {
         display: block;
     }
-    .Office .cover{
+    .Office .cover {
         /* padding: 0 5rem 5rem 0; */
         padding-left: 15%;
     }
     .Contact__form input,
-    .Form__locations{
+    .Form__locations {
         padding-left: 10vw;
         padding-right: 2rem;
     }
-    .Contact__form{
+    .Contact__form {
         padding-top: 0;
         padding-right: 1rem;
     }
-    .Contact__form .btn{
+    .Contact__form .btn {
         margin-bottom: -2rem;
     }
-    .Form__err{
+    .Form__err {
         top: 5rem;
     }
     .Office__bg_img,
-    .Directions__bg_map{
+    .Directions__bg_map {
         height: 50rem;
     }
-    .Office__bg_img{
+    .Office__bg_img {
         display: block;
         width: 100vw;
     }
-
 }
 @media screen and (max-width: 1000px) and (orientation: landscape) {
     .Office__bg_img,
-    .Directions__bg_map{
+    .Directions__bg_map {
         display: none;
     }
     /* .Office__bg_img{
@@ -293,30 +300,27 @@
     } */
 }
 @media only screen and (max-width: 786px) {
-
-    .text_side{
+    .text_side {
         top: 45%;
         right: -16rem;
     }
-
 }
 @media only screen and (max-width: 480px) {
-    .Directions__img{
+    .Directions__img {
         width: 25rem;
         margin: 1rem 0 2rem;
     }
-    .text_side{
+    .text_side {
         right: -16.5rem;
     }
     .Form__locations,
-    .Contact__form input{
+    .Contact__form input {
         width: 95%;
         /* padding-right: 1rem; */
         padding-left: 2rem;
     }
 
-
-    .Office .cover{
+    .Office .cover {
         /* padding: 0 5rem 5rem 0; */
         padding-left: 10%;
     }
