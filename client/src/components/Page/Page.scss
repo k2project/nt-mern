@@ -125,10 +125,10 @@
 .Page__nav_mobile a {
     color: #fff;
     display: block;
-    /* font-family: sans-serif; */
-    font-size: 2rem;
-    letter-spacing: 0.3rem;
-    padding: 0.7rem 0;
+    font-family: $FONT_FAMILY_HEADINGS;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    padding: 0.5rem 0;
 }
 
 .Page.m_open .Page__nav_hum div:nth-child(1) {
@@ -244,8 +244,6 @@ footer p {
     .butterfly {
         right: 16%;
     }
-}
-@include tablet {
     .Page__top-container {
         width: 150vw;
         left: -50vw;
@@ -274,6 +272,8 @@ footer p {
     .Nav__mobile_img {
         display: block;
     }
+}
+@include tablet {
     /* .Page.m_open .Page__top_img{
         opacity: .3;
         transition: .1s .5s;
