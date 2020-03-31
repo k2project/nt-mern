@@ -158,19 +158,19 @@ const IntegrativeTherapy = () => {
                         and compassion. It takes place in a private and
                         confidential setting where we can explore thoughts and
                         feelings in a context different to most every-day
-                        settings. It is a dedicated time set aside by you and
-                        me.{' '}
+                        settings. It is a dedicated time set aside by both you
+                        and me.{' '}
                     </p>
                     <p>
                         {' '}
                         The setting and regularity of our meetings as well as
-                        our therapeutic relationship will be the vessel within
-                        which you will be free to express whatever is on your
-                        mind.
+                        our therapeutic relationship will be the container
+                        within which you will be free to express whatever is on
+                        your mind.
                     </p>
                     <p>
                         Starting therapy can be a source of comfort and release
-                        as well as worry. The below FAQs may help you reach a
+                        as well as worry. The below FAQ may help you reach a
                         decision whether now is the right time for you.
                     </p>
                 </div>
@@ -364,16 +364,16 @@ const Fees = () => {
                         fee or initial consultation at no charge. I feel the
                         first session is an important part of the work and I
                         provide the same level of service during that session as
-                        all others so my charges reflect this. In our
-                        preliminary session there is an opportunity for us to
-                        meet each other and explore whether therapy might be
-                        helpful to you. There is no commitment to ongoing work.
+                        all others so my charges reflect this. Our preliminary
+                        sessions are an opportunity for us to meet each other
+                        and explore whether therapy might be helpful to you.
+                        There is no commitment to ongoing work.
                     </p>
                     <p>
                         If you decide you would like to continue, we will agree
-                        regular days and times to meet on an ongoing basis. The
-                        establishment of regular sessions is important in order
-                        to facilitate, and give momentum to the therapeutic
+                        a regular day and time to meet on an ongoing basis. The
+                        establishment of regular sessions is important to
+                        facilitate, and give momentum to the therapeutic
                         process. Many people find that regular meetings provide
                         a sense of safety and continuity whilst they are working
                         on their emotional difficulties.

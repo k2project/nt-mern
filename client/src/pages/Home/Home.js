@@ -54,7 +54,7 @@ const Welcome = () => {
                     <SectionTitle
                         data={{
                             divider: '',
-                            subtitle: 'Welcome',
+                            subtitle: '',
                             title:
                                 'Change happens when you allow yourself to look at life in a new way'
                         }}
@@ -92,7 +92,7 @@ const About = () => {
                     <SectionTitle
                         data={{
                             divider: 'themed',
-                            subtitle: 'About Me',
+                            subtitle: '',
                             title: 'When was the last time you felt understood?'
                         }}
                     />
@@ -128,7 +128,7 @@ const Nujoji = () => {
                     <SectionTitle
                         data={{
                             divider: 'white',
-                            subtitle: 'Qualified, Registered & Insured',
+                            subtitle: '',
                             title: 'Two people sitting down together'
                         }}
                     />
@@ -144,6 +144,12 @@ const Nujoji = () => {
                         an individual and counselling and psychotherapy
                         techniques are tailored to their individual needs and
                         personal circumstances.
+                    </p>
+                    <p>
+                        I place importance on the therapeutic relationship. My
+                        practice is particularly informed by psychodynamic and
+                        attachment theory, systemic thinking and underpinned
+                        with a trauma informed approach.
                     </p>
                 </div>
             </div>
@@ -169,7 +175,7 @@ const Nujoji = () => {
                         professional standards and are validated by the main
                         professional bodies the{' '}
                         <a
-                            href=' https://www.psychotherapy.org.uk/therapist/nujoji-calvocoressi/'
+                            href='https://www.psychotherapy.org.uk/'
                             target='_blank'
                             rel='noopener noreferrer'
                         >
@@ -177,7 +183,7 @@ const Nujoji = () => {
                         </a>{' '}
                         and{' '}
                         <a
-                            href=' https://www.bacp.co.uk/profile/8fb9f46e-e25c-e811-8108-3863bb351d40/therapist?location=City%20of%20London'
+                            href='https://www.bacp.co.uk/'
                             target='_blank'
                             rel='noopener noreferrer'
                         >
@@ -198,16 +204,16 @@ const Nujoji = () => {
                                 and Psychotherapy
                             </span>
                             <span>&bull;</span>
-                            <span>Diploma in Counselling</span>
+                            <span>Post Graduate Diploma in Counselling</span>
                         </span>
                     </p>
                     <p>
-                        I have experience working one to one with a diverse
-                        variety of individual clients in private practice as
-                        well as working within a student wellbeing service in a
-                        higher education setting. I work in the NHS with male
-                        offenders in the secure forensic estate who engage in
-                        violent, harmful and criminal behaviour.
+                        I am experienced working one to one with individual
+                        clients with differing cultures, identities and belief
+                        systems in my private practice. I currently work in the
+                        National Health Service with male offenders in the
+                        secure forensic estate who engage in violent, harmful
+                        and criminal behaviour.
                     </p>
                     <p>
                         <a
@@ -244,12 +250,14 @@ const Nujoji = () => {
 const professionalBodiesData = [
     {
         logo: bacp,
-        link: 'https://www.bacp.co.uk',
+        link:
+            'https://www.bacp.co.uk/profile/8fb9f46e-e25c-e811-8108-3863bb351d40/therapist?location=City%20of%20London',
         name: 'bacp'
     },
     {
         logo: ukcp,
-        link: 'https://www.psychotherapy.org.uk/',
+        link:
+            'https://www.psychotherapy.org.uk/therapist/nujoji-calvocoressi/?back%5Btherapist_name%5D=nujoji&amp;back%5Bsubmitted%5D=1&amp;back%5Bseed%5D=1054133881',
         name: 'ukcp'
     },
     {

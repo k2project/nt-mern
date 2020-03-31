@@ -37,14 +37,19 @@ const Top = props => {
                 <Nav />
 
                 <div className='Page__title'>
+                    <h2 className={props.name + '__color_themed heading'}>
+                        Nujoji Calvocoressi{' '}
+                    </h2>
                     <h1 className='heading'>
+                        {/* <span className={props.name + '__color_themed'}>
+                            Nujoji Calvocoressi{' '}
+                        </span>
+                        <br /> */}
                         Counselling and
                         <br />
                         Psychotherapy
                     </h1>
-                    <h2 className={props.name + '__color_themed heading'}>
-                        Nujoji Calvocoressi{' '}
-                    </h2>
+
                     <h3 className='heading'>City of London &amp; West End</h3>
                 </div>
                 <img src={butterfly} alt='' className='butterfly' />
@@ -184,7 +189,7 @@ const toggleMobileMenu = () => {
 const Footer = () => {
     return (
         <footer className='Page__bg_grey'>
-            <ShareBtns />
+            {/* <ShareBtns /> */}
             <div
                 className='btn'
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
@@ -192,8 +197,8 @@ const Footer = () => {
                 Back To Top
             </div>
             <p>
-                Nujoji Calvocoressi Counselling & Psychotherapy <br /> City of
-                London & West End &copy; {new Date().getFullYear()}
+                Nujoji Calvocoressi Counselling &amp; Psychotherapy <br /> City
+                of London &amp; West End &copy; {new Date().getFullYear()}
             </p>
         </footer>
     );

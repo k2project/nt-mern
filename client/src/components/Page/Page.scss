@@ -14,7 +14,7 @@
 }
 .Page__top .wrapper {
     // text-align: center;
-    padding-bottom: 10rem;
+    padding-bottom: 12rem;
 }
 
 .Page__nav {
@@ -25,13 +25,13 @@
 }
 .Page__nav a {
     font-size: 1.4rem;
-    font-family: sans-serif;
+    font-family: $FONT_FAMILY_HEADINGS;
     display: inline-block;
-    padding: 6rem 1.6rem 3rem;
+    padding: 6rem 1.3rem 3rem;
     text-align: center;
 }
 .Page__nav a:nth-child(2) {
-    width: 7.8rem;
+    width: 7.6rem;
 }
 
 .Page__nav a.selected {
@@ -150,20 +150,26 @@
     grid-template-columns: auto auot;
     // padding-left: 5rem;
     h1 {
-        font-size: 6rem;
+        font-size: 5rem;
         letter-spacing: 0.2rem;
-        line-height: 0.9;
-        // color: #ccc;
-        padding-top: 12rem;
+        line-height: 1;
+        color: #ccc;
         font-weight: normal;
+        text-transform: uppercase;
+        letter-spacing: -0.1rem;
+        // padding-bottom: 0.5rem;
     }
     h2 {
+        padding-top: 10rem;
         font-size: 3rem;
         font-weight: normal;
-        padding-top: 3rem;
+        // padding-top: 3rem;
+        // font-weight: bold;
+        padding-bottom: 1rem;
+        padding-bottom: 0.5rem;
     }
     h3 {
-        // color: #ccc;
+        color: #ccc;
         // font-size: 1.8rem;
         text-transform: uppercase;
         padding-top: 0.2rem;
@@ -175,11 +181,11 @@
     right: 10rem;
     top: 14rem;
     transform: scaleX(1.2);
-    opacity: 0.2;
+    // opacity: 0.2;
 }
 footer {
     background: #eee;
-    padding: 2rem 0 1rem;
+    padding: 3rem 0 1rem;
     text-align: center;
 }
 
@@ -323,11 +329,13 @@ footer p {
     .Page__title {
         h1 {
             font-size: 4rem;
+            color: #111;
         }
         h2 {
             font-size: 2.6rem;
         }
         h3 {
+            color: #111;
             font-size: 1.3rem;
         }
     }
@@ -335,9 +343,14 @@ footer p {
         transform: scaleX(1);
         right: 5%;
         // top: 9rem;
+        opacity: 0.2;
+        top: 10rem;
     }
 }
 @include mobile-sm {
+    .Page__top .wrapper {
+        padding-bottom: 10rem;
+    }
     .Page__nav_num a span {
         display: none;
     }
@@ -354,11 +367,12 @@ footer p {
     }
     .Page__title {
         h1 {
-            font-size: 3.5rem;
+            font-size: 3rem;
             letter-spacing: -0.1rem;
-            padding-top: 17rem;
+            line-height: 1.1;
         }
         h2 {
+            padding-top: 20rem;
             font-size: 2.4rem;
         }
     }
@@ -366,6 +380,6 @@ footer p {
         transform: scaleX(-1);
         right: 10%;
         height: 20rem;
-        top: 10rem;
+        top: 12rem;
     }
 }

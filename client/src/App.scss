@@ -63,6 +63,7 @@ a.btn,
     text-align: center;
     width: 20rem;
     margin-top: 4rem;
+    font-family: $FONT_FAMILY_HEADINGS;
 }
 .btn_square:hover,
 .btn:hover {
@@ -104,6 +105,7 @@ section div {
     margin-bottom: 4rem;
     text-align: left;
     text-transform: uppercase;
+    padding-top: 3rem;
 }
 .section__subtitle {
     /* border-bottom: solid .1rem #111; */

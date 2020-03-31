@@ -214,7 +214,12 @@ class Contact extends Component {
                                 />
                                 <RadioInput
                                     value='any office'
-                                    text='Either location'
+                                    text='Either Location'
+                                    clearErr={this.handleChange}
+                                />
+                                <RadioInput
+                                    value='online session'
+                                    text='Online Session'
                                     clearErr={this.handleChange}
                                 />
                             </div>
@@ -287,7 +292,7 @@ const Office = () => {
                     <SectionTitle
                         data={{
                             divider: 'themed',
-                            subtitle: 'City of London and West End',
+                            subtitle: '',
                             title: 'A comfortable and confidential place'
                         }}
                     />
@@ -313,9 +318,9 @@ const Office = () => {
                         </p>
                     </div>
                     <p>
-                        Appointment Times. I see clients Monday to Friday
+                        I see clients for appointments, Monday to Friday
                         throughout the year except public holidays. Appointments
-                        are available from{' '}
+                        are available between
                         <span className='nowrap'>8am – 8pm</span>.
                     </p>
                     {/* <p>I also see clients in the West End at 19 Nassau Street, Fitzrovia, London, W1W 7AF a few minutes’ walk from Tottenham Court Road London Underground (Northern and Central Lines) and Oxford Circus London Underground (Victoria, Central and Bakerloo Lines).</p> */}
@@ -332,7 +337,7 @@ const Directions = () => {
                     <SectionTitle
                         data={{
                             divider: 'white',
-                            subtitle: 'Directions',
+                            subtitle: '',
                             title: 'Getting here'
                         }}
                     />
@@ -400,7 +405,7 @@ const Form = props => {
                     <SectionTitle
                         data={{
                             divider: 'themed',
-                            subtitle: 'How to get in touch',
+                            subtitle: '',
                             title: (
                                 <span>
                                     Talking can be a good place to start
@@ -410,8 +415,8 @@ const Form = props => {
                     />
                     <p>
                         {' '}
-                        I am always happy to speak on the telephone. You can
-                        contact me on{' '}
+                        I am always happy to speak briefly on the telephone. You
+                        can contact me on
                         <a href='tel:+442086759754'>
                             <b className='nowrap'>0208 675 9754</b>
                         </a>
