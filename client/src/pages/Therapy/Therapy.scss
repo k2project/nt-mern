@@ -1,168 +1,165 @@
-.TherapyIntro__img{
+.TherapyIntro__img {
     margin: auto;
     margin-bottom: -5rem;
     /* margin-top: -2rem; */
     width: 115%;
 }
-.IntegrativeTherapy__bg_respect{
+.IntegrativeTherapy__bg_respect {
     background-image: url('./../../imgs/respect.png');
-    background-position:right center;
-    background-size:cover;
+    background-position: right center;
+    background-size: cover;
 }
 
-.FAQ .wrapper{
+.FAQ .wrapper {
     padding-top: 10rem;
     padding-bottom: 10rem;
 }
-.fr1auto{
+.fr1auto {
     align-items: center;
     display: grid;
     grid-column-gap: 2rem;
     grid-template-columns: 1fr auto;
 }
 
-.Accordion{
+.Accordion {
     margin-top: 4rem;
     margin-bottom: 2rem;
 }
-.accordion__li{
+.accordion__li {
     max-height: 9.5rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     overflow: hidden;
-    transition: .5s;
-
+    transition: 0.5s;
+    a {
+        font-weight: bold;
+    }
 }
-.accordion__li.active{
+.accordion__li.active {
     max-height: 80rem;
-    transition: .75s ease-in;
+    transition: 0.75s ease-in;
 }
-.accordion__li span{
+.accordion__li span {
     font-size: 2rem;
 }
-.accordion__q{
+.accordion__q {
     align-items: center;
-    background: rgba(255,255,255,.8);
+    background: rgba(255, 255, 255, 0.8);
     cursor: pointer;
     display: grid;
     /* grid-template-columns: 1fr 5rem; */
     padding: 3rem 5rem 2rem;
-    margin-bottom: .2rem;
-    transition: .2s .5s;
+    margin-bottom: 0.2rem;
+    transition: 0.2s 0.5s;
     z-index: 2;
     display: flex;
-    align-items:center
+    align-items: center;
 }
-.accordion__q p{
+.accordion__q p {
     flex-grow: 1;
     padding-right: 1rem;
 }
-.accordion__a{
-    background: rgba(255,255,255,.8);
+.accordion__a {
+    background: rgba(255, 255, 255, 0.8);
     opacity: 0;
     padding: 2rem 7rem 2rem;
     text-align: justify;
-    transition: opacity 0s .5s;
+    transition: opacity 0s 0.5s;
 }
 
-.accordion__li.active .accordion__q{
-    background:  #F0E478;
-    background: #F6EFAD;
+.accordion__li.active .accordion__q {
+    background: #f0e478;
+    background: #f6efad;
     font-weight: bold;
-    transition: .2s;
+    transition: 0.2s;
 }
-.accordion__li.active .accordion__a{
+.accordion__li.active .accordion__a {
     opacity: 1;
     transition: opacity 0s 0s;
 }
-.Insurance{
+.Insurance {
     background: #efefef;
 }
-.Insurance .wrapper{
-    padding-top:12rem;
-    padding-bottom:10rem;
+.Insurance .wrapper {
+    padding-top: 12rem;
+    padding-bottom: 10rem;
     text-align: justify;
 }
-.Insurance__logos{
+.Insurance__logos {
     text-align: center;
-    margin: 0 0 2rem ;
+    margin: 0 0 2rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
-.Insurance__logo{
+.Insurance__logo {
     height: 5rem;
-    margin: .5rem .8rem;
+    margin: 0.5rem 0.8rem;
 }
 @media only screen and (max-width: 1200px) {
-
 }
 @media only screen and (max-width: 1000px) {
-    .TherapyIntro__img{
+    .TherapyIntro__img {
         width: 80%;
     }
-    .IntegrativeTherapy .Therapy__bg_themed{
+    .IntegrativeTherapy .Therapy__bg_themed {
         background: #fff;
     }
     .IntegrativeTherapy .section__divider.white,
-    .IntegrativeTherapy__bg_respect{
-        background: #F0E478;
-        background: #F6EFAD;
+    .IntegrativeTherapy__bg_respect {
+        background: #f0e478;
+        background: #f6efad;
     }
 
-    .Insurance__logos{
+    .Insurance__logos {
         width: 57rem;
         margin: auto;
     }
-
 }
 @media only screen and (max-width: 786px) {
-    .fr1auto{
+    .fr1auto {
         grid-template-columns: 1fr;
     }
-    .accordion__li{
+    .accordion__li {
         max-height: 6rem;
         /* margin-top: -1.5rem; */
     }
-    .accordion__q{
-        align-items:start;
+    .accordion__q {
+        align-items: start;
         background: none;
         /* grid-column-gap: 1rem; */
         grid-template-columns: 1fr 1.5rem;
         padding: 0;
     }
-    .accordion__li.active .accordion__q{
+    .accordion__li.active .accordion__q {
         background: none;
-        color:  #F0E478;
+        color: #f0e478;
         color: #c8b716;
         font-weight: bold;
         transition: 0s;
     }
-    .accordion__li span{
+    .accordion__li span {
         /* display: none; */
         padding-top: 1rem;
     }
-    .accordion__a{
+    .accordion__a {
         background: none;
         font-size: 1.4rem;
-        padding:  0;
+        padding: 0;
     }
-    .Insurance__logos{
+    .Insurance__logos {
         width: 100%;
     }
-    .Insurance__logo{
+    .Insurance__logo {
         height: 7.5vw;
         max-height: 6rem;
     }
-
 }
 @media only screen and (max-width: 480px) {
-
-    .Insurance__logo{
+    .Insurance__logo {
         height: 10vw;
         max-height: 4rem;
     }
-    .Insurance__logos a:nth-child(5){
+    .Insurance__logos a:nth-child(5) {
         order: -1;
     }
-
 }

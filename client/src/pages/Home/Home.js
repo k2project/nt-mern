@@ -294,12 +294,18 @@ const ProfessionalBodies = () => {
             <div className='wrapper'>
                 <div className='ProfessionalBodies__logos'>{logos}</div>
                 <p>
-                    I am a member of the British Association of Counsellors and
-                    Psychotherapists (BACP) and adhere to their Ethical
-                    Principles and Code of Professional Conduct. I am also a
-                    registered member of the United Kingdom Council for
-                    Psychotherapy (UKCP) and the International Association for
-                    Forensic Psychotherapy (IAFP). I hold an enhanced
+                    I am a registered member of the United Kingdom Council for
+                    Psychotherapy (UKCP) and adhere to their{' '}
+                    <a
+                        href='https://www.psychotherapy.org.uk/wp-content/uploads/2019/06/UKCP-Code-of-Ethics-and-Professional-Practice-2019.pdf'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
+                        Code of Ethics and Professional Practice
+                    </a>
+                    . I am a member of the International Association for
+                    Forensic Psychotherapy (IAFP) and the British Association of
+                    Counsellors and Psychotherapists (BACP). I hold an enhanced
                     certificate from the Disclosure and Barring Service.
                 </p>
             </div>
