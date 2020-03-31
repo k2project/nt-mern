@@ -345,7 +345,7 @@ const questionsAndAnswers = [
     {
         q: 'Are my problems big enough?',
         a:
-            'There is no scale of importance, you don&#39;t have to be in crisis to make use of therapy. The most important thing is curiosity and a will and desire for growth. Simply wanting more fulfilment, improved mental wellbeing and a clearer understanding and energy for life is reason enough for committing to therapy.'
+            "There is no scale of importance, you don't have to be in crisis to make use of therapy. The most important thing is curiosity and a will and desire for growth. Simply wanting more fulfilment, improved mental wellbeing and a clearer understanding and energy for life is reason enough for committing to therapy."
     },
 
     {

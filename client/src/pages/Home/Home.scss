@@ -14,7 +14,8 @@
 .ProfessionalBodies {
     background: #efefef;
     a {
-        font-weight: bold;
+        // font-weight: bold;
+        text-decoration: underline;
     }
 }
 .ProfessionalBodies .wrapper {
@@ -33,15 +34,22 @@
     height: 6rem;
     margin: 0.5rem 1rem;
 }
-
+.ProfessionalBodies__logo.bacp {
+    left: -0.5rem;
+}
+.ProfessionalBodies__logo.ukcp {
+    transform: scale(1.3);
+    top: -1rem;
+    left: 0.7rem;
+}
 .Nujoji__pb_links {
     height: 4rem;
     margin: 2rem 0.2rem -1rem;
 }
 
 .Nujoji a {
-    text-decoration: none;
-    font-weight: bold;
+    text-decoration: underline;
+    // font-weight: bold;
     // color: #001041;
     // color: #1498d9;
 }
@@ -89,6 +97,9 @@
     }
     .ProfessionalBodies__logos a:last-child {
         order: -1;
+    }
+    .ProfessionalBodies__logo.ukcp {
+        top: -0.5rem;
     }
     .tp__logo {
         height: 5rem;

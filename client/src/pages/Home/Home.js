@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import DocumentMeta from 'react-document-meta';
 import { NavHashLink as Link } from 'react-router-hash-link';
 
@@ -55,8 +55,12 @@ const Welcome = () => {
                         data={{
                             divider: '',
                             subtitle: '',
-                            title:
-                                'Change happens when you allow yourself to look at life in a new way'
+                            title: (
+                                <span>
+                                    <b>Change</b> happens when you allow
+                                    yourself to look at life in a new way
+                                </span>
+                            )
                         }}
                     />
                 </div>
@@ -93,7 +97,12 @@ const About = () => {
                         data={{
                             divider: 'themed',
                             subtitle: '',
-                            title: 'When was the last time you felt understood?'
+                            title: (
+                                <span>
+                                    When was the last time you felt{' '}
+                                    <b>understood</b>?
+                                </span>
+                            )
                         }}
                     />
                     {/* <p>It's taugh to find someone you can truly connect with. Yet, in our fast-paced lives, the connection is more important than ever.</p> */}
@@ -129,7 +138,11 @@ const Nujoji = () => {
                         data={{
                             divider: 'white',
                             subtitle: '',
-                            title: 'Two people sitting down together'
+                            title: (
+                                <span>
+                                    Two people sitting down <b>together</b>
+                                </span>
+                            )
                         }}
                     />
 
@@ -284,7 +297,7 @@ const ProfessionalBodies = () => {
                 <img
                     src={b.logo}
                     alt={b.name}
-                    className='ProfessionalBodies__logo'
+                    className={'ProfessionalBodies__logo ' + b.name}
                 />
             </a>
         );

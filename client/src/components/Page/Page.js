@@ -81,7 +81,7 @@ const Nav = props => {
             </div>
             <div className='Page__nav_media'>
                 <a
-                    href='https://www.facebook.com/calvocoressi/'
+                    href='https://www.facebook.com/calvocoressi'
                     target='_blank'
                     rel='noopener noreferrer'
                 >
