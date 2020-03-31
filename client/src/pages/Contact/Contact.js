@@ -293,7 +293,12 @@ const Office = () => {
                         data={{
                             divider: 'themed',
                             subtitle: '',
-                            title: 'A comfortable and confidential place'
+                            title: (
+                                <span>
+                                    A <b>comfortable</b> and <b>confidential</b>{' '}
+                                    place
+                                </span>
+                            )
                         }}
                     />
                     <div className='section__clm2'>
@@ -408,7 +413,7 @@ const Form = props => {
                             subtitle: '',
                             title: (
                                 <span>
-                                    Talking can be a good place to start
+                                    Talking can be a good place to <b>start</b>
                                 </span>
                             )
                         }}

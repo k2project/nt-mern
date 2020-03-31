@@ -98,7 +98,11 @@ const TherapyIntro = () => {
                         data={{
                             divider: 'themed',
                             subtitle: '',
-                            title: 'How will therapy help?'
+                            title: (
+                                <span>
+                                    How will therapy <b>help</b>?
+                                </span>
+                            )
                         }}
                     />
                     <img
@@ -478,8 +482,13 @@ const Fees = () => {
                         data={{
                             divider: 'white',
                             subtitle: '',
-                            title:
-                                'Many people find that regular meetings provide a sense of safety and continuity'
+                            title: (
+                                <span>
+                                    Many people find that <b>regular</b>{' '}
+                                    meetings provide a sense of safety and{' '}
+                                    <b>continuity</b>
+                                </span>
+                            )
                         }}
                     />
                     <p>
