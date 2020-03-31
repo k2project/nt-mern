@@ -97,7 +97,7 @@ const TherapyIntro = () => {
                     <SectionTitle
                         data={{
                             divider: 'themed',
-                            subtitle: 'First steps',
+                            subtitle: '',
                             title: 'How will therapy help?'
                         }}
                     />
@@ -137,7 +137,7 @@ const IntegrativeTherapy = () => {
                     <SectionTitle
                         data={{
                             divider: 'white',
-                            subtitle: 'How I work',
+                            subtitle: '',
                             title: 'Integrative Therapy'
                         }}
                     />
@@ -190,7 +190,7 @@ const FAQ = props => {
                 <SectionTitle
                     data={{
                         divider: 'white',
-                        subtitle: 'FAQ',
+                        subtitle: '',
                         title: 'What is therapy?'
                     }}
                 />
@@ -477,7 +477,7 @@ const Fees = () => {
                     <SectionTitle
                         data={{
                             divider: 'white',
-                            subtitle: 'What I charge',
+                            subtitle: '',
                             title:
                                 'Many people find that regular meetings provide a sense of safety and continuity'
                         }}
