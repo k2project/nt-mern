@@ -287,7 +287,7 @@ const Office = () => {
     return (
         <section className='Office'>
             <div className='Office__bg_img'></div>
-            <div>
+            <div className='Contact__bg_themed'>
                 <div className='section__wrapper'>
                     <SectionTitle
                         data={{
