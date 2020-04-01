@@ -1,3 +1,4 @@
+@import '../../VarAndMIxins.scss';
 .TherapyIntro__img {
     margin: auto;
     margin-bottom: -5rem;
@@ -78,6 +79,7 @@
 }
 .Insurance {
     background: #efefef;
+    font-family: $FONT_FAMILY_HEADINGS;
 }
 .Insurance .wrapper {
     padding-top: 12rem;
