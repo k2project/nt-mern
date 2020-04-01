@@ -59,7 +59,7 @@ const Welcome = () => {
                             title: (
                                 <span>
                                     <b>Change</b> happens when you allow
-                                    yourself to look at life in a new way
+                                    yourself to look at <b>life</b> in a new way
                                 </span>
                             )
                         }}
@@ -106,12 +106,12 @@ const About = () => {
                             )
                         }}
                     />
-                    {/* <p>It's taugh to find someone you can truly connect with. Yet, in our fast-paced lives, the connection is more important than ever.</p> */}
 
                     <p>
-                        I am passionate about my work and firmly believe that
-                        therapy can bring about positive change to people’s
-                        lives.
+                        Hello, my name is Nujoji and I am a London based
+                        counsellor and psychotherapist. I am passionate about my
+                        work and firmly believe that therapy can bring about
+                        positive change to people’s lives.
                     </p>
                     <Link
                         to='/therapy#integrative-therapy'
@@ -141,7 +141,8 @@ const Nujoji = () => {
                             subtitle: '',
                             title: (
                                 <span>
-                                    Two people sitting down <b>together</b>
+                                    Two people <b>sitting</b> down{' '}
+                                    <b>together</b>
                                 </span>
                             )
                         }}
@@ -240,9 +241,9 @@ const Nujoji = () => {
                         I am experienced working one to one with individual
                         clients with differing cultures, identities and belief
                         systems in my private practice. I currently work in the
-                        National Health Service with male offenders in the
-                        secure forensic estate who engage in violent, harmful
-                        and criminal behaviour.
+                        National Health Service with men offenders in the secure
+                        forensic estate who engage in violent, harmful and
+                        criminal behaviour.
                     </p>
                     <p>
                         <a

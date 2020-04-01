@@ -274,7 +274,7 @@ const openAllQuestions = () => {
 };
 const questionsAndAnswers = [
     {
-        q: 'How counselling and psychotherapy can help?',
+        q: 'How can counselling and psychotherapy help?',
         a: (
             <Fragment>
                 <p>
@@ -458,7 +458,7 @@ Ethics-and-Professional-Practice-2019.pdf'
             'The decision to end the therapy will always be yours. I do recommend for short term work you allow three weeks notice to bring the work to an end and in longer term work, over one year, three months notice.'
     },
     {
-        q: 'Can I come in the evening?',
+        q: 'Can I have an evening appointment?',
         a:
             'I work in the evenings. I do not work Saturdays, Sundays or public holidays.'
     },

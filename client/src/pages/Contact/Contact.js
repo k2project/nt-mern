@@ -326,7 +326,7 @@ const Office = () => {
                         I see clients for appointments, Monday to Friday
                         throughout the year except public holidays. Appointments
                         are available between
-                        <span className='nowrap'>8am – 8pm</span>.
+                        <span className='nowrap'> 8am – 8pm</span>.
                     </p>
                     {/* <p>I also see clients in the West End at 19 Nassau Street, Fitzrovia, London, W1W 7AF a few minutes’ walk from Tottenham Court Road London Underground (Northern and Central Lines) and Oxford Circus London Underground (Victoria, Central and Bakerloo Lines).</p> */}
                 </div>
@@ -413,7 +413,8 @@ const Form = props => {
                             subtitle: '',
                             title: (
                                 <span>
-                                    Talking can be a good place to <b>start</b>
+                                    <b>Talking</b> can be a good place to{' '}
+                                    <b>start</b>
                                 </span>
                             )
                         }}

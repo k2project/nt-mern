@@ -74,12 +74,12 @@
 .Contact__form {
     padding-top: 4rem;
     font-size: 1.3rem;
+    font-family: $FONT_FAMILY_HEADINGS;
 }
 .Contact__form input {
     font-size: 1.3rem;
     background: none;
     border-bottom: solid 0.1rem #111;
-    font-family: 'Raleway', serif;
     width: 100%;
     padding: 2.5rem 5rem 1.5rem;
 }
@@ -97,8 +97,8 @@
     /* border-width: .1rem; */
 }
 .text_side {
-    /* font-family: sans-serif; */
-    font-size: 1.3rem;
+    font-family: $FONT_FAMILY_HEADINGS;
+    font-size: 1.2rem;
     width: 40rem;
     position: absolute;
     text-align: center;
@@ -286,11 +286,24 @@
         display: block;
         width: 100vw;
     }
+    .Office .Contact__bg_themed {
+        background-color: #fff;
+    }
+    .Directions .cover {
+        // background-image: linear-gradient(
+        //     rgba(255, 255, 255, 0.3),
+        //     rgba(255, 255, 255, 0.3),
+        //     $CONTACT_COLOR
+        // );
+    }
+    .Form {
+        background-color: #f5f5f5;
+    }
 }
 @media screen and (max-width: 1000px) and (orientation: landscape) {
     .Office__bg_img,
     .Directions__bg_map {
-        display: none;
+        // display: none;
     }
     /* .Office__bg_img{
         padding: 20rem 0;
