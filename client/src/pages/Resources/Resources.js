@@ -65,14 +65,19 @@ const Intro = () => {
             <div>
                 <div className='section__wrapper'>
                     <p>
-                        <img src={chair} alt='' className='chair' />
                         The below selection is not designed to substitute
                         counselling or psychotherapy, rather to support your
                         curiosity and decision making about whether now is the
-                        right time for you to start therapy. They are all
-                        resources I have chosen because they have been useful to
-                        my own personal and professional development.
+                        right time for you to start therapy.
                     </p>
+                    <div className='chair'>
+                        <p>
+                            They are all resources I have chosen because they
+                            have been useful to my own personal and professional
+                            development.
+                        </p>
+                        <img src={chair} alt='' />
+                    </div>
                 </div>
             </div>
         </section>

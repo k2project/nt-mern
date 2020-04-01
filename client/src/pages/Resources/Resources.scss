@@ -1,8 +1,15 @@
 @import '../../VarAndMIxins.scss';
 .chair {
-    height: 18rem;
-    float: left;
-    padding-right: 2rem;
+    display: gird;
+    grid-template-columns: 1fr auto;
+    align-items: start;
+
+    img {
+        height: 15rem;
+        padding: 0 2rem;
+        margin-bottom: -3rem;
+        top: -1rem;
+    }
 }
 .resources__img {
     max-width: 100%;
@@ -27,6 +34,14 @@
     }
     .resources__title .section__body {
         display: grid;
+        grid-template-columns: 1fr;
+    }
+    .chair img {
+        top: 1rem;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .chair {
         grid-template-columns: 1fr;
     }
 }
