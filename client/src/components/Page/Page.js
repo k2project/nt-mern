@@ -163,14 +163,14 @@ const NavLinks = () => {
             >
                 Contact
             </NavLink>
-            <NavLink
+            {/* <NavLink
                 to='/resources'
                 activeClassName='selected'
                 smooth
                 onClick={toggleMobileMenu}
             >
                 Resources
-            </NavLink>
+            </NavLink> */}
         </ul>
     );
 };
