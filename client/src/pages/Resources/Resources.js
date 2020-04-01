@@ -7,6 +7,8 @@ import SectionTitle from '../../components/SectionTitle';
 
 import chair from '../../imgs/chair.png';
 
+import Attached from './Attached';
+
 const meta = {
     title: 'Resources | Nujoji Calvocoressi Counselling and Psychotherapy',
     description:
@@ -33,6 +35,7 @@ export const Resources = () => {
         <DocumentMeta {...meta}>
             <Page page={pageDetails}>
                 <Intro />
+                <Attached />
             </Page>
         </DocumentMeta>
     );
@@ -51,8 +54,8 @@ const Intro = () => {
                             subtitle: '',
                             title: (
                                 <span>
-                                    <b>Looking</b> for a written, visual or
-                                    audible <b>resource</b>?
+                                    Looking for a{' '}
+                                    <b>written, visual or audible</b> resource?
                                 </span>
                             )
                         }}

@@ -110,12 +110,15 @@ section div {
 }
 .section__subtitle {
     /* border-bottom: solid .1rem #111; */
-    font-size: 1.6rem;
     font-size: 1.4rem;
     letter-spacing: 0.1rem;
     text-transform: none;
     display: block;
-    margin: 1rem 0 2rem;
+    font-family: $FONT_FAMILY_HEADINGS;
+    font-weight: bold;
+    margin-top: -3rem;
+    letter-spacing: -0.1rem;
+    // margin: 1rem 0 2rem;
 }
 
 .section__clm2 {
@@ -192,9 +195,8 @@ section div {
         padding: 12rem 10rem;
     }
     section {
-        /* grid-auto-rows: auto; */
+        grid-auto-rows: auto;
         grid-template-columns: 1fr;
-        /* grid-auto-rows: minmax(40vw,1fr); */
     }
     .Contact section.Office {
         grid-auto-rows: 50rem 1fr;
