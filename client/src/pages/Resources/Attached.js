@@ -1,6 +1,8 @@
 import React from 'react';
 import SectionTitle from '../../components/SectionTitle';
 import attached from '../../imgs/attached.jpg';
+import book from '../../imgs/book.png';
+import books from '../../imgs/books.png';
 
 function Attached(props) {
     return (
@@ -24,7 +26,9 @@ function Attached(props) {
                 </div>
             </div>
 
-            <div className='Resources__bg_themed'>
+            <div className='Resources__bg_themed book-watermark'>
+                <img src={books} alt='' className='books-inline-watermark' />
+                {/* <img src={book} alt='' className='book-inline-watermark' /> */}
                 <div className='section__wrapper'>
                     <p>
                         Is there a science to love? In this ground-breaking
