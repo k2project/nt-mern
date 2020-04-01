@@ -1,29 +1,30 @@
 {
-  "name": "nt-mern",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "client": "cd client && npm run start",
-    "server": "nodemon server.js",
-    "start": "node server.js",
-    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
-  },
-  "engines": {
-    "node": "10.14.2"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.18.3",
-    "dotenv": "^6.2.0",
-    "express": "^4.16.4",
-    "express-force-https": "^1.0.0",
-    "nodemailer": "^4.7.0"
-  },
-  "devDependencies": {
-    "concurrently": "^4.0.1"
-  }
+    "name": "nt-mern",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server",
+        "server": "nodemon server",
+        "client": "npm start --prefix client",
+        "dev": "concurrently \"npm run server\" \"npm run client\"",
+        "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+    },
+    "engines": {
+        "node": "10.14.2"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "dotenv": "^6.2.0",
+        "express": "^4.16.4",
+        "express-force-https": "^1.0.0",
+        "nodemailer": "^4.7.0"
+    },
+    "devDependencies": {
+        "concurrently": "^4.0.1",
+        "nodemon": "^2.0.2"
+    }
 }
