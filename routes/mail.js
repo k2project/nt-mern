@@ -1,3 +1,5 @@
+//working update:01.04.2020
+//jSOn must have double quotes around text
 const nodemailer = require("nodemailer");
 module.exports = (function() {
     "use strict";
