@@ -1,29 +1,29 @@
-const nodemailer = require('nodemailer');
+const nodemailer = require("nodemailer");
 module.exports = (function() {
-    'use strict';
-    const mailRoutes = require('express').Router();
+    "use strict";
+    const mailRoutes = require("express").Router();
 
-    mailRoutes.post('/send', function(req, res) {
+    mailRoutes.post("/send", function(req, res) {
         const { name, mail, mobile, location } = req.body;
         if (!name) {
             return res.send({
                 success: false,
-                message: 'Your name is required.'
+                message: "Your name is required."
             });
         }
         if (!mail && !mobile) {
             return res.send({
                 success: false,
                 message:
-                    'Please enter at last one way to contact you or call me directly on  0208 675 9754.'
+                    "Please enter at last one way to contact you or call me directly on  0208 675 9754."
             });
         }
-        const emailRegex = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+        const emailRegex = /[a-z0-9!#$%&"*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&"*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
         if (mail && !emailRegex.test(mail)) {
             return res.send({
                 success: false,
                 message:
-                    'Please enter a valid address or send an emial directly to georgie@calvocoressi.com.'
+                    "Please enter a valid address or send an emial directly to georgie@calvocoressi.com."
             });
         }
         const mobRegex = /^[+]?(\d+([- ])?)*$/;
@@ -31,20 +31,20 @@ module.exports = (function() {
             return res.send({
                 success: false,
                 message:
-                    'Please enter a valid mobile number or call me directly on  02086759754.'
+                    "Please enter a valid mobile number or call me directly on  02086759754."
             });
         }
         console.log(location);
         if (!location) {
             return res.send({
                 success: false,
-                message: 'Please indicate at what place you wish to see me.'
+                message: "Please indicate at what place you wish to see me."
             });
         }
 
         //secure: true for 465, false for other ports
         let transporter = nodemailer.createTransport({
-            host: 'smtp.livemail.co.uk',
+            host: "smtp.livemail.co.uk",
             port: 465,
             secure: true,
             auth: {
@@ -58,27 +58,27 @@ module.exports = (function() {
 
         let text =
             req.body.name +
-            ' is requesting a meeting at ' +
+            " is requesting a meeting at " +
             req.body.location +
-            ' .';
+            " .";
         text += req.body.mail
-            ? ' Email them back by clicking on the "Replay" button'
-            : '';
-        let replyTo = req.body.mail ? req.body.mail : '';
+            ? " Email them back by clicking on the 'Replay' button"
+            : "";
+        let replyTo = req.body.mail ? req.body.mail : "";
         text +=
             req.body.mobile && !req.body.mail
-                ? ' Contact them directly only by mobile on ' + req.body.mobile
-                : '';
+                ? " Contact them directly only by mobile on " + req.body.mobile
+                : "";
         text +=
             req.body.mobile && req.body.mail
-                ? ' or call ' + req.body.mobile
-                : '';
-        text += '.';
+                ? " or call " + req.body.mobile
+                : "";
+        text += ".";
         const mailOptions = {
             from: process.env.MAIL_USER,
             to: process.env.MAIL_USER,
             replyTo,
-            subject: 'Chat request received.',
+            subject: "Chat request received.",
             text
         };
 
@@ -86,7 +86,7 @@ module.exports = (function() {
             if (error) {
                 console.log(error);
             } else {
-                console.log('Email sent: ' + info.response);
+                console.log("Email sent: " + info.response);
                 res.send({
                     success: true
                 });
