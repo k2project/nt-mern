@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import DocumentMeta from 'react-document-meta';
 import { NavHashLink as Link } from 'react-router-hash-link';
 

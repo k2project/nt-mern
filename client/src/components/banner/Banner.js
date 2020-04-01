@@ -1,6 +1,6 @@
 import React from 'react';
 import './Banner.scss';
-import butterfly from '../../imgs/butterfly.png';
+// import butterfly from '../../imgs/butterfly.png';
 
 const Banner = () => {
     return (

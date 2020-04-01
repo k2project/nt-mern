@@ -173,6 +173,12 @@ section div {
     color: $CONTACT_COLOR;
     /* color: #ecd5f1; */
 }
+.Resources__bg_themed {
+    background: $RESOURCES_COLOR;
+}
+.Resources__color_themed {
+    color: darken($RESOURCES_COLOR, 10%);
+}
 
 @include desktop-sm {
     .wrapper {

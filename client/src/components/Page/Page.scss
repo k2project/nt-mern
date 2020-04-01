@@ -56,6 +56,9 @@
     background: #e4e4ff;
     background: $CONTACT_COLOR;
 }
+.Resources .Page__nav a.selected {
+    background: $RESOURCES_COLOR;
+}
 
 .Page__nav_hum {
     flex-grow: 1;
