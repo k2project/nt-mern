@@ -70,14 +70,16 @@ export default function Videos() {
             </div>
             <div className='video'>
                 <div>
-                    <div className='video__title'>Mobile World</div>
+                    <div className='video__title'>
+                        Are You Lost in the World Like Me
+                    </div>
                     <div>
                         Steve Cutt’s wonderful animation explores the mobile
                         world we find ourselves living in.
                     </div>
                     <div>
                         <a
-                            href='https://www.youtube.com/watch?v=wUW1wjlKvmY'
+                            href='https://www.youtube.com/watch?v=eXC4X_dsmCc'
                             className='btn'
                             target='_blank'
                             rel='noopener noreferrer'
