@@ -1,16 +1,9 @@
 import React, { Component } from 'react';
 import './Page.scss';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
-import {
-    FacebookShareButton,
-    LinkedinShareButton,
-    TwitterShareButton,
-    WhatsappShareButton
-} from 'react-share';
 import linkedin from './../../imgs/in.png';
 import fb from './../../imgs/fb.png';
 import butterfly from './../../imgs/butterfly.png';
-const shareUrl = 'http://www.calvocoressi.com';
 
 let mobileMenuOpen = false;
 class Page extends Component {
@@ -201,37 +194,5 @@ const Footer = () => {
                 of London &amp; West End &copy; {new Date().getFullYear()}
             </p>
         </footer>
-    );
-};
-
-const ShareBtns = () => {
-    return (
-        <div className='ShareBtns'>
-            <span>Share Website On:</span>
-            <TwitterShareButton url={shareUrl}>
-                <img
-                    src={require('./../../imgs/twitter.icon.png')}
-                    alt='Twitter Share Btn'
-                />
-            </TwitterShareButton>
-            <FacebookShareButton url={shareUrl}>
-                <img
-                    src={require('./../../imgs/facebook.icon.png')}
-                    alt='Facebook Share Btn'
-                />
-            </FacebookShareButton>
-            <LinkedinShareButton url={shareUrl}>
-                <img
-                    src={require('./../../imgs/linkedin.icon.png')}
-                    alt='Linkedin Share Btn'
-                />
-            </LinkedinShareButton>
-            <WhatsappShareButton url={shareUrl}>
-                <img
-                    src={require('./../../imgs/whatsapp.icon.png')}
-                    alt='WhatsApp Share Btn'
-                />
-            </WhatsappShareButton>
-        </div>
     );
 };

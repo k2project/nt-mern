@@ -1,8 +1,6 @@
 import React from 'react';
 import SectionTitle from '../../components/SectionTitle';
 import encyclopaedia from '../../imgs/encyclopaedia.jpg';
-import book from '../../imgs/book.png';
-import books from '../../imgs/books.png';
 
 function Encyclopaedia(props) {
     return (
