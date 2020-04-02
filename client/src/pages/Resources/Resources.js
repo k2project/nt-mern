@@ -8,6 +8,10 @@ import SectionTitle from '../../components/SectionTitle';
 import chair from '../../imgs/chair.png';
 
 import Attached from './Attached';
+import Tiger from './Tiger';
+import Encyclopaedia from './Encyclopaedia';
+import Fuck from './Fuck';
+import Videos from './Videos';
 
 const meta = {
     title: 'Resources | Nujoji Calvocoressi Counselling and Psychotherapy',
@@ -35,7 +39,13 @@ export const Resources = () => {
         <DocumentMeta {...meta}>
             <Page page={pageDetails}>
                 <Intro />
+                {/* books */}
                 <Attached />
+                <Tiger />
+                <Encyclopaedia />
+                <Fuck />
+                {/* videos */}
+                <Videos />
             </Page>
         </DocumentMeta>
     );

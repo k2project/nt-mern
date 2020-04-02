@@ -241,9 +241,9 @@ const Nujoji = () => {
                         I am experienced working one to one with individual
                         clients with differing cultures, identities and belief
                         systems in my private practice. I currently work in the
-                        National Health Service with men offenders in the secure
-                        forensic estate who engage in violent, harmful and
-                        criminal behaviour.
+                        National Health Service with men in the secure forensic
+                        estate who engage in violent, harmful and criminal
+                        behaviour.
                     </p>
                     <p>
                         <a

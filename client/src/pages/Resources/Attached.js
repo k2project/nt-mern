@@ -26,7 +26,7 @@ function Attached(props) {
                 </div>
             </div>
 
-            <div className='Resources__bg_themed book-watermark'>
+            <div className='Resources__bg_themed'>
                 <img src={books} alt='' className='books-inline-watermark' />
                 {/* <img src={book} alt='' className='book-inline-watermark' /> */}
                 <div className='section__wrapper'>
