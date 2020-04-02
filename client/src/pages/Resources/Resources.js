@@ -12,6 +12,10 @@ import Tiger from './Tiger';
 import Encyclopaedia from './Encyclopaedia';
 import Fuck from './Fuck';
 import Videos from './Videos';
+import Seattle from './Seattle';
+import Race from './Race';
+import Partially from './Partially';
+import Files from './Files';
 
 const meta = {
     title: 'Resources | Nujoji Calvocoressi Counselling and Psychotherapy',
@@ -46,6 +50,11 @@ export const Resources = () => {
                 <Fuck />
                 {/* videos */}
                 <Videos />
+                {/* podcsasts */}
+                <Seattle />
+                <Race />
+                <Partially />
+                <Files />
             </Page>
         </DocumentMeta>
     );

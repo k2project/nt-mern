@@ -14,10 +14,21 @@
         top: -1rem;
     }
 }
+.Resources .resources__title .section__wrapper {
+    .btn {
+        // margin-top: 2rem;
+    }
+}
 .resources__img {
     max-height: 30rem;
     box-shadow: 0 0 1rem 0.2rem #eee;
     margin-right: 4rem;
+}
+.resources__img--no-shadow {
+    box-shadow: none;
+}
+.resources__img--border {
+    border: solid 0.1rem #111;
 }
 .books-inline-watermark {
     position: absolute;
