@@ -39,12 +39,12 @@
     right: 0%;
     opacity: 0.5;
 }
-.book-inline-watermark {
+.podcasts-inline-watermark {
     position: absolute;
-    top: 5rem;
-    right: 4rem;
+    bottom: 5rem;
+    right: -10rem;
     height: 17rem;
-    opacity: 0.2;
+    opacity: 0.8;
 }
 .videos {
     background-color: #f5f5f5;
@@ -105,6 +105,7 @@
 @include mobile {
 }
 @include mobile-sm {
+    .podcasts-inline-watermark,
     .books-inline-watermark {
         display: none;
     }

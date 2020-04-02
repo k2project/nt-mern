@@ -1,8 +1,7 @@
 import React from 'react';
 import SectionTitle from '../../components/SectionTitle';
 import seattle from '../../imgs/seattle.jpg';
-import book from '../../imgs/book.png';
-import books from '../../imgs/books.png';
+import podcasts from '../../imgs/podcasts.png';
 
 function Seattle(props) {
     return (
@@ -26,7 +25,11 @@ function Seattle(props) {
             </div>
 
             <div className='Resources__bg_themed'>
-                <img src={books} alt='' className='books-inline-watermark' />
+                <img
+                    src={podcasts}
+                    alt=''
+                    className='podcasts-inline-watermark'
+                />
                 <div className='section__wrapper'>
                     <p>
                         The Psychology In Seattle Podcast has been producing
