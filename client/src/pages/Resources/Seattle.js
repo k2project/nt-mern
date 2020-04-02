@@ -6,7 +6,7 @@ import books from '../../imgs/books.png';
 
 function Seattle(props) {
     return (
-        <section>
+        <section className='podcasts'>
             <div className='resources__title'>
                 <div className='section__wrapper'>
                     <SectionTitle

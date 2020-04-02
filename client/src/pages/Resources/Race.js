@@ -4,7 +4,7 @@ import race from '../../imgs/race.jpg';
 
 function Race(props) {
     return (
-        <section className='section__reverse'>
+        <section className='section__reverse podcasts'>
             <div className='Resources__bg_themed '>
                 <div className='section__wrapper'>
                     <p>

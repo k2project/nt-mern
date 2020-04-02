@@ -4,7 +4,7 @@ import partially from '../../imgs/partially.jpg';
 
 function Partially(props) {
     return (
-        <section>
+        <section className='podcasts'>
             <div className='resources__title'>
                 <div className='section__wrapper'>
                     <SectionTitle

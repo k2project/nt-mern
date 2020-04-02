@@ -4,7 +4,7 @@ import files from '../../imgs/files.png';
 
 function Files(props) {
     return (
-        <section>
+        <section className='section__reverse podcasts podcasts'>
             <div className='Resources__bg_themed'>
                 <div className='section__wrapper'>
                     <p>
@@ -29,7 +29,7 @@ function Files(props) {
                     </a>
                 </div>
             </div>
-            <div className='resources__title'>
+            <div className='resources__title '>
                 <div className='section__wrapper'>
                     <SectionTitle
                         data={{
