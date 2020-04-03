@@ -125,14 +125,14 @@ class Contact extends Component {
                     <Directions />
                     <Form>
                         <form className={formCls} onSubmit={this.handleSubmit}>
-                            <label htmlFor='name'>Name:</label>
+                            <label htmlFor='name'>Name: *</label>
                             <input
                                 type='text'
                                 name='name'
                                 id='name'
                                 onChange={this.handleChange}
                             />
-                            <label htmlFor='mail1'>Email:</label>
+                            <label htmlFor='mail1'>Email: *</label>
                             <input
                                 type='text'
                                 name='mail1'
@@ -147,7 +147,7 @@ class Contact extends Component {
                                 onChange={this.handleChange}
                                 onMouseDown={e => e.preventDefault()}
                             />
-                            <label htmlFor='mobile'>Mobile:</label>
+                            <label htmlFor='mobile'>Mobile: *</label>
                             <input
                                 type='text'
                                 name='mobile'
@@ -156,7 +156,7 @@ class Contact extends Component {
                             />
                             <fieldset className='Form__locations'>
                                 <legend>
-                                    What location is the most convenient?
+                                    What location is the most convenient? *
                                 </legend>
                                 <RadioInput
                                     value='Tokenhouse Yard'
@@ -182,7 +182,7 @@ class Contact extends Component {
 
                             <div className='text_cntr'>
                                 <button type='submit' className='btn'>
-                                    Please Get In Touch*
+                                    Get In Touch
                                 </button>
                             </div>
                             <div className='Form__err'>
@@ -419,8 +419,8 @@ const Form = props => {
                 /> */}
                 <div className='section__wrapper'>{props.children}</div>
                 <p className='text_side'>
-                    <b>*REQUIRED: </b> Your name and at least one method to
-                    contact you.
+                    <b>*REQUIRED. </b> Please choose at least one form of
+                    contact.
                 </p>
             </div>
         </section>
