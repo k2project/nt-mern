@@ -5,6 +5,8 @@ import './Contact.scss';
 import Page from '../../components/Page/Page';
 import SectionTitle from '../../components/SectionTitle';
 
+import location from '../../imgs/location.png';
+
 const meta = {
     title:
         'City of London & West End| Nujoji Calvocoressi Counselling and Psychotherapy',
@@ -106,7 +108,10 @@ class Contact extends Component {
                         mobile: '',
                         err: ''
                     });
-                    for (var i = 0; i < locations.length; i++) {
+                    const locationInputs = document.querySelectorAll(
+                        '.RadioInput__fake'
+                    );
+                    for (var i = 0; i < locationInputs.length; i++) {
                         locations[i].checked = false;
                     }
                 } else {
@@ -297,11 +302,21 @@ const Office = () => {
                             )
                         }}
                     />
-                    <p>
-                        <b>CITY OF LONDON</b>: 11-12 Tokenhouse Yard, London,
-                        EC2R 7AS <br />
-                        <b>WEST END</b>: 19 Nassau Street, London, W1W 7AF{' '}
-                    </p>
+                    <div className='addresses'>
+                        <div className='address'>
+                            <img src={location} alt='' />
+                            <span>
+                                11-12 Tokenhouse Yard, City of London, London,
+                                EC2R 7AS
+                            </span>
+                        </div>
+                        <div className='address'>
+                            <img src={location} alt='' />
+                            <span>
+                                19 Nassau Street, West End, London, W1W 7AF
+                            </span>
+                        </div>
+                    </div>
                     {/* <div className='section__clm2'>
                         <p>
                             <b>

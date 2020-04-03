@@ -1,4 +1,21 @@
 @import '../../VarAndMIxins.scss';
+.addresses {
+    margin: 2rem 0 3rem;
+}
+.address {
+    font-size: 1.6rem;
+    text-align: left;
+    font-family: $FONT_FAMILY_HEADINGS;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    margin: 0.5rem 1rem;
+    img {
+        height: 4rem;
+        margin-right: 1rem;
+        display: inline-block;
+    }
+}
 .Office__bg_img {
     background: #111;
     background-image: url('./../../imgs/office.jpg');
@@ -72,6 +89,8 @@
 }
 
 .Contact__form {
+    width: 30rem;
+    margin: auto;
     padding-top: 4rem;
     font-size: 1.3rem;
     font-family: $FONT_FAMILY_HEADINGS;
@@ -319,6 +338,9 @@
     }
 }
 @media only screen and (max-width: 480px) {
+    .Contact__form {
+        width: 92%;
+    }
     .Directions__img {
         width: 25rem;
         margin: 1rem 0 2rem;
