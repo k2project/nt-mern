@@ -58,6 +58,7 @@ class Contact extends Component {
     }
     handleSubmit = async e => {
         e.preventDefault();
+        console.log('submitting....')
 
         const t = e.target;
         if (this.state.err) {
@@ -103,7 +104,7 @@ class Contact extends Component {
         })
             .then(res => res.json())
             .then(json => {
-                // console.log('json', json);
+                console.log('json', json);
                 const locationInputs = document.querySelectorAll(
                     '.RadioInput__fake'
                 );
