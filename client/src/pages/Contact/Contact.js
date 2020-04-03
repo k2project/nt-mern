@@ -113,7 +113,7 @@ class Contact extends Component {
                     });
 
                     for (var i = 0; i < locationInputs.length; i++) {
-                        locationInputs[i].className = '.RadioInput__fake';
+                        locationInputs[i].classList.remove('clicked');
                     }
                 } else {
                     this.setState({
