@@ -32,15 +32,21 @@ class Contact extends Component {
         super(props);
 
         this.state = {
-            sent: false
+            sent: false,
+            name: '',
+            mail: '',
+            mobile: '',
+            err: ''
         };
 
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleChange = this.handleChange.bind(this);
     }
-    handleChange() {
+    handleChange(e) {
+        const name = e.target.name;
         this.setState({
             err: '',
+            [name]: e.target.value,
             sent: false
         });
     }
@@ -66,7 +72,7 @@ class Contact extends Component {
         }
 
         let name = stripHTML(t.name.value);
-        let mail = stripHTML(t.mail1.value);
+        let mail = stripHTML(t.mail.value);
         let mobile = stripHTML(t.mobile.value);
         let location = null;
 
@@ -91,7 +97,7 @@ class Contact extends Component {
         })
             .then(res => res.json())
             .then(json => {
-                // console.log('json', json);
+                console.log('json', json);
                 if (json.success) {
                     this.setState({
                         sent: true,
@@ -131,13 +137,15 @@ class Contact extends Component {
                                 name='name'
                                 id='name'
                                 onChange={this.handleChange}
+                                value={this.state.name}
                             />
-                            <label htmlFor='mail1'>Email: *</label>
+                            <label htmlFor='mail'>Email: *</label>
                             <input
                                 type='text'
-                                name='mail1'
-                                id='mail1'
+                                name='mail'
+                                id='mail'
                                 onChange={this.handleChange}
+                                value={this.state.mail}
                             />
                             <input
                                 type='email'
@@ -153,6 +161,7 @@ class Contact extends Component {
                                 name='mobile'
                                 id='mobile'
                                 onChange={this.handleChange}
+                                value={this.state.mobile}
                             />
                             <fieldset className='Form__locations'>
                                 <legend>
@@ -161,22 +170,42 @@ class Contact extends Component {
                                 <RadioInput
                                     value='Tokenhouse Yard'
                                     text='Tokenhouse Yard (City of London)'
-                                    clearErr={this.handleChange}
+                                    clearErr={() => {
+                                        this.setState({
+                                            err: '',
+                                            sent: false
+                                        });
+                                    }}
                                 />
                                 <RadioInput
                                     value='Nassau Street'
                                     text='Nassau Street (West End)'
-                                    clearErr={this.handleChange}
+                                    clearErr={() => {
+                                        this.setState({
+                                            err: '',
+                                            sent: false
+                                        });
+                                    }}
                                 />
                                 <RadioInput
                                     value='any office'
                                     text='Either Location'
-                                    clearErr={this.handleChange}
+                                    clearErr={() => {
+                                        this.setState({
+                                            err: '',
+                                            sent: false
+                                        });
+                                    }}
                                 />
                                 <RadioInput
                                     value='online session'
                                     text='Online Session'
-                                    clearErr={this.handleChange}
+                                    clearErr={() => {
+                                        this.setState({
+                                            err: '',
+                                            sent: false
+                                        });
+                                    }}
                                 />
                             </fieldset>
 
@@ -268,7 +297,12 @@ const Office = () => {
                             )
                         }}
                     />
-                    <div className='section__clm2'>
+                    <p>
+                        <b>CITY OF LONDON</b>: 11-12 Tokenhouse Yard, London,
+                        EC2R 7AS <br />
+                        <b>WEST END</b>: 19 Nassau Street, London, W1W 7AF{' '}
+                    </p>
+                    {/* <div className='section__clm2'>
                         <p>
                             <b>
                                 11-12 Tokenhouse Yard
@@ -288,7 +322,7 @@ const Office = () => {
                                 W1W 7AF
                             </b>
                         </p>
-                    </div>
+                    </div> */}
                     <p>
                         I see clients for appointments, Monday to Friday
                         throughout the year except public holidays. Appointments
