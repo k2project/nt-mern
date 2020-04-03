@@ -17,7 +17,7 @@ class App extends Component {
         return (
             <Router basename={process.env.PUBLIC_URL}>
                 <Analytics id='UA-127585560-1' debug>
-                    {/* <Banner /> */}
+                    <Banner />
                     <Switch>
                         <Route exact path={`/`} component={Home} />
                         <Route exact path={`/therapy`} component={Therapy} />

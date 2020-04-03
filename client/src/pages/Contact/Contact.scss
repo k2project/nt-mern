@@ -75,25 +75,43 @@
     padding-top: 4rem;
     font-size: 1.3rem;
     font-family: $FONT_FAMILY_HEADINGS;
-}
-.Contact__form input {
-    font-size: 1.3rem;
-    background: none;
-    border-bottom: solid 0.1rem #111;
-    width: 100%;
-    padding: 2.5rem 5rem 1.5rem;
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        //to get rid off bg color
+        -webkit-transition-delay: 99999s;
+    }
+    label {
+        padding: 0.5rem;
+        display: block;
+    }
+    input {
+        display: block;
+        border: solid 0.1rem #111;
+        color: #fff;
+        font-size: 1.4rem;
+        background: none;
+        // border-bottom: solid 0.1rem #111;
+        width: 100%;
+        // padding: 2.5rem 5rem 1.5rem;
+        padding: 1rem 1rem;
+    }
+    fieldset {
+        border: none;
+    }
+    legend {
+        display: block;
+        margin: 0.5rem 0;
+    }
 }
 .Contact__form input:focus {
-    color: #111;
-    font-size: 1.3rem;
-    background: none;
-    /* color: #fff; */
-    /* border-bottom:solid .1rem #fff; */
 }
 .Contact__form button.btn {
     font-size: 1.3rem;
     font-weight: 400;
-    margin: 4rem auto 2rem;
+    margin: 3rem auto 2rem;
     /* border-radius: 0; */
     /* border-width: .1rem; */
 }
@@ -108,19 +126,18 @@
     right: -12rem;
     opacity: 0.5;
 }
-.Contact__mail_fake {
+#mail2 {
     display: none;
 }
 .Form__locations {
-    margin-top: 1rem;
-    padding: 0 5rem;
+    margin-top: 1.5rem;
+    padding: 0.5rem;
 }
 .Form__locations p {
-    opacity: 0.6;
     text-align: left;
 }
 .RadioInput {
-    margin: 0.3rem 0;
+    margin: 0;
 }
 .RadioInput__input {
     position: absolute;
@@ -131,7 +148,7 @@
 .RadioInput__fake {
     display: grid;
     grid-template-columns: auto 1fr;
-    opacity: 0.6;
+    margin: 0.3rem 0;
 }
 .RadioInput__fake.clicked {
     opacity: 1;
@@ -162,9 +179,9 @@
     text-align: left;
 }
 .Form__err {
-    font-family: sans-serif;
     font-size: 1.1rem;
     height: 1rem;
+    margin-top: 1rem;
     /* opacity: .4; */
 }
 .Form__message_sent,
@@ -182,8 +199,6 @@
 .Form__message_err span {
     background: rgba(255, 255, 255, 1);
     border-radius: 100%;
-    color: #d8a8e3;
-    color: #cbcbff;
     color: $CONTACT_COLOR;
     display: inline-block;
     font-size: 1.6rem;
@@ -193,20 +208,13 @@
     margin-right: 0.5rem;
     text-align: center;
     width: 2.5rem;
-    top: 0.3rem;
+    top: 0.2rem;
 }
 .Contact__form.shake {
     animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000px;
-}
-.Vsee {
-    height: 3rem;
-    margin-right: 1rem;
-    margin-top: -2rem;
-    margin-bottom: 1rem;
-    top: 2rem;
 }
 
 @keyframes shake {
@@ -249,11 +257,6 @@
         top: 0;
         transition: 0.5s 0.25s;
     }
-    .Contact__form input,
-    .Form__locations {
-        padding-left: 2rem;
-        padding-right: 0;
-    }
 }
 @media only screen and (max-width: 1000px) {
     .Office,
@@ -264,21 +267,17 @@
         /* padding: 0 5rem 5rem 0; */
         padding-left: 15%;
     }
-    .Contact__form input,
-    .Form__locations {
-        padding-left: 10vw;
-        padding-right: 2rem;
-    }
+
     .Contact__form {
         padding-top: 0;
         padding-right: 1rem;
     }
-    .Contact__form .btn {
-        margin-bottom: -2rem;
-    }
-    .Form__err {
-        top: 5rem;
-    }
+    // .Contact__form .btn {
+    //     margin-bottom: -2rem;
+    // }
+    // .Form__err {
+    //     top: 5rem;
+    // }
     .Office__bg_img,
     .Directions__bg_map {
         height: 50rem;
@@ -327,11 +326,8 @@
     .text_side {
         right: -16.5rem;
     }
-    .Form__locations,
-    .Contact__form input {
-        width: 95%;
-        /* padding-right: 1rem; */
-        padding-left: 2rem;
+    .Form {
+        left: -1rem;
     }
 
     .Office .cover {

@@ -65,7 +65,7 @@ class Contact extends Component {
             return;
         }
 
-        let name = stripHTML(t.nick.value);
+        let name = stripHTML(t.name.value);
         let mail = stripHTML(t.mail1.value);
         let mobile = stripHTML(t.mobile.value);
         let location = null;
@@ -76,6 +76,7 @@ class Contact extends Component {
                 location = locations[i].value;
             }
         }
+
         await fetch('/mail/send', {
             method: 'POST',
             headers: {
@@ -124,84 +125,39 @@ class Contact extends Component {
                     <Directions />
                     <Form>
                         <form className={formCls} onSubmit={this.handleSubmit}>
+                            <label htmlFor='name'>Name:</label>
                             <input
                                 type='text'
-                                name='nick'
-                                placeholder='What is your name?'
+                                name='name'
+                                id='name'
                                 onChange={this.handleChange}
-                                onFocus={e => changePlaceholder(e, '', '#fff')}
-                                onBlur={e =>
-                                    changePlaceholder(
-                                        e,
-                                        'What is your name?',
-                                        '#fff'
-                                    )
-                                }
                             />
+                            <label htmlFor='mail1'>Email:</label>
                             <input
                                 type='text'
                                 name='mail1'
-                                placeholder='What is your email address?'
+                                id='mail1'
                                 onChange={this.handleChange}
-                                onFocus={e =>
-                                    changePlaceholder(
-                                        e,
-                                        'eg. example@mail.com',
-                                        '#fff'
-                                    )
-                                }
-                                onBlur={e =>
-                                    changePlaceholder(
-                                        e,
-                                        'What is your email address?',
-                                        '#fff'
-                                    )
-                                }
                             />
                             <input
                                 type='email'
                                 name='mail2'
+                                id='mail2'
                                 className='Contact__mail_fake'
-                                placeholder='Shall I drop you an email...'
                                 onChange={this.handleChange}
-                                onFocus={e =>
-                                    changePlaceholder(
-                                        e,
-                                        'eg. example@mail.com',
-                                        '#fff'
-                                    )
-                                }
-                                onBlur={e =>
-                                    changePlaceholder(
-                                        e,
-                                        'Shall I drop you an email...',
-                                        '#fff'
-                                    )
-                                }
+                                onMouseDown={e => e.preventDefault()}
                             />
-
+                            <label htmlFor='mobile'>Mobile:</label>
                             <input
                                 type='text'
                                 name='mobile'
-                                placeholder='What is your telephone number?'
+                                id='mobile'
                                 onChange={this.handleChange}
-                                onFocus={e =>
-                                    changePlaceholder(
-                                        e,
-                                        'eg. +44 (0) 123456789',
-                                        '#fff'
-                                    )
-                                }
-                                onBlur={e =>
-                                    changePlaceholder(
-                                        e,
-                                        'What is your telephone number?',
-                                        '#fff'
-                                    )
-                                }
                             />
-                            <div className='Form__locations'>
-                                <p>What location is the most convenient?</p>
+                            <fieldset className='Form__locations'>
+                                <legend>
+                                    What location is the most convenient?
+                                </legend>
                                 <RadioInput
                                     value='Tokenhouse Yard'
                                     text='Tokenhouse Yard (City of London)'
@@ -222,7 +178,7 @@ class Contact extends Component {
                                     text='Online Session'
                                     clearErr={this.handleChange}
                                 />
-                            </div>
+                            </fieldset>
 
                             <div className='text_cntr'>
                                 <button type='submit' className='btn'>
@@ -263,8 +219,15 @@ const RadioInput = props => {
         if (sellectedRadioInput) {
             sellectedRadioInput.classList.remove('clicked');
         }
-        e.target.previousElementSibling.classList.add('clicked');
+        e.target.previousElementSibling.previousElementSibling.classList.add(
+            'clicked'
+        );
     }
+
+    const hash = props.value
+        .split(' ')
+        .join('_')
+        .toLowerCase();
     return (
         <div className='RadioInput'>
             <div className='RadioInput__fake'>
@@ -273,9 +236,13 @@ const RadioInput = props => {
                 </span>
                 <span className='RadioInput__text'>{props.text}</span>
             </div>
+            <label htmlFor={hash} className='sr-only'>
+                {props.text}
+            </label>
             <input
                 type='radio'
                 name='location'
+                id={hash}
                 value={props.value}
                 className='RadioInput__input'
                 onClick={handleClick}
@@ -328,7 +295,6 @@ const Office = () => {
                         are available between
                         <span className='nowrap'> 8am – 8pm</span>.
                     </p>
-                    {/* <p>I also see clients in the West End at 19 Nassau Street, Fitzrovia, London, W1W 7AF a few minutes’ walk from Tottenham Court Road London Underground (Northern and Central Lines) and Oxford Circus London Underground (Victoria, Central and Bakerloo Lines).</p> */}
                 </div>
             </div>
         </section>

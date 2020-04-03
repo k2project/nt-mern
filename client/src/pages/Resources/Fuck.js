@@ -32,7 +32,7 @@ function Fuck(props) {
                             title: (
                                 <span>
                                     They F*** You Up: <br />
-                                    How to <b>Survive </b> Family  Life
+                                    How to Survive <b>Family</b> Life
                                 </span>
                             )
                         }}

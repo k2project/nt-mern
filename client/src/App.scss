@@ -1,5 +1,14 @@
 @import './VarAndMIxins.scss';
-
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
 ::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #111;

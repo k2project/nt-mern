@@ -36,6 +36,16 @@ function Attached(props) {
                         relationship science in existence today – can help us
                         find and sustain love.
                     </p>
+                    <p>
+                        With fascinating psychological insight, quizzes and case
+                        studies, Dr Amir Levine and Rachel Heller help you
+                        understand the three attachment styles, identify your
+                        own and recognize the styles of others so that you can
+                        find compatible partners or improve your existing
+                        relationship. An insightful look at the science behind
+                        love, <q>Attached</q> offers readers a road map for
+                        building stronger, more fulfilling connections.
+                    </p>
                 </div>
             </div>
         </section>

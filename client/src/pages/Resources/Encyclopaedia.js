@@ -37,15 +37,15 @@ function Encyclopaedia(props) {
                         antsy with iktsuarpok? Or giddy with dépaysement?
                     </p>
                     <p>
-                        The Book of Human <b>Emotions</b> is a gleeful,
-                        thoughtful collection of 156 feelings, both rare and
-                        familiar. Each has its own story, and reveals the
-                        strange forces which shape our rich and varied internal
-                        worlds. In reading it, you&#39;ll discover feelings you
-                        never knew you had (like basorexia, the sudden urge to
-                        kiss someone), uncover the secret histories of 
-                        boredom and  confidence, and gain unexpected insights
-                        into why we feel the way we do.
+                        The Book of Human Emotions is a gleeful, thoughtful
+                        collection of 156 feelings, both rare and familiar. Each
+                        has its own story, and reveals the strange forces which
+                        shape our rich and varied internal worlds. In reading
+                        it, you&#39;ll discover feelings you never knew you had
+                        (like basorexia, the sudden urge to kiss someone),
+                        uncover the secret histories of  boredom and 
+                        confidence, and gain unexpected insights into why we
+                        feel the way we do.
                     </p>
                 </div>
             </div>
