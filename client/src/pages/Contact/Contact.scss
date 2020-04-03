@@ -214,8 +214,9 @@
 .Form__message_sent {
     font-size: 1.4rem;
     b {
+        display: block;
+        margin-bottom: 1rem;
         font-size: 3rem;
-        margin-bottom: -1rem;
         font-family: $FONT_FAMILY_HEADINGS;
     }
     img {

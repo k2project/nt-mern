@@ -260,8 +260,8 @@ class Contact extends Component {
                             <div className='Form__message_sent text_cntr'>
                                 <img src={mailSent} alt='' />
                                 <b>THANK YOU!</b>
-                                <br /> Your message has been sent and I will get
-                                back to you shortly.
+                                Your message has been sent and I will get back
+                                to you shortly.
                                 <button
                                     className='btn'
                                     onClick={() =>
