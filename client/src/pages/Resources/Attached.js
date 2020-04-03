@@ -14,8 +14,8 @@ function Attached(props) {
                             subtitle: 'by Amir Levine and Rachel Heller',
                             title: (
                                 <span>
-                                    Attached: Are you Anxious, Avoidant or
-                                    Secure?
+                                    <b>Attached</b>: Are you Anxious, Avoidant
+                                    or Secure?
                                 </span>
                             )
                         }}

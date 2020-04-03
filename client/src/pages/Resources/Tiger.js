@@ -9,8 +9,8 @@ function Tiger(props) {
                 <div className='section__wrapper'>
                     <p>
                         Waking the Tiger offers a new and hopeful vision of
-                        <b> trauma</b>. It views the human animal as a unique
-                        being, endowed with an instinctual capacity. It asks and
+                        trauma. It views the human animal as a unique being,
+                        endowed with an instinctual capacity. It asks and
                         answers an intriguing question: Why are animals in the
                         wild, though threatened routinely, rarely traumatized?
                         By understanding the dynamics that make wild animals
@@ -35,7 +35,8 @@ function Tiger(props) {
                             subtitle: 'by Peter A. Levine',
                             title: (
                                 <span>
-                                    Waking the Tiger: <wbr /> Healing Trauma
+                                    Waking the Tiger: <wbr /> Healing{' '}
+                                    <b>Trauma</b>
                                 </span>
                             )
                         }}

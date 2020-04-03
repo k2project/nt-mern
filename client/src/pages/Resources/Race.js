@@ -4,7 +4,31 @@ import race from '../../imgs/race.jpg';
 
 function Race(props) {
     return (
-        <section className='section__reverse podcasts'>
+        <section className='podcasts'>
+            <div className='resources__title'>
+                <div className='section__wrapper'>
+                    <SectionTitle
+                        data={{
+                            divider: '',
+                            subtitle: 'by Reni Eddo-Lodge',
+                            title: <span>About Race </span>
+                        }}
+                    >
+                        <a
+                            href='https://podcasts.apple.com/gb/podcast/about-race-with-reni-eddo-
+lodge/id1353151856'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                        >
+                            <img
+                                src={race}
+                                alt='About Race podcast'
+                                className='resources__img resources__img--no-shadow'
+                            />
+                        </a>
+                    </SectionTitle>
+                </div>
+            </div>
             <div className='Resources__bg_themed '>
                 <div className='section__wrapper'>
                     <p>
@@ -29,30 +53,6 @@ lodge/id1353151856'
                         {' '}
                         Listen now
                     </a>
-                </div>
-            </div>
-            <div className='resources__title'>
-                <div className='section__wrapper'>
-                    <SectionTitle
-                        data={{
-                            divider: '',
-                            subtitle: 'by Reni Eddo-Lodge',
-                            title: <span>About Race </span>
-                        }}
-                    >
-                        <a
-                            href='https://podcasts.apple.com/gb/podcast/about-race-with-reni-eddo-
-lodge/id1353151856'
-                            target='_blank'
-                            rel='noopener noreferrer'
-                        >
-                            <img
-                                src={race}
-                                alt='About Race podcast'
-                                className='resources__img resources__img--no-shadow'
-                            />
-                        </a>
-                    </SectionTitle>
                 </div>
             </div>
         </section>

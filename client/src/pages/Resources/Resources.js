@@ -52,8 +52,8 @@ export const Resources = () => {
                 <Videos />
                 {/* podcsasts */}
                 <Seattle />
-                <Race />
                 <Partially />
+                <Race />
                 <Files />
             </Page>
         </DocumentMeta>

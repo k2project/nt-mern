@@ -4,7 +4,26 @@ import partially from '../../imgs/partially.jpg';
 
 function Partially(props) {
     return (
-        <section className='podcasts'>
+        <section className='section__reverse  podcasts'>
+            <div className='Resources__bg_themed'>
+                <div className='section__wrapper'>
+                    <p>
+                        Philosophy, philosophers and philosophical texts. The
+                        format is an informal roundtable discussion, with each
+                        episode loosely focused on a short reading that
+                        introduces at least one &quot;big&quot; philosophical
+                        question, concern, or idea.
+                    </p>
+                    <a
+                        href='https://podcasts.apple.com/gb/podcast/the-partially-examined-life/id318345767'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        className='btn'
+                    >
+                        Listen now
+                    </a>
+                </div>
+            </div>
             <div className='resources__title'>
                 <div className='section__wrapper'>
                     <SectionTitle
@@ -27,26 +46,6 @@ function Partially(props) {
                             />
                         </a>
                     </SectionTitle>
-                </div>
-            </div>
-
-            <div className='Resources__bg_themed'>
-                <div className='section__wrapper'>
-                    <p>
-                        Philosophy, philosophers and philosophical texts. The
-                        format is an informal roundtable discussion, with each
-                        episode loosely focused on a short reading that
-                        introduces at least one &quot;big&quot; philosophical
-                        question, concern, or idea.
-                    </p>
-                    <a
-                        href='https://podcasts.apple.com/gb/podcast/the-partially-examined-life/id318345767'
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        className='btn'
-                    >
-                        Listen now
-                    </a>
                 </div>
             </div>
         </section>

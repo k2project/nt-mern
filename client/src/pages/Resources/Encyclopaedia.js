@@ -11,7 +11,11 @@ function Encyclopaedia(props) {
                         data={{
                             divider: '',
                             subtitle: 'by Tiffany Watt Smith',
-                            title: <span>The Book of Human Emotions</span>
+                            title: (
+                                <span>
+                                    The Book of Human <b>Emotions</b>
+                                </span>
+                            )
                         }}
                     >
                         <img
