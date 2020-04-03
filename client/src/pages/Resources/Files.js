@@ -9,15 +9,12 @@ function Files(props) {
                 <div className='section__wrapper'>
                     <p>
                         The Psych Files is a Psychology podcast hosted by
-                        Michael A. Britt, Ph.D.. Michael received his Ph.D. from
-                        the University at Albany and was Assistant Professor of
-                        Psychology for many years at Marist College in
-                        Poughkeepsie, NY. He started The Psych Files in 2007 and
-                        thus one of the longest running podcasts. It is aimed at
-                        anyone curious about human behaviour, though students
-                        taking a course in psychology, those majoring in
-                        psychology, and instructors of psychology will find the
-                        podcast particularly of interest.
+                        Michael A. Britt, Ph.D.. He started The Psych Files in
+                        2007 and thus one of the longest running podcasts. It is
+                        aimed at anyone curious about human behaviour, though
+                        students taking a course in psychology, those majoring
+                        in psychology, and instructors of psychology will find
+                        the podcast particularly of interest.
                     </p>
                     <a
                         href='https://podcasts.apple.com/gb/podcast/the-psych-files/id215516451'
@@ -38,11 +35,17 @@ function Files(props) {
                             title: <span>The Psych Files Podcast</span>
                         }}
                     >
-                        <img
-                            src={files}
-                            alt=''
-                            className='resources__img resources__img--border'
-                        />
+                        <a
+                            href='https://podcasts.apple.com/gb/podcast/the-psych-files/id215516451'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                        >
+                            <img
+                                src={files}
+                                alt='The Psych Files Podcast podcast'
+                                className='resources__img resources__img--border'
+                            />
+                        </a>
                     </SectionTitle>
                 </div>
             </div>

@@ -15,11 +15,17 @@ function Seattle(props) {
                             title: <span>Psychology in Seattle </span>
                         }}
                     >
-                        <img
-                            src={seattle}
-                            alt=''
-                            className='resources__img resources__img--no-shadow'
-                        />
+                        <a
+                            href='https://podcasts.apple.com/gb/podcast/psychology-in-seattle-podcast/id767626637'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                        >
+                            <img
+                                src={seattle}
+                                alt='Psychology in Seattle  podcast'
+                                className='resources__img resources__img--no-shadow'
+                            />
+                        </a>
                     </SectionTitle>
                 </div>
             </div>
@@ -35,7 +41,7 @@ function Seattle(props) {
                         The Psychology In Seattle Podcast has been producing
                         weekly podcasts about psychology and psychotherapy since
                         2008. This psychology podcast is both educational and
-                        entertaining. We have around 100,000 dedicated
+                        entertaining. They have around 100,000 dedicated
                         listeners. The host, Dr. Kirk Honda, is a licensed
                         therapist and a professor. Co-host Humberto provides the
                         layperson&#39;s voice.

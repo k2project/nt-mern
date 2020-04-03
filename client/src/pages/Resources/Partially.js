@@ -10,15 +10,22 @@ function Partially(props) {
                     <SectionTitle
                         data={{
                             divider: '',
-                            subtitle: '',
+                            subtitle:
+                                'by Mark Linsenmayer, Seth Paskin, Wes Alwan, and Dylan Casey',
                             title: <span>Partially Examined Life </span>
                         }}
                     >
-                        <img
-                            src={partially}
-                            alt=''
-                            className='resources__img resources__img--no-shadow'
-                        />
+                        <a
+                            href='https://podcasts.apple.com/gb/podcast/the-partially-examined-life/id318345767'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                        >
+                            <img
+                                src={partially}
+                                alt='Partially Examined Life podcast'
+                                className='resources__img resources__img--no-shadow'
+                            />
+                        </a>
                     </SectionTitle>
                 </div>
             </div>

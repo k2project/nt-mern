@@ -44,11 +44,6 @@ function Encyclopaedia(props) {
                         <b>confidence</b>, and gain unexpected insights into why
                         we feel the way we do.
                     </p>
-                    <p>
-                        Published in partnership with the Wellcome Collection -
-                        a free museum and library that aims to challenge how we
-                        think and feel about health.
-                    </p>
                 </div>
             </div>
         </section>

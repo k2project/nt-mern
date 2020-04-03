@@ -8,7 +8,7 @@ function Race(props) {
             <div className='Resources__bg_themed '>
                 <div className='section__wrapper'>
                     <p>
-                        RENI EDDO-LODGE is a London-based, award-winning
+                        Reni Eddo-Lodge is a London-based, award-winning
                         journalist. She has written for the New York Times, the
                         Voice, Daily Telegraph, Guardian, Independent, Stylist,
                         the Pool, Dazed and Confused and the New Humanist. Why
@@ -40,11 +40,18 @@ lodge/id1353151856'
                             title: <span>About Race </span>
                         }}
                     >
-                        <img
-                            src={race}
-                            alt=''
-                            className='resources__img resources__img--no-shadow'
-                        />
+                        <a
+                            href='https://podcasts.apple.com/gb/podcast/about-race-with-reni-eddo-
+lodge/id1353151856'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                        >
+                            <img
+                                src={race}
+                                alt='About Race podcast'
+                                className='resources__img resources__img--no-shadow'
+                            />
+                        </a>
                     </SectionTitle>
                 </div>
             </div>

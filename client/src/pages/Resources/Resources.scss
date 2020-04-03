@@ -73,8 +73,17 @@
     text-align: left;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+    margin-bottom: 0.3rem;
+    line-height: 1.2;
+}
+.video__subtitle {
+    font-family: $FONT_FAMILY_HEADINGS;
+    text-align: left;
+    // text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
 }
 @include tablet {
     .resources__title .section__wrapper {
