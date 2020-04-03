@@ -191,7 +191,7 @@ class Contact extends Component {
                                 />
                                 <fieldset className='Form__locations'>
                                     <legend>
-                                        What location is the most convenient? *
+                                        Which location is the most convenient? *
                                     </legend>
                                     <RadioInput
                                         value='Tokenhouse Yard'
@@ -342,13 +342,14 @@ const Office = () => {
                             <img src={location} alt='' />
                             <span>
                                 11-12 Tokenhouse Yard, City of London, London,
-                                EC2R 7AS
+                                <span className='nowrap'> EC2R 7AS</span>
                             </span>
                         </div>
                         <div className='address'>
                             <img src={location} alt='' />
                             <span>
-                                19 Nassau Street, West End, London, W1W 7AF
+                                19 Nassau Street, West End, London,{' '}
+                                <span className='nowrap'>W1W 7AF</span>
                             </span>
                         </div>
                     </div>
