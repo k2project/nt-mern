@@ -100,6 +100,9 @@ class Contact extends Component {
             .then(res => res.json())
             .then(json => {
                 console.log('json', json);
+                const locationInputs = document.querySelectorAll(
+                    '.RadioInput__fake'
+                );
                 if (json.success) {
                     this.setState({
                         sent: true,
@@ -108,11 +111,9 @@ class Contact extends Component {
                         mobile: '',
                         err: ''
                     });
-                    const locationInputs = document.querySelectorAll(
-                        '.RadioInput__fake'
-                    );
+
                     for (var i = 0; i < locationInputs.length; i++) {
-                        locations[i].checked = false;
+                        locationInputs[i].className = '.RadioInput__fake';
                     }
                 } else {
                     this.setState({
