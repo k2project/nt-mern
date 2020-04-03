@@ -8,9 +8,9 @@
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    margin: 0.5rem 1rem;
+    margin: 0.5rem 0;
     img {
-        height: 3rem;
+        height: 2.7rem;
         margin-right: 0.5rem;
         display: inline-block;
     }
@@ -77,9 +77,9 @@
     width: 22rem;
 }
 .Directions .cover:hover .btn {
-    opacity: 1;
-    top: 0;
-    transition: 0.5s 0.25s;
+    // opacity: 1;
+    // top: 0;
+    // transition: 0.5s;
 }
 
 .Directions .cover:hover {
@@ -88,11 +88,11 @@
 }
 
 .Contact__form {
-    width: 30rem;
+    width: 32rem;
     margin: auto;
     padding-top: 4rem;
     font-size: 1.3rem;
-    font-family: $FONT_FAMILY_HEADINGS;
+    // font-family: $FONT_FAMILY_HEADINGS;
 
     input:-webkit-autofill,
     input:-webkit-autofill:hover,
@@ -104,6 +104,19 @@
     label {
         padding: 0.5rem;
         display: block;
+        height: 0.1rem;
+        line-height: 1.2;
+        img {
+            width: 1.8rem;
+            top: 1.7rem;
+            left: 0.5rem;
+            opacity: 0.8;
+        }
+        b {
+            top: 0.5rem;
+            left: 0.3rem;
+            font-weight: normal;
+        }
     }
     input {
         display: block;
@@ -115,11 +128,14 @@
         width: 100%;
         // padding: 2.5rem 5rem 1.5rem;
         padding: 1rem 1rem;
+        padding-left: 3.7rem;
+        font-family: $FONT_FAMILY_BODY;
     }
     fieldset {
         border: none;
     }
     legend {
+        text-align: left;
         display: block;
         margin: 0.5rem 0;
     }
@@ -129,21 +145,11 @@
 .Contact__form button.btn {
     font-size: 1.3rem;
     font-weight: 400;
-    margin: 3rem auto 2rem;
+    margin: 3rem auto 1rem;
     /* border-radius: 0; */
     /* border-width: .1rem; */
 }
-.text_side {
-    font-family: $FONT_FAMILY_HEADINGS;
-    font-size: 1.2rem;
-    width: 40rem;
-    position: absolute;
-    text-align: center;
-    transform: rotate(90deg) translateY(-50%);
-    top: 48%;
-    right: -12rem;
-    opacity: 0.5;
-}
+
 #mail2 {
     display: none;
 }
@@ -197,16 +203,49 @@
     text-align: left;
 }
 .Form__err {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     height: 1rem;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    p {
+        line-height: 1;
+    }
     /* opacity: .4; */
+}
+.Form__message_sent {
+    font-size: 1.4rem;
+    b {
+        font-size: 3rem;
+        margin-bottom: -1rem;
+        font-family: $FONT_FAMILY_HEADINGS;
+    }
+    img {
+        width: 15rem;
+        margin: auto;
+        opacity: 0.1;
+        margin-bottom: 2rem;
+        left: -2rem;
+    }
+    .btn {
+        margin: 4rem auto 2rem;
+    }
 }
 .Form__message_sent,
 .Form__message_err {
     opacity: 0;
     transform: scale(0.5);
     animation: slideIn 0.5s 0.5s cubic-bezier(0.1, 1.13, 0.7, 1.79) forwards;
+}
+.text_side {
+    font-size: 1rem;
+    margin-top: 1rem;
+    line-height: 1.2;
+    // width: 40rem;
+    // position: absolute;
+    // text-align: center;
+    // transform: rotate(90deg) translateY(-50%);
+    // top: 48%;
+    // right: -12rem;
+    // opacity: 0.5;
 }
 @keyframes slideIn {
     to {
@@ -331,24 +370,24 @@
     } */
 }
 @media only screen and (max-width: 786px) {
-    .text_side {
-        top: 45%;
-        right: -16rem;
-    }
+    // .text_side {
+    //     top: 45%;
+    //     right: -16rem;
+    // }
 }
 @media only screen and (max-width: 480px) {
     .Contact__form {
-        width: 92%;
+        width: 100%;
     }
     .Directions__img {
         width: 25rem;
         margin: 1rem 0 2rem;
     }
-    .text_side {
-        right: -16.5rem;
-    }
+    // .text_side {
+    //     right: -16.5rem;
+    // }
     .Form {
-        left: -1rem;
+        // left: -1rem;
     }
 
     .Office .cover {

@@ -6,6 +6,10 @@ import Page from '../../components/Page/Page';
 import SectionTitle from '../../components/SectionTitle';
 
 import location from '../../imgs/location.png';
+import person from '../../imgs/person.png';
+import mail from '../../imgs/mail.png';
+import tel from '../../imgs/tel.png';
+import mailSent from '../../imgs/mailSent.png';
 
 const meta = {
     title:
@@ -136,107 +140,138 @@ class Contact extends Component {
                     <Office />
                     <Directions />
                     <Form>
-                        <form className={formCls} onSubmit={this.handleSubmit}>
-                            <label htmlFor='name'>Name: *</label>
-                            <input
-                                type='text'
-                                name='name'
-                                id='name'
-                                onChange={this.handleChange}
-                                value={this.state.name}
-                            />
-                            <label htmlFor='mail'>Email: *</label>
-                            <input
-                                type='text'
-                                name='mail'
-                                id='mail'
-                                onChange={this.handleChange}
-                                value={this.state.mail}
-                            />
-                            <input
-                                type='email'
-                                name='mail2'
-                                id='mail2'
-                                className='Contact__mail_fake'
-                                onChange={this.handleChange}
-                                onMouseDown={e => e.preventDefault()}
-                            />
-                            <label htmlFor='mobile'>Mobile: *</label>
-                            <input
-                                type='text'
-                                name='mobile'
-                                id='mobile'
-                                onChange={this.handleChange}
-                                value={this.state.mobile}
-                            />
-                            <fieldset className='Form__locations'>
-                                <legend>
-                                    What location is the most convenient? *
-                                </legend>
-                                <RadioInput
-                                    value='Tokenhouse Yard'
-                                    text='Tokenhouse Yard (City of London)'
-                                    clearErr={() => {
-                                        this.setState({
-                                            err: '',
-                                            sent: false
-                                        });
-                                    }}
+                        {!sent && (
+                            <form
+                                className={formCls}
+                                onSubmit={this.handleSubmit}
+                            >
+                                <label htmlFor='name'>
+                                    <img src={person} alt='' />
+                                    <b>*</b>
+                                    <span className='sr-only'>Name: *</span>
+                                </label>
+                                <input
+                                    type='text'
+                                    name='name'
+                                    id='name'
+                                    onChange={this.handleChange}
+                                    value={this.state.name}
                                 />
-                                <RadioInput
-                                    value='Nassau Street'
-                                    text='Nassau Street (West End)'
-                                    clearErr={() => {
-                                        this.setState({
-                                            err: '',
-                                            sent: false
-                                        });
-                                    }}
+                                <label htmlFor='mail'>
+                                    <img src={mail} alt='' />
+                                    <b>*</b>
+                                    <span className='sr-only'>Email: *</span>
+                                </label>
+                                <input
+                                    type='text'
+                                    name='mail'
+                                    id='mail'
+                                    onChange={this.handleChange}
+                                    value={this.state.mail}
                                 />
-                                <RadioInput
-                                    value='any office'
-                                    text='Either Location'
-                                    clearErr={() => {
-                                        this.setState({
-                                            err: '',
-                                            sent: false
-                                        });
-                                    }}
+                                <input
+                                    type='email'
+                                    name='mail2'
+                                    id='mail2'
+                                    className='Contact__mail_fake'
+                                    onChange={this.handleChange}
+                                    onMouseDown={e => e.preventDefault()}
                                 />
-                                <RadioInput
-                                    value='online session'
-                                    text='Online Session'
-                                    clearErr={() => {
-                                        this.setState({
-                                            err: '',
-                                            sent: false
-                                        });
-                                    }}
+                                <label htmlFor='mobile'>
+                                    <img src={tel} alt='' />
+                                    <b>*</b>
+                                    <span className='sr-only'>Mobile: *</span>
+                                </label>
+                                <input
+                                    type='text'
+                                    name='mobile'
+                                    id='mobile'
+                                    onChange={this.handleChange}
+                                    value={this.state.mobile}
                                 />
-                            </fieldset>
+                                <fieldset className='Form__locations'>
+                                    <legend>
+                                        What location is the most convenient? *
+                                    </legend>
+                                    <RadioInput
+                                        value='Tokenhouse Yard'
+                                        text='Tokenhouse Yard (City of London)'
+                                        clearErr={() => {
+                                            this.setState({
+                                                err: '',
+                                                sent: false
+                                            });
+                                        }}
+                                    />
+                                    <RadioInput
+                                        value='Nassau Street'
+                                        text='Nassau Street (West End)'
+                                        clearErr={() => {
+                                            this.setState({
+                                                err: '',
+                                                sent: false
+                                            });
+                                        }}
+                                    />
+                                    <RadioInput
+                                        value='any office'
+                                        text='Either Location'
+                                        clearErr={() => {
+                                            this.setState({
+                                                err: '',
+                                                sent: false
+                                            });
+                                        }}
+                                    />
+                                    <RadioInput
+                                        value='online session'
+                                        text='Online Session'
+                                        clearErr={() => {
+                                            this.setState({
+                                                err: '',
+                                                sent: false
+                                            });
+                                        }}
+                                    />
+                                </fieldset>
 
-                            <div className='text_cntr'>
-                                <button type='submit' className='btn'>
-                                    Get In Touch
+                                <div className='text_cntr'>
+                                    <button type='submit' className='btn'>
+                                        Get In Touch
+                                    </button>
+                                </div>
+                                {!err && (
+                                    <div className='text_side text_cntr'>
+                                        *REQUIRED FIELDS. Please choose at least
+                                        one form of contact.
+                                    </div>
+                                )}
+                                <div className='Form__err'>
+                                    {err && (
+                                        <p className='Form__message_err text_cntr'>
+                                            <span>!</span>
+                                            {err}
+                                        </p>
+                                    )}
+                                </div>
+                            </form>
+                        )}
+                        {sent && (
+                            <div className='Form__message_sent text_cntr'>
+                                <img src={mailSent} alt='' />
+                                <b>THANK YOU!</b>
+                                <br /> Your message has been sent and I will get
+                                back to you shortly.
+                                <button
+                                    className='btn'
+                                    onClick={() =>
+                                        this.setState({ sent: false })
+                                    }
+                                >
+                                    Back to Form
                                 </button>
                             </div>
-                            <div className='Form__err'>
-                                {err && (
-                                    <p className='Form__message_err text_cntr'>
-                                        <span>!</span>
-                                        {err}
-                                    </p>
-                                )}
-                                {sent && (
-                                    <p className='Form__message_sent text_cntr'>
-                                        <b>THANK YOU FOR CONTACTING ME.</b>{' '}
-                                        <br />
-                                        Your message has been sent. I will get
-                                        back to you shortly.
-                                    </p>
-                                )}
-                            </div>
-                        </form>
+                        )}
                     </Form>
                 </Page>
             </DocumentMeta>
@@ -289,7 +324,7 @@ const Office = () => {
     return (
         <section className='Office'>
             <div className='Office__bg_img'></div>
-            <div className='Contact__bg_themed'>
+            <div className='Contact__bg_themed Directions__bg_lnd'>
                 <div className='section__wrapper'>
                     <SectionTitle
                         data={{
@@ -297,8 +332,7 @@ const Office = () => {
                             subtitle: '',
                             title: (
                                 <span>
-                                    A <b>comfortable</b> and <b>confidential</b>{' '}
-                                    place
+                                    A comfortable and <b>confidential</b> place
                                 </span>
                             )
                         }}
@@ -353,7 +387,7 @@ const Office = () => {
 const Directions = () => {
     return (
         <section className='Directions'>
-            <div className='Contact__bg_themed Directions__bg_lnd'>
+            <div className='Contact__bg_themed '>
                 <div className='section__wrapper'>
                     <SectionTitle
                         data={{
@@ -390,7 +424,11 @@ const Directions = () => {
             <div className='Directions__bg_map'>
                 <div className='cover'>
                     <div className='cover_ctr'>
-                        Find directions with Google Maps*
+                        <span className='themed-font'>
+                            {' '}
+                            Find directions with Google Maps*
+                        </span>
+                        {/* Find directions with Google Maps* */}
                         <a
                             href='https://www.google.com/maps/dir//Tokenhouse+Yard,+London+EC2R+7AS/@51.5153851,-0.0907049,17z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x48761cab515b7a57:0xa9652d3756affe10!2m2!1d-0.0885162!2d51.5153851!3e3'
                             target='_blank'
@@ -408,9 +446,7 @@ const Directions = () => {
                             Nassau Street – West End
                         </a>
                         <p>
-                            <small>
-                                <i>*Directions open up in a new tab.</i>
-                            </small>
+                            <small>*Directions open up in a new tab.</small>
                         </p>
                     </div>
                 </div>
@@ -455,23 +491,10 @@ const Form = props => {
                         are confidential. I will get back to you as soon as
                         possible and within 24 hours.{' '}
                     </p>
-
-                    {/* <p><a href="https://my.vsee.com/s/5bf7bbd27cfb4" target="_blank" rel="noopener noreferrer">
-                        <img src={require('./../../imgs/vsee.png')} className="Vsee" alt="Vsee"/>
-                        VSee Video calling.</a></p> */}
                 </div>
             </div>
             <div className='Contact__bg_themed' id='contact-form'>
-                {/* <img
-                    src={require('./../../imgs/contactText.pt2.png')}
-                    alt='Contact Page'
-                    className='Page__top_img part2'
-                /> */}
                 <div className='section__wrapper'>{props.children}</div>
-                <p className='text_side'>
-                    <b>*REQUIRED. </b> Please choose at least one form of
-                    contact.
-                </p>
             </div>
         </section>
     );

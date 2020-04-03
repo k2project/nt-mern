@@ -9,6 +9,10 @@
     clip: rect(0, 0, 0, 0);
     border: 0;
 }
+.themed-font {
+    font-family: $FONT_FAMILY_HEADINGS;
+    text-transform: uppercase;
+}
 ::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #111;
