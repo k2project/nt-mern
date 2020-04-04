@@ -238,6 +238,9 @@ section div {
     }
 }
 @include mobile {
+    .mob-hidden {
+        display: none;
+    }
     .wrapper {
         padding: 0 5rem 23rem;
     }

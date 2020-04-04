@@ -17,7 +17,7 @@ function Tiger(props) {
                         virtually immune to traumatic symptoms, the mystery of
                         human trauma is revealed.
                     </p>
-                    <p>
+                    <p className='mob-hidden'>
                         Waking the Tiger normalizes the symptoms of trauma and
                         the steps needed to heal them. People are often
                         traumatized by seemingly ordinary experiences. The

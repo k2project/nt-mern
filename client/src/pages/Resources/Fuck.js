@@ -7,7 +7,7 @@ function Fuck(props) {
         <section className='section__reverse'>
             <div className='Resources__bg_themed '>
                 <div className='section__wrapper'>
-                    <p>
+                    <p className='mob-hidden'>
                         Do your relationships tend to follow the same
                         destructive pattern? Do you feel trapped by your
                         family's expectations of you? Does your life seem

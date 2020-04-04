@@ -351,6 +351,10 @@ footer p {
         opacity: 0.2;
         top: 10rem;
     }
+    footer p {
+        /* margin: 0; */
+        font-size: 0.8rem;
+    }
 }
 @include mobile-sm {
     .Page__top .wrapper {

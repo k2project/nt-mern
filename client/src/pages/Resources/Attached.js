@@ -36,7 +36,7 @@ function Attached(props) {
                         relationship science in existence today – can help us
                         find and sustain love.
                     </p>
-                    <p>
+                    <p className='mob-hidden'>
                         With fascinating psychological insight, quizzes and case
                         studies, Dr Amir Levine and Rachel Heller help you
                         understand the three attachment styles, identify your

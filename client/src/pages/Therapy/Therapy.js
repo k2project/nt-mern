@@ -165,7 +165,7 @@ const IntegrativeTherapy = () => {
                         settings. It is a dedicated time set aside by both you
                         and me.
                     </p>
-                    <p>
+                    <p className='mob-hidden'>
                         {' '}
                         The setting and regularity of our meetings as well as
                         our therapeutic relationship will be the container

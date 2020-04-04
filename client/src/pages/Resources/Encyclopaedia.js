@@ -29,7 +29,7 @@ function Encyclopaedia(props) {
 
             <div className='Resources__bg_themed book-watermark'>
                 <div className='section__wrapper'>
-                    <p>
+                    <p className='mob-hidden'>
                         Is your heart fluttering in anticipation? Is your
                         stomach tight with nerves? Are you falling in  love?
                         Feeling a bit miffed? Do you have the heebie-jeebies?

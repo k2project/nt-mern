@@ -163,7 +163,7 @@ const Nujoji = () => {
                         psychotherapy techniques are tailored to their
                         individual needs and personal circumstances.
                     </p>
-                    <p>
+                    <p className='mob-hidden'>
                         I place importance on the therapeutic relationship. My
                         practice is particularly informed by psychodynamic and
                         attachment theory, systemic thinking and underpinned
@@ -269,9 +269,6 @@ const Nujoji = () => {
                         >
                             Independent Inquiry into Child Sexual Abuse
                         </a>
-                        . The Inquiry was set up to consider the extent to which
-                        state and non-state institutions have failed in their
-                        duty of care to protect children from sexual abuse.
                     </p>
                 </div>
             </div>
