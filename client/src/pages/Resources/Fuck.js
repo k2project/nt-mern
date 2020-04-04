@@ -10,16 +10,19 @@ function Fuck(props) {
                     <p>
                         Do your relationships tend to follow the same
                         destructive pattern? Do you feel trapped by your
-                        family&#39;s expectations of you? Does your life seem
+                        family's expectations of you? Does your life seem
                         overwhelmingly governed by jealousy or competitiveness
-                        or lack of confidence? In this ground- breaking book,
-                        clinical psychologist Oliver James shows that it is the
-                        way we were cared for in the first six years of life
-                        that has a crucial effect on who we are and how we
-                        behave. Nurture, in effect, shapes our very nature.
-                        James combines the latest scientific research with
-                        fascinating interviews to show that understanding your
-                        past is the first step to controlling your present.
+                        or lack of confidence?
+                    </p>
+                    <p>
+                        In this ground- breaking book, clinical psychologist
+                        Oliver James shows that it is the way we were cared for
+                        in the first six years of life that has a crucial effect
+                        on who we are and how we behave. Nurture, in effect,
+                        shapes our very nature. James combines the latest
+                        scientific research with fascinating interviews to show
+                        that understanding your past is the first step to
+                        controlling your present.
                     </p>
                 </div>
             </div>

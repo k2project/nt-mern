@@ -15,14 +15,17 @@ function Tiger(props) {
                         wild, though threatened routinely, rarely traumatized?
                         By understanding the dynamics that make wild animals
                         virtually immune to traumatic symptoms, the mystery of
-                        human trauma is revealed. Waking the Tiger normalizes
-                        the symptoms of trauma and the steps needed to heal
-                        them. People are often traumatized by seemingly ordinary
-                        experiences. The listener is taken on a guided tour of
-                        the subtle, yet powerful impulses that govern our
-                        responses to overwhelming life events. To do this, it
-                        employs a series of exercises that help us focus on
-                        bodily sensations. Through heightened awareness of these
+                        human trauma is revealed.
+                    </p>
+                    <p>
+                        Waking the Tiger normalizes the symptoms of trauma and
+                        the steps needed to heal them. People are often
+                        traumatized by seemingly ordinary experiences. The
+                        listener is taken on a guided tour of the subtle, yet
+                        powerful impulses that govern our responses to
+                        overwhelming life events. To do this, it employs a
+                        series of exercises that help us focus on bodily
+                        sensations. Through heightened awareness of these
                         sensations’ trauma can be healed.
                     </p>
                 </div>

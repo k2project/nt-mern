@@ -58,7 +58,6 @@ class Contact extends Component {
     }
     handleSubmit = async e => {
         e.preventDefault();
-        console.log('submitting....')
 
         const t = e.target;
         if (this.state.err) {
@@ -192,7 +191,8 @@ class Contact extends Component {
                                 />
                                 <fieldset className='Form__locations'>
                                     <legend>
-                                        Which location is the most convenient? *
+                                        <img src={location} alt='' />
+                                        Which location is the most convenient?*
                                     </legend>
                                     <RadioInput
                                         value='Tokenhouse Yard'

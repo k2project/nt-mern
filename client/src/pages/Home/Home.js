@@ -11,7 +11,7 @@ import ukcp from './../../imgs/ukcp.png';
 import iafp from './../../imgs/iafp.png';
 import dbs from './../../imgs/dbs.png';
 import truthproject from './../../imgs/tp.png';
-import graduation from './../../imgs/graduation.png';
+import graduation from './../../imgs/ok.png';
 
 const meta = {
     title:
@@ -108,9 +108,9 @@ const About = () => {
                     />
 
                     <p>
-                        Hello, my name is Nujoji and I am a London based
-                        counsellor and psychotherapist. I am passionate about my
-                        work and firmly believe that therapy can bring about
+                        Hello, my name is Nujoji and I am a counsellor and
+                        psychotherapist based in London. I am passionate about
+                        my work and firmly believe that therapy can bring about
                         positive change to people’s lives.
                     </p>
                     <Link
@@ -149,16 +149,19 @@ const Nujoji = () => {
                     />
 
                     <p>
-                        I have been trained in integrative therapy, this is a
-                        progressive form of therapy that combines different
-                        therapeutic tools and approaches to fit the needs of the
-                        individual client. By combining elements drawn from
-                        different schools of psychological theory and research,
-                        integrative therapy becomes a flexible and inclusive
-                        approach to understanding. Each person is considered as
-                        an individual and counselling and psychotherapy
-                        techniques are tailored to their individual needs and
-                        personal circumstances.
+                        I have been trained in{' '}
+                        <Link to='/therapy/#integrative-therapy'>
+                            integrative therapy
+                        </Link>
+                        , this is a progressive form of therapy that combines
+                        different therapeutic tools and approaches to fit the
+                        needs of the individual client. By combining elements
+                        drawn from different schools of psychological theory and
+                        research, integrative therapy becomes a flexible and
+                        inclusive approach to understanding. Each person is
+                        considered as an individual and counselling and
+                        psychotherapy techniques are tailored to their
+                        individual needs and personal circumstances.
                     </p>
                     <p>
                         I place importance on the therapeutic relationship. My
@@ -240,7 +243,7 @@ const Nujoji = () => {
                     <p>
                         I am experienced working one to one with individual
                         clients with differing cultures, identities and belief
-                        systems in my private practice. I currently work in the
+                        systems in my private practice. I also work in the
                         National Health Service with men in the secure forensic
                         estate who engage in violent, harmful and criminal
                         behaviour.
@@ -257,9 +260,8 @@ const Nujoji = () => {
                                 className='tp__logo'
                             />
                         </a>
-                        Aside from my work as a psychotherapist I am also a
-                        member of the Victims and Survivors’ Consultative Panel
-                        at the{' '}
+                        Aside from my work as a psychotherapist I am a member of
+                        the Victims and Survivors’ Consultative Panel at the{' '}
                         <a
                             href='https://www.truthproject.org.uk/i-will-be-heard'
                             target='_blank'

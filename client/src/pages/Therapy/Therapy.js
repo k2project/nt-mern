@@ -159,11 +159,11 @@ const IntegrativeTherapy = () => {
                 <div className='section__wrapper'>
                     <p>
                         In therapy, what you say will be treated with respect
-                        and compassion. It takes place in a private and
-                        confidential setting where we can explore thoughts and
-                        feelings in a context different to most every-day
+                        and compassion. <b>Therapy</b> takes place in a private
+                        and confidential setting where we can explore thoughts
+                        and feelings in a context different to most every-day
                         settings. It is a dedicated time set aside by both you
-                        and me.{' '}
+                        and me.
                     </p>
                     <p>
                         {' '}
@@ -243,14 +243,14 @@ const Accordion = props => {
                 onClick={toggleAccordionLi}
             >
                 <div className='accordion__q'>
-                    <p>
+                    <div>
                         <b>Q : </b>
                         {qa.q}
-                    </p>
+                    </div>
                     <span>&#43;</span>
                 </div>
                 <div className='accordion__a'>
-                    <p>{qa.a}</p>
+                    <div>{qa.a}</div>
                 </div>
             </div>
         );
@@ -348,8 +348,16 @@ const questionsAndAnswers = [
     },
     {
         q: 'Are my problems big enough?',
-        a:
-            "There is no scale of importance, you don't have to be in crisis to make use of therapy. The most important thing is curiosity and a will and desire for growth. Simply wanting more fulfilment, improved mental wellbeing and a clearer understanding and energy for life is reason enough for committing to therapy."
+        a: (
+            <p>
+                There is no scale of importance, you don't have to be in crisis
+                to make use of therapy. The most important thing is curiosity
+                and a will and desire for growth. Simply wanting more
+                fulfilment, improved mental wellbeing and a clearer
+                understanding and energy for life is reason enough for
+                committing to therapy.
+            </p>
+        )
     },
 
     {
@@ -421,12 +429,16 @@ Ethics-and-Professional-Practice-2019.pdf'
     },
     {
         q: 'How long do sessions last?',
-        a: 'Sessions are 50 minutes long.'
+        a: <p>Sessions are 50 minutes long.</p>
     },
     {
         q: 'Do you charge for missed sessions?',
-        a:
-            'Yes. I will try to offer an alternative session time when possible. The alternative time may be an online session.'
+        a: (
+            <p>
+                Yes. I will try to offer an alternative session time when
+                possible. The alternative time may be an online session.
+            </p>
+        )
     },
     {
         q: 'How many sessions will I need?',
@@ -454,22 +466,36 @@ Ethics-and-Professional-Practice-2019.pdf'
     },
     {
         q: 'Can I end the therapy at any point?',
-        a:
-            'The decision to end the therapy will always be yours. I do recommend for short term work you allow three weeks notice to bring the work to an end and in longer term work, over one year, three months notice.'
+        a: (
+            <p>
+                The decision to end the therapy will always be yours. I do
+                recommend for short term work you allow three weeks notice to
+                bring the work to an end and in longer term work, over one year,
+                three months notice.
+            </p>
+        )
     },
     {
         q: 'Can I have an evening appointment?',
-        a:
-            'I work in the evenings. I do not work Saturdays, Sundays or public holidays.'
+        a: (
+            <p>
+                I work in the evenings. I do not work Saturdays, Sundays or
+                public holidays.
+            </p>
+        )
     },
     {
         q: 'Do you offer counselling and psychotherapy supervision?',
-        a: 'I do not.'
+        a: <p>I do not.</p>
     },
     {
         q: "What if the time slot isn't convenient for both of us? ",
-        a:
-            'I am in contact with a number of other well qualified therapists in London who might provide a suitable alternative.'
+        a: (
+            <p>
+                I am in contact with a number of other well qualified therapists
+                in London who might provide a suitable alternative.
+            </p>
+        )
     }
 ];
 
@@ -513,10 +539,12 @@ const Fees = () => {
                         fee or initial consultation at no charge. I feel the
                         first session is an important part of the work and I
                         provide the same level of service during that session as
-                        all others so my charges reflect this. Our preliminary
-                        sessions are an opportunity for us to meet each other
-                        and explore whether therapy might be helpful to you.
-                        There is no commitment to ongoing work.
+                        all others so my charges reflect this.
+                    </p>
+                    <p>
+                        Our preliminary sessions are an opportunity for us to
+                        meet each other and explore whether therapy might be
+                        helpful to you. There is no commitment to ongoing work.
                     </p>
                     <p>
                         If you decide you would like to continue, we will agree

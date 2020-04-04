@@ -32,9 +32,9 @@ function Encyclopaedia(props) {
                     <p>
                         Is your heart fluttering in anticipation? Is your
                         stomach tight with nerves? Are you falling in  love?
-                        Feeling a bit miffed? Are you  curious (perhaps about
-                        this book)? Do you have the heebie-jeebies? Are you
-                        antsy with iktsuarpok? Or giddy with dépaysement?
+                        Feeling a bit miffed? Do you have the heebie-jeebies?
+                        Are you antsy with iktsuarpok? Or giddy
+                        with dépaysement?
                     </p>
                     <p>
                         The Book of Human Emotions is a gleeful, thoughtful

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Resources.scss';
-import { Link } from 'react-router-dom';
+import { NavHashLink as Link } from 'react-router-hash-link';
 import DocumentMeta from 'react-document-meta';
 import Page from '../../components/Page/Page';
 import SectionTitle from '../../components/SectionTitle';
@@ -79,6 +79,9 @@ const Intro = () => {
                             )
                         }}
                     ></SectionTitle>
+                    <Link to='/therapy/#FAQ'>
+                        <button className='btn'>WHAT IS THERAPY?</button>
+                    </Link>
                 </div>
             </div>
             <div>
