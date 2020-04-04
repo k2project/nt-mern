@@ -493,6 +493,19 @@ const Form = props => {
                         are confidential. I will get back to you as soon as
                         possible and within 24 hours.{' '}
                     </p>
+                    <p>
+                        If you are experiencing thoughts about taking your life
+                        or you are in danger it is important to tell someone.{' '}
+                        <a
+                            href='https://www.nhs.uk/conditions/suicide/'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            className='link'
+                        >
+                            Help and support is available free and 24 hours a
+                            day.
+                        </a>
+                    </p>
                 </div>
             </div>
             <div className='Contact__bg_themed' id='contact-form'>

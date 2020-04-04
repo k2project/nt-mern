@@ -159,9 +159,9 @@ const IntegrativeTherapy = () => {
                 <div className='section__wrapper'>
                     <p>
                         In therapy, what you say will be treated with respect
-                        and compassion. <b>Therapy</b> takes place in a private
-                        and confidential setting where we can explore thoughts
-                        and feelings in a context different to most every-day
+                        and compassion. Therapy takes place in a private and
+                        confidential setting where we can explore thoughts and
+                        feelings in a context different to most every-day
                         settings. It is a dedicated time set aside by both you
                         and me.
                     </p>
@@ -319,13 +319,13 @@ const questionsAndAnswers = [
         a: (
             <Fragment>
                 <p>
-                    I have trained as an{' '}
+                    I have trained as an integrative{' '}
                     <a
                         href='https://www.psychotherapy.org.uk/about-ukcp/how-we-are-structured/ukcp-colleges/humanistic-and-integrative-psychotherapy-college/'
                         target='_blank'
                         rel='noopener noreferrer'
                     >
-                        integrative counsellor and psychotherapist
+                        counsellor and psychotherapist
                     </a>
                     . This is a combined approach that brings together different
                     strands of specific therapeutic modalities. Integrative
