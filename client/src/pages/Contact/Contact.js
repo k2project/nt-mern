@@ -262,7 +262,7 @@ class Contact extends Component {
                                 <img src={mailSent} alt='' />
                                 <b>THANK YOU!</b>
                                 Your message has been sent and I will get back
-                                to you shortly.
+                                to you within 24 hours.
                                 <button
                                     className='btn'
                                     onClick={() =>
