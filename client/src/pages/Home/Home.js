@@ -269,6 +269,7 @@ const Nujoji = () => {
                         >
                             Independent Inquiry into Child Sexual Abuse
                         </a>
+                        .
                     </p>
                 </div>
             </div>

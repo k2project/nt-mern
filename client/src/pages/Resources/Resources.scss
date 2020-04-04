@@ -121,7 +121,8 @@
 }
 @include mobile {
 }
-@include mobile-sm {
+//diferent media styling because of long word :PSYCHOLOGY
+@media only screen and (max-width: 524px) {
     .podcasts-inline-watermark,
     .books-inline-watermark {
         display: none;
