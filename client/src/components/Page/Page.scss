@@ -111,7 +111,7 @@
 
 .Nav__mobile_img {
     display: none;
-    opacity: 0.1;
+    opacity: 0.2;
     position: absolute;
     top: 18%;
     right: 40%;
@@ -358,7 +358,7 @@ footer p {
 }
 @include mobile-sm {
     .Page__top .wrapper {
-        padding-bottom: 10rem;
+        padding-bottom: 12rem;
     }
     .Page__nav_num {
         // padding: 1rem;
