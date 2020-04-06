@@ -1,11 +1,7 @@
-/* //blue      #B4D8E6 */
-/* //yellow    #F0E478 */
-/* //purple    #D8A8E3 */
-// var
-
 $FONT_FAMILY_BODY: 'Lora', serif;
 $FONT_FAMILY_HEADINGS: 'Montserrat', sans-serif;
 
+$ON_FOCUS_COLOR: orange;
 $HOME_COLOR: #a9cfd7;
 $THERAPY_COLOR: #efe09e;
 $CONTACT_COLOR: #ec9b9c;
@@ -20,17 +16,17 @@ $bg-themed: null;
 
 $themes: (
     'Home': (
-        'primary': $HOME_COLOR
+        'primary': $HOME_COLOR,
     ),
     'Therapy': (
-        'primary': $THERAPY_COLOR
+        'primary': $THERAPY_COLOR,
     ),
     'Contact': (
-        'primary': $CONTACT_COLOR
+        'primary': $CONTACT_COLOR,
     ),
     'Resources': (
-        'primary': $RESOURCES_COLOR
-    )
+        'primary': $RESOURCES_COLOR,
+    ),
 ) !default;
 
 @mixin themify($themes: $themes) {

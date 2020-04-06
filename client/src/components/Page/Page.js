@@ -15,7 +15,7 @@ class Page extends Component {
                     <MobileMenu />
                     <Top name={name} />
                 </div>
-                {this.props.children}
+                <main id='main'>{this.props.children}</main>
                 <Footer />
             </div>
         );
@@ -23,7 +23,7 @@ class Page extends Component {
 }
 export default Page;
 
-const Top = props => {
+const Top = (props) => {
     return (
         <div className='Page__top Page__bg_grey'>
             <div className='wrapper'>
@@ -51,13 +51,13 @@ const Top = props => {
     );
 };
 
-const Nav = props => {
+const Nav = (props) => {
     return (
         <nav className='Page__nav'>
             <div className='Page__nav_hum' onClick={toggleMobileMenu}>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div />
+                <div />
+                <div />
             </div>
             <NavLinks />
             <div className='Page__nav_num'>

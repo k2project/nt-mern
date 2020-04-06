@@ -1,45 +1,74 @@
 @import './VarAndMIxins.scss';
+
+//==========================
+//  SCREEN READERS STYLING
+//==========================
 .sr-only {
-    position: absolute;
-    width: 1px;
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip: rect(1px 1px 1px 1px); //IE6 and IE7
+    clip-path: inset(50%);
     height: 1px;
-    padding: 0;
     margin: -1px;
     overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.sr-only--in-focus {
+    position: static;
+    clip: auto !important;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: auto;
+    line-height: normal;
+    width: auto;
+    padding: 3rem 5rem;
+    left: 0;
+    right: 0;
+    background: $ON_FOCUS_COLOR;
+    color: #000 !important;
+    font-size: 1.6rem;
+    z-index: 1000;
+    display: block;
+}
+.sr-only--in-focus:hover {
+    text-decoration-line: underline;
+}
+//==========================
+//  FONTS AND HEADINGS STYLING
+//==========================
+.font__themed {
+    font-family: $FONT_FAMILY_HEADINGS;
+}
+.font__heading {
+    font-family: $FONT_FAMILY_HEADINGS;
 }
 
 .themed-font {
     font-family: $FONT_FAMILY_HEADINGS;
     text-transform: uppercase;
 }
-::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #111;
-    opacity: 0.7; /* Firefox */
+.cover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
 }
 
-:-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: #111;
-    opacity: 0.7;
-}
+//OLD STYLING
 
-::-ms-input-placeholder {
-    /* Microsoft Edge */
-    color: #111;
-    opacity: 0.7;
-}
 .text_cntr {
     text-align: center;
 }
 .text_r {
     text-align: right;
 }
-.App {
-    overflow-x: hidden;
-}
+
 .heading {
     font-family: $FONT_FAMILY_HEADINGS;
 }
@@ -99,7 +128,7 @@ a.btn,
 section {
     display: grid;
     grid-auto-rows: minmax(40vw, 1fr);
-    grid-template-columns: 50vw 50vw;
+    grid-template-columns: 1fr 1fr;
 }
 section div {
     align-content: center;
