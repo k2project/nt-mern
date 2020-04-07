@@ -79,6 +79,7 @@
     display: flex;
     display: grid;
     height: 100%;
+    min-height: 40rem;
     left: 0;
     padding: 0 0 5% 10%;
     position: absolute;
@@ -128,7 +129,7 @@ a.btn,
 section {
     display: grid;
     grid-auto-rows: minmax(40vw, 1fr);
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50vw 50vw;
 }
 section div {
     align-content: center;
@@ -236,10 +237,13 @@ section div {
     section {
         grid-auto-rows: auto;
         grid-template-columns: 1fr;
+        min-height: 30rem;
     }
     .section__reverse {
+        display: flex;
+        flex-direction: column;
         .Resources__bg_themed {
-            grid-row: 2;
+            order: 1;
         }
     }
     .Contact section.Office {

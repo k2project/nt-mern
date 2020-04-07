@@ -209,32 +209,29 @@ const Nujoji = () => {
                     <p>
                         I obtained the following qualifications:
                         <span className='qualifications'>
-                            {/* <span>&bull;</span> */}
                             <img
                                 src={graduation}
                                 alt=''
                                 className='graduation'
                             />
-                            <span>
-                                Master of Arts in Counselling and Psychotherapy
-                            </span>
-                            {/* <span>&bull;</span> */}
+                            Master of Arts in Counselling and Psychotherapy
+                        </span>
+                        <span className='qualifications'>
                             <img
                                 src={graduation}
                                 alt=''
                                 className='graduation'
                             />
-                            <span>
-                                Advanced Post Graduate Diploma in Counselling
-                                and Psychotherapy
-                            </span>
-                            {/* <span>&bull;</span> */}
+                            Advanced Post Graduate Diploma in Counselling and
+                            Psychotherapy
+                        </span>
+                        <span className='qualifications'>
                             <img
                                 src={graduation}
                                 alt=''
                                 className='graduation'
                             />
-                            <span>Post Graduate Diploma in Counselling</span>
+                            Post Graduate Diploma in Counselling
                         </span>
                     </p>
                     <p>

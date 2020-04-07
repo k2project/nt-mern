@@ -45,7 +45,7 @@
     cursor: pointer;
     display: none;
     left: 0;
-    top: 0.5rem;
+    top: -0.1rem;
     text-align: left;
     width: 4rem;
     transition: 1s;
@@ -98,14 +98,16 @@
     transform: rotate(45deg);
     top: 0.2rem;
     width: 2rem;
+    left: 1.3rem;
 }
 .Page.menu-open .Nav__hum span:nth-child(2) {
-    left: -1.3rem;
+    left: 0;
 }
 .Page.menu-open .Nav__hum span:nth-child(3) {
     transform: rotate(-45deg);
     top: -0.2rem;
     width: 2rem;
+    left: 1.3rem;
 }
 .Page__title {
     font-family: $FONT_FAMILY_HEADINGS;
@@ -165,6 +167,14 @@ footer {
     .Nav__hum {
         display: block;
     }
+    .Nav__hum:focus {
+        div {
+            display: inline-block;
+            padding: 0 0.5rem;
+            left: -0.5rem;
+            box-shadow: 0 0 0.2rem 0.2rem green;
+        }
+    }
     .Nav__media,
     .Nav__num {
         top: 0rem;
@@ -183,15 +193,19 @@ footer {
         left: 50vw;
         width: 100vw;
     }
+    .Page.menu-open .Nav-mob {
+        // display: block;
+    }
     .Nav-mob {
+        display: block;
         background-image: url('./../../imgs/bgGrey.png');
         width: 50vw;
-        display: block;
         height: 100%;
         position: absolute;
         left: 0;
         top: 0;
     }
+
     .Nav-mob .NavLinks {
         align-content: center;
         background: rgba(0, 0, 0, 0.85);
@@ -203,12 +217,12 @@ footer {
     }
     .Nav-mob .NavLinks__link {
         color: #fff;
-        display: block;
         font-family: $FONT_FAMILY_HEADINGS;
         font-size: 1.8rem;
         letter-spacing: 0.1rem;
         padding: 0.5rem 0;
         text-align: left;
+        width: 80%;
     }
     .Nav-mob .NavLinks__link.selected {
         background: none;

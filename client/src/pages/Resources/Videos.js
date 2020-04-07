@@ -5,7 +5,7 @@ export default function Videos() {
     return (
         <section className='videos'>
             <div className='video'>
-                <div>
+                <div className='video__desc'>
                     <div className='video__title'>Happiness</div>
                     <div className='video__subtitle'>by Steve Cutts</div>
                     <div>
@@ -27,12 +27,13 @@ export default function Videos() {
                     href='https://www.youtube.com/watch?v=e9dZQelULDk&amp;t=71s'
                     target='_blank'
                     rel='noopener noreferrer'
+                    className='video__icon'
                 >
-                    <img src={video} alt='Happiness' className='video__icon' />
+                    <img src={video} alt='Happiness' />
                 </a>
             </div>
             <div className='video'>
-                <div>
+                <div className='video__desc'>
                     <div className='video__title'>
                         Are You Lost in the World Like Me
                     </div>
@@ -56,16 +57,13 @@ export default function Videos() {
                     href='https://www.youtube.com/watch?v=eXC4X_dsmCc'
                     target='_blank'
                     rel='noopener noreferrer'
+                    className='video__icon'
                 >
-                    <img
-                        src={video}
-                        alt='Are You Lost in the World Like Me'
-                        className='video__icon'
-                    />
+                    <img src={video} alt='Are You Lost in the World Like Me' />
                 </a>
             </div>
             <div className='video'>
-                <div>
+                <div className='video__desc'>
                     <div className='video__title'>How Psychotherapy Works</div>
                     <div className='video__subtitle'>by The School of Life</div>
                     <div>
@@ -89,16 +87,13 @@ export default function Videos() {
                     href='https://www.youtube.com/watch?v=g-i6QMvIAA0'
                     target='_blank'
                     rel='noopener noreferrer'
+                    className='video__icon'
                 >
-                    <img
-                        src={video}
-                        alt='How Psychotherapy Works'
-                        className='video__icon'
-                    />
+                    <img src={video} alt='How Psychotherapy Works' />
                 </a>
             </div>
             <div className='video'>
-                <div>
+                <div className='video__desc'>
                     <div className='video__title'>Psychotherapy</div>
                     <div className='video__subtitle'>by The School of Life</div>
                     <div>
@@ -122,12 +117,9 @@ export default function Videos() {
                     href='https://www.youtube.com/watch?v=OxuZiqY5ypU'
                     target='_blank'
                     rel='noopener noreferrer'
+                    className='video__icon'
                 >
-                    <img
-                        src={video}
-                        alt='Psychotherapy'
-                        className='video__icon'
-                    />
+                    <img src={video} alt='Psychotherapy' />
                 </a>
             </div>
         </section>

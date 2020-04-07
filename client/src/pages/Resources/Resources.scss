@@ -62,16 +62,18 @@
 .video {
     background: #fff;
     padding: 5rem;
-    width: 100rem;
+    width: 90rem;
     margin: 1rem auto;
-    display: grid;
-    grid-template-columns: 1fr auto;
+    display: flex;
     align-items: center;
+    .video__desc {
+        flex-grow: 1;
+    }
     .btn {
         margin-top: 2rem;
     }
 }
-.video__icon {
+.video__icon img {
     height: 9rem;
     margin: 0 4rem 0 8rem;
     opacity: 0.1;
@@ -110,13 +112,18 @@
     }
     .video {
         width: 80%;
+        display: block;
     }
 
     .video__icon {
         position: absolute;
-        right: 0rem;
-        bottom: 4.5rem;
-        height: 6rem;
+        left: 0;
+        top: 4rem;
+        width: 100%;
+        text-align: right;
+        img {
+            height: 6rem;
+        }
     }
 }
 @include mobile {
@@ -142,14 +149,13 @@
     }
     .video {
         width: 85%;
-        padding: 6.5rem 3rem 4rem;
+        padding: 6.7rem 3rem 4.4rem;
     }
     .video__icon {
-        position: absolute;
-        right: -1rem;
-        bottom: 0;
         top: 2rem;
-        height: 4rem;
+        img {
+            height: 4rem;
+        }
     }
 }
 @media only screen and (max-width: 400px) {
