@@ -2,30 +2,26 @@ $FONT_FAMILY_BODY: 'Lora', serif;
 $FONT_FAMILY_HEADINGS: 'Montserrat', sans-serif;
 
 $ON_FOCUS_COLOR: orange;
+$BG_COLOR: #f5f5f5;
 $HOME_COLOR: #a9cfd7;
 $THERAPY_COLOR: #efe09e;
 $CONTACT_COLOR: #ec9b9c;
 $RESOURCES_COLOR: #bad9ad;
 
-$color-primary: null;
-$color-secondary: null;
-$color-darker: null;
-$color-lighter: null;
-$brick-themed: null;
-$bg-themed: null;
+$PAGE_COLOR: null;
 
 $themes: (
     'Home': (
-        'primary': $HOME_COLOR,
+        'PAGE_COLOR': $HOME_COLOR,
     ),
     'Therapy': (
-        'primary': $THERAPY_COLOR,
+        'PAGE_COLOR': $THERAPY_COLOR,
     ),
     'Contact': (
-        'primary': $CONTACT_COLOR,
+        'PAGE_COLOR': $CONTACT_COLOR,
     ),
     'Resources': (
-        'primary': $RESOURCES_COLOR,
+        'PAGE_COLOR': $RESOURCES_COLOR,
     ),
 ) !default;
 
@@ -34,11 +30,11 @@ $themes: (
     @each $theme, $colors in $themes {
         .#{$theme} & {
             // Set the theme variables with `!global`
-            $color-primary: map-get($colors, 'primary') !global;
+            $PAGE_COLOR: map-get($colors, 'PAGE_COLOR') !global;
             // Output user content
             @content;
             // Unset the theme variables with `!global`
-            $color-primary: null !global;
+            $PAGE_COLOR: null !global;
         }
     }
 }

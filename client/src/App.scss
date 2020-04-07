@@ -93,7 +93,7 @@
 .wrapper {
     width: 100rem;
     margin: auto;
-    padding-bottom: 23rem;
+    // padding-bottom: 23rem;
 }
 a.btn,
 .btn {
@@ -173,11 +173,6 @@ section div {
 }
 .section__clm2 b {
     font-weight: 400;
-}
-.section__divider.themed {
-    @include themify {
-        background: $color-primary;
-    }
 }
 
 .section__bg_grey,

@@ -17,38 +17,38 @@ const insuranceLogos = [
     {
         logo: axa,
         link: 'https://www.axappphealthcare.co.uk',
-        name: 'Axa PPP'
+        name: 'Axa PPP',
     },
     {
         logo: aetna,
         link: 'https://www.aetna.com',
-        name: 'Aetna'
+        name: 'Aetna',
     },
     {
         logo: aviva,
         link: 'https://www.aviva.co.uk/health/health-products/',
-        name: 'Aviva'
+        name: 'Aviva',
     },
     {
         logo: vitality,
         link: 'https://www.vitality.co.uk',
-        name: 'Vitality'
+        name: 'Vitality',
     },
     {
         logo: healix,
         link: 'https://healix.com',
-        name: 'Healix'
+        name: 'Healix',
     },
     {
         logo: validium,
         link: 'https://www.validium.com',
-        name: 'Validium'
+        name: 'Validium',
     },
     {
         logo: cigna,
         link: 'https://www.cigna.co.uk/',
-        name: 'Cigna'
-    }
+        name: 'Cigna',
+    },
 ];
 
 const meta = {
@@ -60,23 +60,16 @@ const meta = {
         name: {
             author: '@_k2project',
             keywords:
-                'Nujoji Calvocoressi, counselling and psychotherapy, integrative therapy, London'
-        }
-    }
-};
-const pageDetails = {
-    name: 'Therapy',
-    img: {
-        imgName: 'therapyText.pt1.png',
-        imgAlt: 'Therapy Page'
-    }
+                'Nujoji Calvocoressi, counselling and psychotherapy, integrative therapy, London',
+        },
+    },
 };
 
 class Therapy extends Component {
     render() {
         return (
             <DocumentMeta {...meta}>
-                <Page page={pageDetails}>
+                <Page page='Therapy'>
                     <TherapyIntro />
                     <IntegrativeTherapy />
                     <FAQ />
@@ -102,7 +95,7 @@ const TherapyIntro = () => {
                                 <span>
                                     How will therapy <b>help</b>?
                                 </span>
-                            )
+                            ),
                         }}
                     />
                     <img
@@ -142,7 +135,7 @@ const IntegrativeTherapy = () => {
                         data={{
                             divider: 'white',
                             subtitle: '',
-                            title: 'Integrative Therapy'
+                            title: 'Integrative Therapy',
                         }}
                     />
                     <p>
@@ -182,7 +175,7 @@ const IntegrativeTherapy = () => {
         </section>
     );
 };
-const FAQ = props => {
+const FAQ = (props) => {
     return (
         <div className='FAQ Page__bg_grey' id='FAQ'>
             {/* <img
@@ -195,7 +188,7 @@ const FAQ = props => {
                     data={{
                         divider: 'white',
                         subtitle: '',
-                        title: 'What is therapy?'
+                        title: 'What is therapy?',
                     }}
                 />
                 <div>
@@ -222,8 +215,8 @@ const FAQ = props => {
     );
 };
 
-const Accordion = props => {
-    const toggleAccordionLi = e => {
+const Accordion = (props) => {
+    const toggleAccordionLi = (e) => {
         const accordionLi = e.target.closest('.accordion__li');
 
         if (!accordionLi.classList.contains('active')) {
@@ -235,7 +228,7 @@ const Accordion = props => {
         }
     };
 
-    let accordion = props.qa.map(qa => {
+    let accordion = props.qa.map((qa) => {
         return (
             <div
                 className='accordion__li'
@@ -260,17 +253,19 @@ const Accordion = props => {
 };
 const closeAllQuestions = () => {
     Array.from(document.getElementsByClassName('accordion__li active')).forEach(
-        li => {
+        (li) => {
             li.classList.remove('active');
             li.querySelector('span').innerHTML = '&#43;';
         }
     );
 };
 const openAllQuestions = () => {
-    Array.from(document.getElementsByClassName('accordion__li')).forEach(li => {
-        li.classList.add('active');
-        li.querySelector('span').innerHTML = '&#8722;';
-    });
+    Array.from(document.getElementsByClassName('accordion__li')).forEach(
+        (li) => {
+            li.classList.add('active');
+            li.querySelector('span').innerHTML = '&#8722;';
+        }
+    );
 };
 const questionsAndAnswers = [
     {
@@ -312,7 +307,7 @@ const questionsAndAnswers = [
                     shame, fear of judgement and a wish not to burden others.
                 </p>
             </Fragment>
-        )
+        ),
     },
     {
         q: 'What type of counselling and psychotherapy do you offer?',
@@ -344,7 +339,7 @@ const questionsAndAnswers = [
                     place importance on the therapeutic relationship.
                 </p>
             </Fragment>
-        )
+        ),
     },
     {
         q: 'Are my problems big enough?',
@@ -357,7 +352,7 @@ const questionsAndAnswers = [
                 understanding and energy for life is reason enough for
                 committing to therapy.
             </p>
-        )
+        ),
     },
 
     {
@@ -402,7 +397,7 @@ const questionsAndAnswers = [
                     when you feel ready.
                 </p>
             </Fragment>
-        )
+        ),
     },
     {
         q: 'Will what I say be confidential?',
@@ -425,11 +420,11 @@ Ethics-and-Professional-Practice-2019.pdf'
                     hope this to be done wherever possible, with your agreement.
                 </p>
             </Fragment>
-        )
+        ),
     },
     {
         q: 'How long do sessions last?',
-        a: <p>Sessions are 50 minutes long.</p>
+        a: <p>Sessions are 50 minutes long.</p>,
     },
     {
         q: 'Do you charge for missed sessions?',
@@ -438,7 +433,7 @@ Ethics-and-Professional-Practice-2019.pdf'
                 Yes. I will try to offer an alternative session time when
                 possible. The alternative time may be an online session.
             </p>
-        )
+        ),
     },
     {
         q: 'How many sessions will I need?',
@@ -462,7 +457,7 @@ Ethics-and-Professional-Practice-2019.pdf'
                     of weeks and see how they get on with that.
                 </p>
             </Fragment>
-        )
+        ),
     },
     {
         q: 'Can I end the therapy at any point?',
@@ -473,7 +468,7 @@ Ethics-and-Professional-Practice-2019.pdf'
                 bring the work to an end and in longer term work, over one year,
                 three months notice.
             </p>
-        )
+        ),
     },
     {
         q: 'Can I have an evening appointment?',
@@ -482,11 +477,11 @@ Ethics-and-Professional-Practice-2019.pdf'
                 I work in the evenings. I do not work Saturdays, Sundays or
                 public holidays.
             </p>
-        )
+        ),
     },
     {
         q: 'Do you offer counselling and psychotherapy supervision?',
-        a: <p>I do not.</p>
+        a: <p>I do not.</p>,
     },
     {
         q: "What if the time slot isn't convenient for both of us? ",
@@ -495,8 +490,8 @@ Ethics-and-Professional-Practice-2019.pdf'
                 I am in contact with a number of other well qualified therapists
                 in London who might provide a suitable alternative.
             </p>
-        )
-    }
+        ),
+    },
 ];
 
 const Fees = () => {
@@ -514,7 +509,7 @@ const Fees = () => {
                                     meetings provide a sense of safety and{' '}
                                     <b>continuity</b>
                                 </span>
-                            )
+                            ),
                         }}
                     />
                     <p>
@@ -562,7 +557,7 @@ const Fees = () => {
 };
 
 const Insurance = () => {
-    const logos = insuranceLogos.map(i => (
+    const logos = insuranceLogos.map((i) => (
         <a href={i.link} key={i.name} target='_blank' rel='noopener noreferrer'>
             <img
                 src={i.logo}

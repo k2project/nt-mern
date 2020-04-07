@@ -1,66 +1,46 @@
 @import './../../VarAndMIxins.scss';
+
 .Page {
     overflow-x: hidden;
 }
-.Page__top-container {
+.Page__header {
     transition: left 1s;
+    background-color: #f5f5f5;
+    .wrapper {
+        padding-bottom: 12rem;
+    }
 }
-.Page__nav_mobile {
+.Nav-mob {
     display: none;
 }
-.Page__top {
-    /* display: inline-block; */
+.Nav__desktop {
     width: 100vw;
 }
-.Page__top .wrapper {
-    // text-align: center;
-    padding-bottom: 12rem;
-}
 
-.Page__nav {
+.Nav {
     display: flex;
 }
-.Page__nav_links {
+.NavLinks {
     flex-grow: 1;
 }
-.Page__nav a {
+.NavLinks__link {
     font-size: 1.4rem;
     font-family: $FONT_FAMILY_HEADINGS;
     display: inline-block;
     padding: 6rem 1.3rem 3rem;
     text-align: center;
 }
-.Page__nav a:nth-child(2) {
+.NavLinks__link:nth-child(2) {
     width: 7.6rem;
 }
-
-.Page__nav a.selected {
-    // width: 8rem;
-    // padding-right: 0;
-    // padding-left: 0;
-    // color: #fff;
-}
-.Home .Page__nav a.selected {
-    background: #b4d8e6;
-    background: #d7e7f4;
-    background: $HOME_COLOR;
-}
-.Therapy .Page__nav a.selected {
-    background: #f0e478;
-    background: #f6efad;
-    background: $THERAPY_COLOR;
-}
-.Contact .Page__nav a.selected {
-    background: #d8a8e3;
-    background: #ecd5f1;
-    background: #e4e4ff;
-    background: $CONTACT_COLOR;
-}
-.Resources .Page__nav a.selected {
-    background: $RESOURCES_COLOR;
+.NavLinks__link.selected {
+    @include themify {
+        background: $PAGE_COLOR;
+    }
+    transition: color 1s;
 }
 
-.Page__nav_hum {
+.Nav__hum {
     flex-grow: 1;
     cursor: pointer;
     display: none;
@@ -69,18 +49,19 @@
     text-align: left;
     width: 4rem;
     transition: 1s;
+    span {
+        display: block;
+        background: #111;
+        height: 0.3rem;
+        margin: 0.5rem 0;
+        width: 3rem;
+        transition: 0.2s;
+    }
 }
-.Page__nav_hum div {
-    background: #111;
-    height: 0.3rem;
-    margin: 0.5rem 0;
-    width: 3rem;
-    transition: 0.2s;
-}
-.Page__nav_num {
+
+.Nav__num {
     height: 4rem;
     font-size: 1.4rem;
-    // font-weight: bold;
     font-family: $FONT_FAMILY_HEADINGS;
     letter-spacing: 0rem;
     padding: 1rem 2rem;
@@ -89,27 +70,23 @@
     margin-right: 0.2rem;
     display: inline-block;
 }
-.Page__nav_num a {
-    padding: 0;
-    width: 100%;
-}
-.Page__nav_media a {
+
+.Nav__media {
     display: inline-block;
     padding: 0;
     width: 4rem;
     height: 4rem;
-    // left: 10rem;
     top: 5rem;
     margin: 0 0.1rem;
     border: solid 0.1rem #111;
-    overflow: hidden;
+    text-align: center;
 }
-.Page__nav_media a img {
+.Nav__media img {
     height: 3rem;
     top: 0.3rem;
 }
 
-.Nav__mobile_img {
+.Nav-mob__img {
     display: none;
     opacity: 0.2;
     position: absolute;
@@ -117,42 +94,21 @@
     right: 40%;
 }
 
-.Page__nav_mobile ul {
-    align-content: center;
-    background: rgba(0, 0, 0, 0.85);
-    display: grid;
-    height: 100%;
-    padding-left: 30%;
-    width: 100%;
-    z-index: 8;
-}
-.Page__nav_mobile a {
-    color: #fff;
-    display: block;
-    font-family: $FONT_FAMILY_HEADINGS;
-    font-size: 1.8rem;
-    letter-spacing: 0.1rem;
-    padding: 0.5rem 0;
-}
-
-.Page.m_open .Page__nav_hum div:nth-child(1) {
+.Page.menu-open .Nav__hum span:nth-child(1) {
     transform: rotate(45deg);
     top: 0.2rem;
     width: 2rem;
 }
-.Page.m_open .Page__nav_hum div:nth-child(2) {
+.Page.menu-open .Nav__hum span:nth-child(2) {
     left: -1.3rem;
 }
-.Page.m_open .Page__nav_hum div:nth-child(3) {
+.Page.menu-open .Nav__hum span:nth-child(3) {
     transform: rotate(-45deg);
     top: -0.2rem;
     width: 2rem;
 }
 .Page__title {
-    margin: auto;
-    display: grid;
-    grid-template-columns: auto auot;
-    // padding-left: 5rem;
+    font-family: $FONT_FAMILY_HEADINGS;
     h1 {
         font-size: 5rem;
         letter-spacing: 0.2rem;
@@ -161,25 +117,23 @@
         font-weight: normal;
         text-transform: uppercase;
         letter-spacing: -0.1rem;
-        // padding-bottom: 0.5rem;
+    }
+    span {
+        display: block;
+        padding-top: 10rem;
+        padding-bottom: 0.7rem;
+        font-size: 3.2rem;
+        font-weight: normal;
+        text-transform: capitalize;
     }
     h2 {
-        padding-top: 10rem;
-        font-size: 3rem;
-        font-weight: normal;
-        // padding-top: 3rem;
-        // font-weight: bold;
-        padding-bottom: 1rem;
-        padding-bottom: 0.5rem;
-    }
-    h3 {
         color: #ccc;
-        // font-size: 1.8rem;
         text-transform: uppercase;
         padding-top: 0.2rem;
+        font-size: 1.5rem;
     }
 }
-.butterfly {
+.Page__header-img {
     height: 25rem;
     position: absolute;
     right: 15rem;
@@ -188,147 +142,130 @@
     // opacity: 0.2;
 }
 footer {
-    background: #eee;
+    background-color: #f5f5f5;
     padding: 3rem 0 1rem;
     text-align: center;
     font-family: $FONT_FAMILY_HEADINGS;
+    .btn {
+        margin: 1rem auto 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
 }
 
-footer .btn {
-    margin: 1rem auto 2rem;
-}
-
-footer p {
-    /* margin: 0; */
-    font-size: 1rem;
-}
-
-.ShareBtns {
-    /* align-items: start; */
-    /* display: grid;
-    grid-template-columns: 25rem 1fr auto; */
-    text-align: right;
-    padding: 0 5rem;
-    /* top: 9rem; */
-}
-.ShareBtns span {
-    color: silver;
-    padding-right: 0.7rem;
-}
-.SocialMediaShareButton {
-    display: inline-block;
-    opacity: 0.1;
-}
-.SocialMediaShareButton:hover {
-    opacity: 1;
-    transition: 0.2s;
-}
-.SocialMediaShareButton img {
-    cursor: pointer;
-    height: 3rem;
-    margin: 0 0.3rem -0.5rem;
-    width: 3rem;
-}
-.SocialMediaShareButton--whatsapp {
-    display: none;
-}
-@media only screen and (max-width: 1350px) {
-    // .Page__nav_media a,
-    // .Page__nav_num {
-    //     left: 2rem;
-    // }
-}
 @include desktop-sm {
-    .Page__nav {
+    .Nav {
         padding-top: 3rem;
     }
-    .Page__nav ul {
+    .Nav .NavLinks {
         display: none;
     }
-    .Page__nav_hum {
+    .Nav__hum {
         display: block;
     }
-    .Page__nav_media a,
-    .Page__nav_num {
+    .Nav__media,
+    .Nav__num {
         top: 0rem;
     }
-    .butterfly {
-        right: 16%;
-    }
-    .Page__top-container {
+
+    .Page__header {
         width: 150vw;
         left: -50vw;
-        /* transition: 1s; */
+        display: grid;
     }
-    .Page__nav_mobile {
-        /* background: #161412; */
+    // butterfly
+    .Page__header-img {
+        right: 16%;
+    }
+    .Nav-desktop {
+        left: 50vw;
+        width: 100vw;
+    }
+    .Nav-mob {
         background-image: url('./../../imgs/bgGrey.png');
         width: 50vw;
         display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
         height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
     }
-    .Page__top {
+    .Nav-mob .NavLinks {
+        align-content: center;
+        background: rgba(0, 0, 0, 0.85);
+        display: grid;
+        height: 100%;
+        padding-left: 30%;
+        width: 100%;
+        z-index: 8;
+    }
+    .Nav-mob .NavLinks__link {
+        color: #fff;
+        display: block;
+        font-family: $FONT_FAMILY_HEADINGS;
+        font-size: 1.8rem;
+        letter-spacing: 0.1rem;
+        padding: 0.5rem 0;
+        text-align: left;
+    }
+    .Nav-mob .NavLinks__link.selected {
+        background: none;
+    }
+    .Nav__desktop {
         left: 50vw;
     }
 
-    .Page.m_open .Page__top-container {
+    .Page.menu-open .Page__header {
         left: 0;
-        /* transition: 1s; */
     }
 
     /* //menu bg */
-    .Nav__mobile_img {
+    .Nav-mob__img {
         display: block;
     }
 }
 @include tablet {
-    /* .Page.m_open .Page__top_img{
-        opacity: .3;
-        transition: .1s .5s;
-    } */
+    /* .Page.m_open .Nav__desktop_img{
+            opacity: .3;
+            transition: .1s .5s;
+        } */
     .Page__title {
         h1 {
             font-size: 5rem;
+            margin-top: 0.5rem;
         }
     }
-    .butterfly {
+    .Page__header-img {
         top: 12rem;
         right: 10%;
     }
 }
 @include mobile {
-    .Page__top-container {
+    .Page__header {
         width: 200vw;
         left: -100vw;
     }
-    .Page__nav_mobile {
+    .Nav-mob {
+        width: 100vw;
+        left: 0;
+    }
+    .Nav-desktop {
+        left: 100vw;
         width: 100vw;
     }
-    .Page__top {
-        left: 100vw;
-    }
-    .Page.m_open .Page__nav_hum {
+    .Page.menu-open .Nav__hum {
         left: -17rem;
         transition: 0.5s 0.5s;
         z-index: 9;
     }
-    .Page.m_open .Page__nav_hum div {
+    .Page.menu-open .Nav__hum span {
         background: #fff;
     }
-    .Page__top_img {
-        opacity: 0.3;
-        opacity: 0.5;
-    }
-    .ShareBtns {
-        text-align: center;
-        padding: 1rem 2rem 2rem;
-    }
 
-    .Page__nav_media a,
-    .Page__nav_num {
+    .Nav__media,
+    .Nav__num {
         left: 2rem;
     }
     .Page__title {
@@ -336,46 +273,27 @@ footer p {
             font-size: 4rem;
             color: #111;
         }
-        h2 {
-            font-size: 2.6rem;
+        span {
+            font-size: 2.8rem;
         }
-        h3 {
+        h2 {
             color: #111;
             font-size: 1.3rem;
         }
     }
-    .butterfly {
+    .Page__header-img {
         transform: scaleX(1);
         right: 5%;
-        // top: 9rem;
         opacity: 0.2;
         top: 10rem;
     }
     footer p {
-        /* margin: 0; */
         font-size: 0.8rem;
     }
 }
 @include mobile-sm {
-    .Page__top .wrapper {
-        padding-bottom: 12rem;
-    }
-    .Page__nav_num {
-        // padding: 1rem;
-    }
-    .Page__nav_num a span {
-        display: none;
-    }
-    .Page.m_open .Page__nav_hum {
+    .Page.menu-open .Nav__hum {
         left: -13rem;
-    }
-    .SocialMediaShareButton--whatsapp {
-        display: inline-block;
-    }
-
-    .ShareBtns span {
-        display: block;
-        padding-bottom: 1rem;
     }
     .Page__title {
         h1 {
@@ -383,12 +301,13 @@ footer p {
             letter-spacing: -0.1rem;
             line-height: 1.1;
         }
-        h2 {
+        span {
             padding-top: 20rem;
             font-size: 2.4rem;
+            letter-spacing: 0;
         }
     }
-    .butterfly {
+    .Page__header-img {
         transform: scaleX(-1);
         right: 10%;
         height: 20rem;

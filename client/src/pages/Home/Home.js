@@ -23,19 +23,16 @@ const meta = {
         name: {
             author: '@_k2project',
             keywords:
-                'Nujoji Calvocoressi, counselling, psychotherapy therapy, London'
-        }
-    }
-};
-const pageDetails = {
-    name: 'Home'
+                'Nujoji Calvocoressi, counselling, psychotherapy therapy, London',
+        },
+    },
 };
 
 class Home extends Component {
     render() {
         return (
             <DocumentMeta {...meta}>
-                <Page page={pageDetails}>
+                <Page page='Home'>
                     <Welcome />
                     <About />
                     <Nujoji />
@@ -61,7 +58,7 @@ const Welcome = () => {
                                     <b>Change</b> happens when you allow
                                     yourself to look at <b>life</b> in a new way
                                 </span>
-                            )
+                            ),
                         }}
                     />
                 </div>
@@ -103,7 +100,7 @@ const About = () => {
                                     When was the last time you felt{' '}
                                     <b>understood</b>?
                                 </span>
-                            )
+                            ),
                         }}
                     />
 
@@ -144,7 +141,7 @@ const Nujoji = () => {
                                     Two people <b>sitting</b> down{' '}
                                     <b>together</b>
                                 </span>
-                            )
+                            ),
                         }}
                     />
 
@@ -282,28 +279,28 @@ const professionalBodiesData = [
         logo: bacp,
         link:
             'https://www.bacp.co.uk/profile/8fb9f46e-e25c-e811-8108-3863bb351d40/therapist?location=City%20of%20London',
-        name: 'bacp'
+        name: 'bacp',
     },
     {
         logo: ukcp,
         link:
             'https://www.psychotherapy.org.uk/therapist/nujoji-calvocoressi/?back%5Btherapist_name%5D=nujoji&amp;back%5Bsubmitted%5D=1&amp;back%5Bseed%5D=1054133881',
-        name: 'ukcp'
+        name: 'ukcp',
     },
     {
         logo: iafp,
         link: 'https://forensicpsychotherapy.com/',
-        name: 'iafp'
+        name: 'iafp',
     },
     {
         logo: dbs,
         link:
             'https://www.gov.uk/government/organisations/disclosure-and-barring-service/',
-        name: 'dbs'
-    }
+        name: 'dbs',
+    },
 ];
 const ProfessionalBodies = () => {
-    const logos = professionalBodiesData.map(b => {
+    const logos = professionalBodiesData.map((b) => {
         return (
             <a
                 href={b.link}

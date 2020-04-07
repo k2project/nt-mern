@@ -21,16 +21,16 @@ const meta = {
         name: {
             author: '@_k2project',
             keywords:
-                'Nujoji Calvocoressi, counselling, psychotherapy, therapy, London'
-        }
-    }
+                'Nujoji Calvocoressi, counselling, psychotherapy, therapy, London',
+        },
+    },
 };
 const pageDetails = {
     name: 'Contact',
     img: {
         imgName: 'contactText.pt1.png',
-        imgAlt: 'Contact Page'
-    }
+        imgAlt: 'Contact Page',
+    },
 };
 
 class Contact extends Component {
@@ -42,7 +42,7 @@ class Contact extends Component {
             name: '',
             mail: '',
             mobile: '',
-            err: ''
+            err: '',
         };
 
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -53,10 +53,10 @@ class Contact extends Component {
         this.setState({
             err: '',
             [name]: e.target.value,
-            sent: false
+            sent: false,
         });
     }
-    handleSubmit = async e => {
+    handleSubmit = async (e) => {
         e.preventDefault();
 
         const t = e.target;
@@ -68,7 +68,7 @@ class Contact extends Component {
         }
         if (this.state.sent) {
             this.setState({
-                sent: false
+                sent: false,
             });
         }
 
@@ -92,17 +92,17 @@ class Contact extends Component {
         await fetch('/mail/send', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
             },
             body: JSON.stringify({
                 name,
                 mail,
                 mobile,
-                location
-            })
+                location,
+            }),
         })
-            .then(res => res.json())
-            .then(json => {
+            .then((res) => res.json())
+            .then((json) => {
                 console.log('json', json);
                 const locationInputs = document.querySelectorAll(
                     '.RadioInput__fake'
@@ -113,7 +113,7 @@ class Contact extends Component {
                         name: '',
                         mail: '',
                         mobile: '',
-                        err: ''
+                        err: '',
                     });
 
                     for (var i = 0; i < locationInputs.length; i++) {
@@ -122,7 +122,7 @@ class Contact extends Component {
                 } else {
                     this.setState({
                         err: json.message,
-                        sent: false
+                        sent: false,
                     });
                 }
             });
@@ -136,7 +136,7 @@ class Contact extends Component {
         }
         return (
             <DocumentMeta {...meta}>
-                <Page page={pageDetails}>
+                <Page page='Contact'>
                     <Office />
                     <Directions />
                     <Form>
@@ -175,7 +175,7 @@ class Contact extends Component {
                                     id='mail2'
                                     className='Contact__mail_fake'
                                     onChange={this.handleChange}
-                                    onMouseDown={e => e.preventDefault()}
+                                    onMouseDown={(e) => e.preventDefault()}
                                 />
                                 <label htmlFor='mobile'>
                                     <img src={tel} alt='' />
@@ -200,7 +200,7 @@ class Contact extends Component {
                                         clearErr={() => {
                                             this.setState({
                                                 err: '',
-                                                sent: false
+                                                sent: false,
                                             });
                                         }}
                                     />
@@ -210,7 +210,7 @@ class Contact extends Component {
                                         clearErr={() => {
                                             this.setState({
                                                 err: '',
-                                                sent: false
+                                                sent: false,
                                             });
                                         }}
                                     />
@@ -220,7 +220,7 @@ class Contact extends Component {
                                         clearErr={() => {
                                             this.setState({
                                                 err: '',
-                                                sent: false
+                                                sent: false,
                                             });
                                         }}
                                     />
@@ -230,7 +230,7 @@ class Contact extends Component {
                                         clearErr={() => {
                                             this.setState({
                                                 err: '',
-                                                sent: false
+                                                sent: false,
                                             });
                                         }}
                                     />
@@ -281,7 +281,7 @@ class Contact extends Component {
 }
 export default Contact;
 
-const RadioInput = props => {
+const RadioInput = (props) => {
     function handleClick(e) {
         props.clearErr();
         const sellectedRadioInput = document.querySelector(
@@ -324,7 +324,7 @@ const RadioInput = props => {
 const Office = () => {
     return (
         <section className='Office'>
-            <div className='Office__bg_img'></div>
+            <div className='Office__bg_img' />
             <div className='Contact__bg_themed Directions__bg_lnd'>
                 <div className='section__wrapper'>
                     <SectionTitle
@@ -335,7 +335,7 @@ const Office = () => {
                                 <span>
                                     A comfortable and <b>confidential</b> place
                                 </span>
-                            )
+                            ),
                         }}
                     />
                     <div className='addresses'>
@@ -395,7 +395,7 @@ const Directions = () => {
                         data={{
                             divider: 'white',
                             subtitle: '',
-                            title: 'Getting here'
+                            title: 'Getting here',
                         }}
                     />
                     <p>
@@ -456,7 +456,7 @@ const Directions = () => {
         </section>
     );
 };
-const Form = props => {
+const Form = (props) => {
     return (
         <section className='Form' id='form'>
             <div>
@@ -470,7 +470,7 @@ const Form = props => {
                                     <b>Talking</b> can be a good place to{' '}
                                     <b>start</b>
                                 </span>
-                            )
+                            ),
                         }}
                     />
                     <p>
@@ -518,7 +518,7 @@ const changePlaceholder = (e, text, color) => {
     e.target.placeholder = text;
     e.target.style.color = color;
 };
-const stripHTML = text => {
+const stripHTML = (text) => {
     text = text.replace(/</g, '&lt;').replace(/>/g, '&gt;');
     return text.trim();
 };

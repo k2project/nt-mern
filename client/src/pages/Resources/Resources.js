@@ -26,22 +26,15 @@ const meta = {
         name: {
             author: '@_k2project',
             keywords:
-                'Nujoji Calvocoressi, counselling, psychotherapy, therapy, London, resources'
-        }
-    }
-};
-const pageDetails = {
-    name: 'Resources',
-    img: {
-        imgName: '',
-        imgAlt: ''
-    }
+                'Nujoji Calvocoressi, counselling, psychotherapy, therapy, London, resources',
+        },
+    },
 };
 
 export const Resources = () => {
     return (
         <DocumentMeta {...meta}>
-            <Page page={pageDetails}>
+            <Page page='Resources'>
                 <Intro />
                 {/* books */}
                 <Attached />
@@ -76,9 +69,9 @@ const Intro = () => {
                                     Looking for a{' '}
                                     <b>written, visual or audible</b> resource?
                                 </span>
-                            )
+                            ),
                         }}
-                    ></SectionTitle>
+                    />
                     <Link to='/therapy/#FAQ'>
                         <button className='btn'>WHAT IS THERAPY?</button>
                     </Link>
