@@ -330,7 +330,7 @@
         transition: 0.5s 0.25s;
     }
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
     .Office,
     .Directions {
         display: block;
@@ -374,7 +374,7 @@
         background-color: #f5f5f5;
     }
 }
-@media screen and (max-width: 1000px) and (orientation: landscape) {
+@media screen and (max-width: 1024px) and (orientation: landscape) {
     .Office__bg_img,
     .Directions__bg_map {
         height: 50rem;
