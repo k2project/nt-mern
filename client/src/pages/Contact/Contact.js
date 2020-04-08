@@ -354,27 +354,7 @@ const Office = () => {
                             </span>
                         </div>
                     </div>
-                    {/* <div className='section__clm2'>
-                        <p>
-                            <b>
-                                11-12 Tokenhouse Yard
-                                <br />
-                                City of London
-                                <br />
-                                London <br />
-                                EC2R 7AS
-                            </b>
-                        </p>
-                        <p>
-                            <b>
-                                19 Nassau Street
-                                <br />
-                                West End <br />
-                                London <br />
-                                W1W 7AF
-                            </b>
-                        </p>
-                    </div> */}
+
                     <p>
                         I see clients for appointments, Monday to Friday
                         throughout the year except public holidays. Appointments

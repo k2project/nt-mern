@@ -358,6 +358,7 @@
         display: block;
         width: 100vw;
     }
+
     .Office .Contact__bg_themed {
         background-color: #fff;
     }
@@ -378,7 +379,7 @@
         height: 50rem;
     }
     .Office .Contact__bg_themed {
-        background-color: #fff;
+        background-color: #fff !important;
     }
 }
 @media only screen and (max-width: 786px) {

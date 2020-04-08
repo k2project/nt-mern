@@ -64,9 +64,11 @@
     padding: 5rem;
     width: 90rem;
     margin: 1rem auto;
+    display: -webkit-flex;
     display: flex;
     align-items: center;
     .video__desc {
+        -webkit-flex-grow: 1;
         flex-grow: 1;
     }
     .btn {
@@ -114,7 +116,9 @@
         width: 80%;
         display: block;
     }
-
+    .video__title {
+        width: 75%;
+    }
     .video__icon {
         position: absolute;
         left: 0;
@@ -153,9 +157,15 @@
     }
     .video__icon {
         top: 2rem;
+        left: 1rem;
         img {
             height: 4rem;
         }
+    }
+}
+@include mobile-sm {
+    .video__title {
+        width: 80%;
     }
 }
 @media only screen and (max-width: 400px) {

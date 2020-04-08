@@ -229,15 +229,7 @@ section div {
         padding: 0 10rem 23rem;
     }
 }
-@media screen and (max-width: 1000px) and (orientation: landscape) {
-    .section__reverse {
-        display: flex;
-        flex-direction: column;
-        .Resources__bg_themed {
-            order: 1;
-        }
-    }
-}
+
 @include tablet {
     .section__wrapper {
         width: 100%;
@@ -249,9 +241,11 @@ section div {
         min-height: 30rem;
     }
     .section__reverse {
+        display: -webkit-flex;
         display: flex;
         flex-direction: column;
         .Resources__bg_themed {
+            -webkit-flex-order: 1;
             order: 1;
         }
     }
@@ -310,5 +304,42 @@ section div {
 
     .section__title {
         font-size: 2.8rem;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+    .section__reverse {
+        display: flex;
+        flex-direction: column;
+        .Resources__bg_themed {
+            order: 1;
+        }
+    }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    .section__reverse {
+        display: flex;
+        flex-direction: column;
+        .Resources__bg_themed {
+            order: 1;
+        }
+    }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .section__reverse {
+        display: flex;
+        flex-direction: column;
+        .Resources__bg_themed {
+            order: 1;
+        }
+    }
+}
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+    .section__reverse {
+        display: flex;
+        flex-direction: column;
+        .Resources__bg_themed {
+            order: 1;
+        }
     }
 }

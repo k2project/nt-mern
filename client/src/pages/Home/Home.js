@@ -206,8 +206,8 @@ const Nujoji = () => {
                         </a>
                         .
                     </p>
+                    <p>I obtained the following qualifications:</p>
                     <p>
-                        I obtained the following qualifications:
                         <span className='qualifications'>
                             <img
                                 src={graduation}
