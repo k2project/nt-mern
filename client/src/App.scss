@@ -306,39 +306,48 @@ section div {
         font-size: 2.8rem;
     }
 }
-
+//IPAD LANDSCAPE ISSUE:
+//flexbox order not working
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
     .section__reverse {
+        display: -webkit-flex;
         display: flex;
         flex-direction: column;
         .Resources__bg_themed {
+            -webkit-flex-order: 1;
             order: 1;
         }
     }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
     .section__reverse {
+        display: -webkit-flex;
         display: flex;
         flex-direction: column;
         .Resources__bg_themed {
+            -webkit-flex-order: 1;
             order: 1;
         }
     }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .section__reverse {
+        display: -webkit-flex;
         display: flex;
         flex-direction: column;
         .Resources__bg_themed {
+            -webkit-flex-order: 1;
             order: 1;
         }
     }
 }
 @media screen and (max-width: 1000px) and (orientation: landscape) {
     .section__reverse {
+        display: -webkit-flex;
         display: flex;
         flex-direction: column;
         .Resources__bg_themed {
+            -webkit-flex-order: 1;
             order: 1;
         }
     }
