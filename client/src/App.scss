@@ -229,6 +229,15 @@ section div {
         padding: 0 10rem 23rem;
     }
 }
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+    .section__reverse {
+        display: flex;
+        flex-direction: column;
+        .Resources__bg_themed {
+            order: 1;
+        }
+    }
+}
 @include tablet {
     .section__wrapper {
         width: 100%;
@@ -246,12 +255,12 @@ section div {
             order: 1;
         }
     }
-    .Contact section.Office {
-        grid-auto-rows: 50rem 1fr;
-    }
-    .Contact section.Directions {
-        grid-auto-rows: 1fr 60rem;
-    }
+    // .Contact section.Office {
+    //     grid-auto-rows: 50rem 1fr;
+    // }
+    // .Contact section.Directions {
+    //     grid-auto-rows: 1fr 60rem;
+    // }
     .cover {
         padding-bottom: 3rem;
     }
@@ -265,6 +274,7 @@ section div {
         padding: 2rem 1rem;
     }
 }
+
 @include mobile {
     .mob-hidden {
         display: none;
