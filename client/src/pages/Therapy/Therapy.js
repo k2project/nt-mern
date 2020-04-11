@@ -310,7 +310,7 @@ const questionsAndAnswers = [
         ),
     },
     {
-        q: 'What type of counselling and psychotherapy do you offer?',
+        q: 'What type of therapy do you offer?',
         a: (
             <Fragment>
                 <p>
