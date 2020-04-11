@@ -15,7 +15,7 @@ function Encyclopaedia(props) {
                                 <span>
                                     The Book of Human <b>Emotions</b>
                                 </span>
-                            )
+                            ),
                         }}
                     >
                         <img
@@ -29,13 +29,13 @@ function Encyclopaedia(props) {
 
             <div className='Resources__bg_themed book-watermark'>
                 <div className='section__wrapper'>
-                    <p className='mob-hidden'>
+                    {/* <p className='mob-hidden'>
                         Is your heart fluttering in anticipation? Is your
                         stomach tight with nerves? Are you falling in  love?
                         Feeling a bit miffed? Do you have the heebie-jeebies?
                         Are you antsy with iktsuarpok? Or giddy
                         with dépaysement?
-                    </p>
+                    </p> */}
                     <p>
                         The Book of Human Emotions is a gleeful, thoughtful
                         collection of 156 feelings, both rare and familiar. Each

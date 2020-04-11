@@ -43,19 +43,18 @@
     font-size: 2rem;
 }
 .accordion__q {
-    align-items: center;
     background: rgba(255, 255, 255, 0.8);
     cursor: pointer;
-    display: grid;
-    /* grid-template-columns: 1fr 5rem; */
     padding: 3rem 5rem 2rem;
     margin-bottom: 0.5rem;
     transition: 0.2s 0.5s;
     z-index: 2;
+    display: -webkit-flex;
     display: flex;
     align-items: center;
 }
-.accordion__q div {
+.accordion__q-text {
+    -webkit-flex-grow: 1;
     flex-grow: 1;
     padding: 1rem 0 2rem;
     padding-right: 1rem;
@@ -122,6 +121,10 @@
     .Insurance__logos {
         width: 57rem;
         margin: auto;
+    }
+    .accordion__q {
+        padding: 3rem 3rem 2rem 4rem;
+        font-size: 13px;
     }
 }
 @media only screen and (max-width: 786px) {

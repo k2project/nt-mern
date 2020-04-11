@@ -236,7 +236,7 @@ const Accordion = (props) => {
                 onClick={toggleAccordionLi}
             >
                 <div className='accordion__q'>
-                    <div>
+                    <div className='accordion__q-text'>
                         <b>Q : </b>
                         {qa.q}
                     </div>
