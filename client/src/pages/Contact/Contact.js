@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import DocumentMeta from 'react-document-meta';
 
 import './Contact.scss';
@@ -141,121 +141,144 @@ class Contact extends Component {
                     <Directions />
                     <Form>
                         {!sent && (
-                            <form
-                                className={formCls}
-                                onSubmit={this.handleSubmit}
-                            >
-                                <label htmlFor='name'>
-                                    <img src={person} alt='' />
-                                    <b>*</b>
-                                    <span className='sr-only'>Name: *</span>
-                                </label>
-                                <input
-                                    type='text'
-                                    name='name'
-                                    id='name'
-                                    onChange={this.handleChange}
-                                    value={this.state.name}
+                            <Fragment>
+                                <SectionTitle
+                                    data={{
+                                        divider: '',
+                                        subtitle: '',
+                                        title: (
+                                            <span>
+                                                TAKING THE
+                                                <b className='nowrap'>
+                                                    {' '}
+                                                    FIRST STEP
+                                                </b>
+                                            </span>
+                                        ),
+                                    }}
                                 />
-                                <label htmlFor='mail'>
-                                    <img src={mail} alt='' />
-                                    <b>*</b>
-                                    <span className='sr-only'>Email: *</span>
-                                </label>
-                                <input
-                                    type='text'
-                                    name='mail'
-                                    id='mail'
-                                    onChange={this.handleChange}
-                                    value={this.state.mail}
-                                />
-                                <input
-                                    type='email'
-                                    name='mail2'
-                                    id='mail2'
-                                    className='Contact__mail_fake'
-                                    onChange={this.handleChange}
-                                    onMouseDown={(e) => e.preventDefault()}
-                                />
-                                <label htmlFor='mobile'>
-                                    <img src={tel} alt='' />
-                                    <b>*</b>
-                                    <span className='sr-only'>Mobile: *</span>
-                                </label>
-                                <input
-                                    type='text'
-                                    name='mobile'
-                                    id='mobile'
-                                    onChange={this.handleChange}
-                                    value={this.state.mobile}
-                                />
-                                <fieldset className='Form__locations'>
-                                    <legend>
-                                        <img src={location} alt='' />
-                                        Which location is the most convenient?*
-                                    </legend>
-                                    <RadioInput
-                                        value='Tokenhouse Yard'
-                                        text='Tokenhouse Yard (City of London)'
-                                        clearErr={() => {
-                                            this.setState({
-                                                err: '',
-                                                sent: false,
-                                            });
-                                        }}
-                                    />
-                                    <RadioInput
-                                        value='Nassau Street'
-                                        text='Nassau Street (West End)'
-                                        clearErr={() => {
-                                            this.setState({
-                                                err: '',
-                                                sent: false,
-                                            });
-                                        }}
-                                    />
-                                    <RadioInput
-                                        value='any office'
-                                        text='Either Location'
-                                        clearErr={() => {
-                                            this.setState({
-                                                err: '',
-                                                sent: false,
-                                            });
-                                        }}
-                                    />
-                                    <RadioInput
-                                        value='online session'
-                                        text='Online Session'
-                                        clearErr={() => {
-                                            this.setState({
-                                                err: '',
-                                                sent: false,
-                                            });
-                                        }}
-                                    />
-                                </fieldset>
 
-                                <div className='text_cntr'>
-                                    <button type='submit' className='btn'>
-                                        Get In Touch
-                                    </button>
-                                </div>
-                                {!err && (
-                                    <div className='text_side text_cntr'>
-                                        *REQUIRED FIELDS. Please choose at least
-                                        one form of contact.
+                                <form
+                                    className={formCls}
+                                    onSubmit={this.handleSubmit}
+                                >
+                                    <label htmlFor='name'>
+                                        <img src={person} alt='' />
+                                        <b>*</b>
+                                        <span className='sr-only'>Name: *</span>
+                                    </label>
+                                    <input
+                                        type='text'
+                                        name='name'
+                                        id='name'
+                                        onChange={this.handleChange}
+                                        value={this.state.name}
+                                    />
+                                    <label htmlFor='mail'>
+                                        <img src={mail} alt='' />
+                                        <b>*</b>
+                                        <span className='sr-only'>
+                                            Email: *
+                                        </span>
+                                    </label>
+                                    <input
+                                        type='text'
+                                        name='mail'
+                                        id='mail'
+                                        onChange={this.handleChange}
+                                        value={this.state.mail}
+                                    />
+                                    <input
+                                        type='email'
+                                        name='mail2'
+                                        id='mail2'
+                                        className='Contact__mail_fake'
+                                        onChange={this.handleChange}
+                                        onMouseDown={(e) => e.preventDefault()}
+                                    />
+                                    <label htmlFor='mobile'>
+                                        <img src={tel} alt='' />
+                                        <b>*</b>
+                                        <span className='sr-only'>
+                                            Mobile: *
+                                        </span>
+                                    </label>
+                                    <input
+                                        type='text'
+                                        name='mobile'
+                                        id='mobile'
+                                        onChange={this.handleChange}
+                                        value={this.state.mobile}
+                                    />
+                                    <fieldset className='Form__locations'>
+                                        <legend>
+                                            <img src={location} alt='' />
+                                            Which location is the most
+                                            convenient?*
+                                        </legend>
+                                        <RadioInput
+                                            value='Tokenhouse Yard'
+                                            text='Tokenhouse Yard (City of London)'
+                                            clearErr={() => {
+                                                this.setState({
+                                                    err: '',
+                                                    sent: false,
+                                                });
+                                            }}
+                                        />
+                                        <RadioInput
+                                            value='Nassau Street'
+                                            text='Nassau Street (West End)'
+                                            clearErr={() => {
+                                                this.setState({
+                                                    err: '',
+                                                    sent: false,
+                                                });
+                                            }}
+                                        />
+                                        <RadioInput
+                                            value='any office'
+                                            text='Either Location'
+                                            clearErr={() => {
+                                                this.setState({
+                                                    err: '',
+                                                    sent: false,
+                                                });
+                                            }}
+                                        />
+                                        <RadioInput
+                                            value='online session'
+                                            text='Online Session'
+                                            clearErr={() => {
+                                                this.setState({
+                                                    err: '',
+                                                    sent: false,
+                                                });
+                                            }}
+                                        />
+                                    </fieldset>
+
+                                    <div className='text_cntr'>
+                                        <button type='submit' className='btn'>
+                                            Get In Touch
+                                        </button>
                                     </div>
-                                )}
-                                <div className='Form__err'>
-                                    {err && (
-                                        <p className='Form__message_err text_cntr'>
-                                            <span>!</span>
-                                            {err}
-                                        </p>
+                                    {!err && (
+                                        <div className='text_side text_cntr'>
+                                            *REQUIRED FIELDS. Please choose at
+                                            least one method of contact.
+                                        </div>
                                     )}
-                                </div>
-                            </form>
+                                    <div className='Form__err'>
+                                        {err && (
+                                            <p className='Form__message_err text_cntr'>
+                                                <span>!</span>
+                                                {err}
+                                            </p>
+                                        )}
+                                    </div>
+                                </form>
+                            </Fragment>
                         )}
                         {sent && (
                             <div className='Form__message_sent text_cntr'>
@@ -324,7 +347,37 @@ const RadioInput = (props) => {
 const Office = () => {
     return (
         <section className='Office'>
-            <div className='Office__bg_img' />
+            <div className='Directions__bg_map'>
+                <div className='cover'>
+                    <div className='cover_ctr'>
+                        <span className='themed-font'>
+                            {' '}
+                            Find directions with Google Maps*
+                        </span>
+                        {/* Find directions with Google Maps* */}
+                        <a
+                            href='https://www.google.com/maps/dir//Tokenhouse+Yard,+London+EC2R+7AS/@51.5153851,-0.0907049,17z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x48761cab515b7a57:0xa9652d3756affe10!2m2!1d-0.0885162!2d51.5153851!3e3'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            className='btn'
+                        >
+                            Tokenhouse Yard - City of London
+                        </a>
+                        <a
+                            href='https://www.google.com/maps/dir//Nassau+St,+Fitzrovia,+London+W1W+7AF/@51.5188268,-0.1412905,17z/data=!4m17!1m7!3m6!1s0x48761b2a47340f1d:0x7122f29f93bdb1e8!2sNassau+St,+Fitzrovia,+London+W1W+7AF!3b1!8m2!3d51.5188268!4d-0.1391018!4m8!1m0!1m5!1m1!1s0x48761b2a47340f1d:0x7122f29f93bdb1e8!2m2!1d-0.1391018!2d51.5188268!3e3'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            className='btn'
+                        >
+                            Nassau Street – West End
+                        </a>
+                        <p>
+                            <small>*Directions open up in a new tab.</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
             <div className='Contact__bg_themed Directions__bg_lnd'>
                 <div className='section__wrapper'>
                     <SectionTitle
@@ -403,36 +456,7 @@ const Directions = () => {
                     </p>
                 </div>
             </div>
-            <div className='Directions__bg_map'>
-                <div className='cover'>
-                    <div className='cover_ctr'>
-                        <span className='themed-font'>
-                            {' '}
-                            Find directions with Google Maps*
-                        </span>
-                        {/* Find directions with Google Maps* */}
-                        <a
-                            href='https://www.google.com/maps/dir//Tokenhouse+Yard,+London+EC2R+7AS/@51.5153851,-0.0907049,17z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x48761cab515b7a57:0xa9652d3756affe10!2m2!1d-0.0885162!2d51.5153851!3e3'
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='btn'
-                        >
-                            Tokenhouse Yard - City of London
-                        </a>
-                        <a
-                            href='https://www.google.com/maps/dir//Nassau+St,+Fitzrovia,+London+W1W+7AF/@51.5188268,-0.1412905,17z/data=!4m17!1m7!3m6!1s0x48761b2a47340f1d:0x7122f29f93bdb1e8!2sNassau+St,+Fitzrovia,+London+W1W+7AF!3b1!8m2!3d51.5188268!4d-0.1391018!4m8!1m0!1m5!1m1!1s0x48761b2a47340f1d:0x7122f29f93bdb1e8!2m2!1d-0.1391018!2d51.5188268!3e3'
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='btn'
-                        >
-                            Nassau Street – West End
-                        </a>
-                        <p>
-                            <small>*Directions open up in a new tab.</small>
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <div className='Office__bg_img' />
         </section>
     );
 };

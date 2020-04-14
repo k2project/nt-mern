@@ -15,6 +15,9 @@
         display: inline-block;
     }
 }
+#contact-form .section__title {
+    text-align: center;
+}
 .Form .link {
     text-decoration: underline;
 }
@@ -28,7 +31,7 @@
 
 .Office .cover {
     /* padding: 0 15rem 5rem 0; */
-    padding-left: 20%;
+    // padding-left: 20%;
 }
 .Directions__bg_lnd {
     background-image: url('./../../imgs/lnd.png');
@@ -46,7 +49,7 @@
     background-position: center;
     min-height: 50rem;
 }
-.Directions .cover {
+.Office .cover {
     align-content: center;
     background: none;
     /* background: rgba(255,255,255,.5); */
@@ -58,21 +61,21 @@
     padding: 0 20%;
     transition: 0.2s 0.7s;
 }
-.Directions .cover small {
+.Office .cover small {
     display: block;
     font-size: 1rem;
 }
-.Directions .cover p {
+.Office .cover p {
     /* opacity: 0;
     top: 15rem; */
     transition: 0.75s 0.1s;
 }
-.Directions .cover:hover p {
+.Office .cover:hover p {
     opacity: 1;
     top: 0;
     transition: 0.5s;
 }
-.Directions .btn {
+.Office .btn {
     font-size: 1.1rem;
     /* opacity: 0;
     top: 5rem; */
@@ -87,7 +90,7 @@
     // transition: 0.5s;
 }
 
-.Directions .cover:hover {
+.Office .cover:hover {
     background: rgba(255, 255, 255, 0.8);
     transition: 0.2s;
 }
@@ -95,7 +98,7 @@
 .Contact__form {
     width: 32rem;
     margin: auto;
-    padding-top: 4rem;
+    // padding-top: 4rem;
     font-size: 1.3rem;
     // font-family: $FONT_FAMILY_HEADINGS;
 
@@ -337,7 +340,7 @@
     }
     .Office .cover {
         /* padding: 0 5rem 5rem 0; */
-        padding-left: 15%;
+        // padding-left: 15%;
     }
 
     .Contact__form {
@@ -358,10 +361,16 @@
         display: block;
         width: 100vw;
     }
-
+    .Office {
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+    }
     .Office .Contact__bg_themed {
-        background: #fff;
-        background-color: #fff;
+        -webkit-flex-order: -1;
+        order: -1;
+        // background: #fff;
+        // background-color: #fff;
     }
     .Directions .cover {
         // background-image: linear-gradient(
@@ -380,8 +389,19 @@
         height: 50rem;
     }
     .Office .Contact__bg_themed {
-        background: #fff !important;
-        background-color: #fff !important;
+        // background: #fff !important;
+        // background-color: #fff !important;
+    }
+    .Office {
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+    }
+    .Office .Contact__bg_themed {
+        -webkit-flex-order: -1;
+        order: -1;
+        // background: #fff;
+        // background-color: #fff;
     }
 }
 @media only screen and (max-width: 786px) {
@@ -407,6 +427,6 @@
 
     .Office .cover {
         /* padding: 0 5rem 5rem 0; */
-        padding-left: 10%;
+        // padding-left: 10%;
     }
 }
