@@ -11,7 +11,7 @@ import ukcp from './../../imgs/ukcp.png';
 import iafp from './../../imgs/iafp.png';
 import dbs from './../../imgs/dbs.png';
 import truthproject from './../../imgs/tp.png';
-import graduation from './../../imgs/ok.png';
+import graduation from './../../imgs/ok2.png';
 
 const meta = {
     title:
@@ -106,9 +106,9 @@ const About = () => {
 
                     <p>
                         Hello, my name is Nujoji and I am a counsellor and
-                        psychotherapist based in London. I am passionate about
-                        my work and firmly believe that therapy can bring about
-                        positive change to people’s lives.
+                        psychotherapist in London. I am passionate about my work
+                        and firmly believe that therapy can bring about positive
+                        change to people’s lives.
                     </p>
                     <Link
                         to='/therapy#integrative-therapy'

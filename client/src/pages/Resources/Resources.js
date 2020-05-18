@@ -73,7 +73,7 @@ const Intro = () => {
                         }}
                     />
                     <Link to='/therapy/#FAQ'>
-                        <button className='btn'>WHAT IS THERAPY?</button>
+                        <button className='btn'>What is therapy?</button>
                     </Link>
                 </div>
             </div>

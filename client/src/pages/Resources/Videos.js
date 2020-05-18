@@ -35,7 +35,7 @@ export default function Videos() {
             <div className='video'>
                 <div className='video__desc'>
                     <div className='video__title'>
-                        Are You Lost in the World Like Me
+                        Are You Lost in the World Like Me?
                     </div>
                     <div className='video__subtitle'>by Steve Cutts</div>
                     <div>
