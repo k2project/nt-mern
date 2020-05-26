@@ -37,19 +37,25 @@ class Header extends React.Component {
                         />
                         <div className='Page__title'>
                             <h1>
-                                <span
+                                {/* <span
                                     className={
                                         this.props.page + '__color_themed'
                                     }
                                 >
-                                    {' '}
+                                  
+                                    Nujoji Calvocoressi
+                                </span> */}
+                                <span className='Page__title-1'>
+                                    Psychotherapy
+                                </span>
+                                <span className='Page__title-2'>
+                                    &amp; Counselling
+                                </span>
+                                <span className='Page__title-3'>
                                     Nujoji Calvocoressi
                                 </span>
-                                Counselling and
-                                <br />
-                                Psychotherapy
                             </h1>
-                            <h2>City of London &amp; West End</h2>
+                            {/* <h2>City of London &amp; West End</h2> */}
                         </div>
                         <img
                             src={butterfly}
