@@ -112,9 +112,8 @@
 .Page__title {
     font-family: $FONT_FAMILY_HEADINGS;
     text-transform: uppercase;
-    padding-top: 12rem;
-    padding-bottom: 4rem;
-    left: 18rem;
+    // padding-top: 12rem;
+    // left: 18rem;
     span {
         display: block;
     }
@@ -146,6 +145,10 @@
     //     font-size: 1.5rem;
     // }
 }
+.logo {
+    width: 64rem;
+    padding-top: 10rem;
+}
 .Page__title-1 {
     font-size: 5rem;
 }
@@ -155,7 +158,7 @@
 .Page__title-3 {
     font-size: 2rem;
     font-weight: bold;
-    letter-spacing: 1.15rem;
+    letter-spacing: 1.05rem;
     left: 0.3rem;
     padding-top: 0.2rem;
 }
@@ -213,8 +216,8 @@ footer {
         display: grid;
     }
     .Page__title {
-        left: 15rem;
-        padding-top: 14rem;
+        // left: 15rem;
+        // padding-top: 14rem;
     }
     // butterfly
     .Page__header-img {
@@ -289,14 +292,19 @@ footer {
     //     right: 10%;
     // }
     .Page__title {
-        left: 12rem;
-        padding-top: 12rem;
+        // left: 12rem;
+        // padding-top: 12rem;
     }
     // butterfly
     .Page__header-img {
         // right: 16%;
-        left: 7rem;
+        // left: 7rem;
         top: 18rem;
+    }
+    .logo {
+        width: 60rem;
+        padding-top: 10rem;
+        left: -3rem;
     }
 }
 @include mobile {
@@ -345,10 +353,10 @@ footer {
     //     top: 10rem;
     // }
     .Page__title {
-        padding: 12rem 0 0;
+        // padding: 12rem 0 0;
         // transform: scale(0.8);
         // left: -4%;
-        left: 1rem;
+        // left: 1rem;
     }
     .Page__title-1 {
         font-size: 3.8rem;
@@ -369,6 +377,12 @@ footer {
     footer p {
         font-size: 0.8rem;
     }
+    .logo {
+        width: 40rem;
+        padding-top: 10rem;
+        top: 1rem;
+        left: -1rem;
+    }
 }
 
 @media only screen and (max-width: 560px) {
@@ -379,7 +393,7 @@ footer {
         left: -13rem;
     }
     .Page__title {
-        padding: 15rem 0 3rem;
+        // padding: 15rem 0 3rem;
     }
     .Page__title-1 {
         font-size: 3.1rem;
@@ -409,4 +423,10 @@ footer {
     //     height: 20rem;
     //     top: 12rem;
     // }
+    .logo {
+        width: 100%;
+        padding-top: 10rem;
+        top: 1rem;
+        left: -1rem;
+    }
 }

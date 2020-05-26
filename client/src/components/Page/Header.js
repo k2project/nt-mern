@@ -2,6 +2,7 @@ import React from 'react';
 import NavLinks from './NavLinks';
 import Nav from './Nav';
 import butterfly from './../../imgs/butterfly.png';
+import logo from './../../imgs/logo.png';
 
 class Header extends React.Component {
     constructor(props) {
@@ -36,8 +37,13 @@ class Header extends React.Component {
                             mobileMenuOpen={this.state.mobileMenuOpen}
                         />
                         <div className='Page__title'>
-                            <h1>
-                                {/* <span
+                            <h1 className='sr-only'>
+                                Nujoji Calvocoressi Psychotherapy and
+                                Counselling
+                            </h1>
+                            <img src={logo} alt='' className='logo' />
+                            {/* <h1> */}
+                            {/* <span
                                     className={
                                         this.props.page + '__color_themed'
                                     }
@@ -45,7 +51,7 @@ class Header extends React.Component {
                                   
                                     Nujoji Calvocoressi
                                 </span> */}
-                                <span className='Page__title-1'>
+                            {/* <span className='Page__title-1'>
                                     Psychotherapy
                                 </span>
                                 <span className='Page__title-2'>
@@ -53,15 +59,15 @@ class Header extends React.Component {
                                 </span>
                                 <span className='Page__title-3'>
                                     Nujoji Calvocoressi
-                                </span>
-                            </h1>
+                                </span> */}
+                            {/* </h1> */}
                             {/* <h2>City of London &amp; West End</h2> */}
                         </div>
-                        <img
+                        {/* <img
                             src={butterfly}
                             alt=''
                             className='Page__header-img'
-                        />
+                        /> */}
                     </div>
                 </div>
             </header>
