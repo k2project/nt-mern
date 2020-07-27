@@ -243,6 +243,13 @@ const Nujoji = () => {
                         behaviour.
                     </p>
                     <p>
+                        I have also undertaken Critical Incident Debriefing
+                        training. This is an intensive and highly effective
+                        intervention to deal with the adverse psychological
+                        impact (anxiety, depression, sleep disturbance and
+                        fatigue) of critical incidents.
+                    </p>
+                    <p>
                         <a
                             href='https://www.truthproject.org.uk/i-will-be-heard'
                             target='_blank'
