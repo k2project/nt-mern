@@ -164,7 +164,7 @@ const Nujoji = () => {
                         I place importance on the therapeutic relationship. My
                         practice is particularly informed by{' '}
                         <a
-                            href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/'
+                            href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/#psychodynamic'
                             target='_blank'
                             rel='noopener noreferrer'
                         >
@@ -172,7 +172,7 @@ const Nujoji = () => {
                         </a>{' '}
                         and{' '}
                         <a
-                            href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/'
+                            href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/#attachment-based-psychotherapy'
                             target='_blank'
                             rel='noopener noreferrer'
                         >
@@ -180,7 +180,7 @@ const Nujoji = () => {
                         </a>
                         ,{' '}
                         <a
-                            href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/'
+                            href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/#relational'
                             target='_blank'
                             rel='noopener noreferrer'
                         >
