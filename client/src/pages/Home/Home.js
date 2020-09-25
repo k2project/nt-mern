@@ -162,9 +162,31 @@ const Nujoji = () => {
                     </p>
                     <p className='mob-hidden'>
                         I place importance on the therapeutic relationship. My
-                        practice is particularly informed by psychodynamic and
-                        attachment theory, systemic thinking and underpinned
-                        with a trauma informed approach.
+                        practice is particularly informed by{' '}
+                        <a
+                            href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                        >
+                            psychodynamic
+                        </a>{' '}
+                        and{' '}
+                        <a
+                            href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                        >
+                            attachment theory
+                        </a>
+                        ,{' '}
+                        <a
+                            href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                        >
+                            relational concepts
+                        </a>{' '}
+                        and underpinned with a trauma informed approach.
                     </p>
                 </div>
             </div>
@@ -244,10 +266,18 @@ const Nujoji = () => {
                     </p>
                     <p>
                         I have also undertaken Critical Incident Debriefing
-                        training. This is an intensive and highly effective
-                        intervention to deal with the adverse psychological
-                        impact (anxiety, depression, sleep disturbance and
-                        fatigue) of critical incidents.
+                        training. This is a highly effective intervention to
+                        deal with the adverse psychological impact of critical
+                        incidents. I am currently completing a
+                        Mentalization-Based Treatment training at{' '}
+                        <a
+                            href='https://www.annafreud.org'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                        >
+                            The Anna Freud Centre
+                        </a>
+                        .
                     </p>
                     <p>
                         <a

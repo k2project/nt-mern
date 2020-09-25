@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.scss';
 //list pages imports before router
 import Home from './pages/Home/Home';
@@ -14,11 +14,12 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Analytics from 'react-router-ga';
 
 function App() {
+    const showBanner = false;
     return (
         <Router basename={process.env.PUBLIC_URL}>
             <Analytics id='UA-127585560-1' debug>
                 <SkipToMainContentLink />
-                {/* <Banner /> */}
+                {showBanner && <Banner />}
                 <Switch>
                     <Route exact path={`/`} component={Home} />
                     <Route exact path={`/therapy`} component={Therapy} />

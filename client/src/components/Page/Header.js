@@ -1,7 +1,6 @@
 import React from 'react';
 import NavLinks from './NavLinks';
 import Nav from './Nav';
-import butterfly from './../../imgs/butterfly.png';
 import logo from './../../imgs/logo.png';
 
 class Header extends React.Component {
