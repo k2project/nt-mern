@@ -15,11 +15,11 @@ export const questionsAndAnswers = [
                         counselling and psychotherapy{' '}
                     </a>
                     isn’t about giving advice or telling people what to do.
-                    Instead it is about creating a safe and non-judgemental
-                    space where you can reflect, explore and understand the
-                    difficulties in your life. The insight and awareness you
-                    gain will in itself feel freeing allowing more choice in the
-                    way you live your life.
+                    Instead it is about creating a safer, calmer and non-
+                    judgemental space where you can reflect, explore and
+                    understand the difficulties in your life. The insight and
+                    awareness you gain can in itself feel freeing allowing you
+                    more choice in the way you live your life.
                 </p>
                 <p>
                     Counselling and psychotherapy can bring new levels of
@@ -67,9 +67,31 @@ export const questionsAndAnswers = [
                     I also believe that adverse childhood experiences impact how
                     we feel about ourselves today and may influence how we
                     relate to others and how we live in the present moment. I
-                    incorporate psychodynamic ideas into my work with clients,
-                    attachment theory as well as relational psychotherapy and
-                    place importance on the therapeutic relationship.
+                    incorporate{' '}
+                    <a
+                        href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/#psychodynamic'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
+                        psychodynamic
+                    </a>{' '}
+                    ideas into my work with clients,{' '}
+                    <a
+                        href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/#attachment-based-psychotherapy'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
+                        attachment theory
+                    </a>{' '}
+                    as well as{' '}
+                    <a
+                        href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/#relational'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
+                        relational psychotherapy
+                    </a>{' '}
+                    and place importance on the therapeutic relationship.
                 </p>
             </Fragment>
         ),
@@ -100,7 +122,7 @@ export const questionsAndAnswers = [
             <p>
                 There is no scale of importance, you don't have to be in crisis
                 to make use of therapy. The most important thing is curiosity
-                and a will and desire for growth. Simply wanting more
+                and a will and desire for personal growth. Simply wanting more
                 fulfilment, improved mental wellbeing and a clearer
                 understanding and energy for life is reason enough for
                 committing to therapy.
@@ -167,10 +189,10 @@ Ethics-and-Professional-Practice-2019.pdf'
                         strictly confidential
                     </a>
                     . The only exception to this is if you talk about something
-                    that suggests your safety or the safety of others being in
+                    that suggests your safety or the safety of others is in
                     danger, in this case I would discuss my concerns with you
                     and any other professionals I might need to contact. I would
-                    hope this to be done wherever possible, with your agreement.
+                    hope to do this wherever possible, with your agreement.
                 </p>
             </Fragment>
         ),
@@ -201,13 +223,12 @@ Ethics-and-Professional-Practice-2019.pdf'
                     with long lasting difficulties.
                 </p>
                 <p>
-                    My preference is to meet at the same time on the same day
-                    each week. Some people may benefit from counselling and
-                    psychotherapy twice a week, if you feel that you might, we
-                    can discuss this. Many people prefer to work in an
-                    open-ended way and to continue for as long as it feels
-                    useful or helpful, others prefer to agree to a fixed number
-                    of weeks and see how they get on with that.
+                    Some people may benefit from counselling and psychotherapy
+                    twice a week, if you feel that you might, we can discuss
+                    this. Many people prefer to work in an open-ended way and to
+                    continue for as long as it feels useful or helpful, others
+                    prefer to agree to a fixed number of weeks and see how they
+                    get on with that.
                 </p>
             </Fragment>
         ),
