@@ -120,6 +120,7 @@ export const questionsAndAnswers = [
                 </p>
             </>
         ),
+        hash: '#inclusive-therapy',
     },
     {
         q: 'Are my problems big enough?',

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import SectionTitle from '../../../components/SectionTitle';
 import { questionsAndAnswers } from './questionsAndAnswers';
 
@@ -56,11 +56,15 @@ const Accordion = (props) => {
     };
 
     let accordion = props.qa.map((qa) => {
+        const isLinked =
+            window.location.hash && window.location.hash === qa.hash;
+
         return (
             <div
-                className='accordion__li'
+                className={isLinked ? 'accordion__li active' : 'accordion__li'}
                 key={qa.q}
                 onClick={toggleAccordionLi}
+                id={isLinked ? qa.hash.slice(1) : null}
             >
                 <div className='accordion__q'>
                     <div className='accordion__q-text'>
