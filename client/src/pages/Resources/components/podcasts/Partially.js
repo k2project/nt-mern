@@ -1,6 +1,6 @@
 import React from 'react';
-import SectionTitle from '../../components/SectionTitle';
-import partially from '../../imgs/partially.jpg';
+import SectionTitle from '../../../../components/SectionTitle';
+import partially from '../../../../imgs/partially.jpg';
 
 function Partially(props) {
     return (
@@ -31,7 +31,7 @@ function Partially(props) {
                             divider: '',
                             subtitle:
                                 'by Mark Linsenmayer, Seth Paskin, Wes Alwan, and Dylan Casey',
-                            title: <span>Partially Examined Life </span>
+                            title: <span>Partially Examined Life </span>,
                         }}
                     >
                         <a

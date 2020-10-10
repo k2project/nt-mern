@@ -1,7 +1,7 @@
 import React from 'react';
-import SectionTitle from '../../components/SectionTitle';
-import seattle from '../../imgs/seattle.jpg';
-import podcasts from '../../imgs/podcasts.png';
+import SectionTitle from '../../../../components/SectionTitle';
+import seattle from '../../../../imgs/seattle.jpg';
+import podcasts from '../../../../imgs/podcasts.png';
 
 function Seattle(props) {
     return (
@@ -12,7 +12,7 @@ function Seattle(props) {
                         data={{
                             divider: '',
                             subtitle: 'by Kirk Honda ',
-                            title: <span>Psychology in Seattle </span>
+                            title: <span>Psychology in Seattle </span>,
                         }}
                     >
                         <a

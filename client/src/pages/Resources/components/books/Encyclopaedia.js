@@ -1,6 +1,6 @@
 import React from 'react';
-import SectionTitle from '../../components/SectionTitle';
-import encyclopaedia from '../../imgs/encyclopaedia.jpg';
+import SectionTitle from '../../../../components/SectionTitle';
+import encyclopaedia from '../../../../imgs/encyclopaedia.jpg';
 
 function Encyclopaedia(props) {
     return (

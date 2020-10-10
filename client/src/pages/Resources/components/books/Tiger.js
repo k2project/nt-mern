@@ -1,6 +1,6 @@
 import React from 'react';
-import SectionTitle from '../../components/SectionTitle';
-import tiger from '../../imgs/tiger.jpg';
+import SectionTitle from '../../../../components/SectionTitle';
+import tiger from '../../../../imgs/tiger.jpg';
 
 function Tiger(props) {
     return (
@@ -41,7 +41,7 @@ function Tiger(props) {
                                     Waking the Tiger: <wbr /> Healing{' '}
                                     <b>Trauma</b>
                                 </span>
-                            )
+                            ),
                         }}
                     >
                         <img src={tiger} alt='' className='resources__img' />

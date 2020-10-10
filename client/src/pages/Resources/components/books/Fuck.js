@@ -1,6 +1,6 @@
 import React from 'react';
-import SectionTitle from '../../components/SectionTitle';
-import fuck from '../../imgs/fuck.jpg';
+import SectionTitle from '../../../../components/SectionTitle';
+import fuck from '../../../../imgs/fuck.jpg';
 
 function Fuck(props) {
     return (
@@ -37,7 +37,7 @@ function Fuck(props) {
                                     They F*** You Up: <br />
                                     How to Survive <b>Family</b> Life
                                 </span>
-                            )
+                            ),
                         }}
                     >
                         <img src={fuck} alt='' className='resources__img' />

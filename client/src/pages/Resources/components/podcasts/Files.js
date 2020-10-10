@@ -1,6 +1,6 @@
 import React from 'react';
-import SectionTitle from '../../components/SectionTitle';
-import files from '../../imgs/files.png';
+import SectionTitle from '../../../../components/SectionTitle';
+import files from '../../../../imgs/files.png';
 
 function Files(props) {
     return (
@@ -32,7 +32,7 @@ function Files(props) {
                         data={{
                             divider: '',
                             subtitle: 'by Michael A. Britt',
-                            title: <span>The Psych Files Podcast</span>
+                            title: <span>The Psych Files Podcast</span>,
                         }}
                     >
                         <a

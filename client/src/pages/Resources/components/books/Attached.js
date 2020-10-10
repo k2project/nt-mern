@@ -1,7 +1,7 @@
 import React from 'react';
-import SectionTitle from '../../components/SectionTitle';
-import attached from '../../imgs/attached.jpg';
-import books from '../../imgs/books.png';
+import SectionTitle from '../../../../components/SectionTitle';
+import attached from '../../../../imgs/attached.jpg';
+import books from '../../../../imgs/books.png';
 
 function Attached(props) {
     return (
@@ -17,7 +17,7 @@ function Attached(props) {
                                     <b>Attached</b>: Are you Anxious, Avoidant
                                     or Secure?
                                 </span>
-                            )
+                            ),
                         }}
                     >
                         <img src={attached} alt='' className='resources__img' />

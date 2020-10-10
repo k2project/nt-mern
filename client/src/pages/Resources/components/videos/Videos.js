@@ -1,5 +1,5 @@
 import React from 'react';
-import video from '../../imgs/video.png';
+import video from '../../../../imgs/video.png';
 
 export default function Videos() {
     return (

@@ -1,6 +1,6 @@
 import React from 'react';
-import SectionTitle from '../../components/SectionTitle';
-import race from '../../imgs/race.jpg';
+import SectionTitle from '../../../../components/SectionTitle';
+import race from '../../../../imgs/race.jpg';
 
 function Race(props) {
     return (
@@ -11,7 +11,7 @@ function Race(props) {
                         data={{
                             divider: '',
                             subtitle: 'by Reni Eddo-Lodge',
-                            title: <span>About Race </span>
+                            title: <span>About Race </span>,
                         }}
                     >
                         <a

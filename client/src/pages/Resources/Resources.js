@@ -1,21 +1,19 @@
 import React from 'react';
 import './Resources.scss';
-import { NavHashLink as Link } from 'react-router-hash-link';
+
 import DocumentMeta from 'react-document-meta';
 import Page from '../../components/Page/Page';
-import SectionTitle from '../../components/SectionTitle';
 
-import chair from '../../imgs/chair.png';
-
-import Attached from './Attached';
-import Tiger from './Tiger';
-import Encyclopaedia from './Encyclopaedia';
-import Fuck from './Fuck';
-import Videos from './Videos';
-import Seattle from './Seattle';
-import Race from './Race';
-import Partially from './Partially';
-import Files from './Files';
+import { Intro } from './components/Intro';
+import Attached from './components/books/Attached';
+import Tiger from './components/books/Tiger';
+import Encyclopaedia from './components/books/Encyclopaedia';
+import Fuck from './components/books/Fuck';
+import Videos from './components/videos/Videos';
+import Seattle from './components/podcasts/Seattle';
+import Race from './components/podcasts/Race';
+import Partially from './components/podcasts/Partially';
+import Files from './components/podcasts/Files';
 
 const meta = {
     title: 'Resources | Nujoji Calvocoressi Counselling and Psychotherapy',
@@ -43,7 +41,7 @@ export const Resources = () => {
                 <Fuck />
                 {/* videos */}
                 <Videos />
-                {/* podcsasts */}
+                {/* podcasts */}
                 <Seattle />
                 <Partially />
                 <Race />
@@ -54,47 +52,3 @@ export const Resources = () => {
 };
 
 export default Resources;
-
-const Intro = () => {
-    return (
-        <section className='Intro'>
-            <div className='Resources__bg_themed'>
-                <div className='section__wrapper'>
-                    <SectionTitle
-                        data={{
-                            divider: '',
-                            subtitle: '',
-                            title: (
-                                <span>
-                                    Looking for a{' '}
-                                    <b>written, visual or audible</b> resource?
-                                </span>
-                            ),
-                        }}
-                    />
-                    <Link to='/therapy/#FAQ'>
-                        <button className='btn'>What is therapy?</button>
-                    </Link>
-                </div>
-            </div>
-            <div>
-                <div className='section__wrapper'>
-                    <p>
-                        The below selection is not designed to substitute
-                        counselling or psychotherapy, rather to support your
-                        curiosity and decision making about whether now is the
-                        right time for you to start therapy.
-                    </p>
-                    <div className='chair'>
-                        <p>
-                            They are all resources I have chosen because they
-                            have been useful to my own personal and professional
-                            development.
-                        </p>
-                        <img src={chair} alt='' />
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
-};
