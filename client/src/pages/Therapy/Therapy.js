@@ -1,9 +1,7 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import DocumentMeta from 'react-document-meta';
-import { NavHashLink as Link } from 'react-router-hash-link';
 import './Therapy.scss';
 import Page from '../../components/Page/Page';
-import SectionTitle from '../../components/SectionTitle';
 
 import { TherapyIntro } from './components/TherapyIntro';
 import { IntegrativeTherapy } from './components/IntegrativeTherapy';

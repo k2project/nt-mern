@@ -10,7 +10,7 @@ import { ProfessionalBodies } from './components/ProfessionalBodies';
 
 const meta = {
     title:
-        'Nujoji Calvocoressi Counselling and Psychotherapy | City of London & West End Therapy',
+        'Nujoji Calvocoressi Counselling and Psychotherapy | City of London & West End and online Therapy',
     description:
         'Welcome to my counselling and psychotherapy practice. I am passionate about my work and firmly believe that therapy can bring about positive change to people’s lives. I have been trained in integrative therapy, that is a progressive form of therapy that combines different therapeutic tools and approaches to fit the needs of the individual client. I am a member of BACP.',
     canonical: 'http://www.calvocoressi.com/',
@@ -18,7 +18,7 @@ const meta = {
         name: {
             author: '@_k2project',
             keywords:
-                'Nujoji Calvocoressi, counselling, psychotherapy therapy, London',
+                'Nujoji Calvocoressi, counselling, psychotherapy therapy, London, online',
         },
     },
 };
