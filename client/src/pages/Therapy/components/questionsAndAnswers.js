@@ -11,6 +11,7 @@ export const questionsAndAnswers = [
                         href='https://www.youtube.com/watch?v=OxuZiqY5ypU&amp;t=10s'
                         target='_blank'
                         rel='noopener noreferrer'
+                        onClick={(e) => e.stopPropagation()}
                     >
                         counselling and psychotherapy{' '}
                     </a>
@@ -52,6 +53,7 @@ export const questionsAndAnswers = [
                         href='https://www.psychotherapy.org.uk/about-ukcp/how-we-are-structured/ukcp-colleges/humanistic-and-integrative-psychotherapy-college/'
                         target='_blank'
                         rel='noopener noreferrer'
+                        onClick={(e) => e.stopPropagation()}
                     >
                         counsellor and psychotherapist
                     </a>
@@ -72,6 +74,7 @@ export const questionsAndAnswers = [
                         href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/#psychodynamic'
                         target='_blank'
                         rel='noopener noreferrer'
+                        onClick={(e) => e.stopPropagation()}
                     >
                         psychodynamic
                     </a>{' '}
@@ -80,6 +83,7 @@ export const questionsAndAnswers = [
                         href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/#attachment-based-psychotherapy'
                         target='_blank'
                         rel='noopener noreferrer'
+                        onClick={(e) => e.stopPropagation()}
                     >
                         attachment theory
                     </a>{' '}
@@ -88,6 +92,7 @@ export const questionsAndAnswers = [
                         href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/#relational'
                         target='_blank'
                         rel='noopener noreferrer'
+                        onClick={(e) => e.stopPropagation()}
                     >
                         relational psychotherapy
                     </a>{' '}
@@ -140,6 +145,7 @@ export const questionsAndAnswers = [
                         href='https://www.youtube.com/watch?v=g-i6QMvIAA0&amp;t=147s'
                         target='_blank'
                         rel='noopener noreferrer'
+                        onClick={(e) => e.stopPropagation()}
                     >
                         therapeutic approaches{' '}
                     </a>{' '}
@@ -185,6 +191,7 @@ export const questionsAndAnswers = [
 Ethics-and-Professional-Practice-2019.pdf'
                         target='_blank'
                         rel='noopener noreferrer'
+                        onClick={(e) => e.stopPropagation()}
                     >
                         strictly confidential
                     </a>

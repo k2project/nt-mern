@@ -36,7 +36,7 @@ export const TherapyIntro = () => {
                         {' '}
                         There are many different therapeutic approaches
                         available and it can be confusing to decide which one is
-                        suited for you.
+                        best suited for you.
                     </p>
                     <Link to='/#about' className='btn' smooth>
                         More About Me
