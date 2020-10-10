@@ -25,13 +25,6 @@ const meta = {
         },
     },
 };
-const pageDetails = {
-    name: 'Contact',
-    img: {
-        imgName: 'contactText.pt1.png',
-        imgAlt: 'Contact Page',
-    },
-};
 
 class Contact extends Component {
     constructor(props) {
@@ -518,10 +511,10 @@ const Form = (props) => {
         </section>
     );
 };
-const changePlaceholder = (e, text, color) => {
-    e.target.placeholder = text;
-    e.target.style.color = color;
-};
+// const changePlaceholder = (e, text, color) => {
+//     e.target.placeholder = text;
+//     e.target.style.color = color;
+// };
 const stripHTML = (text) => {
     text = text.replace(/</g, '&lt;').replace(/>/g, '&gt;');
     return text.trim();
