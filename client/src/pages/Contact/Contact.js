@@ -18,7 +18,7 @@ import { RadioInput } from './components/RadioInput';
 
 const meta = {
     title:
-        'City of London & West End and online | Nujoji Calvocoressi Counselling and Psychotherapy',
+        'City of London, West End & Online | Nujoji Calvocoressi Counselling and Psychotherapy',
     description:
         'Bookings: 07855 846 580 | Office:11-12 Tokenhouse Yard, City of London, London EC2R 7AS',
     canonical: 'http://www.calvocoressi.com/contact',

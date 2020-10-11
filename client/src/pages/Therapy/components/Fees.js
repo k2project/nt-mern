@@ -12,10 +12,15 @@ export const Fees = () => {
                             divider: 'white',
                             subtitle: '',
                             title: (
+                                // <span>
+                                //     Many people find that <b>regular</b>{' '}
+                                //     meetings provide a sense of safety and{' '}
+                                //     <b>continuity</b>
+                                // </span>
                                 <span>
-                                    Many people find that <b>regular</b>{' '}
-                                    meetings provide a sense of safety and{' '}
-                                    <b>continuity</b>
+                                    FINDING A THERAPIST YOU FEEL{' '}
+                                    <b>COMFORTABLE</b> WITH SHOULD ALWAYS COME{' '}
+                                    <b>FIRST AND FOREMOST</b>
                                 </span>
                             ),
                         }}

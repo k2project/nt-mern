@@ -137,7 +137,7 @@ export const Nujoji = () => {
                         Incident Debriefing, this is a highly effective
                         intervention to deal with the adverse psychological
                         impact of critical incidents. I am currently completing
-                        a Mentalization- Based Treatment clinical training at{' '}
+                        a Mentalization-Based Treatment clinical training at{' '}
                         <a
                             href='https://www.annafreud.org'
                             target='_blank'
@@ -160,7 +160,7 @@ export const Nujoji = () => {
                         harmful and criminal behaviour.
                     </p>
 
-                    <p>
+                    {/* <p>
                         <a
                             href='https://www.truthproject.org.uk/i-will-be-heard'
                             target='_blank'
@@ -182,7 +182,7 @@ export const Nujoji = () => {
                             Independent Inquiry into Child Sexual Abuse
                         </a>
                         .
-                    </p>
+                    </p> */}
                 </div>
             </div>
         </section>

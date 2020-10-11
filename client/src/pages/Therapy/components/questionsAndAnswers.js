@@ -16,8 +16,8 @@ export const questionsAndAnswers = [
                         counselling and psychotherapy{' '}
                     </a>
                     isn’t about giving advice or telling people what to do.
-                    Instead it is about creating a safer, calmer and non-
-                    judgemental space where you can reflect, explore and
+                    Instead it is about creating a safer, calmer and
+                    non-judgemental space where you can reflect, explore and
                     understand the difficulties in your life. The insight and
                     awareness you gain can in itself feel freeing allowing you
                     more choice in the way you live your life.
