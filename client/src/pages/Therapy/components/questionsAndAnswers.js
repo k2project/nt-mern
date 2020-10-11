@@ -12,6 +12,7 @@ export const questionsAndAnswers = [
                         target='_blank'
                         rel='noopener noreferrer'
                         onClick={(e) => e.stopPropagation()}
+                        className='link'
                     >
                         counselling and psychotherapy{' '}
                     </a>
@@ -54,6 +55,7 @@ export const questionsAndAnswers = [
                         target='_blank'
                         rel='noopener noreferrer'
                         onClick={(e) => e.stopPropagation()}
+                        className='link'
                     >
                         counsellor and psychotherapist
                     </a>
@@ -75,6 +77,7 @@ export const questionsAndAnswers = [
                         target='_blank'
                         rel='noopener noreferrer'
                         onClick={(e) => e.stopPropagation()}
+                        className='link'
                     >
                         psychodynamic
                     </a>{' '}
@@ -84,6 +87,7 @@ export const questionsAndAnswers = [
                         target='_blank'
                         rel='noopener noreferrer'
                         onClick={(e) => e.stopPropagation()}
+                        className='link'
                     >
                         attachment theory
                     </a>{' '}
@@ -93,6 +97,7 @@ export const questionsAndAnswers = [
                         target='_blank'
                         rel='noopener noreferrer'
                         onClick={(e) => e.stopPropagation()}
+                        className='link'
                     >
                         relational psychotherapy
                     </a>{' '}
@@ -147,6 +152,7 @@ export const questionsAndAnswers = [
                         target='_blank'
                         rel='noopener noreferrer'
                         onClick={(e) => e.stopPropagation()}
+                        className='link'
                     >
                         therapeutic approaches{' '}
                     </a>{' '}
@@ -193,6 +199,7 @@ Ethics-and-Professional-Practice-2019.pdf'
                         target='_blank'
                         rel='noopener noreferrer'
                         onClick={(e) => e.stopPropagation()}
+                        className='link'
                     >
                         strictly confidential
                     </a>

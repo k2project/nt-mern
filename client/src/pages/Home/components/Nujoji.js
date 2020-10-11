@@ -26,7 +26,10 @@ export const Nujoji = () => {
 
                     <p>
                         I have been trained in{' '}
-                        <Link to='/therapy/#integrative-therapy'>
+                        <Link
+                            to='/therapy/#integrative-therapy'
+                            className='link'
+                        >
                             integrative psychotherapy
                         </Link>
                         , this is a progressive form of therapy that combines
@@ -44,6 +47,7 @@ export const Nujoji = () => {
                             href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/#psychodynamic'
                             target='_blank'
                             rel='noopener noreferrer'
+                            className='link'
                         >
                             psychodynamic
                         </a>{' '}
@@ -52,6 +56,7 @@ export const Nujoji = () => {
                             href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/#attachment-based-psychotherapy'
                             target='_blank'
                             rel='noopener noreferrer'
+                            className='link'
                         >
                             attachment theory
                         </a>
@@ -60,6 +65,7 @@ export const Nujoji = () => {
                             href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/#relational'
                             target='_blank'
                             rel='noopener noreferrer'
+                            className='link'
                         >
                             relational concepts
                         </a>{' '}
@@ -81,6 +87,7 @@ export const Nujoji = () => {
                             href='https://www.minstercentre.ac.uk'
                             target='_blank'
                             rel='noopener noreferrer'
+                            className='link'
                         >
                             The Minster Centre,
                         </a>{' '}
@@ -91,6 +98,7 @@ export const Nujoji = () => {
                             href='https://www.psychotherapy.org.uk/'
                             target='_blank'
                             rel='noopener noreferrer'
+                            className='link'
                         >
                             UKCP
                         </a>{' '}
@@ -99,6 +107,7 @@ export const Nujoji = () => {
                             href='https://www.bacp.co.uk/'
                             target='_blank'
                             rel='noopener noreferrer'
+                            className='link'
                         >
                             BACP
                         </a>
@@ -142,6 +151,7 @@ export const Nujoji = () => {
                             href='https://www.annafreud.org'
                             target='_blank'
                             rel='noopener noreferrer'
+                            className='link'
                         >
                             The Anna Freud Centre
                         </a>
@@ -151,7 +161,7 @@ export const Nujoji = () => {
                         I have experience working one to one with individual
                         clients who have differing belief systems and
                         backgrounds including those identifying on the{' '}
-                        <Link to='/therapy/#inclusive-therapy'>
+                        <Link to='/therapy/#inclusive-therapy' className='link'>
                             spectrum of gender, sexuality and relationship
                             diversity
                         </Link>

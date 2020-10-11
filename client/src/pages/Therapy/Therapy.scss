@@ -31,9 +31,6 @@
     margin-bottom: 0.5rem;
     overflow: hidden;
     transition: 0.5s;
-    a {
-        text-decoration: underline;
-    }
 }
 .accordion__li.active {
     max-height: 300vh;

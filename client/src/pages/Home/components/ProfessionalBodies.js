@@ -59,6 +59,7 @@ export const ProfessionalBodies = () => {
                         href='https://www.psychotherapy.org.uk/wp-content/uploads/2019/06/UKCP-Code-of-Ethics-and-Professional-Practice-2019.pdf'
                         target='_blank'
                         rel='noopener noreferrer'
+                        className='link'
                     >
                         Code of Ethics and Professional Practice
                     </a>

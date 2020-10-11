@@ -60,6 +60,13 @@
     background: rgba(0, 0, 0, 0.3);
 }
 
+a.link {
+    color: $COLOR_LINK;
+}
+a.link:hover {
+    text-decoration: underline;
+}
+
 //OLD STYLING
 
 .text_cntr {
