@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavHashLink as NavLink } from 'react-router-hash-link';
 import NavLinks from './NavLinks';
 import Nav from './Nav';
 import logo from './../../imgs/logo.png';
@@ -36,11 +37,13 @@ class Header extends React.Component {
                             mobileMenuOpen={this.state.mobileMenuOpen}
                         />
                         <div className='Page__title'>
-                            <h1 className='sr-only'>
-                                Nujoji Calvocoressi Psychotherapy and
-                                Counselling
-                            </h1>
-                            <img src={logo} alt='' className='logo' />
+                            <NavLink to='/' exact>
+                                <h1 className='sr-only'>
+                                    Nujoji Calvocoressi Psychotherapy and
+                                    Counselling
+                                </h1>
+                                <img src={logo} alt='' className='logo' />
+                            </NavLink>
                             {/* <h1> */}
                             {/* <span
                                     className={
