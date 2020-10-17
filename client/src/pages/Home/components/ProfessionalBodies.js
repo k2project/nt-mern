@@ -20,7 +20,7 @@ const professionalBodiesData = [
     },
     {
         logo: iafp,
-        link: 'https://forensicpsychotherapy.com/',
+        link: 'https://www.forensicpsychotherapy.org',
         name: 'iafp',
     },
     {
