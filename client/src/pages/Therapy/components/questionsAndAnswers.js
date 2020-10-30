@@ -8,7 +8,7 @@ export const questionsAndAnswers = [
                 <p>
                     It often surprises people that{' '}
                     <a
-                        href='https://www.youtube.com/watch?v=OxuZiqY5ypU&amp;t=10s'
+                        href='https://www.youtube.com/watch?v=OxuZiqY5ypU'
                         target='_blank'
                         rel='noopener noreferrer'
                         onClick={(e) => e.stopPropagation()}
