@@ -14,8 +14,8 @@ export const Directions = () => {
                         }}
                     />
                     <p>
-                        CITY OF LONDON Tokenhouse Yard is a four-minute walk
-                        from Bank Tube Station (Waterloo and City, DLR,
+                        <b>CITY OF LONDON Tokenhouse Yard</b> is a four-minute walk
+                        from <b>Bank Tube Station</b> (Waterloo and City, DLR,
                         Northern, Central Line) and is situated just behind the
                         Bank of England off Lothbury.
                     </p>
@@ -31,9 +31,9 @@ export const Directions = () => {
                         Street.
                     </p>
                     <p>
-                        WEST END Nassau Street is located a few minutes’ walk
-                        from Tottenham Court Road London Underground (Northern
-                        and Central Lines) and Oxford Circus London Underground
+                        <b>WEST END Nassau Street</b> is located a few minutes’ walk
+                        from <b>Tottenham Court Road</b> London Underground (Northern
+                        and Central Lines) and <b>Oxford Circus</b> London Underground
                         (Victoria, Central and Bakerloo Lines).
                     </p>
                 </div>

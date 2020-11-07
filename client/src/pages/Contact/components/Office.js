@@ -45,7 +45,7 @@ export const Office = () => {
                             subtitle: '',
                             title: (
                                 <span>
-                                    A comfortable and <b>confidential</b> place
+                                    A <b>calm</b> and <b>confidential</b> place
                                 </span>
                             ),
                         }}
@@ -53,25 +53,25 @@ export const Office = () => {
                     <div className='addresses'>
                         <div className='address'>
                             <img src={location} alt='' />
-                            <span>
+                            <b>
                                 11-12 Tokenhouse Yard, City of London, London,
                                 <span className='nowrap'> EC2R 7AS</span>
-                            </span>
+                            </b>
                         </div>
                         <div className='address'>
                             <img src={location} alt='' />
-                            <span>
+                            <b>
                                 19 Nassau Street, West End, London,{' '}
                                 <span className='nowrap'>W1W 7AF</span>
-                            </span>
+                            </b>
                         </div>
                     </div>
 
                     <p>
-                        I see clients for appointments, Monday to Friday
+                        I see clients for appointments, <b>Monday to Friday </b>
                         throughout the year except public holidays. Appointments
                         are available between
-                        <span className='nowrap'> 8am – 8pm</span>.
+                        <b className='nowrap'> 8am – 8pm</b>.
                     </p>
                 </div>
             </div>
