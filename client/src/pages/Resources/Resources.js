@@ -11,9 +11,9 @@ import Encyclopaedia from './components/books/Encyclopaedia';
 import Fuck from './components/books/Fuck';
 import Videos from './components/videos/Videos';
 import Seattle from './components/podcasts/Seattle';
-import Race from './components/podcasts/Race';
-import Partially from './components/podcasts/Partially';
-import Files from './components/podcasts/Files';
+import Mental from './components/podcasts/Mental';
+import GoodAncestor from './components/podcasts/GoodAncestor';
+import AllInTheMind from './components/podcasts/AllInTheMind'
 
 const meta = {
     title: 'Resources | Nujoji Calvocoressi Counselling and Psychotherapy',
@@ -43,9 +43,9 @@ export const Resources = () => {
                 <Videos />
                 {/* podcasts */}
                 <Seattle />
-                <Partially />
-                <Race />
-                <Files />
+                <Mental />
+                <GoodAncestor />
+                <AllInTheMind/>
             </Page>
         </DocumentMeta>
     );

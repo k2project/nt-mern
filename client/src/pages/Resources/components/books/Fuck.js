@@ -15,7 +15,7 @@ function Fuck(props) {
                         or lack of confidence?
                     </p>
                     <p>
-                        In this ground- breaking book, clinical psychologist
+                        In this ground-breaking book, clinical psychologist
                         Oliver James shows that it is the way we were cared for
                         in the first six years of life that has a crucial effect
                         on who we are and how we behave. Nurture, in effect,

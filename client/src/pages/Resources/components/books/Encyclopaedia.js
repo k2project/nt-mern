@@ -43,7 +43,7 @@ function Encyclopaedia(props) {
                         shape our rich and varied internal worlds. In reading
                         it, you&#39;ll discover feelings you never knew you had
                         (like basorexia, the sudden urge to kiss someone),
-                        uncover the secret histories of  boredom and 
+                        uncover the secret histories of boredom and 
                         confidence, and gain unexpected insights into why we
                         feel the way we do.
                     </p>
