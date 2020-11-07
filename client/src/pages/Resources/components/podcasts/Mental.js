@@ -2,6 +2,8 @@ import React from 'react';
 import SectionTitle from '../../../../components/SectionTitle';
 import mental from '../../../../imgs/mental.jpg';
 
+const link= 'https://podcasts.apple.com/gb/podcast/mental-the-podcast-to-destigmatise-mental-health/id1358920477'
+
 function Mental(props) {
     return (
         <section className='section__reverse  podcasts'>
@@ -14,7 +16,7 @@ function Mental(props) {
                         You’ll also better understand different conditions from first-hand experience, with inspiring guests and surprising statistics. Whether you have experienced mental illness or not, there will be something to relate to in each episode.
                     </p>
                     <a
-                        href='https://podcasts.apple.com/gb/podcast/the-partially-examined-life/id318345767'
+                        href={link}
                         target='_blank'
                         rel='noopener noreferrer'
                         className='btn'
@@ -34,7 +36,7 @@ function Mental(props) {
                         }}
                     >
                         <a
-                            href='https://podcasts.apple.com/gb/podcast/the-partially-examined-life/id318345767'
+                            href={link}
                             target='_blank'
                             rel='noopener noreferrer'
                         >

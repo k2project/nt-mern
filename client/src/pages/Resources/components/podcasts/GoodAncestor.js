@@ -2,6 +2,8 @@ import React from 'react';
 import SectionTitle from '../../../../components/SectionTitle';
 import goodAncestor from '../../../../imgs/goodAncestor.jpg';
 
+const link= 'https://podcasts.apple.com/gb/podcast/good-ancestor-podcast/id1451091236'
+
 function GoodAncestor(props) {
     return (
         <section className='podcasts'>
@@ -15,7 +17,7 @@ function GoodAncestor(props) {
                         }}
                     >
                         <a
-                            href='https://podcasts.apple.com/gb/podcast/psychology-in-seattle-podcast/id767626637'
+                            href={link}
                             target='_blank'
                             rel='noopener noreferrer'
                         >
@@ -36,7 +38,7 @@ function GoodAncestor(props) {
                         Anti-racism educator Layla F. Saad is the author of ground-breaking Me and White Supremacy which went on to appear on six bestseller lists. Her podcast features one in-depth interview per episode with ‘change-makers & culture-shapers’. Race, identity, leadership, personal transformation and social change are all explored. 
                     </p>
                     <a
-                        href='https://podcasts.apple.com/gb/podcast/psychology-in-seattle-podcast/id767626637'
+                        href={link}
                         target='_blank'
                         rel='noopener noreferrer'
                         className='btn'

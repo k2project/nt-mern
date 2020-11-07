@@ -2,6 +2,8 @@ import React from 'react';
 import SectionTitle from '../../../../components/SectionTitle';
 import allInTheMind from '../../../../imgs/allInTheMind.jpg';
 
+const link ='https://podcasts.apple.com/gb/podcast/all-in-the-mind/id643660675'
+
 function AllInTheMind(props) {
     return (
         <section className='section__reverse  podcasts'>
@@ -15,7 +17,7 @@ function AllInTheMind(props) {
                     </p>
                   
                     <a
-                        href='https://podcasts.apple.com/gb/podcast/the-partially-examined-life/id318345767'
+                        href={link}
                         target='_blank'
                         rel='noopener noreferrer'
                         className='btn'
@@ -35,7 +37,7 @@ function AllInTheMind(props) {
                         }}
                     >
                         <a
-                            href='https://podcasts.apple.com/gb/podcast/the-partially-examined-life/id318345767'
+                            href={link}
                             target='_blank'
                             rel='noopener noreferrer'
                         >
