@@ -3,7 +3,7 @@ import { NavHashLink as Link } from 'react-router-hash-link';
 
 import SectionTitle from '../../../components/SectionTitle';
 
-import truthproject from './../../../imgs/tp.png';
+// import truthproject from './../../../imgs/tp.png';
 import graduation from './../../../imgs/ok2.png';
 
 export const Nujoji = () => {
@@ -23,24 +23,49 @@ export const Nujoji = () => {
                             ),
                         }}
                     />
-
                     <p>
-                        I have been trained in{' '}
+                        The therapeutic relationship I develop with you is an important part of how I work.
                         <Link
                             to='/therapy/#integrative-therapy'
                             className='link'
+                        > Integrative psychotherapy </Link>
+                        combines elements drawn from different schools of psychological theory and research to become a flexible and inclusive approach. My practice is particularly informed by <a
+                            href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/#psychodynamic'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            className='link'
                         >
-                            integrative psychotherapy
-                        </Link>
-                        , this is a progressive form of therapy that combines
-                        different therapeutic tools and approaches to fit the
-                        needs and personal circumstances of the individual
-                        client. By combining elements drawn from different
-                        schools of psychological theory and research,
-                        integrative therapy becomes a flexible and inclusive
-                        approach.
+                            psychodynamic
+                        </a>{' '}
+                        and{' '}
+                        <a
+                            href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/#attachment-based-psychotherapy'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            className='link'
+                        >
+                            attachment theory
+                        </a>
+                        ,{' '}
+                        <a
+                            href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/#relational'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            className='link'
+                        >
+                            relational concepts
+                        </a> and underpinned with a trauma informed model. My approach fits the needs and personal circumstances of each person.
                     </p>
-                    <p className='mob-hidden'>
+
+                    <p>
+                        The people who come to my practice hold many different beliefs and come from all walks of life, including those identifying on the 
+                        <Link to='/therapy/#inclusive-therapy' className='link'>
+                            {' '}spectrum of gender, sexuality and relationship diversity
+                        </Link>
+                        . I also work as a senior psychotherapist in the National Health Service with men in the secure forensic estate who engage in violent, harmful and criminal behaviour.
+                    </p>
+                    
+                    {/* <p className='mob-hidden'>
                         I place importance on the therapeutic relationship. My
                         practice is particularly informed by{' '}
                         <a
@@ -71,6 +96,7 @@ export const Nujoji = () => {
                         </a>{' '}
                         and underpinned with a trauma informed approach.
                     </p>
+                 */}
                 </div>
             </div>
             <div>
@@ -91,9 +117,7 @@ export const Nujoji = () => {
                         >
                             The Minster Centre,
                         </a>{' '}
-                        a leading psychotherapy training in the United Kingdom.
-                        Courses meet high academic and professional standards
-                        and are validated by the main professional bodies the{' '}
+                        a leading psychotherapy training institute in the United Kingdom. Courses meet the highest academic and professional standards and are validated by the main professional bodies the{' '}
                         <a
                             href='https://www.psychotherapy.org.uk/'
                             target='_blank'
@@ -142,33 +166,18 @@ export const Nujoji = () => {
                         </span>
                     </p>
                     <p>
-                        I have also undertaken further training in Critical
-                        Incident Debriefing, this is a highly effective
-                        intervention to deal with the adverse psychological
-                        impact of critical incidents. I am currently completing
-                        a Mentalization-Based Treatment clinical training at{' '}
+                        I have also undertaken further training in Critical Incident Debriefing, a highly effective intervention to deal with the adverse psychological impact of overwhelmingly stressful incidents in the workplace. I am also completing a Mentalization-Based Treatment training at{' '}
                         <a
                             href='https://www.annafreud.org'
                             target='_blank'
                             rel='noopener noreferrer'
                             className='link'
                         >
-                            The Anna Freud Centre
+                            The Anna Freud National Centre for Children and Families
                         </a>
                         .
                     </p>
-                    <p>
-                        I have experience working one to one with individual
-                        clients who have differing belief systems and
-                        backgrounds including those identifying on the{' '}
-                        <Link to='/therapy/#inclusive-therapy' className='link'>
-                            spectrum of gender, sexuality and relationship
-                            diversity
-                        </Link>
-                        . I also work in the National Health Service with men in
-                        the secure forensic estate who engage in violent,
-                        harmful and criminal behaviour.
-                    </p>
+                   
 
                     {/* <p>
                         <a

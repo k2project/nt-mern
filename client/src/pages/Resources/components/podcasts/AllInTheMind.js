@@ -33,7 +33,7 @@ function AllInTheMind(props) {
                             divider: '',
                             subtitle:
                                 'by BBC Radio Four',
-                            title: <span>All in the Mind</span>,
+                            title: <span>All in the <b>Mind</b></span>,
                         }}
                     >
                         <a

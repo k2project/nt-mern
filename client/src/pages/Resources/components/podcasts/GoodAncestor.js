@@ -13,7 +13,7 @@ function GoodAncestor(props) {
                         data={{
                             divider: '',
                             subtitle: 'by Layla F. Saad',
-                            title: <span>Good Ancestor Podcast </span>,
+                            title: <span>Good <b>Ancestor</b> Podcast </span>,
                         }}
                     >
                         <a

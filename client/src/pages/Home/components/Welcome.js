@@ -15,7 +15,7 @@ export const Welcome = () => {
                             title: (
                                 <span>
                                     <b>Change</b> happens when you allow
-                                    yourself to look at <b>life</b> in a new way
+                                    yourself to look at life in a <b>new way</b>
                                 </span>
                             ),
                         }}
@@ -25,16 +25,10 @@ export const Welcome = () => {
             <div>
                 <div className='section__wrapper'>
                     <p>
-                        It is not uncommon to feel lost or confused from time to
-                        time, or to experience symptoms, unhelpful behaviours or
-                        a lack of confidence. These are things that we can all
-                        experience.
+                        It is natural to feel lost or confused when facing emotional difficulties, such as the ending of a relationship, when going through big change or you are feeling overwhelmed by past events. You are not alone if you are experiencing anxiety, unhelpful behaviours or you are feeling isolated. These are human experiences that we can all go through.
                     </p>
                     <p>
-                        {' '}
-                        Therapy is about creating a safe and non-judgemental
-                        space where you can reflect, explore and understand the
-                        difficulties in your life.
+                        Psychotherapy and counselling provides a calm and non-judgemental space where you can reflect, explore and deal with the difficulties in your life.
                     </p>
                     {/* <p>However you can always break the cycle of anger, anxiety, addiction, distrust and    unhealthy behaviour if you want. It all starts with you... Make a choice today!</p> */}
                     <Link to='/contact#form' className='btn' smooth>

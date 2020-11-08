@@ -30,7 +30,7 @@ export const Form = (props) => {
                     </p>
                     <p>
                         If you prefer to contact me by email, please
-                        complete <a href='#contact-form'>the contact form.</a> Both methods are confidential.
+                        complete <a href='#contact-form' className='link'>the contact form</a>. Both methods are confidential.
                     </p>
                     <p>
                         Please be aware that if I am with clients I will be

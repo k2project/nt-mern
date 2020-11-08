@@ -14,18 +14,15 @@ export const About = () => {
                             subtitle: '',
                             title: (
                                 <span>
-                                    When was the last time you felt{' '}
-                                    <b>understood</b>?
+                                    To <b>change</b> we first need to feel 
+                                    <b> understood</b>?
                                 </span>
                             ),
                         }}
                     />
 
                     <p>
-                        Hello, my name is Nujoji and I am a counsellor and
-                        psychotherapist in London. I am passionate about my work
-                        and firmly believe that therapy can bring about positive
-                        change to people’s lives.
+                        Hello, my name is Nujoji and I am a psychotherapist and counsellor working in London and online. I am passionate about my work and I firmly believe that therapy can bring about positive change to people's lives.
                     </p>
                     <Link
                         to='/therapy#integrative-therapy'

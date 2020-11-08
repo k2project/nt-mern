@@ -12,7 +12,7 @@ function Seattle(props) {
                         data={{
                             divider: '',
                             subtitle: 'by Kirk Honda ',
-                            title: <span>Psychology in Seattle </span>,
+                            title: <span><b>Psychology</b> in Seattle </span>,
                         }}
                     >
                         <a

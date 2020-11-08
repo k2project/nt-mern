@@ -32,7 +32,7 @@ function Mental(props) {
                             divider: '',
                             subtitle:
                                 'by Bobby Temps',
-                            title: <span>Mental - The Podcast to Destigmatise Mental Health</span>,
+                            title: <span>Mental - The Podcast to <b>Destigmatise</b> Mental Health</span>,
                         }}
                     >
                         <a

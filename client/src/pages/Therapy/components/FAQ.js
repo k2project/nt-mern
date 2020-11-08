@@ -20,10 +20,7 @@ export const FAQ = (props) => {
                 />
                 <div>
                     <p>
-                        I hope some of the FAQ will help answer any questions
-                        that you may have about starting therapy or about how I
-                        practice. Please do not hesitate to contact me if you
-                        have another question.
+                        I hope the FAQ will help answer any questions that you may have about starting therapy or about how I practice. Please do not hesitate to contact me if you have another question.
                     </p>
                     <div className='text_r'>
                         <div className='btn_square' onClick={openAllQuestions}>
