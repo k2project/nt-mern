@@ -22,12 +22,7 @@ function WhenTheBodySaysNo(props) {
                         clarifies that relying just on will power (mind over matter) can be dangerous too,
                         especially when one‘s inner resources are over-estimated.
                     </p>
-                    <p>
-                    This book is not only useful for people affected by chronic diseases. It is extremely
-                        helpful also for the ‘healthy‘ person to live their life more fully and more vibrantly by
-                        understanding and embracing the principles that allow them to embark in the natural
-                        development journey and maximizing the chance of long-term health.
-                    </p>
+                   
                 </div>
             </div>
             <div className='resources__title'>
