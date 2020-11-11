@@ -15,7 +15,7 @@ export const About = () => {
                             title: (
                                 <span>
                                     To <b>change</b> we first need to feel 
-                                    <b> understood</b>?
+                                    <b> understood</b>
                                 </span>
                             ),
                         }}

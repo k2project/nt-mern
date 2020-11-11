@@ -37,7 +37,7 @@ export const questionsAndAnswers = [
                     I hold the view that each person is an individual and psychotherapy and counselling techniques are tailored to their individual needs and personal circumstances.
                 </p>
                 <p>
-                    I have trained as an <b>integrative</b>{' '}
+                    I have trained as an {' '}
                     <a
                         href='https://www.psychotherapy.org.uk/about-ukcp/how-we-are-structured/ukcp-colleges/humanistic-and-integrative-psychotherapy-college/'
                         target='_blank'
@@ -45,7 +45,7 @@ export const questionsAndAnswers = [
                         onClick={(e) => e.stopPropagation()}
                         className='link'
                     >
-                        counsellor and psychotherapist
+                        <b>integrative</b> counsellor and psychotherapist
                     </a>
                     . This is a combined approach that brings together different strands of specific therapeutic modalities. Integrative therapists do not adopt a one-size-fits-all approach to therapy. 
                 </p>
@@ -60,7 +60,7 @@ export const questionsAndAnswers = [
                     >
                         psychodynamic
                     </a>{' '}
-                    ideas into my work with clients,{' '}
+                    and{' '}
                     <a
                         href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/#attachment-based-psychotherapy'
                         target='_blank'
@@ -70,7 +70,7 @@ export const questionsAndAnswers = [
                     >
                         attachment theory
                     </a>{' '}
-                    as well as{' '}
+                    into my work with clients, as well as {' '}
                     <a
                         href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/#relational'
                         target='_blank'
@@ -78,9 +78,9 @@ export const questionsAndAnswers = [
                         onClick={(e) => e.stopPropagation()}
                         className='link'
                     >
-                        relational psychotherapy
+                        relational
                     </a>{' '}
-                    and place importance on the therapeutic relationship.
+                    concepts which place an importance on the therapeutic relationship.
                 </p>
             </Fragment>
         ),
@@ -115,7 +115,7 @@ export const questionsAndAnswers = [
                 <p>
                     There are many different{' '}
                     <a
-                        href='https://www.youtube.com/watch?v=g-i6QMvIAA0&amp;t=147s'
+                        href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/'
                         target='_blank'
                         rel='noopener noreferrer'
                         onClick={(e) => e.stopPropagation()}

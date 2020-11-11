@@ -3,7 +3,7 @@ import { NavHashLink as Link } from 'react-router-hash-link';
 
 import SectionTitle from '../../../components/SectionTitle';
 
-// import truthproject from './../../../imgs/tp.png';
+import truthproject from './../../../imgs/tp.png';
 import graduation from './../../../imgs/ok2.png';
 
 export const Nujoji = () => {
@@ -179,7 +179,7 @@ export const Nujoji = () => {
                     </p>
                    
 
-                    {/* <p>
+                    <p>
                         <a
                             href='https://www.truthproject.org.uk/i-will-be-heard'
                             target='_blank'
@@ -197,11 +197,12 @@ export const Nujoji = () => {
                             href='https://www.truthproject.org.uk/i-will-be-heard'
                             target='_blank'
                             rel='noopener noreferrer'
+                            className="link"
                         >
                             Independent Inquiry into Child Sexual Abuse
                         </a>
                         .
-                    </p> */}
+                    </p>
                 </div>
             </div>
         </section>

@@ -8,7 +8,7 @@ import { Intro } from './components/Intro';
 import Attached from './components/books/Attached';
 import Tiger from './components/books/Tiger';
 import Encyclopaedia from './components/books/Encyclopaedia';
-import Fuck from './components/books/Fuck';
+import WhenTheBodySaysNo from './components/books/WhenTheBodySaysNo';
 import Videos from './components/videos/Videos';
 import Seattle from './components/podcasts/Seattle';
 import Mental from './components/podcasts/Mental';
@@ -38,7 +38,7 @@ export const Resources = () => {
                 <Attached />
                 <Tiger />
                 <Encyclopaedia />
-                <Fuck />
+                <WhenTheBodySaysNo/>
                 {/* videos */}
                 <Videos />
                 {/* podcasts */}
