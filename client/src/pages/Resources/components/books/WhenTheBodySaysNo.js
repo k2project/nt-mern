@@ -38,7 +38,7 @@ function WhenTheBodySaysNo(props) {
                             subtitle: 'by Dr Gabor Maté',
                             title: (
                                 <span>
-                                    When the Body Says No:<br />
+                                    When the <b>Body</b> Says No:<br />
                                     The Cost of Hidden Stress
                                 </span>
                             ),
