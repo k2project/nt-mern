@@ -10,8 +10,8 @@ export default function Footer() {
                 Back To Top
             </button>
             <p>
-                Nujoji Calvocoressi Counselling &amp; Psychotherapy <wbr />
-                City of London &amp; West End &copy; {new Date().getFullYear()}
+                Nujoji Calvocoressi Psychotherapy & Counselling | City of London
+                & West End &copy; {new Date().getFullYear()}
             </p>
         </footer>
     );

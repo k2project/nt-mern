@@ -209,11 +209,11 @@ class Contact extends Component {
                                         value={this.state.mobile}
                                     />
                                     <fieldset className='Form__locations'>
-                                        <legend>
+                                        {/* <legend>
                                             <img src={location} alt='' />
                                             Which location is the most
                                             convenient?*
-                                        </legend>
+                                        </legend> */}
                                         <RadioInput
                                             value='Tokenhouse Yard'
                                             text='Tokenhouse Yard (City of London)'
@@ -234,7 +234,7 @@ class Contact extends Component {
                                                 });
                                             }}
                                         />
-                                        <RadioInput
+                                        {/* <RadioInput
                                             value='any office'
                                             text='Either Location'
                                             clearErr={() => {
@@ -243,7 +243,7 @@ class Contact extends Component {
                                                     sent: false,
                                                 });
                                             }}
-                                        />
+                                        /> */}
                                         <RadioInput
                                             value='online session'
                                             text='Online Session'

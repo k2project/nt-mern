@@ -294,6 +294,10 @@ section div {
     .text_r {
         text-align: left;
     }
+    body,
+    .accordion__li span {
+        font-size: 1.6rem;
+    }
 }
 @include mobile-sm {
     .wrapper {

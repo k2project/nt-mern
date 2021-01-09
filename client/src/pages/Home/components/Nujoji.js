@@ -4,7 +4,7 @@ import { NavHashLink as Link } from 'react-router-hash-link';
 import SectionTitle from '../../../components/SectionTitle';
 
 import truthproject from './../../../imgs/tp.png';
-import graduation from './../../../imgs/ok2.png';
+import graduation from './../../../imgs/butterfly.png';
 
 export const Nujoji = () => {
     return (
@@ -24,12 +24,21 @@ export const Nujoji = () => {
                         }}
                     />
                     <p>
-                        The therapeutic relationship I develop with you is an important part of how I work.
+                        My approach attempts to fit the needs and personal
+                        circumstances of each person and the therapeutic
+                        relationship I develop with you is an important part of
+                        how I work.{' '}
                         <Link
                             to='/therapy/#integrative-therapy'
                             className='link'
-                        > Integrative psychotherapy </Link>
-                        combines elements drawn from different schools of psychological theory and research to become a flexible and inclusive approach. My practice is particularly informed by <a
+                        >
+                            Integrative psychotherapy
+                        </Link>{' '}
+                        combines elements drawn from different schools of
+                        psychological theory and research to become a flexible
+                        and inclusive approach. My practice is particularly
+                        informed by{' '}
+                        <a
                             href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/#psychodynamic'
                             target='_blank'
                             rel='noopener noreferrer'
@@ -54,20 +63,23 @@ export const Nujoji = () => {
                             className='link'
                         >
                             relational concepts
-                        </a> and underpinned with a trauma informed model. My approach fits the needs and personal circumstances of each person.
+                        </a>{' '}
+                        and underpinned with a trauma informed model.
                     </p>
-
-                    <p>
-                        The people who come to my practice hold many different beliefs and come from all walks of life, including those identifying on the 
-                        <Link to='/therapy/#inclusive-therapy' className='link'>
-                            {' '}spectrum of gender, sexuality and relationship diversity
+                    {/* <p>
+                        The therapeutic relationship I develop with you is an
+                        important part of how I work.
+                        <Link
+                            to='/therapy/#integrative-therapy'
+                            className='link'
+                        >
+                            {' '}
+                            Integrative psychotherapy{' '}
                         </Link>
-                        . I also work as a senior psychotherapist in the National Health Service with men in the secure forensic estate who engage in violent, harmful and criminal behaviour.
-                    </p>
-                    
-                    {/* <p className='mob-hidden'>
-                        I place importance on the therapeutic relationship. My
-                        practice is particularly informed by{' '}
+                        combines elements drawn from different schools of
+                        psychological theory and research to become a flexible
+                        and inclusive approach. My practice is particularly
+                        informed by{' '}
                         <a
                             href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/#psychodynamic'
                             target='_blank'
@@ -94,9 +106,40 @@ export const Nujoji = () => {
                         >
                             relational concepts
                         </a>{' '}
-                        and underpinned with a trauma informed approach.
+                        and underpinned with a trauma informed model. My
+                        approach fits the needs and personal circumstances of
+                        each person.
+                    </p> */}
+
+                    {/* <p>
+                        The people who come to my practice hold many different
+                        beliefs and come from all walks of life, including those
+                        identifying on the
+                        <Link to='/therapy/#inclusive-therapy' className='link'>
+                            {' '}
+                            spectrum of gender, sexuality and relationship
+                            diversity
+                        </Link>
+                        . I also work as a senior psychotherapist in the
+                        National Health Service with men in the secure forensic
+                        estate who engage in violent, harmful and criminal
+                        behaviour.
+                    </p> */}
+                    <p>
+                        The people who come to my practice hold many different
+                        beliefs and come from all walks of life, including those
+                        identifying on the{' '}
+                        <Link to='/therapy/#inclusive-therapy' className='link'>
+                            spectrum of gender, sexuality and relationship
+                            diversity
+                        </Link>
+                        .
                     </p>
-                 */}
+                    <p>
+                        I also work as a senior psychotherapist in the National
+                        Health Service with men in the secure forensic estate
+                        who engage in violent, harmful and criminal behaviour.
+                    </p>
                 </div>
             </div>
             <div>
@@ -117,7 +160,10 @@ export const Nujoji = () => {
                         >
                             The Minster Centre,
                         </a>{' '}
-                        a leading psychotherapy training institute in the United Kingdom. Courses meet the highest academic and professional standards and are validated by the main professional bodies the{' '}
+                        a leading psychotherapy training institute in the United
+                        Kingdom. Courses meet the highest academic and
+                        professional standards and are validated by the main
+                        professional bodies the{' '}
                         <a
                             href='https://www.psychotherapy.org.uk/'
                             target='_blank'
@@ -145,7 +191,8 @@ export const Nujoji = () => {
                                 alt=''
                                 className='graduation'
                             />
-                            Master of Arts in Counselling and Psychotherapy
+                            Master of Arts degree in Counselling and
+                            Psychotherapy
                         </span>
                         <span className='qualifications'>
                             <img
@@ -166,18 +213,23 @@ export const Nujoji = () => {
                         </span>
                     </p>
                     <p>
-                        I have also undertaken further training in Critical Incident Debriefing, a highly effective intervention to deal with the adverse psychological impact of overwhelmingly stressful incidents in the workplace. I am also completing a Mentalization-Based Treatment training at{' '}
+                        I have also undertaken further training in Critical
+                        Incident Debriefing, a highly effective intervention to
+                        deal with the adverse psychological impact of
+                        overwhelmingly stressful incidents in the workplace. I
+                        am also completing a Mentalization-Based Treatment
+                        training at{' '}
                         <a
                             href='https://www.annafreud.org'
                             target='_blank'
                             rel='noopener noreferrer'
                             className='link'
                         >
-                            The Anna Freud National Centre for Children and Families
+                            The Anna Freud National Centre for Children and
+                            Families
                         </a>
                         .
                     </p>
-                   
 
                     <p>
                         <a
@@ -197,7 +249,7 @@ export const Nujoji = () => {
                             href='https://www.truthproject.org.uk/i-will-be-heard'
                             target='_blank'
                             rel='noopener noreferrer'
-                            className="link"
+                            className='link'
                         >
                             Independent Inquiry into Child Sexual Abuse
                         </a>

@@ -29,26 +29,30 @@ export const Form = (props) => {
                         .{' '}
                     </p>
                     <p>
-                        If you prefer to contact me by email, <a href='#contact-form' className='link'>please
-                        complete the contact form</a>. Both methods are confidential.
+                        If you prefer to contact me by email,{' '}
+                        <a href='#contact-form' className='link'>
+                            please complete the contact form
+                        </a>
+                        . Both methods are confidential.
                     </p>
                     <p>
                         Please be aware that if I am with clients I will be
                         unable to answer your call. In that case please leave me
-                        a message or use the quick contact form. I will get back to you as soon as
-                        possible and within 24 hours.{' '}
+                        a message or use the quick contact form. I will get back
+                        to you as soon as possible and within 24 hours.{' '}
                     </p>
                     <p>
-                        <b>In case of emergency:</b> If you are experiencing thoughts about taking your life
-                        or you are in danger it is important to tell someone.{' '}
+                        <b>In case of emergency:</b> If you are experiencing
+                        thoughts about taking your life or you are in danger it
+                        is important to tell someone.{' '}
                         <a
                             href='https://www.nhs.uk/conditions/suicide/'
                             target='_blank'
                             rel='noopener noreferrer'
                             className='link'
                         >
-                            <b>Help</b> and support is available <b>free</b> and <b>24 hours</b> a
-                            day.
+                            <b>Help</b> and support is available <b>free</b> and{' '}
+                            <b>24 hours</b> a day.
                         </a>
                     </p>
                 </div>
