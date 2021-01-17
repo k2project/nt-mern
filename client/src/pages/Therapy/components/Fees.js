@@ -21,10 +21,13 @@ export const Fees = () => {
                         }}
                     />
                     <p>
-                        Regular weekly sessions are of 50 minutes duration, and are charged at £70 per session. I am happy to accept payment by debit or credit card, cash or bank transfer.
+                        Regular weekly sessions are of 50 minutes duration, and
+                        are charged at £80 per session. I am happy to accept
+                        payment by debit or credit card, cash or bank transfer.
                     </p>
                     <p>
-                        I also keep a couple of lower priced places for those who have difficulty in being able to afford therapy.
+                        I also keep a couple of lower priced places for those
+                        who have difficulty in being able to afford therapy.
                     </p>
                     <Link to='/contact#form' className='btn' smooth>
                         Get In Touch
@@ -34,13 +37,26 @@ export const Fees = () => {
             <div>
                 <div className='section__wrapper'>
                     <p>
-                        All therapy sessions are chargeable including the initial consultation. Some therapists offer a reduced fee or initial consultation at no charge. I feel the first session is an important part of our work and I provide the same level of service during that session as all others so my charges reflect this.
+                        All therapy sessions are chargeable including the
+                        initial consultation. Some therapists offer a reduced
+                        fee or initial consultation at no charge. I feel the
+                        first session is an important part of our work and I
+                        provide the same level of service during that session as
+                        all others so my charges reflect this.
                     </p>
                     <p>
-                        Our initial sessions are an opportunity for us to meet and explore whether therapy might be helpful to you. There is no commitment to ongoing work.
+                        Our initial sessions are an opportunity for us to meet
+                        and explore whether therapy might be helpful to you.
+                        There is no commitment to ongoing work.
                     </p>
                     <p>
-                        If you decide you would like to continue, we will agree on a regular day and time to meet on an ongoing basis. Regular sessions are necessary to facilitate and give momentum to the therapeutic process. Many people find that regular meetings provide a sense of internal calmness and continuity whilst they are working on their emotional difficulties.
+                        If you decide you would like to continue, we will agree
+                        on a regular day and time to meet on an ongoing basis.
+                        Regular sessions are necessary to facilitate and give
+                        momentum to the therapeutic process. Many people find
+                        that regular meetings provide a sense of internal
+                        calmness and continuity whilst they are working on their
+                        emotional difficulties.
                     </p>
                 </div>
             </div>
