@@ -245,8 +245,8 @@ class Contact extends Component {
                                             }}
                                         /> */}
                                         <RadioInput
-                                            value='online session'
-                                            text='Online Session'
+                                            value='online'
+                                            text='Online'
                                             clearErr={() => {
                                                 this.setState({
                                                     err: '',

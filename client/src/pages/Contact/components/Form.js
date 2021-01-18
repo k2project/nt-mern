@@ -24,7 +24,10 @@ export const Form = (props) => {
                         I am always happy to speak briefly on the telephone. You
                         can contact me on
                         <a href='tel:+442086759754'>
-                            <span className='nowrap'> 0208 675 9754</span>
+                            <span className='nowrap'>
+                                {' '}
+                                <b>0208 675 9754</b>
+                            </span>
                         </a>
                         .{' '}
                     </p>
