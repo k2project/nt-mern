@@ -16,10 +16,11 @@ export const Article = ({ article, odd = false }) => {
     const onOpen = () => {
         const allPosts = document.querySelectorAll('.post');
         Array.from(allPosts).forEach((post) => {
-            if (post.id !== article.id) post.classList.remove('open');
+            post.classList.remove('open');
         });
-        setOpen(true);
         document.getElementById(article.id).scrollIntoView();
+        document.getElementById(article.id).classList.add('open');
+        setOpen(true);
     };
 
     const onClose = () => {
