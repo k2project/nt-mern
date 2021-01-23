@@ -5,6 +5,7 @@ import Home from './pages/Home/Home';
 import Therapy from './pages/Therapy/Therapy';
 import Contact from './pages/Contact/Contact';
 import Resources from './pages/Resources/Resources';
+import Articles from './pages/Articles/Articles';
 import SkipToMainContentLink from './components/SkipToMainContentLink';
 import Banner from './components/banner/Banner';
 
@@ -25,6 +26,7 @@ function App() {
                     <Route exact path={`/therapy`} component={Therapy} />
                     <Route exact path={`/contact`} component={Contact} />
                     <Route exact path={`/resources`} component={Resources} />
+                    <Route exact path={`/articles`} component={Articles} />
                     <Route component={Home} />
                 </Switch>
             </Analytics>

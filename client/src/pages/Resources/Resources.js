@@ -13,13 +13,13 @@ import Videos from './components/videos/Videos';
 import Seattle from './components/podcasts/Seattle';
 import Mental from './components/podcasts/Mental';
 import GoodAncestor from './components/podcasts/GoodAncestor';
-import AllInTheMind from './components/podcasts/AllInTheMind'
+import AllInTheMind from './components/podcasts/AllInTheMind';
 
 const meta = {
     title: 'Resources | Nujoji Calvocoressi Counselling and Psychotherapy',
     description:
         'Looking for a written, visual or audible resource? The below selection is not designed to substitute counselling or psychotherapy, rather to support your curiosity and decision making about whether now is the right time for you to start therapy. They are all resources I have chosen because they have been useful to my own personal and professional development.',
-    canonical: 'http://www.calvocoressi.com/contact',
+    canonical: 'http://www.calvocoressi.com/resources',
     meta: {
         name: {
             author: '@_k2project',
@@ -38,14 +38,14 @@ export const Resources = () => {
                 <Attached />
                 <Tiger />
                 <Encyclopaedia />
-                <WhenTheBodySaysNo/>
+                <WhenTheBodySaysNo />
                 {/* videos */}
                 <Videos />
                 {/* podcasts */}
                 <Seattle />
                 <Mental />
                 <GoodAncestor />
-                <AllInTheMind/>
+                <AllInTheMind />
             </Page>
         </DocumentMeta>
     );

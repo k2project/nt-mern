@@ -229,6 +229,12 @@ section div {
 .Resources__color_themed {
     color: darken($RESOURCES_COLOR, 10%);
 }
+.Articles__bg_themed {
+    background: $ARTICLES_COLOR;
+}
+.Articles__color_themed {
+    color: darken($ARTICLES_COLOR, 10%);
+}
 
 @include desktop-sm {
     .wrapper {
