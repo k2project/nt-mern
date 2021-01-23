@@ -46,7 +46,7 @@ const dummyArticle = {
 
 export const articles = [
     dummyArticle,
-    { ...dummyArticle, id: 2 },
-    { ...dummyArticle, id: 3 },
-    { ...dummyArticle, id: 4 },
+    { ...dummyArticle, id: 2, img: 'dummy3.jpg' },
+    { ...dummyArticle, id: 3, img: 'dummy2.jpg' },
+    { ...dummyArticle, id: 4, img: 'dummy4.jpg' },
 ];
