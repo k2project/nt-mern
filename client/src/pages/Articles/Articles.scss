@@ -19,6 +19,9 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    .cover {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
 }
 
 .Article-header-img.odd {
@@ -92,4 +95,21 @@
 .dummy .Article-header-img {
     background-image: url('./../../imgs/dummy.jpg');
     background-position: center 20%;
+}
+
+@include tablet {
+    .Article-header {
+        display: grid;
+        grid-auto-rows: minmax(40rem, auto);
+        grid-template-columns: 1fr;
+        overflow: hidden;
+    }
+    .Article-header-info {
+        padding: 10rem 10%;
+        z-index: 2;
+    }
+
+    .Article-header-img {
+        order: -1;
+    }
 }

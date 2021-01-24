@@ -2,6 +2,8 @@ import React from 'react';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 
 export default function NavLinks({ toggleMobileMenu }) {
+    const { location } = window;
+    const { search } = location;
     return (
         <ul className='NavLinks' aria-label='main navigation links'>
             <img
@@ -73,6 +75,17 @@ export default function NavLinks({ toggleMobileMenu }) {
             >
                 Contact
             </NavLink>
+            {search && (
+                <NavLink
+                    to='/articles'
+                    activeClassName='selected'
+                    smooth
+                    onClick={toggleMobileMenu}
+                    className='NavLinks__link'
+                >
+                    Articles
+                </NavLink>
+            )}
             <NavLink
                 to='/resources'
                 activeClassName='selected'

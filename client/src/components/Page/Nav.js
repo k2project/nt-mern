@@ -35,7 +35,7 @@ export default function Nav({ toggleMobileMenu, mobileMenuOpen }) {
                 <img src={linkedin} alt='' />
                 <span className='sr-only'>LinkedIn</span>
             </a>
-            <a
+            {/* <a
                 href='https://www.facebook.com/calvocoressi'
                 target='_blank'
                 rel='noopener noreferrer'
@@ -43,7 +43,7 @@ export default function Nav({ toggleMobileMenu, mobileMenuOpen }) {
             >
                 <img src={fb} alt='' />
                 <span className='sr-only'>Facebook</span>
-            </a>
+            </a> */}
         </nav>
     );
 }
