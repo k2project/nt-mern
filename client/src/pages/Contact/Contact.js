@@ -16,17 +16,29 @@ import { Directions } from './components/Directions';
 import { Form } from './components/Form';
 import { RadioInput } from './components/RadioInput';
 
+import {
+    TITLE_CONTACT,
+    DESCRIPTION_CONTACT,
+    AUTHOR,
+    CANONICAL_CONTACT,
+    KEYWORDS_CONTACT,
+    OG_IMG_HOME,
+} from '../../metaData';
+
 const meta = {
-    title:
-        'City of London, West End & Online | Nujoji Calvocoressi Counselling and Psychotherapy',
-    description:
-        'Bookings: 07855 846 580 | Office:11-12 Tokenhouse Yard, City of London, London EC2R 7AS',
-    canonical: 'http://www.calvocoressi.com/contact',
+    title: TITLE_CONTACT,
+    description: DESCRIPTION_CONTACT,
+    canonical: CANONICAL_CONTACT,
     meta: {
         name: {
-            author: '@_k2project',
-            keywords:
-                'Nujoji Calvocoressi, counselling, psychotherapy, therapy, London',
+            author: AUTHOR,
+            keywords: KEYWORDS_CONTACT,
+        },
+        property: {
+            'og:title': TITLE_CONTACT,
+            'og:url': CANONICAL_CONTACT,
+            'og:image': OG_IMG_HOME,
+            'og:description': DESCRIPTION_CONTACT,
         },
     },
 };

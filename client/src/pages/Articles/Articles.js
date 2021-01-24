@@ -9,60 +9,54 @@ import { articles } from './components/articles';
 import { Intro } from './components/Intro';
 import { Article } from './components/Article';
 
+import {
+    TITLE_ARTICLES,
+    DESCRIPTION_ARTICLES,
+    AUTHOR,
+    OG_IMG_HOME,
+    KEYWORDS_ARTICLES,
+    CANONICAL_ARTICLES,
+} from '../../metaData';
+
 let meta = {
-    title: 'Articles | Nujoji Calvocoressi Counselling and Psychotherapy',
-    description: '',
-    canonical: 'http://www.calvocoressi.com/articles',
+    title: TITLE_ARTICLES,
+    description: DESCRIPTION_ARTICLES,
+    canonical: CANONICAL_ARTICLES,
     meta: {
         name: {
-            author: '@_k2project',
-            keywords:
-                'Nujoji Calvocoressi, counselling, psychotherapy, therapy, London, resources',
+            author: AUTHOR,
+            keywords: KEYWORDS_ARTICLES,
         },
         property: {
-            'og:title': 'Samvikshana',
-            'og:url': 'https://samvikshana.weebly.com/',
-            // 'og:image': imageUri,
-            'og:description': 'New Perspective of Exploration',
+            'og:title': TITLE_ARTICLES,
+            'og:url': CANONICAL_ARTICLES,
+            'og:image': OG_IMG_HOME,
+            'og:description': DESCRIPTION_ARTICLES,
         },
     },
 };
-
-// <meta
-// property='og:title'
-// content='About Nicola Moore | Counselling and Psychotherapy'
-// />
-// <meta
-// property='og:url'
-// content='https://www.nicolamooretherapy.co.uk/about'
-// />
-// <meta property='og:type' content='website' />
-// <meta
-// property='og:description'
-// content='I am a fully qualified Psychotherapist (registered with UKCP and FPC). I help with anxiety, depressed mood, anger, trauma, relationship dissatisfaction, attachment issues, grief, body dysmorphia, issues with sexuality and gender, low self-esteem and self-identity, and more. I have worked within the NHS and charities seeing a diverse group of service users.'
-// />
-// <meta
-// property='og:image'
-// content='https://www.nicolamooretherapy.co.uk/imgs/nicola_moore_small.png'
-// />
 
 export const Articles = () => {
     const { location } = window;
     const { hash } = location;
     if (hash && articles[hash.slice(1)]) {
         const article = articles[hash.slice(1)];
-        meta.title =
+
+        const TITLE =
             article.title +
             ' | Articles | Nujoji Calvocoressi Counselling and Psychotherapy';
+        const URL = 'http://www.calvocoressi.com/articles' + hash;
+
+        meta.title = TITLE;
         meta.description = article.summary;
-        meta.canonical = 'http://www.calvocoressi.com/articles' + hash;
+        meta.canonical = URL;
         meta.meta = {
             ...meta.meta,
             property: {
-                'og:title': 'Samvikshana',
-                'og:url': 'https://samvikshana.weebly.com/',
-                // 'og:image': imageUri,
-                'og:description': 'New Perspective of Exploration',
+                'og:title': TITLE,
+                'og:url': URL,
+                'og:image': require('../../imgs/' + article.img),
+                'og:description': article.summary,
             },
         };
     }
