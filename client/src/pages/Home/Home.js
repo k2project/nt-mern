@@ -20,6 +20,12 @@ const meta = {
             keywords:
                 'Nujoji Calvocoressi, counselling, psychotherapy therapy, London, online',
         },
+        // property: {
+        //     'og:title': 'Samvikshana',
+        //     'og:url': 'https://samvikshana.weebly.com/',
+        //     // 'og:image': imageUri,
+        //     'og:description': 'New Perspective of Exploration',
+        // },
     },
 };
 

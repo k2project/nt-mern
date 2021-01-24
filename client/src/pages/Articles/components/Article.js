@@ -3,7 +3,6 @@ import dayjs from 'dayjs';
 
 export const Article = ({ article, odd = false }) => {
     const [open, setOpen] = useState(false);
-    console.log(open);
 
     useEffect(() => {
         const { location } = window;
@@ -29,7 +28,7 @@ export const Article = ({ article, odd = false }) => {
     };
 
     const openCls = open ? ' open' : '';
-    console.log(odd);
+
     return (
         <div
             className={'Article post ' + article.cls + openCls}
