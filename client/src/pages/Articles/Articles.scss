@@ -1,5 +1,13 @@
 @import '../../VarAndMIxins.scss';
 
+.Articles-intro {
+    text-align: left;
+    img {
+        margin: 2rem 0;
+        width: 30rem;
+        display: block;
+    }
+}
 .Article-header {
     display: grid;
     grid-auto-rows: minmax(40vw, 1fr);

@@ -2,6 +2,8 @@ import React from 'react';
 import { NavHashLink as Link } from 'react-router-hash-link';
 import SectionTitle from '../../../components/SectionTitle';
 
+import truthproject from './../../../imgs/tp.png';
+
 export const Intro = () => {
     return (
         <section className='Intro'>
@@ -14,7 +16,7 @@ export const Intro = () => {
                             title: (
                                 <span>
                                     Writing about my <b> work </b>
-                                    and <b> experience</b>...
+                                    and <b> experience</b>
                                 </span>
                             ),
                         }}
@@ -26,16 +28,28 @@ export const Intro = () => {
             </div>
             <div>
                 <div className='section__wrapper'>
-                    <p>
-                        The below selection is... lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                        dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat non proident, sunt in culpa qui officia
-                        deserunt mollit anim id est laborum.
+                    <p className='Articles-intro'>
+                        <a
+                            href='https://www.truthproject.org.uk/i-will-be-heard'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                        >
+                            <img
+                                src={truthproject}
+                                alt='I will be heard. Truth project.'
+                            />
+                        </a>
+                        Aside from my work as a psychotherapist I am a member of
+                        the Victims and Survivors’ Consultative Panel at the{' '}
+                        <a
+                            href='https://www.truthproject.org.uk/i-will-be-heard'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            className='link'
+                        >
+                            Independent Inquiry into Child Sexual Abuse
+                        </a>
+                        .
                     </p>
                 </div>
             </div>
