@@ -1,11 +1,10 @@
 //loads environment variables from a .env file into process.env
-require('dotenv').config()
+require('dotenv').config();
 
 const express = require('express');
 const secure = require('express-force-https');
 const path = require('path');
 const bodyParser = require('body-parser');
-
 
 const app = express();
 //to redirect all http requests to https
@@ -20,8 +19,8 @@ const mailRoutes = require('./routes/mail');
 app.use('/mail', mailRoutes);
 
 // Handles any requests that don't match the ones above
-app.get('*', (req,res) =>{
-    res.sendFile(path.join(__dirname+'/client/build/index.html'));
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname + '/client/build/index.html'));
 });
 
 const port = process.env.PORT || 5000;

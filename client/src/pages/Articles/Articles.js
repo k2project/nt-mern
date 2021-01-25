@@ -7,7 +7,7 @@ import Page from '../../components/Page/Page';
 import { articles } from './components/articles';
 
 import { Intro } from './components/Intro';
-import { Article } from './components/Article';
+import { FeaturedArticles } from './components/FeaturedArticles';
 
 import {
     TITLE_ARTICLES,
@@ -64,13 +64,7 @@ export const Articles = () => {
         <DocumentMeta {...meta}>
             <Page page='Articles'>
                 <Intro />
-                <div className='Articles-featured'>
-                    {articles
-                        .filter((a) => a.featured)
-                        .map((a, i) => (
-                            <Article key={a.id} article={a} odd={i % 2} />
-                        ))}
-                </div>
+                <FeaturedArticles />
             </Page>
         </DocumentMeta>
     );
