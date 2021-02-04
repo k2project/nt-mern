@@ -98,4 +98,10 @@ export const articles = [
         img: 'dummy3.jpg',
         title: 'OTHER Article title goes here 6',
     },
+    {
+        ...dummySecondaryArticle,
+        id: 7,
+        img: 'dummy4.jpg',
+        title: 'OTHER Article title goes here 7',
+    },
 ];

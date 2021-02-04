@@ -113,16 +113,22 @@
     }
     &:first-child {
         padding-top: 10rem;
-        .post.open {
-            margin-top: -10rem;
-        }
+    }
+    &:first-child.open {
+        padding-top: 0rem;
+    }
+    &:last-child {
+        padding-bottom: 10rem;
+    }
+    &:last-child.open {
+        padding-bottom: 0rem;
     }
 }
 .OtherArticle.open {
     .Article-post {
         display: block;
     }
-    .Article-card {
+    .card {
         display: none;
     }
 }
