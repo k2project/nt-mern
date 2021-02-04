@@ -8,6 +8,7 @@ import { articles } from './components/articles';
 
 import { Intro } from './components/Intro';
 import { FeaturedArticles } from './components/FeaturedArticles';
+import { OtherArticles } from './components/OtherArticles';
 
 import {
     TITLE_ARTICLES,
@@ -65,6 +66,7 @@ export const Articles = () => {
             <Page page='Articles'>
                 <Intro />
                 <FeaturedArticles />
+                <OtherArticles />
             </Page>
         </DocumentMeta>
     );

@@ -1,18 +1,11 @@
-import React, { useState, useEffect } from 'react';
-
+import React, { useState } from 'react';
 import { ArticlePost } from './ArticlePost';
-import { articles } from './articles';
+import { Card } from '../../../components/Card';
+import pen from '../../../imgs/pen.png';
+import dayjs from 'dayjs';
 
-export const Article = ({ article, odd = false }) => {
+export const ArticleRow = ({ article }) => {
     const [open, setOpen] = useState(false);
-
-    // useEffect(() => {
-    //     const { location } = window;
-    //     if (location.hash && location.hash === '#' + article.id) {
-    //         setOpen(true);
-    //         document.getElementById(article.id).scrollIntoView();
-    //     }
-    // }, []);
 
     const onOpen = () => {
         const allPosts = document.querySelectorAll('.post');
@@ -20,6 +13,7 @@ export const Article = ({ article, odd = false }) => {
             post.classList.remove('open');
         });
         document.getElementById(article.id).scrollIntoView();
+        document.getElementById(article.id).classList.add('open');
         setOpen(true);
     };
 
@@ -30,18 +24,33 @@ export const Article = ({ article, odd = false }) => {
 
     const openCls = open ? ' open ' : '';
 
+    const item = {
+        title: article.title,
+        subtitle: (
+            <p>
+                by <b>{article.author}</b> - posted on{' '}
+                <b>{dayjs(article.date).format('MMM D, YYYY')}</b>
+            </p>
+        ),
+        summary: article.summary,
+        button: {
+            onClick: onOpen,
+            label: 'Read on',
+        },
+        icon: pen,
+    };
+
     return (
         <div
             id={article.id}
-            className={'Article post ' + article.cls + openCls}
+            className={'OtherArticle Article post ' + article.cls + openCls}
         >
             <ArticlePost
                 article={article}
                 openCls={openCls}
-                onOpen={onOpen}
                 onClose={onClose}
-                odd={odd}
             />
+            <Card item={item} />
         </div>
     );
 };

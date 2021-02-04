@@ -1,0 +1,96 @@
+@import './../../VarAndMIxins.scss';
+
+.card {
+    background: #fff;
+    padding: 5rem;
+    width: 90rem;
+    margin: 3rem auto;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    .card__desc {
+        -webkit-flex-grow: 1;
+        flex-grow: 1;
+    }
+    .btn {
+        margin-top: 2rem;
+    }
+}
+.card__icon img {
+    height: 9rem;
+    margin: 0 4rem 0 8rem;
+    opacity: 0.1;
+}
+.card__title {
+    font-family: $FONT_FAMILY_HEADINGS;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.2rem;
+    margin-bottom: 0.3rem;
+    line-height: 1.2;
+}
+.card__subtitle {
+    font-family: $FONT_FAMILY_HEADINGS;
+    text-align: left;
+    // text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+@include tablet {
+    .resources__title .section__wrapper {
+        background-color: #f5f5f5;
+    }
+    .podcasts .resources__title .section__wrapper {
+        background-color: #fff;
+    }
+    .resources__title .section__body {
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+    .resources__img {
+        max-width: 18rem;
+        max-height: 30rem;
+    }
+    .card {
+        width: 80%;
+        display: block;
+    }
+    .card__title {
+        width: 75%;
+    }
+    .card__icon {
+        position: absolute;
+        left: 0;
+        top: 4rem;
+        width: 100%;
+        text-align: right;
+        img {
+            height: 6rem;
+        }
+    }
+}
+@include mobile {
+    .cards {
+        padding: 10rem 0;
+    }
+    .card {
+        text-align: left;
+        width: 85%;
+        padding: 6.7rem 3rem 4.4rem;
+    }
+    .card__icon {
+        top: 2rem;
+        left: 1rem;
+        img {
+            height: 8rem;
+            opacity: 0.1;
+        }
+    }
+}
+@include mobile-sm {
+    .card__title {
+        width: 80%;
+    }
+}

@@ -39,6 +39,7 @@
 .Article-content {
     padding: 10rem 10%;
     display: none;
+    background-color: #fff;
 }
 
 .Article.open {
@@ -97,6 +98,33 @@
     line-height: 1.2;
     margin-top: 0;
     margin-bottom: -2rem;
+}
+
+.Articles-others {
+    background-color: #efefef;
+}
+.OtherArticle {
+    .Article-post {
+        display: none;
+    }
+    .Article-card {
+        display: flex;
+        padding: 4rem;
+    }
+    &:first-child {
+        padding-top: 10rem;
+        .post.open {
+            margin-top: -10rem;
+        }
+    }
+}
+.OtherArticle.open {
+    .Article-post {
+        display: block;
+    }
+    .Article-card {
+        display: none;
+    }
 }
 
 //BACKGROUND IMG FOR ARTICLES

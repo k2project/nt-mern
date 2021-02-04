@@ -129,7 +129,6 @@
     input {
         display: block;
         border: solid 0.1rem #111;
-        color: #fff;
         font-size: 1.4rem;
         background: none;
         // border-bottom: solid 0.1rem #111;
@@ -193,7 +192,7 @@
 }
 .RadioInput__fake.clicked {
     opacity: 1;
-    color: #fff;
+    color: #111;
 }
 .RadioInput__box {
     width: 2rem;
@@ -210,11 +209,11 @@
 }
 .RadioInput__fake.clicked .RadioInput__box_check {
     opacity: 1;
-    color: #fff;
+    color: #111;
 }
 .RadioInput__fake.clicked .RadioInput__box {
     opacity: 1;
-    border-color: #fff;
+    border-color: #111;
 }
 .RadioInput__text {
     text-align: left;
