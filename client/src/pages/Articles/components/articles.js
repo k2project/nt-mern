@@ -101,7 +101,13 @@ export const articles = [
     {
         ...dummySecondaryArticle,
         id: 7,
-        img: 'dummy4.jpg',
+        img: 'dummy2.jpg',
         title: 'OTHER Article title goes here 7',
+    },
+    {
+        ...dummySecondaryArticle,
+        id: 8,
+        img: 'dummy4.jpg',
+        title: 'OTHER Article title goes here 8',
     },
 ];

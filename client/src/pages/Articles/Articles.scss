@@ -116,12 +116,18 @@
     }
     &:first-child.open {
         padding-top: 0rem;
+        padding-bottom: 7rem;
     }
     &:last-child {
         padding-bottom: 10rem;
     }
     &:last-child.open {
         padding-bottom: 0rem;
+        padding-top: 7rem;
+    }
+    &:not(:first-child):not(:last-child).open {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
     }
 }
 .OtherArticle.open {
