@@ -25,10 +25,10 @@ export const Fees = () => {
                         are charged at £80 per session. I am happy to accept
                         payment by debit or credit card, cash or bank transfer.
                     </p>
-                    <p>
+                    {/* <p>
                         I also keep a couple of lower priced places for those
                         who have difficulty in being able to afford therapy.
-                    </p>
+                    </p> */}
                     <Link to='/contact#form' className='btn' smooth>
                         Get In Touch
                     </Link>

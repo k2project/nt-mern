@@ -231,7 +231,7 @@ export const Nujoji = () => {
                         .
                     </p>
 
-                    <p>
+                    {/* <p>
                         <a
                             href='https://www.truthproject.org.uk/i-will-be-heard'
                             target='_blank'
@@ -254,7 +254,7 @@ export const Nujoji = () => {
                             Independent Inquiry into Child Sexual Abuse
                         </a>
                         .
-                    </p>
+                    </p> */}
                 </div>
             </div>
         </section>
