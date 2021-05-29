@@ -95,6 +95,15 @@ export default function NavLinks({ toggleMobileMenu }) {
             >
                 Resources
             </NavLink>
+            {/* <NavLink
+                to='/articles'
+                activeClassName='selected'
+                smooth
+                onClick={toggleMobileMenu}
+                className='NavLinks__link'
+            >
+                Articles
+            </NavLink> */}
         </ul>
     );
 }

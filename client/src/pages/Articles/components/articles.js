@@ -90,27 +90,27 @@ const dummySecondaryArticle = {
 
 export const articles = [
     ListeningToTheVoicesOfSurvivors,
-    dummyArticle,
-    { ...dummyArticle, id: 2, img: 'dummy3.jpg' },
-    { ...dummyArticle, id: 3, img: 'dummy2.jpg' },
-    { ...dummyArticle, id: 4, img: 'dummy4.jpg' },
-    dummySecondaryArticle,
-    {
-        ...dummySecondaryArticle,
-        id: 6,
-        img: 'dummy3.jpg',
-        title: 'OTHER Article title goes here 6',
-    },
-    {
-        ...dummySecondaryArticle,
-        id: 7,
-        img: 'dummy2.jpg',
-        title: 'OTHER Article title goes here 7',
-    },
-    {
-        ...dummySecondaryArticle,
-        id: 8,
-        img: 'dummy4.jpg',
-        title: 'OTHER Article title goes here 8',
-    },
+    // dummyArticle,
+    // { ...dummyArticle, id: 2, img: 'dummy3.jpg' },
+    // { ...dummyArticle, id: 3, img: 'dummy2.jpg' },
+    // { ...dummyArticle, id: 4, img: 'dummy4.jpg' },
+    // dummySecondaryArticle,
+    // {
+    //     ...dummySecondaryArticle,
+    //     id: 6,
+    //     img: 'dummy3.jpg',
+    //     title: 'OTHER Article title goes here 6',
+    // },
+    // {
+    //     ...dummySecondaryArticle,
+    //     id: 7,
+    //     img: 'dummy2.jpg',
+    //     title: 'OTHER Article title goes here 7',
+    // },
+    // {
+    //     ...dummySecondaryArticle,
+    //     id: 8,
+    //     img: 'dummy4.jpg',
+    //     title: 'OTHER Article title goes here 8',
+    // },
 ];
