@@ -1,5 +1,7 @@
 import React from 'react';
 
+import ListeningToTheVoicesOfSurvivors from './articles/ListeningToTheVoicesOfSurvivors';
+
 const dummyArticle = {
     id: 1,
     cls: 'dummy',
@@ -87,6 +89,7 @@ const dummySecondaryArticle = {
 };
 
 export const articles = [
+    ListeningToTheVoicesOfSurvivors,
     dummyArticle,
     { ...dummyArticle, id: 2, img: 'dummy3.jpg' },
     { ...dummyArticle, id: 3, img: 'dummy2.jpg' },
