@@ -3,6 +3,7 @@ import React from 'react';
 import ListeningToTheVoicesOfSurvivors from './articles/ListeningToTheVoicesOfSurvivors';
 import AbuseKeptSecret from './articles/AbuseKeptSecret';
 import SurvivorsOfSexualObuse from './articles/SurvivorsOfSexualObuse';
+import ChildAbuseInquary from './articles/ChildAbuseInquary';
 
 const dummyArticle = {
     id: 1,
@@ -37,4 +38,5 @@ export const articles = [
     ListeningToTheVoicesOfSurvivors,
     AbuseKeptSecret,
     SurvivorsOfSexualObuse,
+    ChildAbuseInquary,
 ];

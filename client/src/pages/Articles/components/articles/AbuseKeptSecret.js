@@ -20,7 +20,7 @@ export default {
                 New research also finds that almost half of victims suffer from
                 a long-term condition.
             </p>
-            <p>
+            <p className='article-subtitle'>
                 The majority – two-thirds – of child sexual abuse survivors in
                 the UK did not tell anyone about the abuse they suffered at the
                 time that they experienced it, according to research published
@@ -71,7 +71,7 @@ export default {
                 told the inquiry he has not heard anything since his police
                 interview, and feels angry and let down.
             </p>
-            <p>
+            <p className='article-subtitle'>
                 “This appalling finding shows more must be done to normalise the
                 conversation around child sexual abuse,” said Nujoji
                 Calvocoressi, a member of the Victims and Survivors Consultative
@@ -97,10 +97,13 @@ export default {
                 The Truth Project is closing in 2021, but survivors who would
                 like to share their experiences can still do so by phone, via a
                 video call or in writing. More information about how to share
-                can be found on the Truth Project website. “Those who have been
-                sexually abused need to feel there is someone they can reach out
-                to who will listen to them and, most importantly, believe them,”
-                said Calvocoressi.
+                can be found on the Truth Project website.
+            </p>
+            <p className='article-subtitle'>
+                {' '}
+                “Those who have been sexually abused need to feel there is
+                someone they can reach out to who will listen to them and, most
+                importantly, believe them,” said Calvocoressi.
             </p>
         </>
     ),

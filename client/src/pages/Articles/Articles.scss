@@ -61,7 +61,7 @@
 
 .Article.open {
     .cover {
-        background-color: rgba(255, 255, 255, 0.7);
+        background-color: rgba(220, 220, 220, 0.7);
     }
     .Article-header {
         grid-template-columns: 1fr;
@@ -161,12 +161,14 @@
 
 //BACKGROUND IMG FOR ARTICLES
 .AbuseKeptSecret .Article-header-img {
-    background-image: url('./../../imgs/dummy.jpg');
     background-position: center 20%;
 }
 .ListeningToTheVoicesOfSurvivors .Article-header-img {
-    background-image: url('./../../imgs/dummy.jpg');
     background-position: center;
+}
+
+.ChildAbuseInquary .Article-header-img {
+    background-position: top;
 }
 
 @include tablet {
