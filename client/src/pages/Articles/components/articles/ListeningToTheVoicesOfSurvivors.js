@@ -15,7 +15,7 @@ const reportLink = <OuterLink href={reportLinkHref} text='here' />;
 const forumLink = <OuterLink href={FORUM.url} text='here' />;
 
 export default {
-    id: 1,
+    id: 'ListeningToTheVoicesOfSurvivors',
     cls: 'ListeningToTheVoicesOfSurvivors',
     featured: true,
     title: 'Listening to the voices of survivors',
@@ -24,7 +24,9 @@ export default {
     date: '2020-11-13',
     author: 'Nujoji Calvocoressi',
     publication: 'Local Gov',
-    img: 'dummy.jpg',
+    sourceUrl:
+        'https://www.localgov.co.uk/Listening-to-the-voices-of-survivors/51409',
+    img: 'therapy.jpg',
     content: (
         <>
             <p>

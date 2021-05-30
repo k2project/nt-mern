@@ -1,5 +1,6 @@
 import React from 'react';
 import dayjs from 'dayjs';
+import OuterLink from '../../../components/links/OuterLink';
 
 export const ArticlePost = ({ article, onOpen, onClose, odd }) => {
     return (
@@ -13,7 +14,7 @@ export const ArticlePost = ({ article, onOpen, onClose, odd }) => {
                     </p>
                     <p className='article-summary'>{article.summary}</p>
 
-                    <button className='btn' onClick={onOpen}>
+                    <button className='btn' onClick={() => onOpen(article.id)}>
                         Read on
                     </button>
                 </div>
@@ -31,9 +32,15 @@ export const ArticlePost = ({ article, onOpen, onClose, odd }) => {
             </div>
             <div className='Article-content'>
                 {article.content}
-                <button className='btn' onClick={onClose}>
-                    Close
-                </button>
+                <div className='Article-footer'>
+                    <p>
+                        Read the original article{' '}
+                        <OuterLink href={article.sourceUrl} text='here' />.{' '}
+                    </p>
+                    <button className='btn' onClick={() => onClose(article.id)}>
+                        Close
+                    </button>
+                </div>
             </div>
         </div>
     );

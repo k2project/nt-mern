@@ -22,14 +22,14 @@ export const Intro = () => {
                         }}
                     />
                     <Link to='/#about'>
-                        <button className='btn'>More About Author</button>
+                        <button className='btn'>More About Nujoji</button>
                     </Link>
                 </div>
             </div>
             <div>
                 <div className='section__wrapper'>
                     <p className='Articles-intro'>
-                        <a
+                        {/* <a
                             href='https://www.truthproject.org.uk/i-will-be-heard'
                             target='_blank'
                             rel='noopener noreferrer'
@@ -38,7 +38,7 @@ export const Intro = () => {
                                 src={truthproject}
                                 alt='I will be heard. Truth project.'
                             />
-                        </a>
+                        </a> */}
                         Aside from my work as a psychotherapist I am a member of
                         the Victims and Survivors’ Consultative Panel at the{' '}
                         <a

@@ -37,9 +37,26 @@
 }
 
 .Article-content {
-    padding: 10rem 10%;
+    padding: 10rem 10% 8rem;
     display: none;
     background-color: #fff;
+}
+.Article-footer {
+    text-align: center;
+    padding-top: 1rem;
+    margin-top: 5rem;
+    border-top: solid 0.1rem #efefef;
+
+    p {
+        color: #afafaf;
+        .link {
+            color: #afafaf;
+            text-decoration: underline;
+        }
+    }
+    button {
+        margin: 4rem auto 0;
+    }
 }
 
 .Article.open {
@@ -140,6 +157,7 @@
 }
 
 //BACKGROUND IMG FOR ARTICLES
+.AbuseKeptSecret .Article-header-img,
 .ListeningToTheVoicesOfSurvivors .Article-header-img {
     background-image: url('./../../imgs/dummy.jpg');
     background-position: center 20%;
