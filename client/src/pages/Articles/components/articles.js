@@ -2,6 +2,7 @@ import React from 'react';
 
 import ListeningToTheVoicesOfSurvivors from './articles/ListeningToTheVoicesOfSurvivors';
 import AbuseKeptSecret from './articles/AbuseKeptSecret';
+import SurvivorsOfSexualObuse from './articles/SurvivorsOfSexualObuse';
 
 const dummyArticle = {
     id: 1,
@@ -13,7 +14,7 @@ const dummyArticle = {
     date: '2021-01-22',
     author: 'Nujoji Calvocoressi',
     publication: null,
-    img: 'dummy.jpg',
+    img: '',
     content: (
         <>
             <p>
@@ -32,4 +33,8 @@ const dummyArticle = {
     comments: [],
 };
 
-export const articles = [ListeningToTheVoicesOfSurvivors, AbuseKeptSecret];
+export const articles = [
+    ListeningToTheVoicesOfSurvivors,
+    AbuseKeptSecret,
+    SurvivorsOfSexualObuse,
+];

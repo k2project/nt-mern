@@ -8,6 +8,7 @@ export const FeaturedArticles = () => {
         <div className='Articles-featured'>
             {articles
                 .filter((a) => a.featured)
+                .sort((a, b) => new Date(b.date) - new Date(a.date))
                 .map((a, i) => (
                     <Article key={a.id} article={a} odd={i % 2} />
                 ))}

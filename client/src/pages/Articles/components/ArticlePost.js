@@ -8,7 +8,7 @@ export const ArticlePost = ({ article, onOpen, onClose, odd }) => {
             <div className='Article-header'>
                 <div className='Article-header-info'>
                     <h3 className='article-title'>{article.title}</h3>
-                    <p>
+                    <p className='article-author'>
                         by <b>{article.author}</b> - posted on{' '}
                         <b>{dayjs(article.date).format('MMM D, YYYY')}</b>
                     </p>

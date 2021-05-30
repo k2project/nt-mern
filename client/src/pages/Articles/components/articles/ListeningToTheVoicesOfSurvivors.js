@@ -26,7 +26,7 @@ export default {
     publication: 'Local Gov',
     sourceUrl:
         'https://www.localgov.co.uk/Listening-to-the-voices-of-survivors/51409',
-    img: 'therapy.jpg',
+    img: 'megaphon.jpg',
     content: (
         <>
             <p>

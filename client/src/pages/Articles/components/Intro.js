@@ -39,8 +39,8 @@ export const Intro = () => {
                                 alt='I will be heard. Truth project.'
                             />
                         </a> */}
-                        Aside from my work as a psychotherapist I am a member of
-                        the Victims and Survivors’ Consultative Panel at the{' '}
+                        Aside from my work as a psychotherapist I was a member
+                        of the Victims and Survivors’ Consultative Panel at the{' '}
                         <a
                             href='https://www.truthproject.org.uk/i-will-be-heard'
                             target='_blank'
