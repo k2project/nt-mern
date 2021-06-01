@@ -1,5 +1,18 @@
 import React, { Fragment } from 'react';
 
+import OuterLink from '../../../components/links/OuterLink';
+import { BACP } from '../../../config';
+
+const therapiesTypesLinkPsychodynamic = (
+    <OuterLink href={BACP.therapiesTypesLinkUrl} text='psychodynamic' />
+);
+const therapiesTypesLinkPsychodynamicAttachmentTheory = (
+    <OuterLink href={BACP.therapiesTypesLinkUrl} text='attachment theory' />
+);
+const therapiesTypesLinkPsychodynamicRelationalConcepts = (
+    <OuterLink href={BACP.therapiesTypesLinkUrl} text='relational concepts' />
+);
+
 export const questionsAndAnswers = [
     {
         q: 'How can counselling and psychotherapy help?',
@@ -73,38 +86,11 @@ export const questionsAndAnswers = [
                     I also believe that adverse childhood experiences impact how
                     we feel about ourselves today and may influence how we
                     relate to others and how we live in the present moment. I
-                    incorporate{' '}
-                    <a
-                        href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/#psychodynamic'
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        onClick={(e) => e.stopPropagation()}
-                        className='link'
-                    >
-                        psychodynamic
-                    </a>{' '}
-                    and{' '}
-                    <a
-                        href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/#attachment-based-psychotherapy'
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        onClick={(e) => e.stopPropagation()}
-                        className='link'
-                    >
-                        attachment theory
-                    </a>{' '}
-                    into my work with clients, as well as{' '}
-                    <a
-                        href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/#relational'
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        onClick={(e) => e.stopPropagation()}
-                        className='link'
-                    >
-                        relational
-                    </a>{' '}
-                    concepts which place an importance on the therapeutic
-                    relationship.
+                    incorporate {therapiesTypesLinkPsychodynamic} and{' '}
+                    {therapiesTypesLinkPsychodynamicAttachmentTheory} into my
+                    work with clients, as well as{' '}
+                    {therapiesTypesLinkPsychodynamicRelationalConcepts} which
+                    place an importance on the therapeutic relationship.
                 </p>
             </Fragment>
         ),

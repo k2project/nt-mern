@@ -5,6 +5,13 @@ import ukcp from './../../../imgs/ukcp.png';
 import iafp from './../../../imgs/iafp.png';
 import dbs from './../../../imgs/dbs.png';
 
+import OuterLink from '../../../components/links/OuterLink';
+import { UKCP } from '../../../config';
+
+const ukcpEthicsLink = (
+    <OuterLink href={UKCP.urlEthics} text={UKCP.ethicsTitle} />
+);
+
 const professionalBodiesData = [
     {
         logo: bacp,
@@ -54,17 +61,9 @@ export const ProfessionalBodies = () => {
                 <div className='ProfessionalBodies__logos'>{logos}</div>
                 <p>
                     I am a registered member of the United Kingdom Council for
-                    Psychotherapy (UKCP) and adhere to their{' '}
-                    <a
-                        href='https://www.psychotherapy.org.uk/wp-content/uploads/2019/06/UKCP-Code-of-Ethics-and-Professional-Practice-2019.pdf'
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        className='link'
-                    >
-                        Code of Ethics and Professional Practice
-                    </a>
-                    . I am a member of the International Association for
-                    Forensic Psychotherapy (IAFP) and the British Association of
+                    Psychotherapy (UKCP) and adhere to their {ukcpEthicsLink}. I
+                    am a member of the International Association for Forensic
+                    Psychotherapy (IAFP) and the British Association of
                     Counsellors and Psychotherapists (BACP). I hold an enhanced
                     certificate from the Disclosure and Barring Service.
                 </p>

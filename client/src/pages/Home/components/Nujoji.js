@@ -5,6 +5,21 @@ import SectionTitle from '../../../components/SectionTitle';
 
 import truthproject from './../../../imgs/tp.png';
 import graduation from './../../../imgs/butterfly.png';
+import OuterLink from '../../../components/links/OuterLink';
+import { UKCP, BACP } from '../../../config';
+
+const ukcpLink = <OuterLink href={UKCP.url} text={UKCP.acronym} />;
+const bacpLink = <OuterLink href={BACP.url} text={BACP.acronym} />;
+
+const therapiesTypesLinkPsychodynamic = (
+    <OuterLink href={BACP.therapiesTypesLinkUrl} text='psychodynamic' />
+);
+const therapiesTypesLinkPsychodynamicAttachmentTheory = (
+    <OuterLink href={BACP.therapiesTypesLinkUrl} text='attachment theory' />
+);
+const therapiesTypesLinkPsychodynamicRelationalConcepts = (
+    <OuterLink href={BACP.therapiesTypesLinkUrl} text='relational concepts' />
+);
 
 export const Nujoji = () => {
     return (
@@ -37,34 +52,10 @@ export const Nujoji = () => {
                         combines elements drawn from different schools of
                         psychological theory and research to become a flexible
                         and inclusive approach. My practice is particularly
-                        informed by{' '}
-                        <a
-                            href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/#psychodynamic'
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='link'
-                        >
-                            psychodynamic
-                        </a>{' '}
-                        and{' '}
-                        <a
-                            href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/#attachment-based-psychotherapy'
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='link'
-                        >
-                            attachment theory
-                        </a>
-                        ,{' '}
-                        <a
-                            href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/#relational'
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='link'
-                        >
-                            relational concepts
-                        </a>{' '}
-                        and underpinned with a trauma informed model.
+                        informed by {therapiesTypesLinkPsychodynamic} and{' '}
+                        {therapiesTypesLinkPsychodynamicAttachmentTheory},{' '}
+                        {therapiesTypesLinkPsychodynamicRelationalConcepts} and
+                        underpinned with a trauma informed model.
                     </p>
                     {/* <p>
                         The therapeutic relationship I develop with you is an
@@ -163,25 +154,7 @@ export const Nujoji = () => {
                         a leading psychotherapy training institute in the United
                         Kingdom. Courses meet the highest academic and
                         professional standards and are validated by the main
-                        professional bodies the{' '}
-                        <a
-                            href='https://www.psychotherapy.org.uk/'
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='link'
-                        >
-                            UKCP
-                        </a>{' '}
-                        and{' '}
-                        <a
-                            href='https://www.bacp.co.uk/'
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='link'
-                        >
-                            BACP
-                        </a>
-                        .
+                        professional bodies the {ukcpLink} and {bacpLink}.
                     </p>
                     <p>I obtained the following qualifications:</p>
                     <p>
