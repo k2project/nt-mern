@@ -10,7 +10,7 @@ export const Office = () => {
                 <div className='cover'>
                     <div className='cover_ctr'>
                         <span className='themed-font'>
-                            Find directions with Google Maps*
+                            Find directions with Google Maps
                         </span>
                         <a
                             href='https://www.google.com/maps/dir//Tokenhouse+Yard,+London+EC2R+7AS/@51.5153851,-0.0907049,17z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x48761cab515b7a57:0xa9652d3756affe10!2m2!1d-0.0885162!2d51.5153851!3e3'

@@ -138,7 +138,7 @@ export const questionsAndAnswers = [
                 <p>
                     There are many different{' '}
                     <a
-                        href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/'
+                        href='https://www.bacp.co.uk/about-therapy/types-of-therapy/'
                         target='_blank'
                         rel='noopener noreferrer'
                         onClick={(e) => e.stopPropagation()}
@@ -180,8 +180,7 @@ export const questionsAndAnswers = [
                 <p>
                     Yes, counselling and psychotherapy sessions are{' '}
                     <a
-                        href='https://www.psychotherapy.org.uk/wp-content/uploads/2019/06/UKCP-Code-of-
-Ethics-and-Professional-Practice-2019.pdf'
+                        href='https://www.psychotherapy.org.uk/seeking-therapy/therapy-ethics-what-to-expect/'
                         target='_blank'
                         rel='noopener noreferrer'
                         onClick={(e) => e.stopPropagation()}

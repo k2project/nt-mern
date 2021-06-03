@@ -14,10 +14,10 @@ export const Directions = () => {
                         }}
                     />
                     <p>
-                        <b>CITY OF LONDON Tokenhouse Yard</b> is a four-minute walk
-                        from <b>Bank Tube Station</b> (Waterloo and City, DLR,
-                        Northern, Central Line) and is situated just behind the
-                        Bank of England off Lothbury.
+                        <b>CITY OF LONDON: Tokenhouse Yard</b> is a four-minute
+                        walk from <b>Bank Tube Station</b> (Waterloo and City,
+                        DLR, Northern, Central Line) and is situated just behind
+                        the Bank of England off Lothbury.
                     </p>
                     {/* <div className="Nt4__text_center">
                             <img src={require('./../../imgs/stations.png')} alt='Nujoji' className="Directions__img"/>
@@ -31,10 +31,11 @@ export const Directions = () => {
                         Street.
                     </p>
                     <p>
-                        <b>WEST END Nassau Street</b> is located a few minutes’ walk
-                        from <b>Tottenham Court Road</b> London Underground (Northern
-                        and Central Lines) and <b>Oxford Circus</b> London Underground
-                        (Victoria, Central and Bakerloo Lines).
+                        <b>WEST END: Nassau Street</b> is located a few minutes’
+                        walk from <b>Tottenham Court Road</b> London Underground
+                        (Northern and Central Lines) and <b>Oxford Circus</b>{' '}
+                        London Underground (Victoria, Central and Bakerloo
+                        Lines).
                     </p>
                 </div>
             </div>
