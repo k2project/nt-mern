@@ -3,7 +3,7 @@ import React from 'react';
 export default {
     id: 'AbuseKeptSecret',
     cls: 'AbuseKeptSecret',
-    featured: true,
+    featured: false,
     title:
         'Two-thirds of child sex abuse survivors kept assaults secret at the time',
     summary:

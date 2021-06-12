@@ -77,7 +77,7 @@ export default function NavLinks({ toggleMobileMenu }) {
             </NavLink>
             {search && (
                 <NavLink
-                    to='/articles'
+                    to='/blog'
                     activeClassName='selected'
                     smooth
                     onClick={toggleMobileMenu}

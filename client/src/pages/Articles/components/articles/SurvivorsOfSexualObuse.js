@@ -19,7 +19,7 @@ const sharedExperienceLink = (
 export default {
     id: 'SurvivorsOfSexualObuse',
     cls: 'SurvivorsOfSexualObuse',
-    featured: false,
+    featured: true,
     title: 'Survivors of sexual abuse: Remembering we’re not alone',
     summary:
         'It’s a difficult time for us all, and I wanted to share some thoughts about the issues that have  come up in my work.',
