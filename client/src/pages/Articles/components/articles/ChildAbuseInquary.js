@@ -72,8 +72,8 @@ export default {
             </p>
             <p>
                 The hearings are online from 10.30am to 4.15pm each day,
-                streamed live on the independent inquiry’s {iicsaLink}
-                website, with transcripts available a few hours after.
+                streamed live on the independent inquiry’s {iicsaLink} website,
+                with transcripts available a few hours after.
             </p>
         </>
     ),

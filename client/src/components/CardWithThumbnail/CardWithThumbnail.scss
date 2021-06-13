@@ -38,7 +38,9 @@
     width: 100%;
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
+
 @include tablet {
     .cardWithThumbnail {
         width: 90%;
