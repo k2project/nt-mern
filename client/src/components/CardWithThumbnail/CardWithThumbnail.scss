@@ -1,0 +1,61 @@
+@import './../../VarAndMIxins.scss';
+
+.cardWithThumbnail {
+    background: #fff;
+    width: 90rem;
+    margin: 3rem auto;
+    display: -webkit-flex;
+    display: flex;
+
+    .btn {
+        margin-top: 2rem;
+    }
+}
+
+.cardWithThumbnail__desc {
+    padding: 5rem;
+    width: 100%;
+}
+
+.cardWithThumbnail__title {
+    font-family: $FONT_FAMILY_HEADINGS;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.2rem;
+    margin-bottom: 0.3rem;
+    line-height: 1.2;
+}
+.cardWithThumbnail__subtitle {
+    font-family: $FONT_FAMILY_HEADINGS;
+    text-align: left;
+    // text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+.thumbnail {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+@include tablet {
+    .cardWithThumbnail {
+        width: 90%;
+    }
+}
+@include mobile {
+    .cardWithThumbnail {
+        text-align: left;
+        flex-direction: column-reverse;
+        width: 85%;
+    }
+
+    .thumbnail {
+        height: 35rem;
+        display: block;
+        background-position: 50% 20%;
+    }
+}
+@include mobile-sm {
+}

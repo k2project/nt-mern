@@ -11,6 +11,7 @@ const video1 = {
         label: 'Watch now',
     },
     icon: video,
+    thumbnail: 'happinesV1.png',
 };
 const video2 = {
     title: 'Are You Lost in the World Like Me?',
@@ -22,6 +23,7 @@ const video2 = {
         label: 'Watch now',
     },
     icon: video,
+    thumbnail: 'lostInTheWorld.png',
 };
 const video3 = {
     title: 'How Psychotherapy Works',
@@ -33,6 +35,7 @@ const video3 = {
         label: 'Watch now',
     },
     icon: video,
+    thumbnail: 'howPsychotherapyWorks.png',
 };
 const video4 = {
     title: 'Psychotherapy',
@@ -44,6 +47,7 @@ const video4 = {
         label: 'Watch now',
     },
     icon: video,
+    thumbnail: 'psychotherapyTSOL.png',
 };
 
 export const videos = [video1, video2, video3, video4];

@@ -1,13 +1,16 @@
 import React from 'react';
-import './Card.scss';
+import './CardWithThumbnail.scss';
 
-export const Card = ({ item, thumbnail }) => {
-    const { title, subtitle, summary, link, button, icon } = item;
+export const CardWithThumbnail = ({ item }) => {
+    const { title, subtitle, summary, link, button, thumbnail } = item;
+    const backgroundImage = thumbnail
+        ? 'url(' + require('../../imgs/' + thumbnail) + ')'
+        : 'none';
     return (
-        <div className='card'>
-            <div className='card__desc'>
-                <div className='card__title'>{title}</div>
-                <div className='card__subtitle'>{subtitle}</div>
+        <div className='cardWithThumbnail'>
+            <div className='cardWithThumbnail__desc'>
+                <div className='cardWithThumbnail__title'>{title}</div>
+                <div className='cardWithThumbnail__subtitle'>{subtitle}</div>
                 <div>{summary}</div>
                 {link && (
                     <div>
@@ -34,21 +37,8 @@ export const Card = ({ item, thumbnail }) => {
                     </div>
                 )}
             </div>
-            {link && (
-                <a
-                    href={link.url}
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    className='card__icon'
-                >
-                    {icon && <img src={icon} alt='' />}
-                    <span className='sr-only'>{title}</span>
-                </a>
-            )}
-            {button && icon && (
-                <span className='card__icon'>
-                    <img src={icon} alt='' />
-                </span>
+            {thumbnail && (
+                <div className='thumbnail' style={{ backgroundImage }} />
             )}
         </div>
     );

@@ -39,20 +39,6 @@
     margin-bottom: 2rem;
 }
 @include tablet {
-    .resources__title .section__wrapper {
-        background-color: #f5f5f5;
-    }
-    .podcasts .resources__title .section__wrapper {
-        background-color: #fff;
-    }
-    .resources__title .section__body {
-        display: grid;
-        grid-template-columns: auto 1fr;
-    }
-    .resources__img {
-        max-width: 18rem;
-        max-height: 30rem;
-    }
     .card {
         width: 80%;
         display: block;
