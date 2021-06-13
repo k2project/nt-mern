@@ -20,7 +20,8 @@ export default {
     publication: 'East London Advertiser',
     sourceUrl:
         'https://www.eastlondonadvertiser.co.uk/news/local-council/child-sex-abuse-inquiry-preview-3672056',
-    img: 'bunny.jpg',
+    img: 'elAdvertiserBg.jpg',
+    logo: 'elAdvertiserLogo.png',
     content: (
         <>
             <p>

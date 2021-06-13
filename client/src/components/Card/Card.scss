@@ -16,10 +16,10 @@
         margin-top: 2rem;
     }
 }
-.card__icon img {
-    height: 9rem;
-    margin: 0 4rem 0 8rem;
-    opacity: 0.1;
+
+.card__logo img {
+    max-width: 20rem;
+    margin-left: 4rem;
 }
 .card__title {
     font-family: $FONT_FAMILY_HEADINGS;
@@ -41,19 +41,13 @@
 @include tablet {
     .card {
         width: 80%;
-        display: block;
+        flex-direction: column-reverse;
+        align-items: flex-start;
     }
-    .card__title {
-        width: 75%;
-    }
-    .card__icon {
-        position: absolute;
-        left: 0;
-        top: 4rem;
-        width: 100%;
-        text-align: right;
+
+    .card__logo {
         img {
-            height: 6rem;
+            margin: 0 0 2rem;
         }
     }
 }
@@ -62,21 +56,12 @@
         padding: 10rem 0;
     }
     .card {
-        text-align: left;
         width: 85%;
         padding: 6.7rem 3rem 4.4rem;
-    }
-    .card__icon {
-        top: 2rem;
-        left: 1rem;
-        img {
-            height: 8rem;
-            opacity: 0.1;
-        }
     }
 }
 @include mobile-sm {
     .card__title {
-        width: 80%;
+        width: 90%;
     }
 }

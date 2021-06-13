@@ -1,8 +1,8 @@
 import React from 'react';
 import './Card.scss';
 
-export const Card = ({ item, thumbnail }) => {
-    const { title, subtitle, summary, link, button, icon } = item;
+export const Card = ({ item }) => {
+    const { title, subtitle, summary, link, button, publication, logo } = item;
     return (
         <div className='card'>
             <div className='card__desc'>
@@ -34,21 +34,10 @@ export const Card = ({ item, thumbnail }) => {
                     </div>
                 )}
             </div>
-            {link && (
-                <a
-                    href={link.url}
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    className='card__icon'
-                >
-                    {icon && <img src={icon} alt='' />}
-                    <span className='sr-only'>{title}</span>
-                </a>
-            )}
-            {button && icon && (
-                <span className='card__icon'>
-                    <img src={icon} alt='' />
-                </span>
+            {logo && (
+                <div className='card__logo'>
+                    <img src={logo} alt={publication} />
+                </div>
             )}
         </div>
     );

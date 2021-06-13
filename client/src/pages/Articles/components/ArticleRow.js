@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { ArticlePost } from './ArticlePost';
 import { Card } from '../../../components/Card';
-import pen from '../../../imgs/pen.png';
 import dayjs from 'dayjs';
 
 export const ArticleRow = ({ article }) => {
@@ -37,7 +36,8 @@ export const ArticleRow = ({ article }) => {
             onClick: onOpen,
             label: 'Read on',
         },
-        icon: pen,
+        logo: article.logo ? require('../../../imgs/' + article.logo) : null,
+        publication: article.publication,
     };
 
     return (

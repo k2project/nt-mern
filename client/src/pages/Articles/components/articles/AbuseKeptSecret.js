@@ -13,7 +13,8 @@ export default {
     publication: 'New Statesman',
     sourceUrl:
         'https://www.newstatesman.com/2021/02/two-thirds-child-sex-abuse-survivors-kept-assaults-secret-time',
-    img: 'robot.jpg',
+    img: 'newstatesmanBg.png',
+    logo: 'newstatesmanLogo.png',
     content: (
         <>
             <p>
