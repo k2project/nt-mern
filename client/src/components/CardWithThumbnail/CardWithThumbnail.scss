@@ -39,6 +39,13 @@
     background-size: cover;
     background-position: center;
     overflow: hidden;
+    .cover {
+        background-color: transparent;
+        color: transparent;
+    }
+    a.cover:focus {
+        border: solid 2px green;
+    }
 }
 
 @include tablet {

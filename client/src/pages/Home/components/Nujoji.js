@@ -182,7 +182,7 @@ export const Nujoji = () => {
                                 alt=''
                                 className='graduation'
                             />
-                            Post Graduate Diploma in Counselling
+                            Diploma in Counselling
                         </span>
                     </p>
                     <p>

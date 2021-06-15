@@ -38,7 +38,16 @@ export const CardWithThumbnail = ({ item }) => {
                 )}
             </div>
             {thumbnail && (
-                <div className='thumbnail' style={{ backgroundImage }} />
+                <div className='thumbnail' style={{ backgroundImage }}>
+                    <a
+                        href={link.url}
+                        className='cover'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
+                        Watch youtube video: <q>{title}</q>
+                    </a>
+                </div>
             )}
         </div>
     );
