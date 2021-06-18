@@ -27,8 +27,17 @@ export const ArticleRow = ({ article }) => {
         title: article.title,
         subtitle: (
             <p>
-                by <b>{article.author}</b> - posted on{' '}
-                <b>{dayjs(article.date).format('MMM D, YYYY')}</b>
+                {article.author && (
+                    <>
+                        by <b>{article.author}</b> -{' '}
+                    </>
+                )}
+                {article.pseudoauthor && (
+                    <>
+                        <b>{article.pseudoauthor}</b> -{' '}
+                    </>
+                )}
+                posted on <b>{dayjs(article.date).format('MMM D, YYYY')}</b>
             </p>
         ),
         summary: article.summary,
