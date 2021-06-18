@@ -5,6 +5,7 @@ import AbuseKeptSecret from './articles/AbuseKeptSecret';
 import SurvivorsOfSexualObuse from './articles/SurvivorsOfSexualObuse';
 import ChildAbuseInquary from './articles/ChildAbuseInquary';
 import TheGuardianLetter from './articles/TheGuardianLetter';
+import StHelensReporter from './articles/StHelensReporter';
 
 const dummyArticle = {
     id: 1,
@@ -41,4 +42,5 @@ export const articles = [
     SurvivorsOfSexualObuse,
     ChildAbuseInquary,
     TheGuardianLetter,
+    StHelensReporter,
 ];

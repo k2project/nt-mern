@@ -17,7 +17,7 @@ export default {
     date: '2021-06-17',
     author: null,
     pseudoauthor: 'Letter',
-    publication: 'The `Guardian',
+    publication: 'The Guardian',
     sourceUrl:
         'https://www.theguardian.com/uk-news/2021/jun/17/an-opportunity-for-victims-and-survivors-of-child-sexual-abuse-to-finally-be-heard',
     img: 'theGuardian.jpg',
