@@ -1,10 +1,4 @@
 import React from 'react';
-import OuterLink from '../../../../components/links/OuterLink';
-import { TRUTH_PROJECT } from '../../../../config';
-
-const truthProjectLink = (
-    <OuterLink href={TRUTH_PROJECT.urlHome} text={TRUTH_PROJECT.name} />
-);
 
 export default {
     id: 'StHelensReporter',
