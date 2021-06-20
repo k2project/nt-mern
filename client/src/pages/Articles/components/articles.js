@@ -7,6 +7,7 @@ import ChildAbuseInquary from './articles/ChildAbuseInquary';
 import TheGuardianLetter from './articles/TheGuardianLetter';
 import StHelensReporter from './articles/StHelensReporter';
 import YorkshirePost from './articles/YorkshirePost';
+import TheNorthernEcho from './articles/TheNorthernEcho';
 
 export const articles = [
     ListeningToTheVoicesOfSurvivors,
@@ -16,4 +17,5 @@ export const articles = [
     TheGuardianLetter,
     StHelensReporter,
     YorkshirePost,
+    TheNorthernEcho,
 ];
