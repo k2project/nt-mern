@@ -17,6 +17,7 @@ export default {
     id: 'YorkshirePost',
     cls: 'YorkshirePost',
     featured: false,
+    category: 'Quoted in articles',
     title: 'Shock at the scale of youth custody abuse',
     summary: 'Children ‘left isolated’, inquiry told.',
     date: '2020-04-24',

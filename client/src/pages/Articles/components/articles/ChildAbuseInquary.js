@@ -12,6 +12,7 @@ export default {
     id: 'ChildAbuseInquary',
     cls: 'ChildAbuseInquary',
     featured: false,
+    category: 'Quoted in articles',
     title:
         'Child sex abuse inquiry opens Monday to test how Tower Hamlets and 5 other authorities cope',
     summary: '',

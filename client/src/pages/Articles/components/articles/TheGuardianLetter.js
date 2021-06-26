@@ -10,6 +10,7 @@ export default {
     id: 'TheGuardianLetter',
     cls: 'TheGuardianLetter',
     featured: false,
+    category: 'Letter to the Editor',
     title:
         'An opportunity for victims and survivors of child sexual abuse to finally be heard',
     summary:

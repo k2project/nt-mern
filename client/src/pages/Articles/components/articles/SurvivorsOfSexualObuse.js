@@ -19,7 +19,8 @@ const sharedExperienceLink = (
 export default {
     id: 'SurvivorsOfSexualObuse',
     cls: 'SurvivorsOfSexualObuse',
-    featured: true,
+    featured: false,
+    category: 'Opinion piece',
     title: 'Survivors of sexual abuse: Remembering we’re not alone',
     summary:
         'It’s a difficult time for us all, and I wanted to share some thoughts about the issues that have  come up in my work.',
@@ -29,6 +30,7 @@ export default {
     sourceUrl:
         'https://lifecontinuesafter.com/words/2020/5/7/survivors-of-sexual-abuse-remembering-were-not-alone',
     img: 'group.jpg',
+    logo: 'lifeContinuesAfterLogo.png',
     content: (
         <>
             <p>

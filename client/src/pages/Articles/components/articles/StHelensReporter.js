@@ -4,6 +4,7 @@ export default {
     id: 'StHelensReporter',
     cls: 'StHelensReporter',
     featured: false,
+    category: 'Letter to the Editor',
     title:
         'Inquiry to examine child sexual exploitation by organised networks in St Helens',
     summary:

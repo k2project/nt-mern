@@ -125,7 +125,14 @@
 
 .Articles-others {
     background-color: #efefef;
+    padding-bottom: 5rem;
+    border-bottom: solid 5px #f5f5f5;
+
+    .btn.btn-center {
+        margin: auto;
+    }
 }
+
 .OtherArticle {
     .Article-post {
         display: none;
@@ -134,24 +141,24 @@
         display: flex;
         padding: 4rem;
     }
-    &:first-child {
-        padding-top: 10rem;
-    }
-    &:first-child.open {
-        padding-top: 0rem;
-        padding-bottom: 7rem;
-    }
-    &:last-child {
-        padding-bottom: 10rem;
-    }
-    &:last-child.open {
-        padding-bottom: 0rem;
-        padding-top: 7rem;
-    }
-    &:not(:first-child):not(:last-child).open {
-        padding-top: 7rem;
-        padding-bottom: 7rem;
-    }
+    // &:first-child {
+    //     padding-top: 10rem;
+    // }
+    // &:first-child.open {
+    //     padding-top: 0rem;
+    //     padding-bottom: 7rem;
+    // }
+    // &:last-child {
+    //     padding-bottom: 10rem;
+    // }
+    // &:last-child.open {
+    //     padding-bottom: 0rem;
+    //     padding-top: 7rem;
+    // }
+    // &:not(:first-child):not(:last-child).open {
+    //     padding-top: 7rem;
+    //     padding-bottom: 7rem;
+    // }
 }
 .OtherArticle.open {
     .Article-post {
@@ -161,11 +168,35 @@
         display: none;
     }
 }
-.Articles-others-btnContainer {
+.Articles-category {
+    width: 90rem;
+    margin: auto;
+    font-size: 2.4rem;
+    text-transform: uppercase;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 6rem;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: #333;
+    padding: 7rem 0 2rem;
+    h3 {
+        display: flex;
+        align-items: center;
+    }
+    .budge {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        background: $ARTICLES_COLOR;
+        color: darken($ARTICLES_COLOR, 40%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 1.5rem;
+        font-size: 2rem;
+    }
+    .btn_square {
+        margin: 0;
+    }
 }
 
 //BACKGROUND IMG FOR ARTICLES
@@ -198,6 +229,27 @@
     .Article.open {
         .Article-header-info {
             max-width: 100%;
+        }
+    }
+    .Articles-category {
+        width: 80%;
+    }
+}
+@include mobile {
+    .Articles-category {
+        width: 85%;
+        flex-direction: column;
+        align-items: flex-start;
+        h3 {
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        b {
+            width: calc(100% - 6rem);
+        }
+        .btn_square {
+            margin-top: 1rem;
         }
     }
 }

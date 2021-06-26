@@ -4,6 +4,7 @@ export default {
     id: 'TheNorthernEcho',
     cls: 'TheNorthernEcho',
     featured: false,
+    category: 'Quoted in articles',
     title: 'Inquiry into child sexual abuse to hear evidence from Durham',
     summary:
         'CHILD sexual exploitation by organised networks in County Durham will be examined as part of an inquiry.',

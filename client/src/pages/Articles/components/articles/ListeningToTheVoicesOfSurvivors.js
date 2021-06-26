@@ -17,7 +17,8 @@ const forumLink = <OuterLink href={FORUM.url} text='here' />;
 export default {
     id: 'ListeningToTheVoicesOfSurvivors',
     cls: 'ListeningToTheVoicesOfSurvivors',
-    featured: true,
+    featured: false,
+    category: 'Opinion piece',
     title: 'Listening to the voices of survivors',
     summary:
         'Nujoji Calvocoressi is a member of the Victims and Survivors Consultative Panel at the Independent Inquiry into Child Sexual Abuse. In this blog, he describes how the voices of survivors are central to the Inquiry’s work, and argues that if things are to change, it’s essential we listen to those voices.',
@@ -27,6 +28,7 @@ export default {
     sourceUrl:
         'https://www.localgov.co.uk/Listening-to-the-voices-of-survivors/51409',
     img: 'megaphon.jpg',
+    logo: 'localgovLogo.png',
     content: (
         <>
             <p>
