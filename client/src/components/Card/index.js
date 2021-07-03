@@ -8,7 +8,7 @@ export const Card = ({ item }) => {
             <div className='card__desc'>
                 <div className='card__title'>{title}</div>
                 <div className='card__subtitle'>{subtitle}</div>
-                <div>{summary}</div>
+                <div className='card__summary'>{summary}</div>
                 {link && (
                     <div>
                         <a

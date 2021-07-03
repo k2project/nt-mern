@@ -4,7 +4,7 @@ export default {
     id: 'StHelensReporter',
     cls: 'StHelensReporter',
     featured: false,
-    category: 'Letter to the Editor',
+    category: 'Quoted in articles',
     title:
         'Inquiry to examine child sexual exploitation by organised networks in St Helens',
     summary:
@@ -51,11 +51,11 @@ export default {
                 transcripts will be available on the website a few hours after
                 each hearing day.
             </p>
-            <p>
+            <p className='article-subtitle'>
                 Nujoji Calvocoressi, a member of the Inquiry’s Victims and
                 Survivors Consultative Panel, said: “It is clear that the
                 grooming and sexual abuse of children by groups of offenders is
-                an urgent problem across England and Wales.
+                an urgent problem across England and Wales.”
             </p>
             <p>
                 “This hugely important investigation will examine the current

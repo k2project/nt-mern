@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { articles } from './articles';
 import { ArticleRow } from './ArticleRow';
 
-const LIMIT_ARTICLES_DISPLAY = 2;
+const LIMIT_ARTICLES_DISPLAY = 5;
 
 export const OtherArticles = () => {
     const others = articles
@@ -66,12 +66,12 @@ const ArticlesListByCategory = ({ category, articles }) => {
                     <ArticleRow key={a.id} article={a} id={a.id} />
                 ))}
 
-            {rest && (
+            {articles.length > LIMIT_ARTICLES_DISPLAY && (
                 <button
-                    onClick={() => showRest(false)}
+                    onClick={() => showRest(!rest)}
                     className='btn btn-center '
                 >
-                    Hide older
+                    {rest ? 'Hide older' : 'Show all'}
                 </button>
             )}
         </div>

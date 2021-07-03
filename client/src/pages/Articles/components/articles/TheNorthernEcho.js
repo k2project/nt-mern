@@ -13,7 +13,7 @@ export default {
     pseudoauthor: null,
     publication: 'The Northern Echo',
     sourceUrl:
-        'https://www.sthelensreporter.co.uk/news/crime/inquiry-examine-child-sexual-exploitation-organised-networks-st-helens-2974791',
+        'https://www.thenorthernecho.co.uk/news/18736307.inquiry-child-sexual-abuse-hear-evidence-durham',
     img: 'newspapers.jpg',
     logo: 'TheNorthernEchoLogo.png',
     content: (
@@ -77,6 +77,39 @@ export default {
                 The latest section of the wide-ranging IICSA will draw evidence
                 from a range of complainants and organisations to assess how
                 networks including grooming gangs have been able to operate.
+            </p>
+            <p>
+                It will explore themes such as the adequacy of risk assessment
+                and protection measures for vulnerable children, whether victims
+                were shown appropriate empathy and concern, and measures taken
+                to successfully disrupt offenders.
+            </p>
+            <p>
+                Evidence will come from a number of victims, including children
+                as young as 12 who were raped or seriously sexually assaulted,
+                who spent time in and out of care homes, yet repeatedly felt
+                their complaints to police and social services were ignored.
+            </p>
+            <p>
+                The IICSA was set up in 2015 following claims from a complainant
+                known as “Nick” of a murderous paedophile ring linked to
+                Parliament operating in and around Westminster.
+            </p>
+            <p>
+                Nick, real name Carl Beech, was later discredited and jailed for
+                18 years for what a judge called his “cruel and callous” lies.
+            </p>
+            <p className='article-subtitle'>
+                Nujoji Calvocoressi, a member of the Inquiry’s Victims and
+                Survivors Consultative Panel, said: “It is clear that the
+                grooming and sexual abuse of children by groups of offenders is
+                an urgent problem across England and Wales.
+            </p>
+            <p>
+                “This hugely important investigation will examine the current
+                strategies in places including Durham to prevent this type of
+                child sexual exploitation and see what more can be done in
+                future.”
             </p>
         </>
     ),

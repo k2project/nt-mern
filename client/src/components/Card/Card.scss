@@ -28,7 +28,7 @@
     font-weight: bold;
     font-size: 2.2rem;
     margin-bottom: 0.3rem;
-    line-height: 1.2;
+    line-height: 1.4;
 }
 .card__subtitle {
     font-family: $FONT_FAMILY_HEADINGS;
@@ -37,6 +37,9 @@
     font-weight: bold;
     font-size: 1.4rem;
     margin-bottom: 2rem;
+}
+.card__summary {
+    line-height: 1.5;
 }
 @include tablet {
     .card {
