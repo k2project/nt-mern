@@ -1,8 +1,6 @@
 import React from 'react';
 import { NavHashLink as Link } from 'react-router-hash-link';
-
 import SectionTitle from '../../../components/SectionTitle';
-
 import truthproject from './../../../imgs/tp.png';
 import graduation from './../../../imgs/butterfly.png';
 import OuterLink from '../../../components/links/OuterLink';
@@ -19,6 +17,19 @@ const therapiesTypesLinkPsychodynamicAttachmentTheory = (
 );
 const therapiesTypesLinkPsychodynamicRelationalConcepts = (
     <OuterLink href={BACP.therapiesTypesLinkUrl} text='relational concepts' />
+);
+const theAFNC = (
+    <OuterLink
+        href='https://www.annafreud.org'
+        text='The Anna Freud National Centre for Children and
+    Families'
+    />
+);
+const EMDR = (
+    <OuterLink
+        href='https://emdrassociation.org.uk/become-an-accredited-therapist/training/standard-accredited/'
+        text='standard accredited training'
+    />
 );
 
 export const Nujoji = () => {
@@ -186,48 +197,13 @@ export const Nujoji = () => {
                         </span>
                     </p>
                     <p>
-                        I have also undertaken further training in Critical
-                        Incident Debriefing, a highly effective intervention to
-                        deal with the adverse psychological impact of
-                        overwhelmingly stressful incidents in the workplace. I
-                        am also completing a Mentalization-Based Treatment
-                        training at{' '}
-                        <a
-                            href='https://www.annafreud.org'
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='link'
-                        >
-                            The Anna Freud National Centre for Children and
-                            Families
-                        </a>
-                        .
+                        I have also undertaken further training in
+                        Mentalization-Based Treatment training at {theAFNC}. I
+                        am also completing an EMDR UK {EMDR} to deliver Eye
+                        Movement Desensitisation and Reprocessing which is a
+                        powerful therapy designed to help people recover from
+                        traumatic events.
                     </p>
-
-                    {/* <p>
-                        <a
-                            href='https://www.truthproject.org.uk/i-will-be-heard'
-                            target='_blank'
-                            rel='noopener noreferrer'
-                        >
-                            <img
-                                src={truthproject}
-                                alt='I will be heard. Truth project.'
-                                className='tp__logo'
-                            />
-                        </a>
-                        Aside from my work as a psychotherapist I am a member of
-                        the Victims and Survivors’ Consultative Panel at the{' '}
-                        <a
-                            href='https://www.truthproject.org.uk/i-will-be-heard'
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='link'
-                        >
-                            Independent Inquiry into Child Sexual Abuse
-                        </a>
-                        .
-                    </p> */}
                 </div>
             </div>
         </section>

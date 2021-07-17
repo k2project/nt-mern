@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 
 import OuterLink from '../../../components/links/OuterLink';
+import { Bullet } from '../../../components/Bullet';
 import { BACP } from '../../../config';
 
 const therapiesTypesLinkPsychodynamic = (
@@ -12,6 +13,8 @@ const therapiesTypesLinkPsychodynamicAttachmentTheory = (
 const therapiesTypesLinkPsychodynamicRelationalConcepts = (
     <OuterLink href={BACP.therapiesTypesLinkUrl} text='relational concepts' />
 );
+
+const bullet = <Bullet type='img' />;
 
 export const questionsAndAnswers = [
     {
@@ -93,6 +96,103 @@ export const questionsAndAnswers = [
                     place an importance on the therapeutic relationship.
                 </p>
             </Fragment>
+        ),
+    },
+    {
+        hash: '#online',
+        q: 'How does online therapy work? ',
+        a: (
+            <>
+                <p>
+                    This information should help provide you with some practical
+                    information to understand what to expect with online therapy
+                    sessions and provide some tips to make sure the process runs
+                    as smoothly as possible.
+                </p>
+                <p>
+                    Many psychotherapists have now moved over to a remote based
+                    therapy provision.
+                </p>
+                <p>
+                    Importantly, online psychotherapy is psychotherapy, and I
+                    know how powerful and transformational this approach has
+                    been for clients
+                </p>
+                <p>
+                    Working online can remove barriers to therapy. It enables me
+                    to offer therapy to those who could not otherwise access it.
+                </p>
+                <p>
+                    People who live far from a therapist, people who have
+                    difficulties leaving home, or people who find meeting people
+                    face-to-face so anxiety provoking that they can’t get to a
+                    clinic can now benefit from therapy
+                </p>
+                <p>
+                    I use Zoom as it is free, straightforward and encrypted.
+                    Some clients are worried about security. The reality is that
+                    nothing online can be guaranteed to be 100% secure.
+                </p>
+                <p>
+                    All we can do is enable as much security as we can, and I
+                    will configure my settings to maximize this.
+                </p>
+                <p className='bullet-list'>
+                    <b id='tips'>TIPS. Please ensure that:</b>
+                    <ul aria-labelledby='tips'>
+                        <li>
+                            {bullet}
+                            You have your computer or device set up with Zoom
+                            before the session commences. This includes having
+                            your microphone and video turned on.
+                        </li>
+                        <li>
+                            {bullet}
+                            Your computer or device is positioned at a sensible
+                            height so that I can clearly see your head and
+                            shoulders and that the camera is at eye level.
+                        </li>
+                        <li>
+                            {bullet}
+                            You make sure that you are in a quiet location. It
+                            is easy to hear background noises such as pets,
+                            washing machines and televisions etc.
+                        </li>
+                        <li>
+                            {bullet}
+                            You will not be disturbed for the duration of the
+                            session and that the door to the room you are
+                            sitting in is closed.
+                        </li>
+                        <li>
+                            {bullet}
+                            If you are using your computer, that you have your
+                            other devices out of reach and with the sound muted
+                            so that it is not a distraction
+                        </li>
+                        <li>
+                            {bullet}
+                            You do not have your back to a window or bright
+                            light – this can make it harder for me to see you
+                            clearly.
+                        </li>
+                        <li>
+                            {bullet}
+                            That there is adequate lighting in the room you are
+                            in.
+                        </li>
+                        <li>
+                            {bullet}You join the session at the agreed time.
+                        </li>
+                        <li>
+                            {bullet}
+                            You close other internet using programmes e.g.,
+                            online gaming and music and video streaming
+                            services.
+                        </li>
+                    </ul>
+                </p>
+            </>
         ),
     },
     {

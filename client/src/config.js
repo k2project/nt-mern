@@ -27,3 +27,8 @@ export const BACP = {
     therapiesTypesLinkUrl:
         'https://www.bacp.co.uk/about-therapy/types-of-therapy/',
 };
+
+export const EMDR = {
+    acronym: 'EMDR UK',
+    url: 'https://emdrassociation.org.uk',
+};

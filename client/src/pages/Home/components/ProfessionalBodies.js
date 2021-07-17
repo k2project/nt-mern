@@ -4,13 +4,16 @@ import bacp from './../../../imgs/bacp.PNG';
 import ukcp from './../../../imgs/ukcp.png';
 import iafp from './../../../imgs/iafp.png';
 import dbs from './../../../imgs/dbs.png';
+import emdr from './../../../imgs/EMDRlogo.png';
 
 import OuterLink from '../../../components/links/OuterLink';
-import { UKCP } from '../../../config';
+import { UKCP, EMDR } from '../../../config';
 
 const ukcpEthicsLink = (
     <OuterLink href={UKCP.urlEthics} text={UKCP.ethicsTitle} />
 );
+
+const EMDRlink = <OuterLink href={EMDR.url} text={EMDR.acronym} />;
 
 const professionalBodiesData = [
     {
@@ -28,6 +31,11 @@ const professionalBodiesData = [
     {
         logo: iafp,
         link: 'https://www.forensicpsychotherapy.org',
+        name: 'emdr',
+    },
+    {
+        logo: emdr,
+        link: EMDR.url,
         name: 'iafp',
     },
     {
@@ -64,8 +72,9 @@ export const ProfessionalBodies = () => {
                     Psychotherapy (UKCP) and adhere to their {ukcpEthicsLink}. I
                     am a member of the International Association for Forensic
                     Psychotherapy (IAFP) and the British Association of
-                    Counsellors and Psychotherapists (BACP). I hold an enhanced
-                    certificate from the Disclosure and Barring Service.
+                    Counsellors and Psychotherapists (BACP). I am a trainee
+                    member of {EMDRlink}. I hold an enhanced certificate from
+                    the Disclosure and Barring Service.
                 </p>
             </div>
         </div>

@@ -65,7 +65,7 @@
     padding: 0 1.2rem 0 0;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1150px) {
     .ProfessionalBodies__logo {
         height: 4.4rem;
         margin: 0.5rem 0.5rem;
@@ -82,8 +82,11 @@
     .Home__bg_hello {
         background-position: left top;
     }
+}
+@media only screen and (max-width: 900px) {
     .ProfessionalBodies__logo {
-        height: 10vw;
+        height: 9vw;
+        max-height: 9rem;
         margin: 0.5rem 0.5rem;
     }
     .ProfessionalBodies__logo:nth-child(3) {
