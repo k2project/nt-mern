@@ -2,17 +2,30 @@ import React from 'react';
 import video from '../../../../imgs/video.png';
 
 const video1 = {
-    title: 'Happiness',
-    subtitle: 'by Steve Cutts',
+    title: 'EMDR',
+    subtitle: 'by EMDR Association UK',
     summary:
-        "A four-minute animation about the story of a rodent's unrelenting quest for happiness and fulfilment.",
+        'EMDR stands for Eye Movement Desensitisation and Reprocessing. It is a powerful therapy that helps people recover from problems triggered by traumatic events in their lives.',
     link: {
-        url: 'https://www.youtube.com/watch?v=e9dZQelULDk&amp;t=71s',
+        url: 'https://www.youtube.com/watch?v=bIJZQAr9nQo',
         label: 'Watch now',
     },
     icon: video,
-    thumbnail: 'happinesV1.png',
+    thumbnail: 'emdr.png',
+    cls: 'emdr',
 };
+// const video1 = {
+//     title: 'Happiness',
+//     subtitle: 'by Steve Cutts',
+//     summary:
+//         "A four-minute animation about the story of a rodent's unrelenting quest for happiness and fulfilment.",
+//     link: {
+//         url: 'https://www.youtube.com/watch?v=e9dZQelULDk&amp;t=71s',
+//         label: 'Watch now',
+//     },
+//     icon: video,
+//     thumbnail: 'happinesV1.png',
+// };
 const video2 = {
     title: 'Are You Lost in the World Like Me?',
     subtitle: 'by Steve Cutts',

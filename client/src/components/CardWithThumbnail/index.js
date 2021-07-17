@@ -38,7 +38,10 @@ export const CardWithThumbnail = ({ item }) => {
                 )}
             </div>
             {thumbnail && (
-                <div className='thumbnail' style={{ backgroundImage }}>
+                <div
+                    className={`thumbnail ${item.cls}`}
+                    style={{ backgroundImage }}
+                >
                     <a
                         href={link.url}
                         className='cover'

@@ -47,6 +47,9 @@
         background-color: rgba(0, 0, 0, 0.4);
     }
 }
+.thumbnail.emdr {
+    background-position: 20% 50%;
+}
 
 @include tablet {
     .cardWithThumbnail {
