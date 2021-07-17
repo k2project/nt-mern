@@ -17,12 +17,6 @@ const EMDRlink = <OuterLink href={EMDR.url} text={EMDR.acronym} />;
 
 const professionalBodiesData = [
     {
-        logo: bacp,
-        link:
-            'https://www.bacp.co.uk/profile/8fb9f46e-e25c-e811-8108-3863bb351d40/therapist?location=City%20of%20London',
-        name: 'bacp',
-    },
-    {
         logo: ukcp,
         link:
             'https://www.psychotherapy.org.uk/therapist/nujoji-calvocoressi/?back%5Btherapist_name%5D=nujoji&amp;back%5Bsubmitted%5D=1&amp;back%5Bseed%5D=1054133881',
@@ -31,12 +25,18 @@ const professionalBodiesData = [
     {
         logo: iafp,
         link: 'https://www.forensicpsychotherapy.org',
-        name: 'emdr',
+        name: 'iafp',
     },
     {
         logo: emdr,
         link: EMDR.url,
-        name: 'iafp',
+        name: 'emdr',
+    },
+    {
+        logo: bacp,
+        link:
+            'https://www.bacp.co.uk/profile/8fb9f46e-e25c-e811-8108-3863bb351d40/therapist?location=City%20of%20London',
+        name: 'bacp',
     },
     {
         logo: dbs,
@@ -73,8 +73,8 @@ export const ProfessionalBodies = () => {
                     am a member of the International Association for Forensic
                     Psychotherapy (IAFP) and the British Association of
                     Counsellors and Psychotherapists (BACP). I am a trainee
-                    member of {EMDRlink}. I hold an enhanced certificate from
-                    the Disclosure and Barring Service.
+                    member of EMDR UK. I hold an enhanced certificate from the
+                    Disclosure and Barring Service.
                 </p>
             </div>
         </div>

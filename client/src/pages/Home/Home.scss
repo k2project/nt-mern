@@ -87,16 +87,14 @@
     .ProfessionalBodies__logo {
         height: 9vw;
         max-height: 9rem;
-        margin: 0.5rem 0.5rem;
+        margin: 1rem 0.5rem;
     }
-    .ProfessionalBodies__logo:nth-child(3) {
-        height: 15vw;
-    }
-    .ProfessionalBodies__logos a:last-child {
-        order: -1;
-    }
+
     .ProfessionalBodies__logo.ukcp {
         top: -0.5rem;
+    }
+    .ProfessionalBodies__logo.emdr {
+        margin-left: -1.5rem;
     }
     .tp__logo {
         height: 5rem;

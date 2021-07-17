@@ -116,7 +116,7 @@ export const questionsAndAnswers = [
                 <p>
                     Importantly, online psychotherapy is psychotherapy, and I
                     know how powerful and transformational this approach has
-                    been for clients
+                    been for clients.
                 </p>
                 <p>
                     Working online can remove barriers to therapy. It enables me
@@ -126,7 +126,7 @@ export const questionsAndAnswers = [
                     People who live far from a therapist, people who have
                     difficulties leaving home, or people who find meeting people
                     face-to-face so anxiety provoking that they can’t get to a
-                    clinic can now benefit from therapy
+                    clinic can now benefit from therapy.
                 </p>
                 <p>
                     I use Zoom as it is free, straightforward and encrypted.
@@ -168,7 +168,7 @@ export const questionsAndAnswers = [
                             {bullet}
                             If you are using your computer, that you have your
                             other devices out of reach and with the sound muted
-                            so that it is not a distraction
+                            so that it is not a distraction.
                         </li>
                         <li>
                             {bullet}
