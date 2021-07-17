@@ -6,10 +6,15 @@
 }
 .About__bg_therapist {
     background: #161412;
-    background-image: url('./../../imgs/nc.jpg');
+    background-image: url('./../../imgs/nc2.jpg');
+    // background-image: url('./../../imgs/nc.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: top;
+    // background-position: center;
     min-height: 60rem;
+    .cover {
+        background: rgba(0, 0, 0, 0.2);
+    }
 }
 
 .ProfessionalBodies {

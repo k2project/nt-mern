@@ -104,23 +104,24 @@ export const questionsAndAnswers = [
         a: (
             <>
                 <p>
-                    This information should help provide you with some practical
-                    information to understand what to expect with online therapy
-                    sessions and provide some tips to make sure the process runs
-                    as smoothly as possible.
+                    This information should help provide you with some{' '}
+                    <b>practical information</b> to understand what to expect
+                    with <b>online therapy</b> sessions and provide some tips to
+                    make sure the process runs as smoothly as possible.
                 </p>
                 <p>
                     Many psychotherapists have now moved over to a remote based
                     therapy provision.
                 </p>
                 <p>
-                    Importantly, online psychotherapy is psychotherapy, and I
-                    know how powerful and transformational this approach has
-                    been for clients.
+                    Importantly, <b>online psychotherapy is psychotherapy</b>,
+                    and I know how <b>powerful</b> and <b>transformational</b>{' '}
+                    this approach has been for clients.
                 </p>
                 <p>
-                    Working online can remove barriers to therapy. It enables me
-                    to offer therapy to those who could not otherwise access it.
+                    Working online <b>can remove barriers</b> to therapy. It
+                    enables me to offer therapy to those who could not otherwise
+                    access it.
                 </p>
                 <p>
                     People who live far from a therapist, people who have
@@ -144,19 +145,21 @@ export const questionsAndAnswers = [
                             {bullet}
                             You have your computer or device set up with Zoom
                             before the session commences. This includes having
-                            your microphone and video turned on.
+                            your <b>microphone and video turned on</b>.
                         </li>
                         <li>
                             {bullet}
                             Your computer or device is positioned at a sensible
-                            height so that I can clearly see your head and
-                            shoulders and that the camera is at eye level.
+                            height so that I can{' '}
+                            <b>clearly see your head and shoulders</b> and that
+                            the camera is at eye level.
                         </li>
                         <li>
                             {bullet}
-                            You make sure that you are in a quiet location. It
-                            is easy to hear background noises such as pets,
-                            washing machines and televisions etc.
+                            You make sure that you are in a{' '}
+                            <b>quiet location</b>. It is easy to hear background
+                            noises such as pets, washing machines and
+                            televisions etc.
                         </li>
                         <li>
                             {bullet}
@@ -178,16 +181,18 @@ export const questionsAndAnswers = [
                         </li>
                         <li>
                             {bullet}
-                            That there is adequate lighting in the room you are
-                            in.
+                            That there is <b>adequate lighting</b> in the room
+                            you are in.
                         </li>
                         <li>
                             {bullet}You join the session at the agreed time.
                         </li>
                         <li>
                             {bullet}
-                            You close other internet using programmes e.g.,
-                            online gaming and music and video streaming
+                            You <b>
+                                close other internet using programmes
+                            </b>{' '}
+                            e.g., online gaming and music and video streaming
                             services.
                         </li>
                     </ul>

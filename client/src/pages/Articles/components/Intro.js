@@ -1,8 +1,10 @@
 import React from 'react';
 import { NavHashLink as Link } from 'react-router-hash-link';
 import SectionTitle from '../../../components/SectionTitle';
+import OuterLink from '../../../components/links/OuterLink';
+import { IICSA } from '../../../config';
 
-import truthproject from './../../../imgs/tp.png';
+const iicsaLink = <OuterLink href={IICSA.urlHome} text={IICSA.name} />;
 
 export const Intro = () => {
     return (
@@ -15,8 +17,8 @@ export const Intro = () => {
                             subtitle: '',
                             title: (
                                 <span>
-                                    Writing about my <b> work </b>
-                                    and <b> experience</b>
+                                    Writing about my <b> work </b> and{' '}
+                                    <b>experience</b>
                                 </span>
                             ),
                         }}
@@ -28,28 +30,25 @@ export const Intro = () => {
             </div>
             <div>
                 <div className='section__wrapper'>
-                    <p className='Articles-intro'>
-                        {/* <a
-                            href='https://www.truthproject.org.uk/i-will-be-heard'
-                            target='_blank'
-                            rel='noopener noreferrer'
-                        >
-                            <img
-                                src={truthproject}
-                                alt='I will be heard. Truth project.'
-                            />
-                        </a> */}
-                        Aside from my work as a psychotherapist I was a member
-                        of the Victims and Survivors’ Consultative Panel at the{' '}
-                        <a
-                            href='https://www.truthproject.org.uk/i-will-be-heard'
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='link'
-                        >
-                            Independent Inquiry into Child Sexual Abuse
-                        </a>
-                        .
+                    <p>
+                        I am aware of the difficulties that some victims and
+                        survivors of child sexual abuse face in finding
+                        effective and compassionate psychological support with
+                        well-trained and trauma-informed clinicians. It is
+                        unacceptable that far too frequently the needs of
+                        victims and survivors are not being met. Access to
+                        justice, accountability, reparation, and emotional
+                        wellbeing remains out of reach for many.
+                    </p>
+                    <p>
+                        As a past member of the Victims and Survivors’
+                        Consultative Panel at the {iicsaLink} it remains my firm
+                        belief that the work of the Inquiry is imperative to
+                        better understand to what degree institutions have
+                        failed in their duty to safeguard children from sexual
+                        abuse and to help protect children in the future. At
+                        various times I wrote and contributed to pieces
+                        discussing this important subject.
                     </p>
                 </div>
             </div>

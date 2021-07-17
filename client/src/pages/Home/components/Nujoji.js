@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavHashLink as Link } from 'react-router-hash-link';
 import SectionTitle from '../../../components/SectionTitle';
-import truthproject from './../../../imgs/tp.png';
 import graduation from './../../../imgs/butterfly.png';
 import OuterLink from '../../../components/links/OuterLink';
 import { UKCP, BACP } from '../../../config';

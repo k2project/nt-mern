@@ -95,15 +95,15 @@ export default function NavLinks({ toggleMobileMenu }) {
             >
                 Resources
             </NavLink>
-            {/* <NavLink
-                to='/articles'
+            <NavLink
+                to='/blog'
                 activeClassName='selected'
                 smooth
                 onClick={toggleMobileMenu}
                 className='NavLinks__link'
             >
-                Articles
-            </NavLink> */}
+                Blog
+            </NavLink>
         </ul>
     );
 }

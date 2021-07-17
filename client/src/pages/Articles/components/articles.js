@@ -12,7 +12,7 @@ import TheNorthernEcho from './articles/TheNorthernEcho';
 export const articles = [
     ListeningToTheVoicesOfSurvivors,
     AbuseKeptSecret,
-    SurvivorsOfSexualObuse,
+    // SurvivorsOfSexualObuse,
     ChildAbuseInquary,
     TheGuardianLetter,
     StHelensReporter,
