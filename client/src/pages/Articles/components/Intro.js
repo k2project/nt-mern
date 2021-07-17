@@ -17,8 +17,10 @@ export const Intro = () => {
                             subtitle: '',
                             title: (
                                 <span>
-                                    Writing about my <b> work </b> and{' '}
-                                    <b>experience</b>
+                                    Writing about my experience
+                                    <b> working</b> with
+                                    <b> trauma</b> and offender{' '}
+                                    <b>mental health</b>
                                 </span>
                             ),
                         }}
@@ -30,7 +32,7 @@ export const Intro = () => {
             </div>
             <div>
                 <div className='section__wrapper'>
-                    <p>
+                    {/* <p>
                         I am aware of the difficulties that some victims and
                         survivors of child sexual abuse face in finding
                         effective and compassionate psychological support with
@@ -39,7 +41,7 @@ export const Intro = () => {
                         victims and survivors are not being met. Access to
                         justice, accountability, reparation, and emotional
                         wellbeing remains out of reach for many.
-                    </p>
+                    </p> */}
                     <p>
                         As a past member of the Victims and Survivors’
                         Consultative Panel at the {iicsaLink} it remains my firm
