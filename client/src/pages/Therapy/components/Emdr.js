@@ -27,7 +27,7 @@ export const Emdr = memo(() => {
                             subtitle: '',
                             title: (
                                 <span>
-                                    What is the <b>EMDR </b> about?
+                                    What is <b>EMDR </b>?
                                 </span>
                             ),
                         }}
