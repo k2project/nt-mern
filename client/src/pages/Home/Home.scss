@@ -44,6 +44,9 @@
     top: -1rem;
     left: 0.7rem;
 }
+.ProfessionalBodies__logo.dbs {
+    display: none;
+}
 .Nujoji__pb_links {
     height: 4rem;
     margin: 2rem 0.2rem -1rem;
@@ -104,6 +107,9 @@
     .tp__logo {
         height: 5rem;
         margin-top: 1rem;
+    }
+    .ProfessionalBodies__logo.dbs {
+        display: inline-block;
     }
 }
 @media only screen and (max-width: 480px) {

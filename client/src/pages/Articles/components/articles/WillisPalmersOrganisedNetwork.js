@@ -1,10 +1,6 @@
 import React from 'react';
 import OuterLink from '../../../../components/links/OuterLink';
-import { TRUTH_PROJECT, IICSA } from '../../../../config';
-
-const truthProjectLink = (
-    <OuterLink href={TRUTH_PROJECT.urlHome} text={TRUTH_PROJECT.name} />
-);
+import { IICSA } from '../../../../config';
 
 const iicsaLink = <OuterLink href={IICSA.urlHome} text={IICSA.name} />;
 
@@ -16,7 +12,7 @@ export default {
     title: 'Inquiry into Child Sexual Abuse examines CSE by organised networks',
     summary:
         'A public hearing into child sexual exploitation by organised networks has been held by the Independent Inquiry into Child Sexual Abuse.',
-    date: '2021-07-18',
+    date: '2020-11-18',
     author: 'Willis Palmer',
     pseudoauthor: null,
     publication: 'Willis Palmer website',

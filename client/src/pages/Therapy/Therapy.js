@@ -8,6 +8,7 @@ import { IntegrativeTherapy } from './components/IntegrativeTherapy';
 import { FAQ } from './components/FAQ';
 import { Fees } from './components/Fees';
 import { Insurance } from './components/Insurance';
+import { Emdr } from './components/Emdr';
 
 import {
     TITLE_THERAPY,
@@ -43,6 +44,7 @@ class Therapy extends Component {
                     <TherapyIntro />
                     <IntegrativeTherapy />
                     <FAQ />
+                    <Emdr />
                     <Fees />
                     <Insurance />
                 </Page>

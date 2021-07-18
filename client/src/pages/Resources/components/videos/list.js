@@ -13,6 +13,7 @@ const video1 = {
     icon: video,
     thumbnail: 'emdr.png',
     cls: 'emdr',
+    id: 'emdr-video',
 };
 // const video1 = {
 //     title: 'Happiness',

@@ -2,13 +2,13 @@ import React from 'react';
 import './CardWithThumbnail.scss';
 
 export const CardWithThumbnail = ({ item }) => {
-    const { title, subtitle, summary, link, button, thumbnail } = item;
+    const { title, subtitle, summary, link, button, thumbnail, id } = item;
     const backgroundImage = thumbnail
         ? 'url(' + require('../../imgs/' + thumbnail) + ')'
         : 'none';
     return (
         <div className='cardWithThumbnail'>
-            <div className='cardWithThumbnail__desc'>
+            <div className='cardWithThumbnail__desc' id={id}>
                 <div className='cardWithThumbnail__title'>{title}</div>
                 <div className='cardWithThumbnail__subtitle'>{subtitle}</div>
                 <div>{summary}</div>
