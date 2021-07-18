@@ -35,10 +35,10 @@ export const Emdr = memo(() => {
                     <p>
                         <b>Eye Movement Desensitization and Reprocessing</b> is
                         a psychotherapy that helps people to recover from the
-                        symptoms and emotional distress leftover from
-                        frightening and overwhelming life experiences. It
-                        involves using side to side eye movements combined with
-                        talking therapy in a specific and structured format.
+                        symptoms and emotional distress leftover from upsetting
+                        and overwhelming life events. It involves using side to
+                        side eye movements combined with talking therapy in a
+                        specific and structured format.
                     </p>
                     <p>
                         EMDR requires specific training and specialist skills to
@@ -59,21 +59,14 @@ export const Emdr = memo(() => {
                         post-traumatic stress disorder but can also help with a
                         wide range of other mental health conditions such as
                         anxiety, depression, addictions, behavioural
-                        difficulties, relationship issues and even more enduring
-                        mental illnesses.
+                        difficulties, and relationship issues.
                     </p>
 
                     <p>
-                        Tipically, after the assessment of your current symptoms
-                        and your readiness for EMDR, as well as understanding
-                        how your past has impacted your present, we will start
-                        bilateral stimulation to help you access your
-                        unconscious mind and process the memory. This involves
-                        stimulating either side of your brain in a rhythmic
-                        left-right pattern achieved by making eye movements from
-                        side to side, listening to sounds in headphones that
-                        alternate from one ear to the other, or by tapping
-                        either side of your body.
+                        EMDR has a specific structure, and I will work through
+                        several stages with you. This includes a thorough
+                        assessment of your current symptoms and your readiness
+                        for EMDR.
                     </p>
                     <p>
                         Sessions are held weekly and last up to ninety minutes.
