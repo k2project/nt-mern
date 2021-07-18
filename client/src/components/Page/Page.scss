@@ -30,6 +30,9 @@
     padding: 6rem 1.3rem 3rem;
     text-align: center;
 }
+.NavLinks__link:last-child {
+    width: 7rem;
+}
 .NavLinks__link:nth-child(2) {
     width: 7.6rem;
 }

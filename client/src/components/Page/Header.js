@@ -44,32 +44,7 @@ class Header extends React.Component {
                                 </h1>
                                 <img src={logo} alt='' className='logo' />
                             </NavLink>
-                            {/* <h1> */}
-                            {/* <span
-                                    className={
-                                        this.props.page + '__color_themed'
-                                    }
-                                >
-                                  
-                                    Nujoji Calvocoressi
-                                </span> */}
-                            {/* <span className='Page__title-1'>
-                                    Psychotherapy
-                                </span>
-                                <span className='Page__title-2'>
-                                    &amp; Counselling
-                                </span>
-                                <span className='Page__title-3'>
-                                    Nujoji Calvocoressi
-                                </span> */}
-                            {/* </h1> */}
-                            {/* <h2>City of London &amp; West End</h2> */}
                         </div>
-                        {/* <img
-                            src={butterfly}
-                            alt=''
-                            className='Page__header-img'
-                        /> */}
                     </div>
                 </div>
             </header>
