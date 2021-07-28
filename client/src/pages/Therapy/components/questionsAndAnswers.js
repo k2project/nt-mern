@@ -139,7 +139,8 @@ export const questionsAndAnswers = [
                     will configure my settings to maximize this.
                 </p>
                 <p className='bullet-list'>
-                    <b id='tips'>TIPS. Please ensure that:</b>
+                    <b id='tips'>TIPS</b> <br />
+                    <b id='tips'>Please ensure that:</b>
                     <ul aria-labelledby='tips'>
                         <li>
                             {bullet}

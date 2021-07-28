@@ -64,7 +64,7 @@ export const Articles = () => {
     return (
         <DocumentMeta {...meta}>
             <Page page='Articles'>
-                <Intro />
+                {/* <Intro /> */}
                 <FeaturedArticles />
                 <OtherArticles />
             </Page>
