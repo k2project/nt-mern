@@ -139,7 +139,6 @@ export const questionsAndAnswers = [
                 </p>
                 <p className='bullet-list'>
                     <span className='bullet-list-banner'>
-                        <b id='tips'>TIPS</b> <br />
                         <b id='tips'>Please ensure that:</b>
                     </span>
                     <ul aria-labelledby='tips'>
