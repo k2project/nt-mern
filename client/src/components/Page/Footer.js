@@ -1,4 +1,5 @@
 import React from 'react';
+import FooterNavLinks from './FooterNavLinks';
 
 export default function Footer() {
     return (
@@ -9,9 +10,10 @@ export default function Footer() {
             >
                 Back To Top
             </button>
+            <FooterNavLinks />
             <p>
-                Nujoji Calvocoressi Psychotherapy & Counselling | City of London
-                & West End &copy; {new Date().getFullYear()}
+                Nujoji Calvocoressi Psychotherapy | City of London & West End
+                &copy; {new Date().getFullYear()}
             </p>
         </footer>
     );

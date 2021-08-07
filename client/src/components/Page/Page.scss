@@ -189,6 +189,19 @@ footer {
         font-size: 1rem;
     }
 }
+.FooterNavLinks {
+    padding: 1rem 0 0.7rem;
+    width: 90%;
+    margin: auto;
+}
+.FooterNavLinks__link {
+    display: inline-block;
+    padding: 0.7rem;
+}
+.FooterNavLinks__link:hover {
+    color: $COLOR_LINK;
+    text-decoration: underline;
+}
 
 @include desktop-sm {
     .Nav {
