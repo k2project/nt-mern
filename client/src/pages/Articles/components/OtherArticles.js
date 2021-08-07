@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { articles } from './articles';
 import { ArticleRow } from './ArticleRow';
 
-const LIMIT_ARTICLES_DISPLAY = 5;
+const LIMIT_ARTICLES_DISPLAY = 15;
 
 export const OtherArticles = () => {
     const others = articles

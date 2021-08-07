@@ -4,12 +4,12 @@ import FooterNavLinks from './FooterNavLinks';
 export default function Footer() {
     return (
         <footer>
-            <button
+            {/* <button
                 className='btn'
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
                 Back To Top
-            </button>
+            </button> */}
             <FooterNavLinks />
             <p>
                 Nujoji Calvocoressi Psychotherapy | City of London & West End

@@ -3,7 +3,7 @@ import './Bullet.scss';
 
 import logo from '../../imgs/butterfly.png';
 
-export const Bullet = ({ type = 'eyefish' }) => {
+export const Bullet = ({ type }) => {
     switch (type) {
         case 'img':
             return (
@@ -12,11 +12,15 @@ export const Bullet = ({ type = 'eyefish' }) => {
                 </span>
             );
         case 'square':
-            return <span>&#9635;</span>;
+            return <span className='bullet'>&#9635;</span>;
         case 'romboid':
-            return <span>&#x25C8;</span>;
+            return <span className='bullet'>&#x25C8;</span>;
+        case 'tick':
+            return <span className='bullet'>&#10004;</span>;
         case 'eyefish':
+            return <span className='bullet'>&#9673;</span>;
+
         default:
-            return <span>&#9673;</span>;
+            return <span className='bullet-circle' />;
     }
 };

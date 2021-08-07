@@ -14,7 +14,7 @@ const therapiesTypesLinkPsychodynamicRelationalConcepts = (
     <OuterLink href={BACP.therapiesTypesLinkUrl} text='relational concepts' />
 );
 
-const bullet = <Bullet type='img' />;
+const bullet = <Bullet type='circle' />;
 
 export const questionsAndAnswers = [
     {
@@ -138,8 +138,10 @@ export const questionsAndAnswers = [
                     will configure my settings to maximize this.
                 </p>
                 <p className='bullet-list'>
-                    <b id='tips'>TIPS</b> <br />
-                    <b id='tips'>Please ensure that:</b>
+                    <span className='bullet-list-banner'>
+                        <b id='tips'>TIPS</b> <br />
+                        <b id='tips'>Please ensure that:</b>
+                    </span>
                     <ul aria-labelledby='tips'>
                         <li>
                             {bullet}

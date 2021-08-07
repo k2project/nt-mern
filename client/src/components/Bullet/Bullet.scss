@@ -5,3 +5,15 @@
         top: 0.5rem;
     }
 }
+.bullet {
+    padding-right: 1rem;
+    color: #c5c5c5;
+}
+.bullet-circle {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    margin-right: 1rem;
+    border: solid 0.1rem #111;
+}
