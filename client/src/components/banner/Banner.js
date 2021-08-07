@@ -22,8 +22,7 @@ const Banner = () => {
                     <p>
                         Technology can contribute to an evolution in how people
                         receive therapy and during this time of uncertainty I
-                        will be offering all my counselling and psychotherapy
-                        sessions online.{' '}
+                        will be offering all my psychotherapy sessions online.{' '}
                     </p>
                     <button
                         className='btn'

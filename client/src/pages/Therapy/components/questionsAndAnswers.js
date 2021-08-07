@@ -18,7 +18,7 @@ const bullet = <Bullet type='img' />;
 
 export const questionsAndAnswers = [
     {
-        q: 'How can counselling and psychotherapy help?',
+        q: 'How can psychotherapy help?',
         a: (
             <Fragment>
                 <p>
@@ -30,29 +30,28 @@ export const questionsAndAnswers = [
                         onClick={(e) => e.stopPropagation()}
                         className='link'
                     >
-                        counselling and psychotherapy{' '}
+                        psychotherapy{' '}
                     </a>
                     isn’t about giving advice or telling people what to do.
-                    Instead it is about creating a <b>safer</b>, <b>calmer</b>{' '}
+                    Instead, it is about creating a <b>safer</b>, <b>calmer</b>,{' '}
                     and
                     <b> non-judgemental space</b> where you can reflect, explore
                     and understand the difficulties in your life.
                 </p>
                 <p>
-                    Counselling and psychotherapy can bring new levels of
+                    Psychotherapy can bring new levels of
                     <b> awareness</b> that make life feel easier to manage,
                     opening up the possibility of more choice and ways to be in
                     the world. There is strong evidence-based research that
-                    psychotherapy and counselling can be helpful.
+                    psychotherapy can be helpful.
                 </p>
                 <p>
-                    In my experience, psychotherapy and counselling is a
-                    collaborative process that works best if you engage with it
-                    over a period of time. There are many ways in which I
-                    believe counselling and psychotherapy helps; one example is
-                    that being able to <b>talk things through</b> with a well
-                    trained professional, someone other than your friends or
-                    family, can bring a sense of relief. We often{' '}
+                    In my experience, psychotherapy is a collaborative process
+                    that works best if you engage with it over a period of time.
+                    There are many ways in which I believe psychotherapy helps;
+                    one example is that being able to <b>talk things through</b>{' '}
+                    with a well-trained professional, someone other than your
+                    friends or family, can bring a sense of relief. We often{' '}
                     <b>hide our feelings</b> from those closest to us because of
                     our feelings of shame, fear of judgement and a wish not to
                     burden others.
@@ -66,8 +65,8 @@ export const questionsAndAnswers = [
             <Fragment>
                 <p>
                     I hold the view that each person is an individual and
-                    psychotherapy and counselling techniques are tailored to
-                    their <b>individual needs</b> and personal circumstances.
+                    psychotherapy techniques are tailored to their{' '}
+                    <b>individual needs</b> and personal circumstances.
                 </p>
                 <p>
                     I have trained as an{' '}
@@ -130,7 +129,7 @@ export const questionsAndAnswers = [
                     clinic can now benefit from therapy.
                 </p>
                 <p>
-                    I use Zoom as it is free, straightforward and encrypted.
+                    I use Zoom as it is free, straightforward, and encrypted.
                     Some clients are worried about security. The reality is that
                     nothing online can be guaranteed to be 100% secure.
                 </p>
@@ -214,7 +213,7 @@ export const questionsAndAnswers = [
                 </p>
                 <p>
                     In my practice I attempt to work in a way that appreciates,
-                    affirms and values <b>individual identities</b>,
+                    affirms, and values <b>individual identities</b>,
                     backgrounds, sameness and <b>difference</b>. My intention is
                     to be an anti-oppressive, inclusive therapist and to develop
                     an understanding of your unique experience.
@@ -238,7 +237,7 @@ export const questionsAndAnswers = [
     },
 
     {
-        q: 'How does counselling and psychotherapy work?',
+        q: 'How does psychotherapy work?',
         a: (
             <Fragment>
                 <p>
@@ -263,17 +262,17 @@ export const questionsAndAnswers = [
                     The <b>first session</b> is an opportunity for us to meet
                     and for me to find out a little bit more about you and your
                     difficulties. We will discuss what you would like to{' '}
-                    <b>achieve</b> from counselling and psychotherapy and you
-                    will have the opportunity to ask me <b>as many questions</b>{' '}
-                    as you need to feel more comfortable.
+                    <b>achieve</b> from psychotherapy and you will have the
+                    opportunity to ask me <b>as many questions</b> as you need
+                    to feel more comfortable.
                 </p>
                 <p>
                     After the first session, I will invite you to take some time
                     to think about whether I am <b>the right therapist</b> for
                     you. I completely understand if you would prefer to work
                     with another therapist or if you decide that the time is not
-                    quite right. The decision to start counselling and
-                    psychotherapy can be a difficult one and therapy works best{' '}
+                    quite right. The decision to start psychotherapy can be a
+                    difficult one and therapy works best{' '}
                     <b>when you feel ready</b>.
                 </p>
             </Fragment>
@@ -284,7 +283,7 @@ export const questionsAndAnswers = [
         a: (
             <Fragment>
                 <p>
-                    Yes, counselling and psychotherapy sessions are{' '}
+                    Yes, psychotherapy sessions are{' '}
                     <a
                         href='https://www.psychotherapy.org.uk/seeking-therapy/therapy-ethics-what-to-expect/'
                         target='_blank'
@@ -328,13 +327,13 @@ export const questionsAndAnswers = [
                 <p>
                     In my experience the <b>length of time varies</b>{' '}
                     considerably depending on the nature of your difficulties
-                    and what you hope to get out of counselling and
-                    psychotherapy. For some, a small number of sessions may be
-                    sufficient, however a period of a year or more would be more
-                    beneficial to deal with long lasting difficulties.
+                    and what you hope to get out of psychotherapy. For some, a
+                    small number of sessions may be sufficient, however a period
+                    of a year or more would be more beneficial to deal with long
+                    lasting difficulties.
                 </p>
                 <p>
-                    Some people may benefit from counselling and psychotherapy{' '}
+                    Some people may benefit from psychotherapy{' '}
                     <b>twice a week</b>. If you feel that you might, we can
                     discuss this. Many people prefer to work in an{' '}
                     <b>open-ended</b> way and to continue for as long as it
@@ -377,7 +376,7 @@ export const questionsAndAnswers = [
         a: <p>I do not work Saturdays, Sundays or public holidays.</p>,
     },
     {
-        q: 'Do you offer counselling and psychotherapy supervision?',
+        q: 'Do you offer psychotherapy supervision?',
         a: <p>I do not.</p>,
     },
     {

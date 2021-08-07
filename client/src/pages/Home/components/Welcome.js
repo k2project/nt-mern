@@ -25,10 +25,18 @@ export const Welcome = () => {
             <div>
                 <div className='section__wrapper'>
                     <p>
-                        It is natural to feel lost or confused when facing emotional difficulties, such as the ending of a relationship, when going through big change or you are feeling overwhelmed by past events. You are not alone if you are experiencing anxiety, unhelpful behaviours or you are feeling isolated. These are human experiences that we can all go through.
+                        It is natural to feel lost or confused when facing
+                        emotional difficulties, such as the ending of a
+                        relationship, when going through big change or you are
+                        feeling overwhelmed by past events. You are not alone if
+                        you are experiencing anxiety, unhelpful behaviours or
+                        you are feeling isolated. These are human experiences
+                        that we can all go through.
                     </p>
                     <p>
-                        Psychotherapy and counselling provides a calm and non-judgemental space where you can reflect, explore and deal with the difficulties in your life.
+                        Psychotherapy provides a calm and non-judgemental space
+                        where you can reflect, explore and deal with the
+                        difficulties in your life.
                     </p>
                     {/* <p>However you can always break the cycle of anger, anxiety, addiction, distrust and    unhealthy behaviour if you want. It all starts with you... Make a choice today!</p> */}
                     <Link to='/contact#form' className='btn' smooth>

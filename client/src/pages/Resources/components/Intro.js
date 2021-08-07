@@ -30,9 +30,9 @@ export const Intro = () => {
                 <div className='section__wrapper'>
                     <p>
                         The below selection is not designed to substitute
-                        counselling or psychotherapy, rather to support your
-                        curiosity and decision making about whether now is the
-                        right time for you to start therapy.
+                        psychotherapy, rather to support your curiosity and
+                        decision making about whether now is the right time for
+                        you to start therapy.
                     </p>
                     <div className='chair'>
                         <p>
