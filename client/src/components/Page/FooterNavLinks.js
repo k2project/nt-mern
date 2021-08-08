@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 
 export default function FooterNavLinks() {
     const { location } = window;
@@ -62,6 +63,14 @@ export default function FooterNavLinks() {
             >
                 Blog
             </NavLink>
+            <Link
+                to='/privacy-notice'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='FooterNavLinks__link'
+            >
+                Privacy Notice
+            </Link>
         </ul>
     );
 }

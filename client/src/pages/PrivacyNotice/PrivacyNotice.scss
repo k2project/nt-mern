@@ -30,6 +30,7 @@
 }
 .gdpr-summary-sublist li {
     list-style: lower-alpha;
+    list-style-position: inside;
 }
 
 .gdpr-summary-list a:hover,
@@ -66,6 +67,9 @@
     }
     .PrivacyNotice-main {
         padding-left: 0rem;
+        .wrapper {
+            padding-bottom: 5rem;
+        }
     }
 }
 

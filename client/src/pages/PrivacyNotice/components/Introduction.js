@@ -54,7 +54,7 @@ export default function Introduction() {
                 className='PrivacyNoticeIntro-list-with-roman-letters'
             >
                 <li>
-                    <abbr title='Roman numeral 3' aria-hidden='true'>
+                    <abbr title='Roman numeral 1' aria-hidden='true'>
                         I.
                     </abbr>
                     why I can process your information and what purpose I am
@@ -62,7 +62,7 @@ export default function Introduction() {
                 </li>
                 <li>
                     {' '}
-                    <abbr title='Roman numeral 3' aria-hidden='true'>
+                    <abbr title='Roman numeral 2' aria-hidden='true'>
                         II.
                     </abbr>
                     whether you must provide it to me.
@@ -75,7 +75,7 @@ export default function Introduction() {
                     how long I store it for.
                 </li>
                 <li>
-                    <abbr title='Roman numeral 3' aria-hidden='true'>
+                    <abbr title='Roman numeral 4' aria-hidden='true'>
                         IV.
                     </abbr>
                     whether there are other recipients of your personal
@@ -83,21 +83,21 @@ export default function Introduction() {
                 </li>
                 <li>
                     {' '}
-                    <abbr title='Roman numeral 3' aria-hidden='true'>
+                    <abbr title='Roman numeral 5' aria-hidden='true'>
                         V.
                     </abbr>
                     whether I intend to transfer it to another country.
                 </li>
                 <li>
                     {' '}
-                    <abbr title='Roman numeral 3' aria-hidden='true'>
+                    <abbr title='Roman numeral 6' aria-hidden='true'>
                         VI.
                     </abbr>
                     whether I do automated decision-making or profiling.
                 </li>
                 <li>
                     {' '}
-                    <abbr title='Roman numeral 3' aria-hidden='true'>
+                    <abbr title='Roman numeral 7' aria-hidden='true'>
                         VII.
                     </abbr>
                     your data protection rights.

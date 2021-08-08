@@ -36,6 +36,7 @@ export default function Summary() {
                     <li>
                         <NavLink
                             to='/privacy-notice#gdpr-initial-contact'
+                            smooth
                             exact
                         >
                             Initial contact
@@ -44,25 +45,75 @@ export default function Summary() {
                     <li>
                         <NavLink
                             to='/privacy-notice#gdpr-treatment-duration'
+                            smooth
                             exact
                         >
                             While you are accessing psychotherapy
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to='/privacy-notice#gdpr-treatment-end' exact>
+                        <NavLink
+                            to='/privacy-notice#gdpr-treatment-end'
+                            smooth
+                            exact
+                        >
                             After psychotherapy has ended
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to='/privacy-notice#gdpr-third-party' exact>
+                        <NavLink
+                            to='/privacy-notice#gdpr-third-party'
+                            smooth
+                            exact
+                        >
                             Third party recipients of personal data
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to='/privacy-notice#gdpr-qa' exact>
+                        <NavLink to='/privacy-notice#gdpr-qa' smooth exact>
                             Supervision, Professional Development and Quality
                             Assurance
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to='/privacy-notice#gdpr-disclosures'
+                            smooth
+                            exact
+                        >
+                            Disclosures Required or Permitted Under Law
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to='/privacy-notice#gdpr-your-rights'
+                            smooth
+                            exact
+                        >
+                            Your rights
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to='/privacy-notice#gdpr-data-security'
+                            smooth
+                            exact
+                        >
+                            Data security
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to='/privacy-notice#gdpr-visitors'
+                            smooth
+                            exact
+                        >
+                            Visitors to my website
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to='/privacy-notice#gdpr-YouTube' smooth exact>
+                            Integration of YouTube videos
                         </NavLink>
                     </li>
                 </ol>

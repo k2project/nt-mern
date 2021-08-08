@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-
+import { Link } from 'react-router-dom';
 import OuterLink from '../../../components/links/OuterLink';
 import { Bullet } from '../../../components/Bullet';
 import { BACP } from '../../../config';
@@ -299,7 +299,16 @@ export const questionsAndAnswers = [
                     danger. In this case I would discuss my concerns with you
                     and any other professionals that I might need to contact. I
                     would hope to do this, wherever possible,{' '}
-                    <b>with your agreement</b>.
+                    <b>with your agreement</b>. You can read my privacy notice{' '}
+                    <Link
+                        to='/privacy-notice'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        className='link'
+                    >
+                        here
+                    </Link>
+                    .
                 </p>
             </Fragment>
         ),

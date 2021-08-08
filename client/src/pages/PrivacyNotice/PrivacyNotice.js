@@ -21,6 +21,11 @@ import TreatmentDuration from './components/TreatmentDuration';
 import TreatmentEnd from './components/TreatmentEnd';
 import ThirdParty from './components/ThirdParty';
 import QA from './components/QA';
+import Disclosures from './components/Disclosures';
+import YourRights from './components/YourRights';
+import DataSecurity from './components/DataSecurity';
+import Visitors from './components/Visitors';
+import YTvideos from './components/YTvideos';
 
 const meta = {
     title: TITLE,
@@ -54,6 +59,11 @@ const PrivacyNotice = () => {
                         <TreatmentEnd />
                         <ThirdParty />
                         <QA />
+                        <Disclosures />
+                        <YourRights />
+                        <DataSecurity />
+                        <Visitors />
+                        <YTvideos />
                     </div>
                 </div>
             </Page>
