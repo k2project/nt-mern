@@ -8,7 +8,7 @@ export default function DataSecurity() {
             </h4>
             <p>
                 I take the security of the data I hold about you very seriously
-                and as such I take every effort to make sure it is kept secure.
+                and as such I take every effort to make sure it is kept secure.{' '}
                 <b>I use encrypted devices and a locked filing cabinet.</b>
             </p>
         </>

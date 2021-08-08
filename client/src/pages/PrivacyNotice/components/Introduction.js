@@ -46,7 +46,7 @@ export default function Introduction() {
             <p id='gdpr-intro-list'>
                 This privacy notice tells you what I will do with{' '}
                 <b>your personal information</b> from{' '}
-                <b>initial point of contact</b> through to after your
+                <b>initial point of contact</b> through to after your{' '}
                 <b>psychotherapy has ended</b>, including:
             </p>
             <ol
@@ -115,8 +115,8 @@ export default function Introduction() {
                 data. On this occasion, <b>the data controller is me</b>.
             </p>
             <p>
-                I am registered with the {ICO_Link}
-                registration number A8518835.
+                I am registered with the {ICO_Link} registration number
+                A8518835.
             </p>
             <p>
                 My telephone number is: <u>0208 675 9754</u>. My email address
