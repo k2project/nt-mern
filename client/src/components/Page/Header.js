@@ -37,13 +37,23 @@ class Header extends React.Component {
                             mobileMenuOpen={this.state.mobileMenuOpen}
                         />
                         <div className='Page__title'>
-                            <NavLink to='/' exact>
-                                <h1 className='sr-only'>
-                                    Nujoji Calvocoressi Psychotherapy and
-                                    Counselling
-                                </h1>
-                                <img src={logo} alt='' className='logo' />
-                            </NavLink>
+                            {this.props.headerContent ? (
+                                this.props.headerContent
+                            ) : (
+                                <>
+                                    <NavLink to='/' exact>
+                                        <h1 className='sr-only'>
+                                            Nujoji Calvocoressi Psychotherapy
+                                            and Counselling
+                                        </h1>
+                                        <img
+                                            src={logo}
+                                            alt=''
+                                            className='logo'
+                                        />
+                                    </NavLink>
+                                </>
+                            )}
                         </div>
                     </div>
                 </div>

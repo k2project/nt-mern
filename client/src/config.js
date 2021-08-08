@@ -17,8 +17,11 @@ export const UKCP = {
     acronym: 'UKCP',
     url: 'https://www.psychotherapy.org.uk/about-ukcp/',
     ethicsTitle: 'Code of Ethics and Professional Practice',
+    alternativeEthicsTitle: 'confidential',
     urlEthics:
         'https://www.psychotherapy.org.uk/seeking-therapy/therapy-ethics-what-to-expect/',
+    urlCodeOfEthics:
+        'https://www.psychotherapy.org.uk/media/bkjdm33f/ukcp-code-of-ethics-and-professional-practice-2019.pdf',
 };
 
 export const BACP = {

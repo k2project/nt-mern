@@ -6,6 +6,7 @@ import Therapy from './pages/Therapy/Therapy';
 import Contact from './pages/Contact/Contact';
 import Resources from './pages/Resources/Resources';
 import Articles from './pages/Articles/Articles';
+import PrivacyNotice from './pages/PrivacyNotice/PrivacyNotice';
 import SkipToMainContentLink from './components/SkipToMainContentLink';
 import Banner from './components/banner/Banner';
 
@@ -27,6 +28,11 @@ function App() {
                     <Route exact path={`/contact`} component={Contact} />
                     <Route exact path={`/resources`} component={Resources} />
                     <Route exact path={`/blog`} component={Articles} />
+                    <Route
+                        exact
+                        path={`/privacy-notice`}
+                        component={PrivacyNotice}
+                    />
                     <Route component={Home} />
                 </Switch>
             </Analytics>

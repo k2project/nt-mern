@@ -1,0 +1,78 @@
+@import './../../VarAndMIxins.scss';
+.PrivacyNotice-header {
+    padding: 6rem 1rem 0;
+
+    h1 {
+        font-size: 4.5rem;
+    }
+    h2 {
+        font-weight: 400;
+        padding-top: 1rem;
+    }
+}
+
+.PrivacyNotice-main {
+    padding: 4rem 0 5rem;
+    padding-left: 1rem;
+    li {
+        line-height: 1.8;
+    }
+}
+.gdpr-summary-list {
+    padding-left: 2rem;
+    padding-bottom: 3rem;
+}
+.gdpr-summary-list li {
+    list-style: number;
+}
+.gdpr-summary-sublist {
+    padding-left: 3rem;
+}
+.gdpr-summary-sublist li {
+    list-style: lower-alpha;
+}
+
+.gdpr-summary-list a:hover,
+.gdpr-summary-sublist a:hover {
+    color: $COLOR_LINK;
+    text-decoration: underline;
+}
+.PrivacyNotice-heading {
+    padding: 5rem 0 2rem;
+    font-size: 2rem;
+}
+.PrivacyNotice-subheading {
+    padding: 2rem 0 1rem;
+    font-size: 1.8rem;
+}
+.PrivacyNoticeIntro-list-with-roman-letters {
+    padding-left: 4rem;
+}
+.PrivacyNoticeIntro-list-with-roman-letters li {
+    // list-style: upper-roman;
+    // list-style-position: inside;
+    abbr {
+        width: 3rem;
+        display: inline-block;
+        border-bottom: none !important;
+        cursor: inherit !important;
+        text-decoration: none !important;
+    }
+}
+
+@include desktop-sm {
+    .PrivacyNotice-header {
+        padding: 10rem 0rem 0;
+    }
+    .PrivacyNotice-main {
+        padding-left: 0rem;
+    }
+}
+
+@include mobile {
+    .PrivacyNotice-header {
+        h1 {
+            font-size: 3.5rem;
+        }
+    }
+}
