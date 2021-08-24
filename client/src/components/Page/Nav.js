@@ -3,6 +3,7 @@ import React from 'react';
 import NavLinks from './NavLinks';
 import linkedin from './../../imgs/in.png';
 import fb from './../../imgs/fb.png';
+import MobileLink from '../../components/contactsLinks/MobileLink';
 
 export default function Nav({ toggleMobileMenu, mobileMenuOpen }) {
     return (
@@ -22,10 +23,8 @@ export default function Nav({ toggleMobileMenu, mobileMenuOpen }) {
                 </span>
             </button>
             <NavLinks toggleMobileMenu={toggleMobileMenu} />
-            <a href='tel:+442086759754' className='Nav__num'>
-                <span className='sr-only'>To book enquiries please call </span>
-                0208 675 9754
-            </a>
+            <MobileLink srText cls='Nav__num' />
+
             <a
                 href='http://www.linkedin.com/in/calvocoressi'
                 target='_blank'

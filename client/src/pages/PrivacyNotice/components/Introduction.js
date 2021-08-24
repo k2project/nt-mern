@@ -1,5 +1,7 @@
 import React from 'react';
 import OuterLink from '../../../components/links/OuterLink';
+import MobileLink from '../../../components/contactsLinks/MobileLink';
+import EmailLink from '../../../components/contactsLinks/EmailLink';
 
 const GDPR_Link = (
     <OuterLink
@@ -106,8 +108,8 @@ export default function Introduction() {
 
             <p>
                 I am happy to discuss any questions you might have about the
-                data protection policy, and you can contact me by email at
-                nujoji@calvocoressi.com.
+                data protection policy, and you can contact me by email at{' '}
+                {<EmailLink />}.
             </p>
             <p>
                 ‘Data controller’ is the term used to describe the person that
@@ -119,8 +121,8 @@ export default function Introduction() {
                 A8518835.
             </p>
             <p>
-                My telephone number is: <u>0208 675 9754</u>. My email address
-                is: nujoji@calvocoressi.com.
+                My telephone number is: <u>{<MobileLink />}</u>. My email
+                address is: {<EmailLink />}.
             </p>
         </>
     );

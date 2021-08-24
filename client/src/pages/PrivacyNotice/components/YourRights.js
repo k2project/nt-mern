@@ -1,6 +1,6 @@
 import React from 'react';
 import OuterLink from '../../../components/links/OuterLink';
-
+import EmailLink from '../../../components/contactsLinks/EmailLink';
 const link = (
     <OuterLink
         href='https://ico.org.uk/your-data-matters/'
@@ -69,8 +69,8 @@ export default function YourRights() {
             </p>
             <p>
                 To make a request for any personal information I may hold about
-                you, please put the request in writing addressing it to
-                nujoji@calvocoressi.com.
+                you, please put the request in writing addressing it to{' '}
+                {<EmailLink />}.
             </p>
             <p>
                 If you have a{' '}
