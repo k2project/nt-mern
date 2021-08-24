@@ -25,7 +25,7 @@ module.exports = (function() {
             return res.send({
                 success: false,
                 message:
-                    "Please enter a valid address or send an emial directly to georgie@calvocoressi.com."
+                    "Please enter a valid address or send an emial directly to nujoji@calvocoressi.com."
             });
         }
         const mobRegex = /^[+]?(\d+([- ])?)*$/;
