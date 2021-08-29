@@ -2,6 +2,7 @@ import React from 'react';
 import './App.scss';
 //list pages imports before router
 import Home from './pages/Home/Home';
+import Home2 from './pages/Home2/Home';
 import Therapy from './pages/Therapy/Therapy';
 import Contact from './pages/Contact/Contact';
 import Resources from './pages/Resources/Resources';
@@ -24,6 +25,7 @@ function App() {
                 {showBanner && <Banner />}
                 <Switch>
                     <Route exact path={`/`} component={Home} />
+                    <Route exact path={`/new-header`} component={Home2} />
                     <Route exact path={`/therapy`} component={Therapy} />
                     <Route exact path={`/contact`} component={Contact} />
                     <Route exact path={`/resources`} component={Resources} />
