@@ -2,7 +2,6 @@ import React from 'react';
 
 import NavLinks from './NavLinks';
 import linkedin from './../../imgs/in.png';
-import fb from './../../imgs/fb.png';
 import MobileLink from '../../components/contactsLinks/MobileLink';
 
 export default function Nav({ toggleMobileMenu, mobileMenuOpen }) {

@@ -3,8 +3,7 @@ import { NavHashLink as NavLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
 
 export default function FooterNavLinks() {
-    const { location } = window;
-    const scrollToTop = () => window.scrollTop(0);
+    const scrollToTop = () => window.scrollTo(0, 0);
     return (
         <ul className='FooterNavLinks' aria-label='footer navigation links'>
             <NavLink

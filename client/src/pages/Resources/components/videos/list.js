@@ -1,4 +1,3 @@
-import React from 'react';
 import video from '../../../../imgs/video.png';
 
 const video1 = {

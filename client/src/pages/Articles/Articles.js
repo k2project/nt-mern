@@ -6,7 +6,6 @@ import Page from '../../components/Page/Page';
 
 import { articles } from './components/articles';
 
-import { Intro } from './components/Intro';
 import { FeaturedArticles } from './components/FeaturedArticles';
 import { OtherArticles } from './components/OtherArticles';
 

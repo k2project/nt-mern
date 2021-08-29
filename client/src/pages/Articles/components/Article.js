@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import { ArticlePost } from './ArticlePost';
-import { articles } from './articles';
 
 export const Article = ({ article, odd = false }) => {
     // useEffect(() => {

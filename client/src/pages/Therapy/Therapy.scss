@@ -122,13 +122,14 @@
         width: 80%;
         max-width: 40rem;
     }
+    .Emdr .Therapy__bg_themed,
     .IntegrativeTherapy .Therapy__bg_themed {
         background: #fff;
     }
+    .Emdr,
     .IntegrativeTherapy .section__divider.white,
     .IntegrativeTherapy__bg_respect {
-        background: #f0e478;
-        background: #f6efad;
+        background: $THERAPY_COLOR;
     }
 
     .Insurance__logos {
