@@ -5,10 +5,12 @@
 
 .Page.Home2 .Page__header {
     min-height: 50rem;
-    background-color: transparent;
+    background-color: #f0f0f0;
+    color: #212121;
 
     .NewHeader {
-        padding-top: 11rem;
+        padding: 6rem 0 6rem;
+        text-align: center;
     }
     .blob {
         position: fixed;
@@ -16,24 +18,43 @@
         left: 0;
         width: 100vw;
         height: 100vh;
-        background-image: url('./../../imgs/blob2.gif');
+        // background-image: url('./../../imgs/blob2.gif');
         background-size: cover;
         opacity: 0.1;
         z-index: -1;
     }
 
     h1 {
-        font-size: 6rem;
+        font-size: 3.6rem;
+        margin-top: 12rem;
         font-weight: bold;
-
-        span {
-            color: darken($HOME_COLOR, 20);
-            display: inline-block;
-        }
     }
     h2 {
-        font-size: 6rem;
+        font-size: 18rem;
         font-weight: bolder;
+        text-transform: none;
+        span {
+            color: darken($HOME_COLOR, 10);
+            opacity: 0.8;
+        }
+    }
+    p {
+        font-size: 1.8rem;
+    }
+
+    .motyl {
+        border: solid 1px #212121;
+        width: 12rem;
+        padding: 1rem;
+        margin: 0 auto -2em;
+    }
+    .tangled {
+        width: 55rem;
+        position: absolute;
+        left: 40%;
+        top: -5rem;
+        opacity: 0.1;
+        transform: rotate(65deg);
     }
 }
 

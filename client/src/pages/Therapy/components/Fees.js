@@ -22,7 +22,7 @@ export const Fees = () => {
                     />
                     <p>
                         Regular weekly sessions are of 50 minutes duration, and
-                        are charged at £80 per session. I am happy to accept
+                        are charged at £95 per session. I am happy to accept
                         payment by debit or credit card, cash or bank transfer.
                     </p>
                     {/* <p>

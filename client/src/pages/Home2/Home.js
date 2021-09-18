@@ -55,10 +55,16 @@ const NewHeader = () => {
     return (
         <div className='NewHeader'>
             <div className='blob' />
-            <h2>Psychotherapy</h2>
-            <h1>
-                <span>Nujoji</span>Calvocoressi
-            </h1>
+            {/* <img src={motyl} className='motyl' alt='' /> */}
+
+            <h2>
+                {/* <img src={t} className='tangled' alt='' /> */}
+                {/* <span>ncp</span> */}
+            </h2>
+            {/* <h1>Nujoji Calvocoressi Psychotherapy</h1>
+            <p>
+                <i>Some inpsirational quote could go here...</i>
+            </p> */}
         </div>
     );
 };
