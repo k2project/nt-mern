@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { useLocation } from 'react-router-dom';
 import DocumentMeta from 'react-document-meta';
 import './Therapy.scss';
 import Page from '../../components/Page/Page';
@@ -36,20 +37,21 @@ const meta = {
     },
 };
 
-class Therapy extends Component {
-    render() {
-        return (
-            <DocumentMeta {...meta}>
-                <Page page='Therapy'>
-                    <TherapyIntro />
-                    <IntegrativeTherapy />
-                    <FAQ />
-                    <Emdr />
-                    <Fees />
-                    <Insurance />
-                </Page>
-            </DocumentMeta>
-        );
-    }
-}
+const Therapy = () => {
+    const { search } = useLocation();
+    const newHeader = search === '?new-header=true';
+
+    return (
+        <DocumentMeta {...meta}>
+            <Page page='Therapy' newHeader={newHeader}>
+                <TherapyIntro />
+                <IntegrativeTherapy />
+                <FAQ />
+                <Emdr />
+                <Fees />
+                <Insurance />
+            </Page>
+        </DocumentMeta>
+    );
+};
 export default Therapy;

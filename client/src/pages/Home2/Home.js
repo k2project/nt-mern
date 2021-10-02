@@ -54,17 +54,16 @@ export default Home2;
 const NewHeader = () => {
     return (
         <div className='NewHeader'>
-            <div className='blob' />
-            {/* <img src={motyl} className='motyl' alt='' /> */}
+            <h1>
+                {/* Nujoji <br />
+                Calvocoressi <br /> Psychotherapy */}
+                {/* Help <br /> Yourself */}
+                Sharing <br /> my story...
+            </h1>
 
-            <h2>
-                {/* <img src={t} className='tangled' alt='' /> */}
-                {/* <span>ncp</span> */}
-            </h2>
-            {/* <h1>Nujoji Calvocoressi Psychotherapy</h1>
             <p>
-                <i>Some inpsirational quote could go here...</i>
-            </p> */}
+                Nujoji Calvocoressi <br /> Psychotherapy
+            </p>
         </div>
     );
 };

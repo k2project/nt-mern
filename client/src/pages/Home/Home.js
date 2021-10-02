@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import DocumentMeta from 'react-document-meta';
+import { useLocation } from 'react-router-dom';
 
 import {
     TITLE,
@@ -35,18 +36,18 @@ const meta = {
     },
 };
 
-class Home extends Component {
-    render() {
-        return (
-            <DocumentMeta {...meta}>
-                <Page page='Home'>
-                    <Welcome />
-                    <About />
-                    <Nujoji />
-                    <ProfessionalBodies />
-                </Page>
-            </DocumentMeta>
-        );
-    }
-}
+const Home = () => {
+    const { search } = useLocation();
+    const newHeader = search === '?new-header=true';
+    return (
+        <DocumentMeta {...meta}>
+            <Page page='Home' newHeader={newHeader}>
+                <Welcome />
+                <About />
+                <Nujoji />
+                <ProfessionalBodies />
+            </Page>
+        </DocumentMeta>
+    );
+};
 export default Home;

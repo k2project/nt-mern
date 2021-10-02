@@ -1,6 +1,6 @@
 import React from 'react';
 import './Resources.scss';
-
+import { useLocation } from 'react-router-dom';
 import DocumentMeta from 'react-document-meta';
 import Page from '../../components/Page/Page';
 
@@ -42,10 +42,12 @@ const meta = {
     },
 };
 
-export const Resources = () => {
+const Resources = () => {
+    const { search } = useLocation();
+    const newHeader = search === '?new-header=true';
     return (
         <DocumentMeta {...meta}>
-            <Page page='Resources'>
+            <Page page='Resources' newHeader={newHeader}>
                 <Intro />
                 {/* books */}
                 <Attached />

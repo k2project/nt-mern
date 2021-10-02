@@ -142,9 +142,10 @@ class Contact extends Component {
         if (err) {
             formCls = 'Contact__form shake';
         }
+        const newHeader = window.location.search === '?new-header=true';
         return (
             <DocumentMeta {...meta}>
-                <Page page='Contact'>
+                <Page page='Contact' newHeader={newHeader}>
                     <Office />
                     <Directions />
                     <Form>
