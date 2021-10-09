@@ -1,6 +1,5 @@
 import React from 'react';
 import DocumentMeta from 'react-document-meta';
-import { useLocation } from 'react-router-dom';
 
 import {
     TITLE,
@@ -37,11 +36,9 @@ const meta = {
 };
 
 const Home = () => {
-    const { search } = useLocation();
-    const newHeader = search === '?new-header=true';
     return (
         <DocumentMeta {...meta}>
-            <Page page='Home' newHeader={newHeader}>
+            <Page page='Home'>
                 <Welcome />
                 <About />
                 <Nujoji />

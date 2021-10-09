@@ -1,6 +1,5 @@
 import React from 'react';
 import './Articles.scss';
-import { useLocation } from 'react-router-dom';
 
 import DocumentMeta from 'react-document-meta';
 import Page from '../../components/Page/Page';
@@ -38,8 +37,6 @@ let meta = {
 };
 
 const Articles = () => {
-    const { search } = useLocation();
-    const newHeader = search === '?new-header=true';
     const { location } = window;
     const { hash } = location;
     if (hash && articles[hash.slice(1)]) {
@@ -65,7 +62,7 @@ const Articles = () => {
     }
     return (
         <DocumentMeta {...meta}>
-            <Page page='Articles' newHeader={newHeader}>
+            <Page page='Articles'>
                 {/* <Intro /> */}
                 <FeaturedArticles />
                 <OtherArticles />
