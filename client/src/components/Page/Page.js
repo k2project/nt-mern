@@ -5,6 +5,7 @@ import Header from './Header';
 import Footer from './Footer';
 
 export default function Page({ page, headerContent, children, newHeader }) {
+    const cls = newHeader ? 'msin newH' : 'main';
     return (
         <div className={'Page ' + page}>
             <Header
@@ -12,7 +13,9 @@ export default function Page({ page, headerContent, children, newHeader }) {
                 headerContent={headerContent}
                 newHeader={newHeader}
             />
-            <main id='main'>{children}</main>
+            <main id='main' className={cls}>
+                {children}
+            </main>
             <Footer />
         </div>
     );
