@@ -1,6 +1,5 @@
 import React from 'react';
 import './Resources.scss';
-
 import DocumentMeta from 'react-document-meta';
 import Page from '../../components/Page/Page';
 
@@ -42,7 +41,7 @@ const meta = {
     },
 };
 
-export const Resources = () => {
+const Resources = () => {
     return (
         <DocumentMeta {...meta}>
             <Page page='Resources'>

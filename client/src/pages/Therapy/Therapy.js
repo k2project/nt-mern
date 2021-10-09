@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import DocumentMeta from 'react-document-meta';
 import './Therapy.scss';
 import Page from '../../components/Page/Page';
@@ -36,20 +36,18 @@ const meta = {
     },
 };
 
-class Therapy extends Component {
-    render() {
-        return (
-            <DocumentMeta {...meta}>
-                <Page page='Therapy'>
-                    <TherapyIntro />
-                    <IntegrativeTherapy />
-                    <FAQ />
-                    <Emdr />
-                    <Fees />
-                    <Insurance />
-                </Page>
-            </DocumentMeta>
-        );
-    }
-}
+const Therapy = () => {
+    return (
+        <DocumentMeta {...meta}>
+            <Page page='Therapy'>
+                <TherapyIntro />
+                <IntegrativeTherapy />
+                <FAQ />
+                <Emdr />
+                <Fees />
+                <Insurance />
+            </Page>
+        </DocumentMeta>
+    );
+};
 export default Therapy;

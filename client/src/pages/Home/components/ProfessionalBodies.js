@@ -13,13 +13,10 @@ const ukcpEthicsLink = (
     <OuterLink href={UKCP.urlEthics} text={UKCP.ethicsTitle} />
 );
 
-const EMDRlink = <OuterLink href={EMDR.url} text={EMDR.acronym} />;
-
 const professionalBodiesData = [
     {
         logo: ukcp,
-        link:
-            'https://www.psychotherapy.org.uk/therapist/nujoji-calvocoressi/?back%5Btherapist_name%5D=nujoji&amp;back%5Bsubmitted%5D=1&amp;back%5Bseed%5D=1054133881',
+        link: 'https://www.psychotherapy.org.uk/therapist/nujoji-calvocoressi/?back%5Btherapist_name%5D=nujoji&amp;back%5Bsubmitted%5D=1&amp;back%5Bseed%5D=1054133881',
         name: 'ukcp',
     },
     {
@@ -34,14 +31,12 @@ const professionalBodiesData = [
     },
     {
         logo: bacp,
-        link:
-            'https://www.bacp.co.uk/profile/8fb9f46e-e25c-e811-8108-3863bb351d40/therapist?location=City%20of%20London',
+        link: 'https://www.bacp.co.uk/profile/8fb9f46e-e25c-e811-8108-3863bb351d40/therapist?location=City%20of%20London',
         name: 'bacp',
     },
     {
         logo: dbs,
-        link:
-            'https://www.gov.uk/government/organisations/disclosure-and-barring-service/',
+        link: 'https://www.gov.uk/government/organisations/disclosure-and-barring-service/',
         name: 'dbs',
     },
 ];

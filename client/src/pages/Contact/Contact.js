@@ -5,7 +5,6 @@ import './Contact.scss';
 import Page from '../../components/Page/Page';
 import SectionTitle from '../../components/SectionTitle';
 
-import location from '../../imgs/location.png';
 import person from '../../imgs/person.png';
 import mail from '../../imgs/mail.png';
 import tel from '../../imgs/tel.png';
@@ -113,10 +112,9 @@ class Contact extends Component {
         })
             .then((res) => res.json())
             .then((json) => {
-                console.log('json', json);
-                const locationInputs = document.querySelectorAll(
-                    '.RadioInput__fake'
-                );
+                // console.log('json', json);
+                const locationInputs =
+                    document.querySelectorAll('.RadioInput__fake');
                 if (json.success) {
                     this.setState({
                         sent: true,

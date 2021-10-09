@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import DocumentMeta from 'react-document-meta';
 
 import {
@@ -35,18 +35,16 @@ const meta = {
     },
 };
 
-class Home extends Component {
-    render() {
-        return (
-            <DocumentMeta {...meta}>
-                <Page page='Home'>
-                    <Welcome />
-                    <About />
-                    <Nujoji />
-                    <ProfessionalBodies />
-                </Page>
-            </DocumentMeta>
-        );
-    }
-}
+const Home = () => {
+    return (
+        <DocumentMeta {...meta}>
+            <Page page='Home'>
+                <Welcome />
+                <About />
+                <Nujoji />
+                <ProfessionalBodies />
+            </Page>
+        </DocumentMeta>
+    );
+};
 export default Home;
