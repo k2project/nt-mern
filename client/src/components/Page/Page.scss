@@ -211,6 +211,7 @@ footer {
     background-size: 24rem;
     background-repeat: no-repeat;
     background-position: 80% 70%;
+    background-image: url('./../../imgs/dummy5.png');
     .Nav-desktop {
         background-color: rgba(255, 255, 255, 0.6);
     }
@@ -227,22 +228,22 @@ footer {
     }
 }
 
-.Page.Home .Page__header.newHeader {
-    background-image: url('./../../imgs/dummy4-min.png');
-    background-size: 23.7rem;
-}
-.Page.Therapy .Page__header.newHeader {
-    background-image: url('./../../imgs/dummy2-min.png');
-}
-.Page.Contact .Page__header.newHeader {
-    background-image: url('./../../imgs/dummy3-min.png');
-}
-.Page.Resources .Page__header.newHeader {
-    background-image: url('./../../imgs/dummy1-min.png');
-}
-.Page.Articles .Page__header.newHeader {
-    background-image: url('./../../imgs/dummy5.png');
-}
+// .Page.Home .Page__header.newHeader {
+//     background-image: url('./../../imgs/dummy4-min.png');
+//     background-size: 23.7rem;
+// }
+// .Page.Therapy .Page__header.newHeader {
+//     background-image: url('./../../imgs/dummy2-min.png');
+// }
+// .Page.Contact .Page__header.newHeader {
+//     background-image: url('./../../imgs/dummy3-min.png');
+// }
+// .Page.Resources .Page__header.newHeader {
+//     background-image: url('./../../imgs/dummy1-min.png');
+// }
+// .Page.Articles .Page__header.newHeader {
+//     background-image: url('./../../imgs/dummy5.png');
+// }
 
 @include desktop-sm {
     .Nav {

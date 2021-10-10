@@ -12,8 +12,8 @@ export default function Footer() {
             </button> */}
             <FooterNavLinks />
             <p>
-                Nujoji Calvocoressi Psychotherapy | City of London & West End
-                &copy; {new Date().getFullYear()}
+                Nujoji Calvocoressi Psychotherapy &copy;{' '}
+                {new Date().getFullYear()}
             </p>
         </footer>
     );

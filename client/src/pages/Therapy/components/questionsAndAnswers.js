@@ -139,7 +139,9 @@ export const questionsAndAnswers = [
                 </p>
                 <p className='bullet-list'>
                     <span className='bullet-list-banner'>
-                        <b id='tips'>Please ensure that:</b>
+                        <b id='tips'>
+                            For the best experience, please ensure that:
+                        </b>
                     </span>
                     <ul aria-labelledby='tips'>
                         <li>
@@ -387,7 +389,7 @@ export const questionsAndAnswers = [
     },
     {
         q: 'Do you offer psychotherapy supervision?',
-        a: <p>I do not.</p>,
+        a: <p>I offer online supervision to individuals and groups.</p>,
     },
     {
         q: "What if the time slot isn't convenient for both of us? ",

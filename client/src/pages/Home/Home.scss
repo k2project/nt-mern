@@ -53,14 +53,18 @@
 }
 
 .Nujoji .qualifications {
-    display: block;
-    padding-left: 4rem;
+    display: flex;
+    align-items: center;
+    // padding-left: 3.5rem;
     text-align: left;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
     img {
-        height: 3rem;
-        position: absolute;
-        left: 0rem;
-        top: 0rem;
+        height: 2.7rem;
+        margin-right: 0.7rem;
+        // position: absolute;
+        // left: 0rem;
+        // top: 0rem;
     }
 }
 .Nujoji .qualifications:nth-child(1) {
