@@ -6,7 +6,7 @@ export default function MobileLink({ srText = false, cls }) {
             {srText && (
                 <span className='sr-only'>To book enquiries please call </span>
             )}
-            0208 675 9754
+            02034 420 284
         </a>
     );
 }

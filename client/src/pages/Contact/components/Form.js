@@ -26,7 +26,7 @@ export const Form = (props) => {
                         <a href='tel:+442086759754'>
                             <span className='nowrap'>
                                 {' '}
-                                <b>0208 675 9754</b>
+                                <b>02034 420 284</b>
                             </span>
                         </a>
                         .{' '}
