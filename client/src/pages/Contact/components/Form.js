@@ -1,6 +1,7 @@
 import React from 'react';
 
 import SectionTitle from '../../../components/SectionTitle';
+import { PHONE } from '../../../config';
 
 export const Form = (props) => {
     return (
@@ -26,7 +27,7 @@ export const Form = (props) => {
                         <a href='tel:+442086759754'>
                             <span className='nowrap'>
                                 {' '}
-                                <b>02034 420 284</b>
+                                <b>{PHONE}</b>
                             </span>
                         </a>
                         .{' '}

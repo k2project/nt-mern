@@ -6,7 +6,7 @@ module.exports = (function () {
     const mailRoutes = require('express').Router();
 
     mailRoutes.post('/send', function (req, res) {
-        const { name, mail, mobile, location } = req.body;
+        const { name, mail, mobile, location, message } = req.body;
         if (!name) {
             return res.send({
                 success: false,
@@ -16,8 +16,7 @@ module.exports = (function () {
         if (!mail && !mobile) {
             return res.send({
                 success: false,
-                message:
-                    'Please enter at last one way to contact you or call me directly on  02034 420 284.',
+                message: 'Please enter at last one form of contact.',
             });
         }
         const emailRegex =
@@ -37,7 +36,14 @@ module.exports = (function () {
                     'Please enter a valid mobile number or call me directly on  02086759754.',
             });
         }
-        console.log(location);
+
+        if (!message) {
+            return res.send({
+                success: false,
+                message: 'Please tell me more about why you are reaching out.',
+            });
+        }
+
         if (!location) {
             return res.send({
                 success: false,
@@ -76,7 +82,9 @@ module.exports = (function () {
             req.body.mobile && req.body.mail
                 ? ' or call ' + req.body.mobile
                 : '';
-        text += '.';
+        text += '. Message received:" ';
+        text += req.body.message;
+        text += '".';
         const mailOptions = {
             from: process.env.MAIL_USER,
             to: process.env.MAIL_USER,

@@ -1,4 +1,5 @@
 import React from 'react';
+import { PHONE } from '../../config';
 
 export default function MobileLink({ srText = false, cls }) {
     return (
@@ -6,7 +7,7 @@ export default function MobileLink({ srText = false, cls }) {
             {srText && (
                 <span className='sr-only'>To book enquiries please call </span>
             )}
-            02034 420 284
+            {PHONE}
         </a>
     );
 }
