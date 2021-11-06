@@ -255,6 +255,8 @@
     opacity: 0;
     transform: scale(0.5);
     animation: slideIn 0.5s 0.5s cubic-bezier(0.1, 1.13, 0.7, 1.79) forwards;
+}
+.Form__message_err {
     display: flex;
     align-items: center;
     justify-content: center;
