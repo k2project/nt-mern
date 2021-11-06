@@ -82,7 +82,7 @@ module.exports = (function () {
             req.body.mobile && req.body.mail
                 ? ' or call ' + req.body.mobile
                 : '';
-        text += '. Message received:" ';
+        text += '. Message received:\n\n" ';
         text += req.body.message;
         text += '".';
         const mailOptions = {
