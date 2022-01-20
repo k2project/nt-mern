@@ -126,6 +126,7 @@
             font-weight: normal;
         }
     }
+    textarea,
     input {
         display: block;
         border: solid 0.1rem #111;
@@ -137,6 +138,9 @@
         padding: 1rem 1rem;
         padding-left: 3.7rem;
         font-family: $FONT_FAMILY_BODY;
+    }
+    textarea {
+        resize: none;
     }
     fieldset {
         display: block;
@@ -252,6 +256,11 @@
     transform: scale(0.5);
     animation: slideIn 0.5s 0.5s cubic-bezier(0.1, 1.13, 0.7, 1.79) forwards;
 }
+.Form__message_err {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .text_side {
     font-size: 1rem;
     margin-top: 1rem;
@@ -271,18 +280,16 @@
     }
 }
 .Form__message_err span {
-    background: rgba(255, 255, 255, 1);
+    background: rgba(255, 255, 255, 0.7);
     border-radius: 100%;
-    color: $CONTACT_COLOR;
+    // color: $CONTACT_COLOR;
     display: inline-block;
-    font-size: 1.6rem;
-    line-height: 2.5rem;
-    font-weight: bolder;
+    font-size: 3rem;
     height: 2.5rem;
-    margin-right: 0.5rem;
+    margin-right: 0.7rem;
     text-align: center;
     width: 2.5rem;
-    top: 0.2rem;
+    line-height: 1.25;
 }
 .Contact__form.shake {
     animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;

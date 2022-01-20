@@ -8,6 +8,7 @@ import SectionTitle from '../../components/SectionTitle';
 import person from '../../imgs/person.png';
 import mail from '../../imgs/mail.png';
 import tel from '../../imgs/tel.png';
+import pen from '../../imgs/pen7.png';
 import mailSent from '../../imgs/mailSent.png';
 
 import { Office } from './components/Office';
@@ -51,6 +52,7 @@ class Contact extends Component {
             name: '',
             mail: '',
             mobile: '',
+            message: '',
             err: '',
         };
 
@@ -89,6 +91,7 @@ class Contact extends Component {
         let name = stripHTML(t.name.value);
         let mail = stripHTML(t.mail.value);
         let mobile = stripHTML(t.mobile.value);
+        let message = stripHTML(t.message.value);
         let location = null;
 
         const locations = document.getElementsByName('location');
@@ -108,6 +111,7 @@ class Contact extends Component {
                 mail,
                 mobile,
                 location,
+                message,
             }),
         })
             .then((res) => res.json())
@@ -121,6 +125,7 @@ class Contact extends Component {
                         name: '',
                         mail: '',
                         mobile: '',
+                        message: '',
                         err: '',
                     });
 
@@ -165,10 +170,24 @@ class Contact extends Component {
                                         ),
                                     }}
                                 />
+                                {/* <p
+                                    className='Form__err'
+                                    style={{
+                                        color: 'crimson',
+                                        marginBottom: 80,
+                                    }}
+                                >
+                                    IMPORTANT NOTICE:
+                                    <br /> We are experiencing some issues with
+                                    our mail servers right now. Please send your
+                                    enquiries directly to
+                                    nujoji@calvocoressi.com.
+                                </p> */}
 
                                 <form
                                     className={formCls}
                                     onSubmit={this.handleSubmit}
+                                    autocomplete
                                 >
                                     <label htmlFor='name'>
                                         <img src={person} alt='' />
@@ -217,6 +236,20 @@ class Contact extends Component {
                                         id='mobile'
                                         onChange={this.handleChange}
                                         value={this.state.mobile}
+                                    />
+                                    <label htmlFor='message'>
+                                        <img src={pen} alt='' />
+                                        <b>*</b>
+                                        <span className='sr-only'>
+                                            Message: *
+                                        </span>
+                                    </label>
+                                    <textarea
+                                        name='message'
+                                        id='message'
+                                        onChange={this.handleChange}
+                                        value={this.state.message}
+                                        rows='4'
                                     />
                                     <fieldset className='Form__locations'>
                                         {/* <legend>
@@ -271,6 +304,7 @@ class Contact extends Component {
                                             Get In Touch
                                         </button>
                                     </div>
+
                                     {!err && (
                                         <div className='text_side text_cntr'>
                                             *REQUIRED FIELDS. Please choose at
@@ -280,7 +314,7 @@ class Contact extends Component {
                                     <div className='Form__err'>
                                         {err && (
                                             <p className='Form__message_err text_cntr'>
-                                                <span>!</span>
+                                                <span>*</span>
                                                 {err}
                                             </p>
                                         )}

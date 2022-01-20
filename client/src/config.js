@@ -1,3 +1,4 @@
+export const PHONE = '020 3442 0284';
 export const TRUTH_PROJECT = {
     name: 'Truth Project',
     urlHome: 'https://www.truthproject.org.uk/conclusion-truth-project',
