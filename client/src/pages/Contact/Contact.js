@@ -170,7 +170,7 @@ class Contact extends Component {
                                         ),
                                     }}
                                 />
-                                <p
+                                {/* <p
                                     className='Form__err'
                                     style={{
                                         color: 'crimson',
@@ -182,7 +182,7 @@ class Contact extends Component {
                                     our mail servers right now. Please send your
                                     enquiries directly to
                                     nujoji@calvocoressi.com.
-                                </p>
+                                </p> */}
 
                                 <form
                                     className={formCls}
