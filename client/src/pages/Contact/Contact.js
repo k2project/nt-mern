@@ -170,10 +170,24 @@ class Contact extends Component {
                                         ),
                                     }}
                                 />
+                                <p
+                                    className='Form__err'
+                                    style={{
+                                        color: 'crimson',
+                                        marginBottom: 80,
+                                    }}
+                                >
+                                    IMPORTANT NOTICE:
+                                    <br /> We are experiencing some issues with
+                                    our mail servers right now. Please send your
+                                    enquiries directly to
+                                    nujoji@calvocoressi.com.
+                                </p>
 
                                 <form
                                     className={formCls}
                                     onSubmit={this.handleSubmit}
+                                    autocomplete
                                 >
                                     <label htmlFor='name'>
                                         <img src={person} alt='' />
@@ -290,6 +304,7 @@ class Contact extends Component {
                                             Get In Touch
                                         </button>
                                     </div>
+
                                     {!err && (
                                         <div className='text_side text_cntr'>
                                             *REQUIRED FIELDS. Please choose at
