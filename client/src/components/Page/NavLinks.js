@@ -1,5 +1,4 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 
 export default function NavLinks({ toggleMobileMenu }) {
