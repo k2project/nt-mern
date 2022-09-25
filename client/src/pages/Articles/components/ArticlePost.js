@@ -44,8 +44,7 @@ export const ArticlePost = ({ article, onOpen, onClose, odd }) => {
                 {article.content}
                 <div className='Article-footer'>
                     <p>
-                        Read the original article{' '}
-                        <OuterLink href={article.sourceUrl} text='here' />.{' '}
+                        <OuterLink href={article.sourceUrl} text=' Read the original article here' />.{' '}
                     </p>
                     <button className='btn' onClick={() => onClose(article.id)}>
                         Close
