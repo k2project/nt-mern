@@ -9,6 +9,7 @@ import person from '../../imgs/person.png';
 import mail from '../../imgs/mail.png';
 import tel from '../../imgs/tel.png';
 import mailSent from '../../imgs/mailSent.png';
+import questionMark from '../../imgs/question-mark.png';
 
 import { Office } from './components/Office';
 import { Directions } from './components/Directions';
@@ -150,6 +151,11 @@ class Contact extends Component {
                     <Form>
                         {!sent && (
                             <Fragment>
+                                <img
+                                    src={questionMark}
+                                    alt=''
+                                    className='question-mark'
+                                />
                                 <SectionTitle
                                     data={{
                                         divider: '',

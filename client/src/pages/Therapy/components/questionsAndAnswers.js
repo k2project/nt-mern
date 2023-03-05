@@ -338,11 +338,11 @@ export const questionsAndAnswers = [
             <Fragment>
                 <p>
                     In my experience the <b>length of time varies</b>{' '}
-                    considerably depending on the nature of your difficulties
-                    and what you hope to get out of psychotherapy. For some, a
-                    small number of sessions may be sufficient, however a period
-                    of a year or more would be more beneficial to deal with long
-                    lasting difficulties.
+                    varies considerably depending on the nature of your
+                    difficulties and what you hope to get out of psychotherapy.
+                    For some, a small number of sessions may be sufficient,
+                    however a period of a year or more would be more beneficial
+                    to deal with long lasting difficulties.
                 </p>
                 <p>
                     Some people may benefit from psychotherapy{' '}
@@ -378,7 +378,7 @@ export const questionsAndAnswers = [
         q: 'Can I have an evening appointment?',
         a: (
             <p>
-                I work in the <b>evenings</b>. I do not work Saturdays, Sundays
+                I work in the <b>evenings</b>. I do not work Saturdays, Sundays,
                 or public holidays.
             </p>
         ),
@@ -388,15 +388,23 @@ export const questionsAndAnswers = [
         a: <p>I do not work Saturdays, Sundays or public holidays.</p>,
     },
     {
-        q: 'Do you offer psychotherapy supervision?',
-        a: <p>I offer online supervision to individuals and groups.</p>,
+        q: 'Do you offer psychotherapy clinical supervision?',
+        a: (
+            <p>
+                Yes, I hold a diploma in supervision obtained at the Institute
+                of Group Analysis. I offer online supervision to individuals and
+                groups. I have experience supervising psychotherapists, people
+                working with a therapeutic intention, and emergency service
+                workers.
+            </p>
+        ),
     },
     {
         q: "What if the time slot isn't convenient for both of us? ",
         a: (
             <p>
-                I am in contact with a number of other well qualified therapists
-                in London who might provide a suitable alternative.
+                I am in contact with several other well qualified therapists in
+                London who might provide a suitable alternative.
             </p>
         ),
     },

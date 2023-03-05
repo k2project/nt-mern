@@ -1,4 +1,5 @@
 @import './../../VarAndMIxins.scss';
+
 .Home__bg_hello {
     // background-image: url('./../../imgs/hello.png');
     background-position: bottom right;
@@ -52,20 +53,31 @@
     margin: 2rem 0.2rem -1rem;
 }
 
-.Nujoji .qualifications {
-    display: flex;
+.qualification-num {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    display: inline-flex;
+    justify-content: center;
     align-items: center;
+    margin-right: 1rem;
+    border: solid 1px #e5e5e5;
+}
+.Nujoji .qualifications {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    margin-top: -1rem;
     // padding-left: 3.5rem;
-    text-align: left;
-    line-height: 1.5;
-    margin-bottom: 0.5rem;
-    img {
-        height: 2.7rem;
-        margin-right: 0.7rem;
-        // position: absolute;
-        // left: 0rem;
-        // top: 0rem;
-    }
+    // text-align: left;
+    // line-height: 1.5;
+    // img {
+    //     height: 2.7rem;
+    //     margin-right: 0.7rem;
+    //     // position: absolute;
+    //     // left: 0rem;
+    //     // top: 0rem;
+    // }
 }
 .Nujoji .qualifications:nth-child(1) {
     margin-top: -0.7rem;

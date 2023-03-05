@@ -63,11 +63,10 @@ export const Insurance = () => {
                 <div className='Insurance__logos'>{logos}</div>
                 <p>
                     If you have a private health insurance policy, it is often
-                    possible that you can fund some or all of your counselling
-                    and psychotherapy sessions through your health insurance
-                    policy. I am recognised with a number of medical insurers
-                    including Aetna, Aviva, Axa PPP, Cigna, Healix, Validium and
-                    Vitality Health.{' '}
+                    possible that you can fund some or all your psychotherapy
+                    sessions through your health insurance policy. I am
+                    recognised with several medical insurers including Aetna,
+                    Aviva, Axa PPP, Cigna, Healix, Validium and Vitality Health.
                 </p>
             </div>
         </div>

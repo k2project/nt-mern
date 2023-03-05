@@ -13,7 +13,7 @@ export const Form = (props) => {
                             subtitle: '',
                             title: (
                                 <span>
-                                    <b>Talking</b> can be a good place to{' '}
+                                    <b>Talking</b> is a good place to{' '}
                                     <b>start</b>
                                 </span>
                             ),

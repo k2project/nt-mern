@@ -40,7 +40,8 @@ export const Office = () => {
                             subtitle: '',
                             title: (
                                 <span>
-                                    A <b>calm</b> and <b>confidential</b> place
+                                    A <b>calm</b> place
+                                    <br /> to <b>think</b>
                                 </span>
                             ),
                         }}

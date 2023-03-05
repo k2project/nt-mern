@@ -29,17 +29,17 @@ export const TherapyIntro = () => {
             <div className='Therapy__bg_themed'>
                 <div className='section__wrapper'>
                     <p>
-                        It is perfectly natural to feel hesitant or worried
-                        about seeking help. For many people, asking for help can
-                        feel a huge step to take.
+                        It is natural to feel uncertain or worried about seeking
+                        help. For many people, asking for help can feel a big
+                        step to take.
                     </p>
                     <p>
-                        It is equally common to feel apprehensive about
-                        beginning therapy after a previously unhelpful or
-                        disappointing experience.
+                        It is equally common to feel apprehensive about starting
+                        therapy after a previously unhelpful or disappointing
+                        experience.
                     </p>
                     <p>
-                        Furthermore, there are many different therapeutic
+                        In addition, there are many different therapeutic
                         approaches available, making it confusing to decide
                         which one is best suited for you.
                     </p>
