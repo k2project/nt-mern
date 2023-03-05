@@ -33,18 +33,18 @@ export const Emdr = memo(() => {
                         }}
                     />
                     <p>
-                        <b>Eye Movement Desensitization and Reprocessing</b> is
-                        a psychotherapy that helps people to recover from the
-                        symptoms and emotional distress leftover from upsetting
-                        and overwhelming life events. It involves using side to
-                        side eye movements combined with talking therapy in a
-                        specific and structured format.
+                        <b>Eye Movement Desensitization and Reprocessing</b>
+                        Reprocessing is a psychotherapy that helps people to
+                        recover from the symptoms and emotional distress
+                        leftover from upsetting and overwhelming life events. It
+                        involves using side to side eye movements combined with
+                        psychotherapy in a specific and structured format.
                     </p>
                     <p>
                         EMDR requires specific training and specialist skills to
                         deliver it safely and competently. It is recognised by
-                        the {NIHCElink} and the {WHOlink} as a treatment for
-                        PTSD.
+                        the National {NIHCElink} and the {WHOlink} as a
+                        treatment for PTSD.
                     </p>
 
                     <Link to='/resources#emdr-video' className='btn' smooth>
@@ -56,17 +56,16 @@ export const Emdr = memo(() => {
                 <div className='section__wrapper'>
                     <p>
                         EMDR was originally developed for treating
-                        post-traumatic stress disorder but can also help with a
-                        wide range of other mental health conditions such as
-                        anxiety, depression, addictions, behavioural
+                        post-traumatic stress disorder (PTSD) but can also help
+                        with a wide range of other mental health conditions such
+                        as anxiety, depression, addictions, behavioural
                         difficulties, and relationship issues.
                     </p>
 
                     <p>
-                        EMDR has a specific structure, and I will work through
-                        several stages with you. This includes a thorough
-                        assessment of your current symptoms and your readiness
-                        for EMDR.
+                        EMDR has a specific structure, working through several
+                        stages together. This includes a thorough assessment of
+                        your current symptoms and your readiness for EMDR.
                     </p>
                     <p>
                         Sessions are held weekly and last up to ninety minutes.

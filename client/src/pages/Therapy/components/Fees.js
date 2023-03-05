@@ -21,14 +21,11 @@ export const Fees = () => {
                         }}
                     />
                     <p>
-                        Regular weekly sessions are of 50 minutes duration, and
-                        are charged at £95 per session. I am happy to accept
-                        payment by debit or credit card, cash or bank transfer.
+                        Regular weekly sessions are of 50 minutes duration and
+                        are charged at £80 per session. I am happy to accept
+                        payment by debit or credit card, cash, or bank transfer.
                     </p>
-                    {/* <p>
-                        I also keep a couple of lower priced places for those
-                        who have difficulty in being able to afford therapy.
-                    </p> */}
+
                     <Link to='/contact#form' className='btn' smooth>
                         Get In Touch
                     </Link>
@@ -38,11 +35,11 @@ export const Fees = () => {
                 <div className='section__wrapper'>
                     <p>
                         All therapy sessions are chargeable including the
-                        initial consultation. Some therapists offer a reduced
+                        initial consultations. Some therapists offer a reduced
                         fee or initial consultation at no charge. I feel the
                         first session is an important part of our work and I
                         provide the same level of service during that session as
-                        all others so my charges reflect this.
+                        all others, so my fee reflects this.
                     </p>
                     <p>
                         Our initial sessions are an opportunity for us to meet
@@ -54,9 +51,9 @@ export const Fees = () => {
                         on a regular day and time to meet on an ongoing basis.
                         Regular sessions are necessary to facilitate and give
                         momentum to the therapeutic process. Many people find
-                        that regular meetings provide a sense of internal
-                        calmness and continuity whilst they are working on their
-                        emotional difficulties.
+                        that regular meetings provide a sense of calmness and
+                        continuity whilst they are working on their emotional
+                        difficulties.
                     </p>
                 </div>
             </div>
