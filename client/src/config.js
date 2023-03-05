@@ -35,3 +35,7 @@ export const EMDR = {
     acronym: 'EMDR UK',
     url: 'https://emdrassociation.org.uk',
 };
+export const IGA = {
+    acronym: 'Institute of Group Analysis',
+    url: 'https://www.groupanalysis.org/',
+};

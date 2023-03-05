@@ -22,14 +22,14 @@ export const About = () => {
                     />
 
                     <p>
-                        Hello, my name is Nujoji, and I am a psychotherapist
-                        working in London and{' '}
+                        Hello, my name is Nujoji, and I am a psychotherapist and
+                        clinical supervisor working in London, Brighton and{' '}
                         <Link to='/therapy#online' smooth className='link'>
                             online
                         </Link>
                         . I am passionate about my work, and I firmly believe
-                        that therapy can bring about positive change to people's
-                        lives.
+                        that therapy can bring about positive change to
+                        people&#39;s lives.
                     </p>
                     <Link
                         to='/therapy#integrative-therapy'

@@ -27,15 +27,15 @@ export const Welcome = () => {
                     <p>
                         It is natural to feel lost or confused when facing
                         emotional difficulties, such as the ending of a
-                        relationship, when going through big change or you are
+                        relationship, while going through change or you are
                         feeling overwhelmed by past events. You are not alone if
                         you are experiencing anxiety, unhelpful behaviours or
-                        you are feeling isolated. These are human experiences
-                        that we can all go through.
+                        you are feeling isolated. These are experiences that we
+                        can all go through.
                     </p>
                     <p>
                         Psychotherapy provides a calm and non-judgemental space
-                        where you can reflect, explore and deal with the
+                        where you can reflect, explore, and deal with the
                         difficulties in your life.
                     </p>
                     {/* <p>However you can always break the cycle of anger, anxiety, addiction, distrust and    unhealthy behaviour if you want. It all starts with you... Make a choice today!</p> */}

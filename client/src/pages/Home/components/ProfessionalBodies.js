@@ -66,10 +66,9 @@ export const ProfessionalBodies = () => {
                     I am a registered member of the United Kingdom Council for
                     Psychotherapy (UKCP) and adhere to their {ukcpEthicsLink}. I
                     am a member of the International Association for Forensic
-                    Psychotherapy (IAFP) and the British Association of
-                    Counsellors and Psychotherapists (BACP). I am a trainee
-                    member of EMDR UK. I hold an enhanced certificate from the
-                    Disclosure and Barring Service.
+                    Psychotherapy (IAFP) and a trainee member of EMDR UK. I hold
+                    an enhanced certificate from the Disclosure and Barring
+                    Service.
                 </p>
             </div>
         </div>

@@ -1,12 +1,13 @@
 import React from 'react';
 import { NavHashLink as Link } from 'react-router-hash-link';
 import SectionTitle from '../../../components/SectionTitle';
-import graduation from './../../../imgs/diploma2-min.png';
+// import graduation from './../../../imgs/diploma2-min.png';
 import OuterLink from '../../../components/links/OuterLink';
-import { UKCP, BACP } from '../../../config';
+import { UKCP, BACP, IGA } from '../../../config';
 
 const ukcpLink = <OuterLink href={UKCP.url} text={UKCP.acronym} />;
 const bacpLink = <OuterLink href={BACP.url} text={BACP.acronym} />;
+const igaLink = <OuterLink href={IGA.url} text={IGA.acronym} />;
 
 const therapiesTypesLinkPsychodynamic = (
     <OuterLink href={BACP.therapiesTypesLinkUrl} text='psychodynamic' />
@@ -27,7 +28,7 @@ const theAFNC = (
 const EMDR = (
     <OuterLink
         href='https://emdrassociation.org.uk/become-an-accredited-therapist/training/standard-accredited/'
-        text='standard accredited training'
+        text='EMDR UK'
     />
 );
 
@@ -64,67 +65,9 @@ export const Nujoji = () => {
                         informed by {therapiesTypesLinkPsychodynamic} and{' '}
                         {therapiesTypesLinkPsychodynamicAttachmentTheory},{' '}
                         {therapiesTypesLinkPsychodynamicRelationalConcepts} and
-                        underpinned with a trauma informed model.
+                        underpinned by a trauma informed model.
                     </p>
-                    {/* <p>
-                        The therapeutic relationship I develop with you is an
-                        important part of how I work.
-                        <Link
-                            to='/therapy/#integrative-therapy'
-                            className='link'
-                        >
-                            {' '}
-                            Integrative psychotherapy{' '}
-                        </Link>
-                        combines elements drawn from different schools of
-                        psychological theory and research to become a flexible
-                        and inclusive approach. My practice is particularly
-                        informed by{' '}
-                        <a
-                            href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/#psychodynamic'
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='link'
-                        >
-                            psychodynamic
-                        </a>{' '}
-                        and{' '}
-                        <a
-                            href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/#attachment-based-psychotherapy'
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='link'
-                        >
-                            attachment theory
-                        </a>
-                        ,{' '}
-                        <a
-                            href='https://www.psychotherapy.org.uk/what-is-psychotherapy/types-of-psychotherapy/#relational'
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='link'
-                        >
-                            relational concepts
-                        </a>{' '}
-                        and underpinned with a trauma informed model. My
-                        approach fits the needs and personal circumstances of
-                        each person.
-                    </p> */}
 
-                    {/* <p>
-                        The people who come to my practice hold many different
-                        beliefs and come from all walks of life, including those
-                        identifying on the
-                        <Link to='/therapy/#inclusive-therapy' className='link'>
-                            {' '}
-                            spectrum of gender, sexuality and relationship
-                            diversity
-                        </Link>
-                        . I also work as a senior psychotherapist in the
-                        National Health Service with men in the secure forensic
-                        estate who engage in violent, harmful and criminal
-                        behaviour.
-                    </p> */}
                     <p>
                         The people who come to my practice hold many different
                         beliefs and come from all walks of life, including those
@@ -136,18 +79,17 @@ export const Nujoji = () => {
                         .
                     </p>
                     <p>
-                        I also work as a senior psychotherapist in the National
-                        Health Service with men in the secure forensic estate
-                        who engage in violent, harmful and criminal behaviour.
+                        Alongside my independent practice, I work as a visiting
+                        lecturer on a psychotherapy postgraduate training. I
+                        also conduct a therapy group for women in prison
+                        convicted of violent crimes. Previously, I have worked
+                        as a senior psychotherapist in the NHS with men in the
+                        secure forensic estate who engage in violent, harmful,
+                        and criminal behaviour.
                     </p>
                 </div>
             </div>
             <div>
-                {/* <img
-                    src={require('./../../imgs/homeText.pt2.png')}
-                    alt='Nujoji Calvocoressi'
-                    className='Page__top_img part2'
-                /> */}
                 <div className='section__wrapper'>
                     <p>
                         {' '}
@@ -175,9 +117,8 @@ export const Nujoji = () => {
                             /> */}
                             <span className='qualification-num'>1</span>
                             <p>
-                                {' '}
-                                Master of Arts degree in Counselling and
-                                Psychotherapy
+                                Master of Arts degree in psychotherapy and
+                                counselling
                             </p>
                         </li>
                         <li className='qualifications'>
@@ -188,8 +129,8 @@ export const Nujoji = () => {
                             /> */}
                             <span className='qualification-num'>2</span>
                             <p>
-                                Advanced Post Graduate Diploma in Counselling
-                                and Psychotherapy
+                                Advanced post graduate diploma in psychotherapy
+                                and counselling
                             </p>
                         </li>
                         <li className='qualifications'>
@@ -203,12 +144,17 @@ export const Nujoji = () => {
                         </li>
                     </ul>
                     <p>
+                        I obtained a postgraduate diploma in clinical
+                        supervision at the {igaLink}.
+                    </p>
+                    <p>
                         I have also undertaken further training in
-                        Mentalization-Based Treatment training at {theAFNC}. I
-                        am also completing an EMDR UK {EMDR} to deliver Eye
-                        Movement Desensitisation and Reprocessing which is a
-                        powerful therapy designed to help people recover from
-                        traumatic events.
+                        Mentalization-Based Treatment training to support people
+                        with personality difficulties at the {theAFNC}. I am
+                        also completing an {EMDR} standard accredited training
+                        to deliver Eye Movement Desensitisation and Reprocessing
+                        which is a powerful therapy designed to help people
+                        recover from adverse experiences.
                     </p>
                 </div>
             </div>
