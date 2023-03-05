@@ -14,8 +14,8 @@ export const Welcome = () => {
                             subtitle: '',
                             title: (
                                 <span>
-                                    <b>Change</b> happens when you allow
-                                    yourself to look at life in a <b>new way</b>
+                                    <b>Change</b> HAPPENS WHEN DO SOMETHING{' '}
+                                    <b>DIFFERENT</b>
                                 </span>
                             ),
                         }}

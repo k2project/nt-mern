@@ -22,6 +22,8 @@ import {
     KEYWORDS_RESOURCES,
     OG_IMG_HOME,
 } from '../../metaData';
+import TravelsWithEpicurus from './components/books/TravelsWithEpicurus';
+import British from './components/books/British';
 
 const meta = {
     title: TITLE_RESOURCES,
@@ -48,9 +50,11 @@ const Resources = () => {
                 <Intro />
                 {/* books */}
                 <Attached />
-                <Tiger />
+                {/* <Tiger /> */}
                 <Encyclopaedia />
-                <WhenTheBodySaysNo />
+                {/* <WhenTheBodySaysNo /> */}
+                <TravelsWithEpicurus />
+                <British />
                 {/* videos */}
                 <Videos />
                 {/* podcasts */}

@@ -15,8 +15,9 @@ export const Intro = () => {
                             subtitle: '',
                             title: (
                                 <span>
-                                    Looking for a{' '}
-                                    <b>written, visual or audible</b> resource?
+                                    An
+                                    <b> introduction</b>
+                                    <br /> to <b>therapy</b>
                                 </span>
                             ),
                         }}

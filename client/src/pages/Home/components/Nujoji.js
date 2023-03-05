@@ -42,8 +42,7 @@ export const Nujoji = () => {
                             subtitle: '',
                             title: (
                                 <span>
-                                    Two people <b>sitting</b> down{' '}
-                                    <b>together</b>
+                                    Two people <br /> <b>THINKING TOGETHER</b>
                                 </span>
                             ),
                         }}
@@ -167,34 +166,42 @@ export const Nujoji = () => {
                         professional bodies the {ukcpLink} and {bacpLink}.
                     </p>
                     <p>I obtained the following qualifications:</p>
-                    <p>
-                        <span className='qualifications'>
-                            <img
+                    <ul>
+                        <li className='qualifications'>
+                            {/* <img
                                 src={graduation}
                                 alt=''
                                 className='graduation'
-                            />
-                            Master of Arts degree in Counselling and
-                            Psychotherapy
-                        </span>
-                        <span className='qualifications'>
-                            <img
+                            /> */}
+                            <span className='qualification-num'>1</span>
+                            <p>
+                                {' '}
+                                Master of Arts degree in Counselling and
+                                Psychotherapy
+                            </p>
+                        </li>
+                        <li className='qualifications'>
+                            {/* <img
                                 src={graduation}
                                 alt=''
                                 className='graduation'
-                            />
-                            Advanced Post Graduate Diploma in Counselling and
-                            Psychotherapy
-                        </span>
-                        <span className='qualifications'>
-                            <img
+                            /> */}
+                            <span className='qualification-num'>2</span>
+                            <p>
+                                Advanced Post Graduate Diploma in Counselling
+                                and Psychotherapy
+                            </p>
+                        </li>
+                        <li className='qualifications'>
+                            {/* <img
                                 src={graduation}
                                 alt=''
                                 className='graduation'
-                            />
-                            Diploma in Counselling
-                        </span>
-                    </p>
+                            /> */}
+                            <span className='qualification-num'>3</span>
+                            <p>Diploma in Counselling</p>
+                        </li>
+                    </ul>
                     <p>
                         I have also undertaken further training in
                         Mentalization-Based Treatment training at {theAFNC}. I

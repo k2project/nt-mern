@@ -1,6 +1,6 @@
 {
-    "name": "Psychotherapy",
-    "short_name": "Psychotherapy",
+    "name": "Calvocoressi Psychotherapy",
+    "short_name": "Calvocoressi Psychotherapy",
     "icons": [
         {
             "src": "/favicon/android-chrome-192x192.png",
@@ -8,8 +8,8 @@
             "type": "image/png"
         },
         {
-            "src": "/favicon/android-chrome-256x256.png",
-            "sizes": "256x256",
+            "src": "/favicon/android-chrome-384x384.png",
+            "sizes": "384x384",
             "type": "image/png"
         }
     ],

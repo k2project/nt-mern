@@ -14,8 +14,8 @@ export const About = () => {
                             subtitle: '',
                             title: (
                                 <span>
-                                    To <b>change</b> we first need to feel
-                                    <b> understood</b>
+                                    To <b>change</b> we must feel
+                                    <b> listened</b> to
                                 </span>
                             ),
                         }}
