@@ -7,7 +7,8 @@ import YorkshirePost from './articles/YorkshirePost';
 import TheNorthernEcho from './articles/TheNorthernEcho';
 import ConversationAboutChildSexualAbuse from './articles/ConversationAboutChildSexualAbuse';
 import WillisPalmersOrganisedNetwork from './articles/WillisPalmersOrganisedNetwork';
-import ASafeSpaceToChange from './articles/ASafeSpaceToChange'
+import ASafeSpaceToChange from './articles/ASafeSpaceToChange';
+import Thegriffinssociety from './articles/Thegriffinssociety';
 
 export const articles = [
     ListeningToTheVoicesOfSurvivors,
@@ -20,5 +21,6 @@ export const articles = [
     TheNorthernEcho,
     ConversationAboutChildSexualAbuse,
     WillisPalmersOrganisedNetwork,
-    ASafeSpaceToChange
+    ASafeSpaceToChange,
+    Thegriffinssociety,
 ];
