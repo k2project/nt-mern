@@ -79,8 +79,7 @@
 }
 
 .accordion__li.active .accordion__q {
-    background: #f0e478;
-    background: #f6efad;
+    background: $THERAPY_COLOR;
     font-weight: bold;
     transition: 0.2s;
 }
@@ -168,8 +167,7 @@
     }
     .accordion__li.active .accordion__q {
         background: none;
-        color: #f0e478;
-        color: #c8b716;
+        color: darken($THERAPY_COLOR, 20%);
         font-weight: bold;
         transition: 0s;
     }
