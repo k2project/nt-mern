@@ -63,4 +63,4 @@ const video4 = {
     thumbnail: 'psychotherapyTSOL.png',
 };
 
-export const videos = [video1, video2, video3, video4];
+export const videos = [video3, video4, video1, video2];

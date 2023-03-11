@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import OuterLink from '../../../components/links/OuterLink';
-import { Bullet } from '../../../components/Bullet';
 import { BACP } from '../../../config';
+import questionMark from '../../../imgs/question-mark.png';
 
 const therapiesTypesLinkPsychodynamic = (
     <OuterLink href={BACP.therapiesTypesLinkUrl} text='psychodynamic' />
@@ -14,7 +14,8 @@ const therapiesTypesLinkPsychodynamicRelationalConcepts = (
     <OuterLink href={BACP.therapiesTypesLinkUrl} text='relational concepts' />
 );
 
-const bullet = <Bullet type='circle' />;
+// const bullet = <Bullet type='circle' />;
+const bullet = <img src={questionMark} alt='' className='qm' />;
 
 export const questionsAndAnswers = [
     {
@@ -55,6 +56,29 @@ export const questionsAndAnswers = [
                     <b>hide our feelings</b> from those closest to us because of
                     our feelings of shame, fear of judgement and a wish not to
                     burden others.
+                </p>
+                <p>
+                    One recent study was conducted by Cuijpers and colleagues in
+                    2020, and was published in The Lancet Psychiatry. The study
+                    conducted a meta-analysis of 212 randomized controlled
+                    trials and found that psychotherapy was as effective as
+                    medication in treating depression and anxiety, and was more
+                    effective than medication in preventing relapse. The study
+                    also found that psychotherapy had fewer side effects than
+                    medication.
+                </p>
+                <p>
+                    Cuijpers, P., Karyotaki, E., Reijnders, M., & Ebert, D. D.
+                    (2020). Was Eysenck right after all? A reassessment of the
+                    effects of psychotherapy versus pharmacotherapy in the
+                    treatment of depression and anxiety disorders. The Lancet
+                    Psychiatry, 7(2), 103-115.
+                </p>
+                <p>
+                    <OuterLink
+                        href='https://pubmed.ncbi.nlm.nih.gov/29486804/'
+                        text='Was Eysenck right after all? A reassessment of the effects of psychotherapy for adult depression.'
+                    />
                 </p>
             </Fragment>
         ),

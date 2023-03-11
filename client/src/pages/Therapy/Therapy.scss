@@ -1,4 +1,12 @@
 @import '../../VarAndMIxins.scss';
+.qm {
+    width: 2rem;
+    height: 2rem;
+    border: solid 1px #efefef;
+    border-radius: 100%;
+    margin-right: 1rem;
+    top: 0.5rem;
+}
 .TherapyIntro__img {
     margin: auto;
     margin-bottom: -5rem;

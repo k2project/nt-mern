@@ -20,7 +20,7 @@ export default {
     id: 'SurvivorsOfSexualObuse',
     cls: 'SurvivorsOfSexualObuse',
     featured: false,
-    category: 'Opinion piece',
+    category: 'Blog article',
     title: 'Survivors of sexual abuse: Remembering we’re not alone',
     summary:
         'It’s a difficult time for us all, and I wanted to share some thoughts about the issues that have  come up in my work.',

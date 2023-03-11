@@ -5,13 +5,9 @@ import Page from '../../components/Page/Page';
 
 import { Intro } from './components/Intro';
 import Attached from './components/books/Attached';
-import Tiger from './components/books/Tiger';
 import Encyclopaedia from './components/books/Encyclopaedia';
-import WhenTheBodySaysNo from './components/books/WhenTheBodySaysNo';
 import Videos from './components/videos/Videos';
 import Seattle from './components/podcasts/Seattle';
-import Mental from './components/podcasts/Mental';
-import GoodAncestor from './components/podcasts/GoodAncestor';
 import AllInTheMind from './components/podcasts/AllInTheMind';
 
 import {
@@ -24,6 +20,8 @@ import {
 } from '../../metaData';
 import TravelsWithEpicurus from './components/books/TravelsWithEpicurus';
 import British from './components/books/British';
+import InTherapy from './components/podcasts/InTherapy';
+import PsychiatryAndPsychotherapyPodcast from './components/podcasts/PsychiatryAndPsychotherapyPodcast';
 
 const meta = {
     title: TITLE_RESOURCES,
@@ -49,18 +47,16 @@ const Resources = () => {
             <Page page='Resources'>
                 <Intro />
                 {/* books */}
-                <Attached />
-                {/* <Tiger /> */}
-                <Encyclopaedia />
-                {/* <WhenTheBodySaysNo /> */}
                 <TravelsWithEpicurus />
                 <British />
+                <Attached />
+                <Encyclopaedia />
                 {/* videos */}
                 <Videos />
                 {/* podcasts */}
                 <Seattle />
-                <Mental />
-                <GoodAncestor />
+                <InTherapy />
+                <PsychiatryAndPsychotherapyPodcast />
                 <AllInTheMind />
             </Page>
         </DocumentMeta>

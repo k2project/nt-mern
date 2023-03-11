@@ -9,7 +9,7 @@ export const OtherArticles = () => {
         .filter((a) => !a.featured)
         .sort((a, b) => new Date(b.date) - new Date(a.date));
 
-    const OPINIONS = 'Opinion piece';
+    const BLOG_ARTICLE = 'Blog article';
     const LETTERS = 'Letter to the Editor';
     const QUOTES = 'Quoted in articles';
 
@@ -19,8 +19,8 @@ export const OtherArticles = () => {
     return (
         <>
             <ArticlesListByCategory
-                category={OPINIONS}
-                articles={getArticlesByCat(OPINIONS)}
+                category={BLOG_ARTICLE}
+                articles={getArticlesByCat(BLOG_ARTICLE)}
             />
             <ArticlesListByCategory
                 category={LETTERS}

@@ -156,6 +156,9 @@ export const Nujoji = () => {
                         which is a powerful therapy designed to help people
                         recover from adverse experiences.
                     </p>
+                    <Link to='/contact#form' className='btn' smooth>
+                        Get In Touch
+                    </Link>
                 </div>
             </div>
         </section>

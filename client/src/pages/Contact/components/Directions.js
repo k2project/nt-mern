@@ -19,13 +19,8 @@ export const Directions = () => {
                         DLR, Northern, Central Line) and is situated just behind
                         the Bank of England off Lothbury.
                     </p>
-                    {/* <div className="Nt4__text_center">
-                            <img src={require('./../../imgs/stations.png')} alt='Nujoji' className="Directions__img"/>
-                        </div> */}
+
                     <p>
-                        {/* <b>Bank Tube Station: </b>Waterloo and City, DLR, Northern, Central Line.<br/>
-                                <b>Moorgate Tube Station: </b>Northern, Hammersmith and City, Circle, Metropolitan lines.<br/>
-                                <b>Buses: </b> 21, 43, 76, 141.<br/> */}
                         Pay and display parking on Old Jewry and Coleman Street.
                         Secure bike racks available. Taxi Rank Queen Victoria
                         Street.

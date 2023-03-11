@@ -4,7 +4,7 @@ export default {
     id: 'Thegriffinssociety',
     cls: 'Thegriffinssociety',
     featured: false,
-    category: 'Opinion piece',
+    category: 'Blog article',
     title: 'How women and girls are dealt with in the criminal justice system',
     summary:
         'I am particularly interested in understanding the tensions that exist in prisons between care versus control and inclusion versus exclusion',

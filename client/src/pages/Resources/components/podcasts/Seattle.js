@@ -11,8 +11,12 @@ function Seattle(props) {
                     <SectionTitle
                         data={{
                             divider: '',
-                            subtitle: 'by Kirk Honda ',
-                            title: <span><b>Psychology</b> in Seattle </span>,
+                            subtitle: 'by Dr Kirk Honda ',
+                            title: (
+                                <span>
+                                    <b>Psychology</b> in Seattle 
+                                </span>
+                            ),
                         }}
                     >
                         <a
@@ -42,7 +46,7 @@ function Seattle(props) {
                         weekly podcasts about psychology and psychotherapy since
                         2008. This psychology podcast is both educational and
                         entertaining. They have around 100,000 dedicated
-                        listeners. The host, Dr. Kirk Honda, is a licensed
+                        listeners. The host, Dr Kirk Honda, is a licensed
                         therapist and a professor. Co-host Humberto provides the
                         layperson&#39;s voice.
                     </p>
