@@ -194,35 +194,22 @@ section div {
 }
 
 .Home__bg_themed {
-    background: #b4d8e6;
-    background: #d7e7f4;
     background: $HOME_COLOR;
 }
 .Home__color_themed {
-    // color: #b4d8e6;
     color: $HOME_COLOR;
 }
 .Therapy__bg_themed {
-    background: #f0e478;
-    background: #f6efad;
     background: $THERAPY_COLOR;
 }
 .Therapy__color_themed {
-    color: #f0e478;
     color: darken($THERAPY_COLOR, 10%);
-    /* color: #f6efad; */
 }
 .Contact__bg_themed {
-    background: #d8a8e3;
-    background: #ecd5f1;
-    background: #e4e4ff;
     background: $CONTACT_COLOR;
 }
 .Contact__color_themed {
-    color: #d8a8e3;
-    color: #cbcbff;
     color: $CONTACT_COLOR;
-    /* color: #ecd5f1; */
 }
 .Resources__bg_themed {
     background: $RESOURCES_COLOR;
