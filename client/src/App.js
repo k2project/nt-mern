@@ -11,37 +11,32 @@ import SkipToMainContentLink from './components/SkipToMainContentLink';
 import Banner from './components/banner/Banner';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 //Google Anlitics: pages viewed
-import Analytics from 'react-router-ga';
 import CursorDot from './components/CursorDot/CursorDot';
+import CookiesBanner from './components/Cookies.js/CookiesBanner';
 
 function App() {
     const showBanner = false;
 
     return (
         <>
+            <CookiesBanner />
             <Router basename={process.env.PUBLIC_URL}>
-                <Analytics id='UA-127585560-1' debug>
-                    <SkipToMainContentLink />
-                    {showBanner && <Banner />}
+                <SkipToMainContentLink />
+                {showBanner && <Banner />}
 
-                    <Switch>
-                        <Route exact path={`/`} component={Home} />
-                        <Route exact path={`/therapy`} component={Therapy} />
-                        <Route exact path={`/contact`} component={Contact} />
-                        <Route
-                            exact
-                            path={`/resources`}
-                            component={Resources}
-                        />
-                        <Route exact path={`/blog`} component={Articles} />
-                        <Route
-                            exact
-                            path={`/privacy-notice`}
-                            component={PrivacyNotice}
-                        />
-                        <Route component={Home} />
-                    </Switch>
-                </Analytics>
+                <Switch>
+                    <Route exact path={`/`} component={Home} />
+                    <Route exact path={`/therapy`} component={Therapy} />
+                    <Route exact path={`/contact`} component={Contact} />
+                    <Route exact path={`/resources`} component={Resources} />
+                    <Route exact path={`/blog`} component={Articles} />
+                    <Route
+                        exact
+                        path={`/privacy-notice`}
+                        component={PrivacyNotice}
+                    />
+                    <Route component={Home} />
+                </Switch>
             </Router>
             <CursorDot />
         </>

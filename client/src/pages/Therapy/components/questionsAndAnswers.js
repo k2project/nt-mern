@@ -161,7 +161,7 @@ export const questionsAndAnswers = [
                     All we can do is enable as much security as we can, and I
                     will configure my settings to maximize this.
                 </p>
-                <p className='bullet-list'>
+                <div className='bullet-list'>
                     <span className='bullet-list-banner'>
                         <b id='tips'>
                             For the best experience, please ensure that:
@@ -223,7 +223,7 @@ export const questionsAndAnswers = [
                             services.
                         </li>
                     </ul>
-                </p>
+                </div>
             </>
         ),
     },
