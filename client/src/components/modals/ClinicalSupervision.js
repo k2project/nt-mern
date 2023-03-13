@@ -28,7 +28,9 @@ export default function ClinicalSupervision({
                     </div>
                     <div className='cols'>
                         <div className='text'>
-                            <h1>Clinical Supervision</h1>
+                            <h1 className='section__title'>
+                                Clinical Supervision
+                            </h1>
                             <h2>
                                 I am a UKCP registered clinical supervisor and
                                 integrative psychotherapist offering online
