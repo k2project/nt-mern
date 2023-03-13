@@ -6,7 +6,7 @@ export default function Videos() {
     return (
         <section className='videos'>
             {videos.map((v) => (
-                <CardWithThumbnail item={v} />
+                <CardWithThumbnail item={v} key={v.title} />
             ))}
         </section>
     );

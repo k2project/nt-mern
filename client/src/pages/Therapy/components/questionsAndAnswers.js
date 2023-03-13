@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import OuterLink from '../../../components/links/OuterLink';
+import ClinicalSupervision from '../../../components/modals/ClinicalSupervision';
 import { BACP } from '../../../config';
 import questionMark from '../../../imgs/question-mark.png';
 
@@ -416,10 +417,14 @@ export const questionsAndAnswers = [
         a: (
             <p>
                 Yes, I hold a diploma in supervision obtained at the Institute
-                of Group Analysis. I offer online supervision to individuals and
-                groups. I have experience supervising psychotherapists, people
-                working with a therapeutic intention, and emergency service
-                workers.
+                of Group Analysis.{' '}
+                <ClinicalSupervision
+                    btnText='I offer online supervision to individuals and
+                            groups.'
+                    btnClass='link'
+                />{' '}
+                I have experience supervising psychotherapists, people working
+                with a therapeutic intention, and emergency service workers.
             </p>
         ),
     },
