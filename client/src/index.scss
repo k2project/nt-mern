@@ -34,6 +34,9 @@ a:active {
     cursor: pointer;
     text-decoration: none;
 }
+a.link-underlined {
+    text-decoration: underline !important;
+}
 
 input,
 button,

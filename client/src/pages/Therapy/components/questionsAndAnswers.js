@@ -421,7 +421,7 @@ export const questionsAndAnswers = [
                 <ClinicalSupervision
                     btnText='I offer online supervision to individuals and
                             groups.'
-                    btnClass='link'
+                    btnClass='link link-underlined'
                 />{' '}
                 I have experience supervising psychotherapists, people working
                 with a therapeutic intention, and emergency service workers.
