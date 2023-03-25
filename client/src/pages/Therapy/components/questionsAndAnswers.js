@@ -68,17 +68,15 @@ export const questionsAndAnswers = [
                     also found that psychotherapy had fewer side effects than
                     medication.
                 </p>
-                <p>
-                    Cuijpers, P., Karyotaki, E., Reijnders, M., & Ebert, D. D.
-                    (2020). Was Eysenck right after all? A reassessment of the
-                    effects of psychotherapy versus pharmacotherapy in the
-                    treatment of depression and anxiety disorders. The Lancet
-                    Psychiatry, 7(2), 103-115.
-                </p>
+
                 <p>
                     <OuterLink
                         href='https://pubmed.ncbi.nlm.nih.gov/29486804/'
-                        text='Was Eysenck right after all? A reassessment of the effects of psychotherapy for adult depression.'
+                        text='Cuijpers, P., Karyotaki, E., Reijnders, M., & Ebert, D. D.
+                        (2020). Was Eysenck right after all? A reassessment of the
+                        effects of psychotherapy versus pharmacotherapy in the
+                        treatment of depression and anxiety disorders. The Lancet
+                        Psychiatry, 7(2), 103-115.'
                         italics
                     />
                 </p>
