@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default function OuterLink({ href, text, target = '_blank' }) {
+export default function OuterLink({ href, text, target = '_blank', italics }) {
     return (
         <a
             href={href}
-            className='link'
+            className={`link ${italics ? 'italics' : ''}`}
             target={target}
             rel='noopener noreferrer'
         >

@@ -79,6 +79,7 @@ export const questionsAndAnswers = [
                     <OuterLink
                         href='https://pubmed.ncbi.nlm.nih.gov/29486804/'
                         text='Was Eysenck right after all? A reassessment of the effects of psychotherapy for adult depression.'
+                        italics
                     />
                 </p>
             </Fragment>
@@ -120,6 +121,88 @@ export const questionsAndAnswers = [
                     place an importance on the therapeutic relationship.
                 </p>
             </Fragment>
+        ),
+    },
+    {
+        q: 'Are you qualified as a psychotherapist?',
+        a: (
+            <>
+                <p>
+                    Yes, my main professional qualification is a{' '}
+                    <strong>
+                        Master of Arts degree in Counselling and Psychotherapy
+                    </strong>
+                    . I hold additional qualifications and frequently attend
+                    training to develop professionally.
+                </p>
+                <ul className='ul-qualifications'>
+                    <li>
+                        {bullet}
+                        Foundation Certificate in <strong>
+                            Psychodynamic
+                        </strong>{' '}
+                        Psychotherapy
+                    </li>
+                    <li>
+                        {bullet}
+                        Diploma in <strong>Integrative</strong> Counselling{' '}
+                    </li>
+                    <li>
+                        {bullet}
+                        Post Graduate Diploma in Integrative Counselling and
+                        Psychotherapy
+                    </li>
+                    <li>
+                        {bullet}
+                        Master of Arts degree in Counselling and Psychotherapy
+                    </li>
+                    <li>
+                        {bullet}
+                        Diploma in Group <strong>Supervision</strong>
+                    </li>
+                    <li>
+                        {bullet}
+                        <strong>Mentalization-Based Treatment</strong> (MBT)
+                        Basic Training
+                    </li>
+                    <li>
+                        {bullet}
+                        Babette Rothschild Making <strong>
+                            Trauma
+                        </strong> Safer{' '}
+                    </li>
+                    <li>
+                        {bullet}
+                        <strong>EMDR</strong> Part I and II
+                    </li>
+                    <li>
+                        {bullet}
+                        Knowledge and Understanding Framework (KUF) course for
+                        working with <strong>Personality Disorders</strong>
+                    </li>
+                    <li>
+                        {bullet}
+                        The ADDRESS course for working with Personality
+                        Disorders
+                    </li>
+                    <li>{bullet}Critical Incident Stress Debriefing</li>
+                    <li>
+                        {bullet}
+                        Compassion Focused-Risk Aware. Therapy Program for
+                        Managing Sexual Risk
+                    </li>
+                    <li>
+                        {bullet}
+                        <strong>Therapeutic Community</strong> Accredited
+                        Training (TCAT) 1
+                    </li>
+                    <li>
+                        {bullet}
+                        Foundation Certificate in{' '}
+                        <strong>Group Analysis</strong> (completion June 2023)
+                    </li>
+                </ul>
+            </>
         ),
     },
     {
