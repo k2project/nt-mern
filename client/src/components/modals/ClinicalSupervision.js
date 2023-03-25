@@ -85,11 +85,13 @@ export default function ClinicalSupervision({
                             </p>
                             <p>
                                 <strong>
-                                    {' '}
                                     Individual supervision sessions last one
                                     hour, and group supervision lasts 90
                                     minutes. I charge £60 for supervision.
                                 </strong>
+                            </p>
+                            <p>
+                                <i>therapy@calvocoressi.com</i>
                             </p>
                         </div>
 

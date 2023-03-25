@@ -8,7 +8,6 @@ import Footer from './Footer';
 export default function Page({ page, headerContent, children }) {
     React.useEffect(() => {
         const page = document.getElementById('page');
-        console.log(page);
 
         if (window.location.search.includes('anim') && page) {
             document.body.style.overflow = 'hidden';
