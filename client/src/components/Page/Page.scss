@@ -1,5 +1,8 @@
 @import './../../VarAndMIxins.scss';
 
+.loading {
+    transition: all 5s;
+}
 .Page {
     overflow-x: hidden;
 }

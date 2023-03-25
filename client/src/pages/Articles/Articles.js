@@ -62,7 +62,7 @@ const Articles = () => {
     }
     return (
         <DocumentMeta {...meta}>
-            <Page page='Articles'>
+            <Page page='Articles Blog'>
                 {/* <Intro /> */}
                 <FeaturedArticles />
                 <OtherArticles />

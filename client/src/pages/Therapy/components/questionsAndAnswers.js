@@ -16,7 +16,11 @@ const therapiesTypesLinkPsychodynamicRelationalConcepts = (
 );
 
 // const bullet = <Bullet type='circle' />;
-const bullet = <img src={questionMark} alt='' className='qm' />;
+const bullet = (
+    <span>
+        <img src={questionMark} alt='' className='qm' />
+    </span>
+);
 
 export const questionsAndAnswers = [
     {
@@ -136,68 +140,102 @@ export const questionsAndAnswers = [
                 <ul className='ul-qualifications'>
                     <li>
                         {bullet}
-                        Foundation Certificate in <strong>
-                            Psychodynamic
-                        </strong>{' '}
-                        Psychotherapy
+                        <span>
+                            Foundation Certificate in{' '}
+                            <strong>Psychodynamic</strong> Psychotherapy
+                        </span>
                     </li>
                     <li>
                         {bullet}
-                        Diploma in <strong>Integrative</strong> Counselling{' '}
+                        <span>
+                            {' '}
+                            Diploma in <strong>
+                                Integrative
+                            </strong> Counselling{' '}
+                        </span>
                     </li>
                     <li>
                         {bullet}
-                        Post Graduate Diploma in Integrative Counselling and
-                        Psychotherapy
+                        <span>
+                            Post Graduate Diploma in Integrative Counselling and
+                            Psychotherapy
+                        </span>
                     </li>
                     <li>
                         {bullet}
-                        Master of Arts degree in Counselling and Psychotherapy
+                        <span>
+                            Master of Arts degree in Counselling and
+                            Psychotherapy
+                        </span>
                     </li>
                     <li>
                         {bullet}
-                        Diploma in Group <strong>Supervision</strong>
+                        <span>
+                            Diploma in Group <strong>Supervision</strong>
+                        </span>
                     </li>
                     <li>
                         {bullet}
-                        <strong>Mentalization-Based Treatment</strong> (MBT)
-                        Basic Training
+                        <span>
+                            <strong>Mentalization-Based Treatment</strong> (MBT)
+                            Basic Training
+                        </span>
                     </li>
                     <li>
                         {bullet}
-                        Babette Rothschild Making <strong>
-                            Trauma
-                        </strong> Safer{' '}
+                        <span>
+                            Babette Rothschild Making <strong>Trauma</strong>{' '}
+                            Safer{' '}
+                        </span>
                     </li>
                     <li>
                         {bullet}
-                        <strong>EMDR</strong> Part I and II
+                        <span>
+                            <strong>EMDR</strong> Part I and II
+                        </span>
                     </li>
                     <li>
                         {bullet}
-                        Knowledge and Understanding Framework (KUF) course for
-                        working with <strong>Personality Disorders</strong>
+                        <span>
+                            {' '}
+                            Knowledge and Understanding Framework (KUF) course
+                            for working with{' '}
+                            <strong>Personality Difficulties</strong>
+                        </span>
                     </li>
                     <li>
                         {bullet}
-                        The ADDRESS course for working with Personality
-                        Disorders
-                    </li>
-                    <li>{bullet}Critical Incident Stress Debriefing</li>
-                    <li>
-                        {bullet}
-                        Compassion Focused-Risk Aware. Therapy Program for
-                        Managing Sexual Risk
+                        <span>
+                            The ADDRESS course for working with Personality
+                            Difficulties
+                        </span>
                     </li>
                     <li>
                         {bullet}
-                        <strong>Therapeutic Community</strong> Accredited
-                        Training (TCAT) 1
+                        <span>Critical Incident Stress Debriefing</span>
                     </li>
                     <li>
                         {bullet}
-                        Foundation Certificate in{' '}
-                        <strong>Group Analysis</strong> (completion June 2023)
+                        <span>
+                            Compassion Focused-Risk Aware. Therapy Program for
+                            Managing Sexual Risk
+                        </span>
+                    </li>
+                    <li>
+                        {bullet}
+                        <span>
+                            <strong>Therapeutic Community</strong> Accredited
+                            Training (TCAT) 1
+                        </span>
+                    </li>
+                    <li>
+                        {bullet}
+                        <span>
+                            {' '}
+                            Foundation Certificate in{' '}
+                            <strong>Group Analysis</strong> (completion June
+                            2023)
+                        </span>
                     </li>
                 </ul>
             </>

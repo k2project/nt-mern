@@ -15,7 +15,8 @@ export default function Footer() {
                 );
                 if (currentRoutIndex !== -1) {
                     //navigate to the next route
-                    setNextRoute(routes[currentRoutIndex + 1]);
+                    const route = routes[currentRoutIndex + 1];
+                    if (route) setNextRoute(route + '?anim');
                 }
             }
         };

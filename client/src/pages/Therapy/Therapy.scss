@@ -2,6 +2,13 @@
 .ul-qualifications {
     li {
         padding: 0.7rem 0;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        span {
+            font-size: 14px;
+            line-height: 1.8;
+        }
     }
 }
 .qm {
