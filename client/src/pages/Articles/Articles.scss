@@ -204,6 +204,9 @@
     .btn_square {
         margin: 0;
     }
+    a.btn {
+        margin-top: 0 !important;
+    }
 }
 
 //BACKGROUND IMG FOR ARTICLES
@@ -249,10 +252,13 @@
     }
     .Articles-category {
         width: 85%;
-        flex-direction: column;
-        align-items: flex-start;
+        // flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
+
         h3 {
             width: 100%;
+            flex-grow: 1;
             justify-content: space-between;
         }
 
@@ -261,6 +267,14 @@
         }
         .btn_square {
             margin-top: 1rem;
+        }
+        .Articles-category-header {
+            display: flex;
+            align-items: space-between;
+        }
+
+        .Articles-category-cta {
+            display: none;
         }
     }
 }

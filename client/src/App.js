@@ -16,6 +16,9 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Analytics from 'react-router-ga';
 import CursorDot from './components/CursorDot/CursorDot';
 
+//Used to figure out next page when users scroll to the bottom page - auto navigation
+export const routes = ['/', '/therapy', '/contact', '/resources', '/blog'];
+
 function App() {
     const showBanner = false;
     return (
