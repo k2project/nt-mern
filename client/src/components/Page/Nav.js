@@ -6,7 +6,7 @@ import MobileLink from '../../components/contactsLinks/MobileLink';
 
 export default function Nav({ toggleMobileMenu, mobileMenuOpen }) {
     return (
-        <nav className='Nav' sria-label='main navigation'>
+        <nav className='Nav' aria-label='main navigation'>
             <button
                 className='Nav__hum'
                 onClick={toggleMobileMenu}
