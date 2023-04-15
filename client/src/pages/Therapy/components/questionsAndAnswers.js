@@ -81,7 +81,6 @@ export const questionsAndAnswers = [
                         effects of psychotherapy versus pharmacotherapy in the
                         treatment of depression and anxiety disorders. The Lancet
                         Psychiatry, 7(2), 103-115.'
-                        italics
                     />
                 </p>
             </Fragment>

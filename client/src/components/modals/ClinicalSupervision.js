@@ -10,7 +10,7 @@ export default function ClinicalSupervision({
     const page = window.location.pathname.slice(1);
     return (
         <Popup
-            trigger={<a className={`trigger ${btnClass}`}> {btnText} </a>}
+            trigger={<a className={`trigger ${btnClass}`}>{btnText}</a>}
             modal
             position='center center'
             lockScroll
@@ -35,7 +35,7 @@ export default function ClinicalSupervision({
                                 I am a UKCP registered clinical supervisor and
                                 integrative psychotherapist offering online
                                 supervision. My Diploma in Supervision was
-                                awarded by The Institute of Group Analysis. I
+                                awarded by the Institute of Group Analysis. I
                                 have experience supervising trainees, qualified
                                 practitioners, and people working with a
                                 therapeutic intention, individually and in
@@ -89,7 +89,7 @@ export default function ClinicalSupervision({
                                     href='mailto:therapy@calvocoressi.com?subject=Consultation request&body=I am interested in arranging a consultation.'
                                     className='link'
                                 >
-                                    <i>therapy@calvocoressi.com</i>
+                                    therapy@calvocoressi.com
                                 </a>
                             </p>
                         </div>
