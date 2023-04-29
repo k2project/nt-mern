@@ -62,27 +62,6 @@ export const questionsAndAnswers = [
                     our feelings of shame, fear of judgement and a wish not to
                     burden others.
                 </p>
-                <p>
-                    One recent study was conducted by Cuijpers and colleagues in
-                    2020, and was published in The Lancet Psychiatry. The study
-                    conducted a meta-analysis of 212 randomized controlled
-                    trials and found that psychotherapy was as effective as
-                    medication in treating depression and anxiety, and was more
-                    effective than medication in preventing relapse. The study
-                    also found that psychotherapy had fewer side effects than
-                    medication.
-                </p>
-
-                <p>
-                    <OuterLink
-                        href='https://pubmed.ncbi.nlm.nih.gov/29486804/'
-                        text='Cuijpers, P., Karyotaki, E., Reijnders, M., & Ebert, D. D.
-                        (2020). Was Eysenck right after all? A reassessment of the
-                        effects of psychotherapy versus pharmacotherapy in the
-                        treatment of depression and anxiety disorders. The Lancet
-                        Psychiatry, 7(2), 103-115.'
-                    />
-                </p>
             </Fragment>
         ),
     },
@@ -539,7 +518,7 @@ export const questionsAndAnswers = [
                 <ClinicalSupervision
                     btnText='I offer online supervision to individuals and
                             groups.'
-                    btnClass='link link-underlined'
+                    btnClass='link'
                 />{' '}
                 I have experience supervising psychotherapists, people working
                 with a therapeutic intention, and emergency service workers.
