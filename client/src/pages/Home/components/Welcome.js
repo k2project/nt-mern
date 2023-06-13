@@ -14,7 +14,7 @@ export const Welcome = () => {
                             subtitle: '',
                             title: (
                                 <span>
-                                    <b>Change</b> HAPPENS WHEN DO SOMETHING{' '}
+                                    <b>Change</b> HAPPENS WHEN YOU DO SOMETHING{' '}
                                     <b>DIFFERENT</b>
                                 </span>
                             ),
