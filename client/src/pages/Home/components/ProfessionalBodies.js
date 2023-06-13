@@ -20,25 +20,25 @@ const professionalBodiesData = [
         name: 'ukcp',
     },
     {
-        logo: iafp,
-        link: 'https://www.forensicpsychotherapy.org',
-        name: 'iafp',
-    },
-    {
         logo: emdr,
         link: EMDR.url,
         name: 'emdr',
     },
     {
-        logo: bacp,
-        link: 'https://www.bacp.co.uk/profile/8fb9f46e-e25c-e811-8108-3863bb351d40/therapist?location=City%20of%20London',
-        name: 'bacp',
+        logo: iafp,
+        link: 'https://www.forensicpsychotherapy.org',
+        name: 'iafp',
     },
-    {
-        logo: dbs,
-        link: 'https://www.gov.uk/government/organisations/disclosure-and-barring-service/',
-        name: 'dbs',
-    },
+    // {
+    //     logo: bacp,
+    //     link: 'https://www.bacp.co.uk/profile/8fb9f46e-e25c-e811-8108-3863bb351d40/therapist?location=City%20of%20London',
+    //     name: 'bacp',
+    // },
+    // {
+    //     logo: dbs,
+    //     link: 'https://www.gov.uk/government/organisations/disclosure-and-barring-service/',
+    //     name: 'dbs',
+    // },
 ];
 
 export const ProfessionalBodies = () => {

@@ -14,7 +14,7 @@ export const Welcome = () => {
                             subtitle: '',
                             title: (
                                 <span>
-                                    <b>Change</b> HAPPENS WHEN DO SOMETHING{' '}
+                                    <b>Change</b> HAPPENS WHEN YOU DO SOMETHING{' '}
                                     <b>DIFFERENT</b>
                                 </span>
                             ),
@@ -38,10 +38,6 @@ export const Welcome = () => {
                         where you can reflect, explore, and deal with the
                         difficulties in your life.
                     </p>
-                    {/* <p>However you can always break the cycle of anger, anxiety, addiction, distrust and    unhealthy behaviour if you want. It all starts with you... Make a choice today!</p> */}
-                    <Link to='/contact#form' className='btn' smooth>
-                        Get In Touch
-                    </Link>
                 </div>
             </div>
         </section>

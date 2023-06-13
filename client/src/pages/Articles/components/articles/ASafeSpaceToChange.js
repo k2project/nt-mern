@@ -4,7 +4,7 @@ export default {
     id: 'ASafeSpaceToChange',
     cls: 'ASafeSpaceToChange',
     featured: false,
-    category: 'Opinion piece',
+    category: 'Blog article',
     title: 'A safe space to change',
     summary:
         'The only Democratic Therapeutic Community in a UK women’s prison is housed at HMP Send, in Surrey. But what happens there? ',
@@ -12,7 +12,7 @@ export default {
     author: 'Nujoji Calvocoressi',
     publication: 'insideTime',
     sourceUrl: 'https://insidetime.org/a-safe-space-to-change/',
-    img: 'dtc.png',
+    img: 'insidetime-banner.png',
     logo: 'insidetime.png',
     content: (
         <>

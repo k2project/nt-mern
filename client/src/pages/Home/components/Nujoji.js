@@ -4,6 +4,7 @@ import SectionTitle from '../../../components/SectionTitle';
 // import graduation from './../../../imgs/diploma2-min.png';
 import OuterLink from '../../../components/links/OuterLink';
 import { UKCP, BACP, IGA } from '../../../config';
+import questionMark from '../../../imgs/question-mark.png';
 
 const ukcpLink = <OuterLink href={UKCP.url} text={UKCP.acronym} />;
 const bacpLink = <OuterLink href={BACP.url} text={BACP.acronym} />;
@@ -31,6 +32,8 @@ const EMDR = (
         text='EMDR UK'
     />
 );
+
+const bullet = <img src={questionMark} alt='' className='qmark' />;
 
 export const Nujoji = () => {
     return (
@@ -110,36 +113,24 @@ export const Nujoji = () => {
                     <p>I obtained the following qualifications:</p>
                     <ul>
                         <li className='qualifications'>
-                            {/* <img
-                                src={graduation}
-                                alt=''
-                                className='graduation'
-                            /> */}
-                            <span className='qualification-num'>1</span>
+                            {bullet}
+                            {/* <span className='qualification-num'>1</span> */}
                             <p>
                                 Master of Arts degree in psychotherapy and
                                 counselling
                             </p>
                         </li>
                         <li className='qualifications'>
-                            {/* <img
-                                src={graduation}
-                                alt=''
-                                className='graduation'
-                            /> */}
-                            <span className='qualification-num'>2</span>
+                            {bullet}
+                            {/* <span className='qualification-num'>2</span> */}
                             <p>
                                 Advanced post graduate diploma in psychotherapy
                                 and counselling
                             </p>
                         </li>
                         <li className='qualifications'>
-                            {/* <img
-                                src={graduation}
-                                alt=''
-                                className='graduation'
-                            /> */}
-                            <span className='qualification-num'>3</span>
+                            {bullet}
+                            {/* <span className='qualification-num'>3</span> */}
                             <p>Diploma in Counselling</p>
                         </li>
                     </ul>
@@ -156,6 +147,9 @@ export const Nujoji = () => {
                         which is a powerful therapy designed to help people
                         recover from adverse experiences.
                     </p>
+                    <Link to='/contact#form' className='btn' smooth>
+                        Get In Touch
+                    </Link>
                 </div>
             </div>
         </section>

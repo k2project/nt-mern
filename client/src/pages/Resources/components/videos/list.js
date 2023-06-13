@@ -36,7 +36,7 @@ const video2 = {
         label: 'Watch now',
     },
     icon: video,
-    thumbnail: 'lostInTheWorld.png',
+    thumbnail: 'rat.png',
 };
 const video3 = {
     title: 'How Psychotherapy Works',
@@ -63,4 +63,4 @@ const video4 = {
     thumbnail: 'psychotherapyTSOL.png',
 };
 
-export const videos = [video1, video2, video3, video4];
+export const videos = [video3, video4, video1, video2];

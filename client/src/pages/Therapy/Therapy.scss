@@ -1,4 +1,24 @@
 @import '../../VarAndMIxins.scss';
+.ul-qualifications {
+    li {
+        padding: 0.7rem 0;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        span {
+            font-size: 14px;
+            line-height: 1.8;
+        }
+    }
+}
+.qm {
+    width: 2rem;
+    height: 2rem;
+    border: solid 1px #efefef;
+    border-radius: 100%;
+    margin-right: 1rem;
+    top: 0.5rem;
+}
 .TherapyIntro__img {
     margin: auto;
     margin-bottom: -5rem;
@@ -71,8 +91,7 @@
 }
 
 .accordion__li.active .accordion__q {
-    background: #f0e478;
-    background: #f6efad;
+    background: $THERAPY_COLOR;
     font-weight: bold;
     transition: 0.2s;
 }
@@ -104,6 +123,10 @@
     padding-top: 2rem;
     ul {
         padding: 1rem;
+    }
+    li {
+        padding: 0.5rem 0;
+        line-height: 1.8;
     }
 }
 .bullet-list-banner {
@@ -160,8 +183,7 @@
     }
     .accordion__li.active .accordion__q {
         background: none;
-        color: #f0e478;
-        color: #c8b716;
+        color: darken($THERAPY_COLOR, 20%);
         font-weight: bold;
         transition: 0s;
     }

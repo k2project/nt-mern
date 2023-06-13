@@ -14,9 +14,8 @@ export default {
     id: 'ConversationAboutChildSexualAbuse',
     cls: 'ConversationAboutChildSexualAbuse',
     featured: false,
-    category: 'Opinion piece',
-    title:
-        'We need to have a conversation about child sexual abuse, now more than ever',
+    category: 'Blog article',
+    title: 'We need to have a conversation about child sexual abuse, now more than ever',
     summary:
         'This blog is written by Nujoji Calvocoressi, a member of the Victims and Survivors Consultative Panel. It discusses sexual violence and may be upsetting to read.',
     date: '2021-05-07',

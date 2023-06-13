@@ -4,7 +4,7 @@ export default {
     id: 'Thegriffinssociety',
     cls: 'Thegriffinssociety',
     featured: false,
-    category: 'Opinion piece',
+    category: 'Blog article',
     title: 'How women and girls are dealt with in the criminal justice system',
     summary:
         'I am particularly interested in understanding the tensions that exist in prisons between care versus control and inclusion versus exclusion',
@@ -19,7 +19,7 @@ export default {
             <h4 className='article-subtitle'>
                 I am particularly interested in understanding the tensions that
                 exist in prisons between care versus control and inclusion
-                versus exclusion
+                versus exclusion.
             </h4>
 
             <p>
@@ -32,7 +32,7 @@ export default {
                 Sexual Abuse and contributed to the Inquiry’s work about child
                 sexual abuse in custodial settings. I have also served for ten
                 years in the voluntary sector as a Justice of the Peace in both
-                the Adult and Youth Magistrate’s Courts
+                the Adult and Youth Magistrate’s Courts.
             </p>
 
             <p>
@@ -55,12 +55,12 @@ export default {
             </p>
 
             <p>
-                Our research study will explore whether the DTC situated within
-                a typical prison poses challenges for the governance and
-                operation of the establishment overall because the DTC model
-                wishes to move away from the traditional and dominant culture of
-                control, power, and discipline to one of permissiveness,
-                communalism, and democratisation.
+                Our research study will explore the experience of former DTC
+                participants who have successfully completed the intervention
+                and remain in custody serving the remainder of their sentence.
+                We are interested in the sense the participants have made of
+                their experience of the DTC since leaving and returning to a
+                typical prison location.
             </p>
         </>
     ),

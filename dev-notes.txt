@@ -21,3 +21,6 @@
  Keep "node-sass" locked at "4.14.1"
 
  npm rebuild node-sass
+
+==================== GA ====================
+ Analytics id='UA-127585560-1'

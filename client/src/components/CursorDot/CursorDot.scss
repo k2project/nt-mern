@@ -1,0 +1,13 @@
+#cursor-circle {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 1rem;
+    width: 1rem;
+    border-radius: 100%;
+    background-color: #3ba7d9;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.25s,
+        transform cubic-bezier(0.08, 0.34, 0.37, 1.38) 0.75s;
+}

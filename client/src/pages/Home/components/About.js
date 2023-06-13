@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavHashLink as Link } from 'react-router-hash-link';
+import ClinicalSupervision from '../../../components/modals/ClinicalSupervision';
 
 import SectionTitle from '../../../components/SectionTitle';
 
@@ -22,8 +23,12 @@ export const About = () => {
                     />
 
                     <p>
-                        Hello, my name is Nujoji, and I am a psychotherapist and
-                        clinical supervisor working in London, Brighton and{' '}
+                        Hello, my name is Nujoji, and I am a psychotherapist and{' '}
+                        <ClinicalSupervision
+                            btnText='clinical supervisor'
+                            btnClass='link'
+                        />{' '}
+                        working in London, Brighton and{' '}
                         <Link to='/therapy#online' smooth className='link'>
                             online
                         </Link>

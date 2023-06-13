@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
+import ClinicalSupervision from '../modals/ClinicalSupervision';
 
 export default function FooterNavLinks() {
     const scrollToTop = () => window.scrollTo(0, 0);
@@ -30,13 +31,18 @@ export default function FooterNavLinks() {
             <NavLink to='/therapy#fees' smooth className='FooterNavLinks__link'>
                 Fees
             </NavLink>
-            <NavLink
+            {/* <NavLink
                 to='/therapy#online'
                 smooth
                 className='FooterNavLinks__link'
             >
                 Online
-            </NavLink>
+            </NavLink> */}
+            <ClinicalSupervision
+                btnText='Clinical Supervision'
+                btnClass='FooterNavLinks__link'
+            />
+
             <NavLink
                 to='/contact'
                 className='FooterNavLinks__link'

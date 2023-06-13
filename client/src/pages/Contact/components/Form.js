@@ -32,11 +32,18 @@ export const Form = (props) => {
                         .{' '}
                     </p>
                     <p>
-                        If you prefer to contact me by email,{' '}
+                        If you prefer to contact me by email, please{' '}
                         <a href='#contact-form' className='link'>
-                            please complete the contact form
+                            complete the contact form
+                        </a>{' '}
+                        or{' '}
+                        <a
+                            href='mailto:therapy@calvocoressi.com?subject=Consultation request&body=I am interested in arranging a consultation.'
+                            className='link'
+                        >
+                            contact me directly
                         </a>
-                        . Both methods are confidential.
+                        . All methods are confidential.
                     </p>
                     <p>
                         Please be aware that if I am with clients I will be

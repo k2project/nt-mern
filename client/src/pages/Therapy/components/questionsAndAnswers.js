@@ -1,8 +1,9 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import OuterLink from '../../../components/links/OuterLink';
-import { Bullet } from '../../../components/Bullet';
+import ClinicalSupervision from '../../../components/modals/ClinicalSupervision';
 import { BACP } from '../../../config';
+import questionMark from '../../../imgs/question-mark.png';
 
 const therapiesTypesLinkPsychodynamic = (
     <OuterLink href={BACP.therapiesTypesLinkUrl} text='psychodynamic' />
@@ -14,7 +15,12 @@ const therapiesTypesLinkPsychodynamicRelationalConcepts = (
     <OuterLink href={BACP.therapiesTypesLinkUrl} text='relational concepts' />
 );
 
-const bullet = <Bullet type='circle' />;
+// const bullet = <Bullet type='circle' />;
+const bullet = (
+    <span>
+        <img src={questionMark} alt='' className='qm' />
+    </span>
+);
 
 export const questionsAndAnswers = [
     {
@@ -98,6 +104,122 @@ export const questionsAndAnswers = [
         ),
     },
     {
+        q: 'Are you qualified as a psychotherapist?',
+        a: (
+            <>
+                <p>
+                    Yes, my main professional qualification is a{' '}
+                    <strong>
+                        Master of Arts degree in Counselling and Psychotherapy
+                    </strong>
+                    . I hold additional qualifications and frequently attend
+                    training to develop professionally.
+                </p>
+                <ul className='ul-qualifications'>
+                    <li>
+                        {bullet}
+                        <span>
+                            Foundation Certificate in{' '}
+                            <strong>Psychodynamic</strong> Psychotherapy
+                        </span>
+                    </li>
+                    <li>
+                        {bullet}
+                        <span>
+                            {' '}
+                            Diploma in <strong>
+                                Integrative
+                            </strong> Counselling{' '}
+                        </span>
+                    </li>
+                    <li>
+                        {bullet}
+                        <span>
+                            Post Graduate Diploma in Integrative Counselling and
+                            Psychotherapy
+                        </span>
+                    </li>
+                    <li>
+                        {bullet}
+                        <span>
+                            Master of Arts degree in Counselling and
+                            Psychotherapy
+                        </span>
+                    </li>
+                    <li>
+                        {bullet}
+                        <span>
+                            Diploma in Group <strong>Supervision</strong>
+                        </span>
+                    </li>
+                    <li>
+                        {bullet}
+                        <span>
+                            <strong>Mentalization-Based Treatment</strong> (MBT)
+                            Basic Training
+                        </span>
+                    </li>
+                    <li>
+                        {bullet}
+                        <span>
+                            Babette Rothschild Making <strong>Trauma</strong>{' '}
+                            Safer{' '}
+                        </span>
+                    </li>
+                    <li>
+                        {bullet}
+                        <span>
+                            <strong>EMDR</strong> Part I and II
+                        </span>
+                    </li>
+                    <li>
+                        {bullet}
+                        <span>
+                            {' '}
+                            Knowledge and Understanding Framework (KUF) course
+                            for working with{' '}
+                            <strong>Personality Difficulties</strong>
+                        </span>
+                    </li>
+                    <li>
+                        {bullet}
+                        <span>
+                            The ADDRESS course for working with Personality
+                            Difficulties
+                        </span>
+                    </li>
+                    <li>
+                        {bullet}
+                        <span>Critical Incident Stress Debriefing</span>
+                    </li>
+                    <li>
+                        {bullet}
+                        <span>
+                            Compassion Focused-Risk Aware. Therapy Program for
+                            Managing Sexual Risk
+                        </span>
+                    </li>
+                    <li>
+                        {bullet}
+                        <span>
+                            <strong>Therapeutic Community</strong> Accredited
+                            Training (TCAT) 1
+                        </span>
+                    </li>
+                    <li>
+                        {bullet}
+                        <span>
+                            {' '}
+                            Foundation Certificate in{' '}
+                            <strong>Group Analysis</strong> (completion June
+                            2023)
+                        </span>
+                    </li>
+                </ul>
+            </>
+        ),
+    },
+    {
         hash: '#online',
         q: 'How does online therapy work? ',
         a: (
@@ -137,7 +259,7 @@ export const questionsAndAnswers = [
                     All we can do is enable as much security as we can, and I
                     will configure my settings to maximize this.
                 </p>
-                <p className='bullet-list'>
+                <div className='bullet-list'>
                     <span className='bullet-list-banner'>
                         <b id='tips'>
                             For the best experience, please ensure that:
@@ -199,7 +321,7 @@ export const questionsAndAnswers = [
                             services.
                         </li>
                     </ul>
-                </p>
+                </div>
             </>
         ),
     },
@@ -392,10 +514,14 @@ export const questionsAndAnswers = [
         a: (
             <p>
                 Yes, I hold a diploma in supervision obtained at the Institute
-                of Group Analysis. I offer online supervision to individuals and
-                groups. I have experience supervising psychotherapists, people
-                working with a therapeutic intention, and emergency service
-                workers.
+                of Group Analysis.{' '}
+                <ClinicalSupervision
+                    btnText='I offer online supervision to individuals and
+                            groups.'
+                    btnClass='link'
+                />{' '}
+                I have experience supervising psychotherapists, people working
+                with a therapeutic intention, and emergency service workers.
             </p>
         ),
     },

@@ -15,7 +15,7 @@ export const FAQ = (props) => {
                     data={{
                         divider: 'white',
                         subtitle: '',
-                        title: 'What is psychotherapy?',
+                        title: <b>What is psychotherapy?</b>,
                     }}
                 />
                 <div>

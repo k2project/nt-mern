@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { articles } from './articles';
 import { ArticleRow } from './ArticleRow';
+import { NavHashLink as Link } from 'react-router-hash-link';
 
 const LIMIT_ARTICLES_DISPLAY = 15;
 
@@ -9,7 +10,7 @@ export const OtherArticles = () => {
         .filter((a) => !a.featured)
         .sort((a, b) => new Date(b.date) - new Date(a.date));
 
-    const OPINIONS = 'Opinion piece';
+    const BLOG_ARTICLE = 'Blog article';
     const LETTERS = 'Letter to the Editor';
     const QUOTES = 'Quoted in articles';
 
@@ -19,8 +20,13 @@ export const OtherArticles = () => {
     return (
         <>
             <ArticlesListByCategory
-                category={OPINIONS}
-                articles={getArticlesByCat(OPINIONS)}
+                category={BLOG_ARTICLE}
+                articles={getArticlesByCat(BLOG_ARTICLE)}
+                cta={
+                    <Link to='/therapy#FAQ' className='btn' smooth>
+                        FAQ
+                    </Link>
+                }
             />
             <ArticlesListByCategory
                 category={LETTERS}
@@ -34,7 +40,7 @@ export const OtherArticles = () => {
     );
 };
 
-const ArticlesListByCategory = ({ category, articles }) => {
+const ArticlesListByCategory = ({ category, articles, cta }) => {
     const [rest, showRest] = useState(false);
     const initShownArticles = articles.slice(0, LIMIT_ARTICLES_DISPLAY);
     const restArticles = articles.slice(LIMIT_ARTICLES_DISPLAY);
@@ -44,18 +50,21 @@ const ArticlesListByCategory = ({ category, articles }) => {
     return (
         <div className='Articles-others'>
             <div className='Articles-category'>
-                <h3>
-                    <b>{category}</b>
-                    <span className='budge'>{articles.length}</span>
-                </h3>
-                {articles.length > LIMIT_ARTICLES_DISPLAY && (
-                    <button
-                        onClick={() => showRest(!rest)}
-                        className='btn_square'
-                    >
-                        {rest ? 'Hide' : 'Show all'}
-                    </button>
-                )}
+                <div className='Articles-category-header'>
+                    <h3>
+                        <b>{category}</b>
+                        <span className='budge'>{articles.length}</span>
+                    </h3>
+                    {articles.length > LIMIT_ARTICLES_DISPLAY && (
+                        <button
+                            onClick={() => showRest(!rest)}
+                            className='btn_square'
+                        >
+                            {rest ? 'Hide' : 'Show all'}
+                        </button>
+                    )}
+                </div>
+                {cta && <div className='Articles-category-cta'>{cta}</div>}
             </div>
             {initShownArticles.map((a, i) => (
                 <ArticleRow key={a.id} article={a} id={a.id} />
