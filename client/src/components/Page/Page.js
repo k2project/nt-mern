@@ -25,7 +25,7 @@ export default function Page({ page, headerContent, children }) {
     }, []);
 
     React.useEffect(() => {
-        // ReactGA.send('pageview');
+        ReactGA.send('pageview');
     }, []);
 
     return (
