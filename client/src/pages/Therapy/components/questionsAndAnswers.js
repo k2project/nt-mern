@@ -211,8 +211,7 @@ export const questionsAndAnswers = [
                         <span>
                             {' '}
                             Foundation Certificate in{' '}
-                            <strong>Group Analysis</strong> (completion June
-                            2023)
+                            <strong>Group Analysis</strong>
                         </span>
                     </li>
                 </ul>
