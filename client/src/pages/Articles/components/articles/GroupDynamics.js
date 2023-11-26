@@ -43,7 +43,7 @@ export default {
                 diversified. In 1970, the year before the Institute for Group
                 Analysis was founded in London, Carl Rogers reckoned that the
                 ‘planned, intensive group experience’ was the most potent
-                invention of the century.1 Only a couple of decades before, Kurt
+                invention of the century. Only a couple of decades before, Kurt
                 Lewin’s ‘T-groups’ effectively birthed group therapy in 1947.
                 Writing on group psychology a few decades earlier, Sigmund Freud
                 highlighted humans’ intrinsically social nature, and how ‘in the
