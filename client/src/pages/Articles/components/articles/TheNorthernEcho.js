@@ -7,7 +7,7 @@ export default {
     category: 'Quoted in articles',
     title: 'Inquiry into child sexual abuse to hear evidence from Durham',
     summary:
-        'CHILD sexual exploitation by organised networks in County Durham will be examined as part of an inquiry.',
+        'Child sexual exploitation by organised networks in County Durham will be examined as part of an inquiry.',
     date: '2020-09-21',
     author: 'Catherine Priestley',
     pseudoauthor: null,
@@ -19,7 +19,7 @@ export default {
     content: (
         <>
             <p>
-                CHILD sexual exploitation by organised networks in County Durham
+                Child sexual exploitation by organised networks in County Durham
                 will be examined as part of an inquiry.
             </p>
             <p>

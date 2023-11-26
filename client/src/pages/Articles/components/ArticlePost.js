@@ -19,8 +19,16 @@ export const ArticlePost = ({ article, onOpen, onClose, odd }) => {
                                 <b>{article.pseudoauthor}</b> -{' '}
                             </>
                         )}
-                        posted on{' '}
-                        <b>{dayjs(article.date).format('MMM D, YYYY')}</b>
+                        {article.issue ? (
+                            article.issue
+                        ) : (
+                            <>
+                                posted on{' '}
+                                <b>
+                                    {dayjs(article.date).format('MMM D, YYYY')}
+                                </b>
+                            </>
+                        )}
                     </p>
                     <p className='article-summary'>{article.summary}</p>
 
@@ -44,7 +52,11 @@ export const ArticlePost = ({ article, onOpen, onClose, odd }) => {
                 {article.content}
                 <div className='Article-footer'>
                     <p>
-                        <OuterLink href={article.sourceUrl} text=' Read the original article here' />.{' '}
+                        <OuterLink
+                            href={article.sourceUrl}
+                            text=' Read the original article here'
+                        />
+                        .{' '}
                     </p>
                     <button className='btn' onClick={() => onClose(article.id)}>
                         Close
