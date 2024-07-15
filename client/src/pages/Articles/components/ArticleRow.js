@@ -37,7 +37,14 @@ export const ArticleRow = ({ article }) => {
                         <b>{article.pseudoauthor}</b> -{' '}
                     </>
                 )}
-                posted on <b>{dayjs(article.date).format('MMM D, YYYY')}</b>
+                {article.issue ? (
+                    article.issue
+                ) : (
+                    <>
+                        posted on{' '}
+                        <b>{dayjs(article.date).format('MMM D, YYYY')}</b>
+                    </>
+                )}
             </p>
         ),
         summary: article.summary,

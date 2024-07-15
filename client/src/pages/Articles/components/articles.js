@@ -9,6 +9,7 @@ import ConversationAboutChildSexualAbuse from './articles/ConversationAboutChild
 import WillisPalmersOrganisedNetwork from './articles/WillisPalmersOrganisedNetwork';
 import ASafeSpaceToChange from './articles/ASafeSpaceToChange';
 import Thegriffinssociety from './articles/Thegriffinssociety';
+import GroupDynamics from './articles/GroupDynamics';
 
 export const articles = [
     ListeningToTheVoicesOfSurvivors,
@@ -23,4 +24,5 @@ export const articles = [
     WillisPalmersOrganisedNetwork,
     ASafeSpaceToChange,
     Thegriffinssociety,
+    GroupDynamics,
 ];
