@@ -19,18 +19,7 @@ export const Form = (props) => {
                             ),
                         }}
                     />
-                    <p>
-                        {' '}
-                        I am always happy to speak briefly on the telephone. You
-                        can contact me on
-                        <a href='tel:+442086759754'>
-                            <span className='nowrap'>
-                                {' '}
-                                <b>02034 420 284</b>
-                            </span>
-                        </a>
-                        .{' '}
-                    </p>
+
                     <p>
                         If you prefer to contact me by email, please{' '}
                         <a href='#contact-form' className='link'>

@@ -22,7 +22,7 @@ export default function Nav({ toggleMobileMenu, mobileMenuOpen }) {
                 </span>
             </button>
             <NavLinks toggleMobileMenu={toggleMobileMenu} />
-            <MobileLink srText cls='Nav__num' />
+            {/* <MobileLink srText cls='Nav__num' /> */}
 
             <a
                 href='http://www.linkedin.com/in/calvocoressi'

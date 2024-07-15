@@ -17,7 +17,7 @@ module.exports = (function () {
             return res.send({
                 success: false,
                 message:
-                    'Please enter at last one way to contact you or call me directly on  02034 420 284.',
+                    'Please enter at last one way to contact you or contact me directly on therapy@calvocoressi.com',
             });
         }
         const emailRegex =

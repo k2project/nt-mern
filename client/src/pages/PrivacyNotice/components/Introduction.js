@@ -120,10 +120,7 @@ export default function Introduction() {
                 I am registered with the {ICO_Link} registration number
                 A8518835.
             </p>
-            <p>
-                My telephone number is: <u>{<MobileLink />}</u>. My email
-                address is: {<EmailLink />}.
-            </p>
+            <p>My email address is: {<EmailLink />}.</p>
         </>
     );
 }
