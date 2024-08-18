@@ -9,6 +9,7 @@ import ConversationAboutChildSexualAbuse from './articles/ConversationAboutChild
 import WillisPalmersOrganisedNetwork from './articles/WillisPalmersOrganisedNetwork';
 import ASafeSpaceToChange from './articles/ASafeSpaceToChange';
 import Thegriffinssociety from './articles/Thegriffinssociety';
+import Thegriffinssociety2 from './articles/Thegriffinssociety2';
 import GroupDynamics from './articles/GroupDynamics';
 
 export const articles = [
@@ -24,5 +25,6 @@ export const articles = [
     WillisPalmersOrganisedNetwork,
     ASafeSpaceToChange,
     Thegriffinssociety,
+    Thegriffinssociety2,
     GroupDynamics,
 ];
